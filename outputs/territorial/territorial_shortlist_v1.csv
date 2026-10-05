@@ -1,0 +1,9 @@
+index,priority,candidate_package,cluster_k15,role,evidence,decision
+0,A,Papantla + Zozocolco de Hidalgo,4,anchor + discovery,Same family/region; ~60–66 km road; Papantla has strong observed archaeological demand.,Keep; check Zozocolco service/capacity and final road accessibility.
+1,A,Actopan + Úrsulo Galván + La Antigua,6,territorial pilot,Same family/region; road links roughly 38–60 km for tested legs; existing territorial coherence.,Keep; direction of 'popular anchor' remains to be demonstrated.
+2,B,Misantla + Vega de Alatorre,8,compact pair,Same family/region; ~32 km / 38–40 min road.,Keep as pair; do not automatically include Atzalan because its road connection to Misantla is ~87 km.
+3,B,Coatzacoalcos + Minatitlán,13,urban/service pair,~23–25 km / 20–22 min; high relative services; Coatzacoalcos has DataTur demand context.,"Keep analytically, but verify leisure-tourism relevance before campaign use."
+4,DATA PRIORITY,Catemaco + San Andrés Tuxtla,0,high-potential cell,~11.7 km; high services; coherent Los Tuxtlas family.,"Very promising, but acquire comparable demand evidence first."
+5,DATA PRIORITY,Córdoba + Orizaba + Coscomatepec,11,high-potential cell,~23–37 km between tested road legs; high services in Córdoba/Orizaba.,"Very promising, but acquire comparable demand evidence first."
+6,REJECT,Xalapa + Poza Rica/Tuxpan,3,same cluster but not route,Air distance already ~124–165 km and different tourism regions.,Do not treat one cluster as one package.
+7,REJECT,Jesús Carranza/Texistepec + Santiago Tuxtla,9,same cluster but weak territorial fit,Air distance to Santiago Tuxtla ~82–119 km and region differs.,Do not use as compact package without stronger route rationale.

@@ -1,0 +1,10 @@
+population_scope,period,metric,value,unit,interpretation_note,source_url
+foreign_air_tourists_to_mexico,2025 Jan-Aug,age_30_44_share_pct,28.7,percent,Aggregate across foreign air tourists; not country-specific.,https://www.gob.mx/sectur/articulos/sectur-mexico-recibe-mas-de-14-millones-de-turistas-extranjeros-en-2025-un-incremento-sostenido-respecto-a-anos-anteriores
+foreign_air_tourists_to_mexico,2025 Jan-Aug,age_45_59_share_pct,23.8,percent,Aggregate across foreign air tourists; not country-specific.,https://www.gob.mx/sectur/articulos/sectur-mexico-recibe-mas-de-14-millones-de-turistas-extranjeros-en-2025-un-incremento-sostenido-respecto-a-anos-anteriores
+non_border_international_tourists,2026 Jan,female_share_pct,51.8,percent,Aggregate public EVI result; not country-specific.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,male_share_pct,48.2,percent,Aggregate public EVI result; not country-specific.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,leisure_vacation_share_pct,74.1,percent,Main trip purpose.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,visit_family_friends_share_pct,21.8,percent,Main trip purpose.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,business_professional_share_pct,2.9,percent,Main trip purpose.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,us_residence_share_pct,59.1,percent,Country/region of residence; public aggregate.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf
+non_border_international_tourists,2026 Jan,canada_residence_share_pct,11.6,percent,Country/region of residence; public aggregate.,https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/ViajInternales/evi2026_03.pdf

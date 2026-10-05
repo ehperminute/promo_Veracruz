@@ -1,0 +1,56 @@
+destination,region_turistica_preliminar,model_role_v1,cluster_k15,cluster_k17
+Actopan,Primeros Pasos de Cortés,Observed anchor / training evidence,8,6
+Atzalan,Totonacapan,Observed anchor / training evidence,6,4
+Boca del Río,Primeros Pasos de Cortés,Observed anchor / training evidence,10,9
+Carrillo Puerto,Por verificar,Observed anchor / training evidence,6,4
+Castillo de Teayo,Huasteca,Observed anchor / training evidence,6,4
+Coatzacoalcos,Olmeca,Observed anchor / training evidence,12,7
+Jesús Carranza,Olmeca,Observed anchor / training evidence,6,4
+Papantla,Totonacapan,Observed anchor / training evidence,7,12
+Texistepec,Olmeca,Observed anchor / training evidence,6,4
+Ursulo Galván,Primeros Pasos de Cortés,Observed anchor / training evidence,8,12
+Vega de Alatorre,Totonacapan,Observed anchor / training evidence,6,6
+Veracruz,Primeros Pasos de Cortés,Observed anchor / training evidence,10,9
+Xalapa,Cultura y Aventura,Observed anchor / training evidence,10,11
+Acajete,Cultura y Aventura,Undermeasured analog target,0,5
+Alvarado,Primeros Pasos de Cortés,Undermeasured analog target,13,0
+Calcahualco,Altas Montañas,Undermeasured analog target,3,1
+Catemaco,Los Tuxtlas,Undermeasured analog target,1,2
+Cazones de Herrera,Totonacapan,Undermeasured analog target,4,13
+Chinameca,Olmeca,Undermeasured analog target,3,1
+Coatepec,Cultura y Aventura,Undermeasured analog target,13,0
+Coscomatepec,Altas Montañas,Undermeasured analog target,2,15
+Cuitláhuac,Altas Montañas,Undermeasured analog target,0,15
+Córdoba,Altas Montañas,Undermeasured analog target,10,11
+Emiliano Zapata,Cultura y Aventura,Undermeasured analog target,13,0
+Fortín,Altas Montañas,Undermeasured analog target,2,3
+Huatusco,Altas Montañas,Undermeasured analog target,2,3
+Jalcomulco,Cultura y Aventura,Undermeasured analog target,11,8
+Jilotepec,Cultura y Aventura,Undermeasured analog target,0,5
+Jáltipan,Olmeca,Undermeasured analog target,9,3
+La Antigua,Primeros Pasos de Cortés,Undermeasured analog target,13,0
+Las Choapas,Olmeca,Undermeasured analog target,9,3
+Las Vigas de Ramírez,Cultura y Aventura,Undermeasured analog target,0,5
+Minatitlán,Olmeca,Undermeasured analog target,9,10
+Misantla,Totonacapan,Undermeasured analog target,2,3
+Naolinco,Cultura y Aventura,Undermeasured analog target,4,1
+Nautla,Totonacapan,Undermeasured analog target,4,13
+Orizaba,Altas Montañas,Undermeasured analog target,10,11
+Perote,Cultura y Aventura,Undermeasured analog target,2,3
+Poza Rica de Hidalgo,Totonacapan,Undermeasured analog target,5,10
+Puente Nacional,Primeros Pasos de Cortés,Undermeasured analog target,4,1
+Pánuco,Huasteca,Undermeasured analog target,2,3
+San Andrés Tuxtla,Los Tuxtlas,Undermeasured analog target,1,2
+Santiago Tuxtla,Los Tuxtlas,Undermeasured analog target,8,6
+Soteapan,Olmeca,Undermeasured analog target,3,1
+Tamiahua,Huasteca,Undermeasured analog target,14,16
+Tecolutla,Totonacapan,Undermeasured analog target,5,14
+Tempoal,Huasteca,Undermeasured analog target,4,1
+Tlacotalpan,Primeros Pasos de Cortés,Undermeasured analog target,11,8
+Tlalnelhuayocan,Cultura y Aventura,Undermeasured analog target,3,1
+Tlapacoyan,Totonacapan,Undermeasured analog target,2,3
+Tuxpan,Huasteca,Undermeasured analog target,5,10
+Xico,Cultura y Aventura,Undermeasured analog target,13,0
+Yanga,Altas Montañas,Undermeasured analog target,0,15
+Zongolica,Altas Montañas,Undermeasured analog target,0,15
+Zozocolco de Hidalgo,Totonacapan,Undermeasured analog target,4,13

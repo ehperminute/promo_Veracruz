@@ -1,0 +1,76 @@
+index,producto,municipios,n_municipios
+0,Todo Veracruz es Bello,Catemaco|Boca del Río|Alvarado|Actopan|Coatepec|Córdoba|Coscomatepec|La Antigua|Orizaba|Papantla|San Andrés Tuxtla|Santiago Tuxtla|Tlacotalpan|Ursulo Galván|Veracruz|Xalapa|Xico,17
+1,Al sabor de Boka,Boca del Río|Alvarado|Veracruz,3
+2,Descubre Los Tuxtlas,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3
+3,Pueblos Mágicos del Totonacapan,Papantla|Zozocolco de Hidalgo,2
+4,Xalapa: Cultura y Tradiciones,Coatepec|Xalapa|Xico,3
+5,Sierra del Café de las Montañas,Córdoba|Orizaba,2
+6,Aventura en Ríos,Boca del Río|Jalcomulco|La Antigua|Veracruz,4
+7,Salsas Sones y Danzones 1,Boca del Río|Coatepec|Papantla|Veracruz|Xalapa|Xico,6
+8,Salsas Sones y Danzones 2,Boca del Río|Coatepec|Emiliano Zapata|Veracruz|Xico,5
+9,Salsas Sones y Danzones 3,Boca del Río|Alvarado|Tlacotalpan|Veracruz,4
+10,Tajín y Papantla,Papantla,1
+11,Catemaco y Los Tuxtlas,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3
+12,Xalapa con Pueblos Mágicos Xico y Coatepec,Coatepec|Emiliano Zapata|Xalapa|Xico,4
+13,Pueblos Mágicos Altas Montañas,Córdoba|Coscomatepec|Orizaba,3
+14,Sierra del Café Córdoba Orizaba Fortín,Córdoba|Fortín|Orizaba,3
+15,Quiahuiztlan Cempoala La Antigua Ruta de Cortés,Actopan|La Antigua|Ursulo Galván,3
+16,Cempoala La Antigua San Juan de Ulúa,La Antigua|Ursulo Galván|Veracruz,3
+17,City Tour San Juan de Ulúa y La Antigua,Boca del Río|La Antigua|Veracruz,3
+18,City Tours San Juan de Ulúa,Boca del Río|Veracruz,2
+19,Aventura Dunas Playas Chachalacas,Ursulo Galván,1
+20,Travesía Kayak Isla Sacrificios,Boca del Río|Veracruz,2
+21,Isla Enmedio Snorkel Playa,Boca del Río|Alvarado,2
+22,Aventura Costas Tuxtlas,San Andrés Tuxtla,1
+23,Buceo Roca Partida,San Andrés Tuxtla,1
+24,Cañón Río Oro,San Andrés Tuxtla,1
+25,Kayak Roca Partida,San Andrés Tuxtla,1
+26,Kayak Rapel Roca Partida,San Andrés Tuxtla,1
+27,Rapel Roca Partida,San Andrés Tuxtla,1
+28,Cena Romántica,Catemaco,1
+29,Recorrido Guiado Selva,Catemaco,1
+30,Recorrido Botánico,Catemaco,1
+31,Paquete Salud Integral,Catemaco,1
+32,Escapada Romántica,Catemaco,1
+33,Avistamiento Aves Catemaco,Catemaco,1
+34,Manglares Cascadas Playas Tuxtlas,Catemaco|San Andrés Tuxtla,2
+35,Selva Los Tuxtlas,Catemaco|San Andrés Tuxtla,2
+36,Tour Lancha Manglar,Tamiahua|Tuxpan,2
+37,Paseo Lancha Kayak Manglar,Tamiahua,1
+38,Pesca Camarón Atardecer,Tamiahua,1
+39,La Antigua y Cempoala 2,La Antigua|Ursulo Galván|Veracruz,3
+40,Quiahuiztlán La Antigua Cempoala 2,Actopan|La Antigua|Ursulo Galván|Veracruz,4
+41,Catemaco Los Tuxtlas 2,Catemaco|San Andrés Tuxtla|Veracruz,3
+42,Descenso en Ríos,Actopan|Jalcomulco|La Antigua|Tlapacoyan|Veracruz,5
+43,Ruta de Cortés Xalapa,Coatepec|Emiliano Zapata|Veracruz|Xalapa|Xico,5
+44,Conquista Veracruz,Catemaco|San Andrés Tuxtla|Veracruz,3
+45,Tajín Papantla Veracruz,Papantla|Veracruz,2
+46,Tlacotalpan,Tlacotalpan|Veracruz,2
+47,Tour Ciudad Corto,Boca del Río|Veracruz,2
+48,Tour Ciudad Largo,Boca del Río|Veracruz,2
+49,Sabor a Café,Coatepec|Naolinco|Veracruz|Xalapa,4
+50,Rafting Jalcomulco,Jalcomulco,1
+51,Rappel,Actopan,1
+52,Sandboard,Ursulo Galván,1
+53,Snorkel,Alvarado,1
+54,Kayak,Veracruz,1
+55,Avistamiento Aves Veracruz,Veracruz,1
+56,Naolinco,Naolinco,1
+57,Senderos del Café,Coatepec,1
+58,Veracruz Puerto,Veracruz,1
+59,El Tajín,Papantla,1
+60,Xalapa,Xalapa,1
+61,Quiahuiztlán,Actopan,1
+62,Ruta de Cortés 2,Actopan|La Antigua|Puente Nacional|Ursulo Galván,4
+63,Puente Nacional y su Historia,Puente Nacional,1
+64,Tour Alvarado Tlacotalpan,Alvarado|Tlacotalpan,2
+65,Tour Café Coatepec,Coatepec,1
+66,Tour Rápidos Jalcomulco,Jalcomulco,1
+67,Tour Vainilla,Papantla,1
+68,Cata Cerveza Vainilla,Papantla,1
+69,Tour Papantla El Tajín,Papantla,1
+70,Playa Chaparrales,Cazones de Herrera,1
+71,Pueblos Mágicos Cafetaleros,Coatepec|Emiliano Zapata|Xico,3
+72,Orizaba Pueblo Mágico,Orizaba,1
+73,Tour 4X4,Ursulo Galván,1
+74,Clase Sandboard,Ursulo Galván,1
