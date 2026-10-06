@@ -1,0 +1,92 @@
+project: veracruz_tourism_intelligence
+manifest_version: "1.0"
+constitution_version: "1.0"
+status: proposed_freeze
+change_authority: user_only
+
+global_rules:
+  historical_results_as_active_inputs: false
+  synthetic_data_as_empirical_evidence: false
+  missing_coverage_means_low_demand: false
+  live_campaign_in_scope: false
+  veracruz_campaign_focus: true
+  structural_changes_require_user_approval: true
+
+pipeline:
+  - id: S0
+    name: source_registry
+    type: data_governance
+    depends_on: []
+    produces:
+      - data/raw/**
+      - data/reference/**
+      - docs/DATA_SOURCES.md
+
+  - id: S1
+    name: ingestion_cleaning
+    type: data_engineering
+    depends_on: [S0]
+    produces:
+      - data/interim/**
+
+  - id: S2
+    name: curated_interim_tables
+    type: data_engineering
+    depends_on: [S1]
+    produces:
+      - data/interim/fact_datatur_centro_mes.csv
+      - data/interim/fact_inah_veracruz_mes.csv
+      - data/interim/mart_infraestructura_municipio_veracruz.csv
+      - data/interim/tourism_products.csv
+
+  - id: S3
+    name: integrated_analysis_tables
+    type: integration
+    depends_on: [S2, S0]
+    produces:
+      - data/processed/destination_master.csv
+      - data/processed/demand_series.csv
+      - data/processed/origin_market_opportunity.csv
+
+  - id: S4
+    name: data_mining
+    type: analysis
+    depends_on: [S3]
+    produces:
+      - outputs/mining/**
+
+  - id: S5
+    name: machine_learning
+    type: analysis
+    depends_on: [S3]
+    produces:
+      - outputs/ml/**
+
+  - id: S6
+    name: stochastic_uncertainty
+    type: analysis
+    depends_on: [S5, S3]
+    produces:
+      - outputs/stochastic/**
+
+  - id: S7
+    name: territorial_operations_research
+    type: decision
+    depends_on: [S4, S5, S6, S3]
+    produces:
+      - outputs/optimization/**
+
+  - id: S8
+    name: marketing
+    type: decision
+    depends_on: [S7, S4, S3]
+    produces:
+      - outputs/marketing/**
+      - docs/marketing/**
+
+  - id: S9
+    name: submissions_portfolio
+    type: presentation
+    depends_on: [S4, S5, S6, S7, S8]
+    produces:
+      - submissions/**
