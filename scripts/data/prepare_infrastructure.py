@@ -9,6 +9,7 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
+REFERENCE = ROOT / "data" / "reference" / "denue_activity_groups.csv"
 OUTDIR = ROOT / "data" / "interim"
 OUTPUT = OUTDIR / "mart_infraestructura_municipio_veracruz.csv"
 
@@ -21,34 +22,33 @@ PIB_FILE = RAW / "PIB_Turistico_Estatal_y_Municipal_2018-2022_.zip"
 VERACRUZ_CODE = "30"
 VERACRUZ_NAME = "Veracruz de Ignacio de la Llave"
 
-# Explicit SCIAN code sets used by the original validated municipal mart.
-# Keeping them visible makes the proxy definitions inspectable and testable.
-RECREATION_TOURISM_PROXY_CODES = {
-    "711312",  # public promoters with facilities
-    "712111",  # private museums
-    "712112",  # public museums
-    "712120",  # historical sites
-    "712131",  # private botanical gardens / zoos
-    "712132",  # public botanical gardens / zoos
-    "712190",  # caves, natural parks and cultural-heritage sites
-    "713113",  # private water parks / spas
-    "713114",  # public water parks / spas
-    "713998",  # other private recreational services
-    "713999",  # other public recreational services
-}
+# Proxy definitions are data, not hidden code constants.
+# They live in data/reference/denue_activity_groups.csv and are version-controlled.
 
-AGENCIES_TOURS_EVENTS_CODES = {
-    "561510",  # travel agencies
-    "561520",  # tour/package organization for travel agencies
-    "561590",  # other reservation services
-    "561920",  # convention/trade-fair organizers
-}
+def _load_activity_groups(path: Path = REFERENCE) -> pd.DataFrame:
+    rules = pd.read_csv(path, dtype=str).fillna("")
+    required = {"metric", "match_type", "code", "description"}
+    missing = required - set(rules.columns)
+    if missing:
+        raise ValueError(f"DENUE activity-group reference missing columns: {sorted(missing)}")
+    if not set(rules["match_type"]).issubset({"exact", "prefix"}):
+        raise ValueError("DENUE activity-group match_type must be exact or prefix")
+    if rules[["metric", "match_type", "code"]].duplicated().any():
+        raise AssertionError("Duplicate DENUE activity-group rule")
+    return rules
 
-TOURIST_TRANSPORT_CODES = {
-    "485510",  # bus rental with driver
-    "487110",  # tourist transport by land
-    "487210",  # tourist transport by water
-}
+
+def _mask_from_rules(df: pd.DataFrame, rules: pd.DataFrame, metric: str) -> pd.Series:
+    selected = rules[rules["metric"].eq(metric)]
+    if selected.empty:
+        raise AssertionError(f"No DENUE rules defined for metric: {metric}")
+    mask = pd.Series(False, index=df.index)
+    for rule in selected.itertuples(index=False):
+        if rule.match_type == "exact":
+            mask |= df["codigo_act"].eq(rule.code)
+        else:
+            mask |= df["codigo_act"].str.startswith(rule.code, na=False)
+    return mask
 
 
 def _metadata_text(path: Path) -> str:
@@ -147,6 +147,20 @@ def _load_pib_2022(path: Path) -> pd.DataFrame:
         raise ValueError("PIB workbook does not contain the PIB_Municipal sheet")
     ws = wb["PIB_Municipal"]
 
+    expected_headers = {
+        5: "Clave de municipio",
+        30: "PIB Municipal 2022 (I)",
+        32: "PIB Turístico Municipal 2022 (J)",
+        34: "Participación en % del Turismo en el municipio (J/I)",
+    }
+    for column, expected_prefix in expected_headers.items():
+        value = str(ws.cell(8, column).value or "").replace("\n", " ").strip()
+        if not value.startswith(expected_prefix):
+            raise AssertionError(
+                f"Unexpected PIB workbook header at column {column}: {value!r}; "
+                f"expected prefix {expected_prefix!r}"
+            )
+
     rows = []
     for values in ws.iter_rows(min_row=9, values_only=True):
         if values[3] != VERACRUZ_NAME:
@@ -193,27 +207,24 @@ def build_infrastructure() -> pd.DataFrame:
     pib = _load_pib_2022(PIB_FILE)
     names = _canonical_denue_names(d72, d71, d48, d56)
 
+    rules = _load_activity_groups()
     alojamiento = _count_by_key(
-        d72, d72["codigo_act"].str.startswith("721", na=False), "alojamiento_n"
+        d72, _mask_from_rules(d72, rules, "alojamiento_n"), "alojamiento_n"
     )
     alimentos = _count_by_key(
-        d72, d72["codigo_act"].str.startswith("722", na=False), "alimentos_bebidas_n"
+        d72, _mask_from_rules(d72, rules, "alimentos_bebidas_n"), "alimentos_bebidas_n"
     )
-    recreacion_total = d71.groupby("clave_municipio").size().rename("sector_recreacion_total_n")
+    recreacion_total = _count_by_key(
+        d71, _mask_from_rules(d71, rules, "sector_recreacion_total_n"), "sector_recreacion_total_n"
+    )
     recreacion_proxy = _count_by_key(
-        d71,
-        d71["codigo_act"].isin(RECREATION_TOURISM_PROXY_CODES),
-        "recreacion_turistica_proxy_n",
+        d71, _mask_from_rules(d71, rules, "recreacion_turistica_proxy_n"), "recreacion_turistica_proxy_n"
     )
     agencias = _count_by_key(
-        d56,
-        d56["codigo_act"].isin(AGENCIES_TOURS_EVENTS_CODES),
-        "agencias_tours_eventos_n",
+        d56, _mask_from_rules(d56, rules, "agencias_tours_eventos_n"), "agencias_tours_eventos_n"
     )
     transporte = _count_by_key(
-        d48,
-        d48["codigo_act"].isin(TOURIST_TRANSPORT_CODES),
-        "transporte_turistico_n",
+        d48, _mask_from_rules(d48, rules, "transporte_turistico_n"), "transporte_turistico_n"
     )
 
     out = pib.set_index("clave_municipio")

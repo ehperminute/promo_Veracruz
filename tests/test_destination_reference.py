@@ -54,8 +54,11 @@ def test_reference_binary_fields_and_sources_are_well_formed():
         "data/raw/veracruz_regiones_2026-10-06.html"
     ).all()
     pueblos = df[df["pueblo_magico"].eq(1)]
+    # Direct gob.mx Pueblos Mágicos snapshot was CAPTCHA-blocked in Codespaces.
+    # Current local proof-of-concept evidence comes from the Pueblos Mágicos menu
+    # embedded in the frozen official Veracruz Turismo products snapshot.
     assert pueblos["source_pueblo_magico_snapshot"].eq(
-        "data/raw/veracruz_pueblos_magicos_2026-10-06.html"
+        "data/raw/veracruz_productos_2026-10-06.html"
     ).all()
 
 

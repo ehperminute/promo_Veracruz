@@ -1,27 +1,82 @@
-# Reference curation rules
+# Reference and curation rules
 
-Version: 2026-10-06-v1
+Version: 2026-10-06-v2
 
-This directory contains **version-controlled project reference inputs**. They are not measured demand, DENUE counts, or model outputs. They encode reviewed mappings and categorical interpretations needed to join official sources into the project universe.
+This directory contains **version-controlled project reference inputs**. Reference data are neither measured demand nor model outputs. They hold explicit code lists, reviewed mappings, and interpretive categories needed to transform frozen raw sources reproducibly.
+
+## Raw vs reference vs generated
+
+- `data/raw/`: exact frozen source snapshots. Never manually edited.
+- `data/reference/`: explicit project rules or reviewed selections. Changes are ordinary Git diffs.
+- `data/interim/`: generated outputs from raw + reference.
+- `data/processed/`: canonical analysis-ready tables.
+
+A rule that changes the analytical meaning of a variable must not exist only as a Python constant.
+
+## `denue_activity_groups.csv`
+
+Defines the SCIAN rules used to build municipal service/infrastructure variables.
+
+Each row contains:
+
+- `metric`: generated project variable;
+- `match_type`: `exact` or `prefix`;
+- `code`: SCIAN code or prefix;
+- `description`: human-readable activity meaning.
+
+`prepare_infrastructure.py` reads this file directly. This makes the tourism proxies inspectable without reading Python source.
+
+## PIB workbook fields
+
+The municipal PIB parser uses the official municipality key and validates the workbook headers before reading 2022 values. It expects the `PIB_Municipal` sheet to contain:
+
+- `Clave de municipio`;
+- `PIB Municipal 2022 (I)`;
+- `PIB Turístico Municipal 2022 (J)`;
+- `Participación en % del Turismo en el municipio (J/I)`.
+
+The script fails rather than silently reading different columns if the workbook layout changes.
+
+## Frozen Veracruz HTML
+
+The local proof-of-concept snapshots are:
+
+- `data/raw/veracruz_productos_2026-10-06.html`
+- `data/raw/veracruz_regiones_2026-10-06.html`
+- `data/raw/veracruz_pueblos_magicos_2026-10-06.html`
+
+`prepare_veracruz_web_reference.py` parses local snapshots only; normal pipeline runs do not require the network.
+
+The Pueblos Mágicos gob.mx snapshot returned a **Radware CAPTCHA page** to Codespaces. It is retained unchanged as evidence of what the fetch returned. For the current proof of concept, the parser transparently falls back to the Pueblos Mágicos menu embedded in the frozen official `veracruz_productos_2026-10-06.html` page. The generated table records that fallback explicitly.
+
+The products snapshot currently yields the full set of product cards mechanically. The seven-region navigation menu is also parsed mechanically and retains the municipality identifiers exposed in the source URL.
+
+## `tourism_products.csv`
+
+This is the **75-product project-v1 analytical selection** used by the existing coursework, not a claim that the official website contains only 75 products.
+
+The full frozen page is parsed first. `prepare_tourism_products.py` then verifies every selected row against a source card with the same municipality set and a closely matching title, and records the matched source-card index/title in the generated interim table.
+
+This preserves the existing project scope while making its source grounding testable. A later decision may explicitly replace the 75-product selection with the full parsed offer; that would be a data-scope change, not a hidden parser change.
 
 ## `destination_reference.csv`
 
 One row per destination in the 55-destination project universe.
 
-### Directly source-backed fields
+### Direct/source-backed and reviewed fields
 
-- `destination`, `municipio`: project destination and municipality key.
-- `region_turistica_preliminar`: reviewed mapping against the frozen Veracruz tourism-region page. `Por verificar` is retained where the mapping was not confidently established.
-- `pueblo_magico`: direct indicator from the frozen official Pueblos Mágicos page.
-- `oferta_turistica_oficial_web`, `productos_en_extracto_local_n`, `productos_ejemplo`: curated extraction from the frozen official Veracruz tourism-products page.
-- `inah_inventory_sites`: reviewed mapping from destination to INAH archaeological-site inventory names.
-- `inah_series_sites`: **exact `recinto` values** used to map the INAH visitor time series to a destination.
-- `datatur_center`: reviewed mapping from a destination to an exact DataTur tourism-center name. A DataTur center can cover more than one municipality; this is context, not municipal demand.
-- `datatur_scope_note`: records that interpretation explicitly.
+- `destination`, `municipio`, `clave_municipio`: project destination/municipality identity.
+- `region_turistica_preliminar`: reviewed tourism-region mapping; parser-derived navigation mappings are used as validation where the frozen page exposes the municipality directly. `Por verificar` remains where unresolved.
+- `pueblo_magico`: checked against the mechanically extracted Pueblos Mágicos list.
+- `oferta_turistica_oficial_web`, `productos_en_extracto_local_n`, `productos_ejemplo`: project-v1 offer-selection fields, grounded in `tourism_products.csv`.
+- `inah_inventory_sites`: reviewed mapping to INAH archaeological inventory names.
+- `inah_series_sites`: exact `recinto` strings used to map the INAH visitor series.
+- `datatur_center`: explicit mapping from destination to an exact DataTur center; a center may cover more than one municipality.
+- `datatur_scope_note`: records that interpretation.
 
 ### Interpretive theme fields
 
-The following are project-coded categorical features, not official government classification fields:
+These are project-coded categories, not official government classification fields:
 
 - `tourism_tags`
 - `theme_beach_coast`
@@ -33,36 +88,18 @@ The following are project-coded categorical features, not official government cl
 - `theme_wellness_spiritual`
 - `theme_urban_services`
 
-A theme is coded `1` when the frozen official tourism offer/region description or the reviewed destination evidence explicitly supports that theme. Otherwise it is `0`. These fields describe offer/profile, not demand.
-
-### Provenance fields
-
-Every row points to the frozen local snapshots or structured raw files used for review. The frozen HTML snapshots are:
-
-- `data/raw/veracruz_productos_2026-10-06.html`
-- `data/raw/veracruz_regiones_2026-10-06.html`
-- `data/raw/veracruz_pueblos_magicos_2026-10-06.html`
-
-The INAH and DataTur raw files are also referenced directly.
+A theme is coded `1` when reviewed destination evidence supports that theme. These fields describe offer/profile, not demand.
 
 ### Prohibited content
 
-`destination_reference.csv` must **not** contain measured/derived quantities such as:
+`destination_reference.csv` must not contain derived/measured quantities such as annual visitor totals, DataTur arrivals/occupancy, DENUE counts, tourism GDP, cluster labels, predictions, or campaign outcomes. Those are regenerated downstream.
 
-- annual visitor totals;
-- DataTur arrivals/occupancy;
-- DENUE establishment counts;
-- tourism GDP;
-- cluster labels;
-- model predictions;
-- marketing outcomes.
+## `source_registry.csv`
 
-Those are regenerated downstream.
+Contains the expected raw filename, institution, URL, snapshot date, release/coverage note, project role, and expected SHA-256 checksum.
 
-## `tourism_products.csv`
-
-One row per reviewed official tourism product, with the municipalities associated with that product. This is a curated representation of the **official offer** and can support offer-association mining later. It does not represent tourist co-visitation.
+`build_source_registry.py` recalculates every hash, fails on any mismatch or missing file, writes `data/interim/source_registry_resolved.csv`, and regenerates `docs/DATA_SOURCES.md`.
 
 ## Change rule
 
-Changes to reference rows should be reviewable as ordinary Git diffs. If a theme, mapping, or destination universe changes, the reason should be documented in the commit/decision log. Measured data must never be manually inserted here to make a downstream result match an older artifact.
+Changes to reference rows must be reviewable in Git. Measured data must never be manually inserted into reference files merely to reproduce an older output.

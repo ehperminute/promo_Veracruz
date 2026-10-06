@@ -1,0 +1,9 @@
+source_name,pueblo_magico,source_snapshot,requested_snapshot,extraction_note
+COATEPEC,Coatepec,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+COSCOMATEPEC,Coscomatepec,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+CÓRDOBA,Córdoba,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+NAOLINCO,Naolinco,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+ORIZABA,Orizaba,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+PAPANTLA,Papantla,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+XICO,Xico,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles
+ZOZOCOLCO,Zozocolco de Hidalgo,data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html,data/raw/veracruz_pueblos_magicos_2026-10-06.html,manual_browser_snapshot_iframe_titles

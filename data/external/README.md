@@ -1,22 +1,7 @@
-# External data
+# Deprecated external-data note
 
-Large raw downloads are intentionally not committed to this repository.
+The project now keeps the frozen source snapshots required by the active S0–S3 pipeline in `data/raw/`.
 
-| Source | Project role |
-|---|---|
-| INEGI DENUE | Tourism/service infrastructure by municipality |
-| INAH open visitor data | Observed archaeological-site demand and seasonality |
-| DataTur | Hotel-center arrivals and occupancy context |
-| DataTur PIB turístico estatal/municipal | Structural economic context |
-| Veracruz tourism portal | Official products/routes and tourism-offer attributes |
+Do not add new active dependencies here. `data/external/` remains only as a compatibility note for the older repository layout.
 
-The processed `destination_master_v1.csv` contains the small integrated profile used by the runnable scripts.
-
-Source pages:
-- https://www.inegi.org.mx/app/mapa/denue/default.aspx
-- https://datos.inah.gob.mx/datos-abiertos/visitantes-zonas-arqueologicas
-- https://www.datatur.sectur.gob.mx/SitePages/hoteleria.aspx
-- https://datatur.sectur.gob.mx/SitePages/pibturisticoestatalmunicipal.aspx
-- https://veracruz.mx/productos.php
-- https://www.veracruz.gob.mx/turismo/regiones-turisticas/
-- https://www.veracruz.gob.mx/turismo/pueblos-magicos/
+See generated `docs/DATA_SOURCES.md` and `data/reference/source_registry.csv` for the active raw-source registry.

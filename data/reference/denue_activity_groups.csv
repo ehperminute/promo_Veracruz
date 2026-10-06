@@ -1,0 +1,22 @@
+metric,match_type,code,description
+alojamiento_n,prefix,721,Servicios de alojamiento temporal
+alimentos_bebidas_n,prefix,722,Servicios de preparación de alimentos y bebidas
+sector_recreacion_total_n,prefix,71,Sector completo de servicios de esparcimiento culturales deportivos y otros recreativos
+recreacion_turistica_proxy_n,exact,711312,Promotores del sector público de espectáculos artísticos culturales deportivos y similares que cuentan con instalaciones
+recreacion_turistica_proxy_n,exact,712111,Museos del sector privado
+recreacion_turistica_proxy_n,exact,712112,Museos del sector público
+recreacion_turistica_proxy_n,exact,712120,Sitios históricos
+recreacion_turistica_proxy_n,exact,712131,Jardines botánicos y zoológicos del sector privado
+recreacion_turistica_proxy_n,exact,712132,Jardines botánicos y zoológicos del sector público
+recreacion_turistica_proxy_n,exact,712190,Grutas parques naturales y otros sitios del patrimonio cultural de la nación
+recreacion_turistica_proxy_n,exact,713113,Parques acuáticos y balnearios del sector privado
+recreacion_turistica_proxy_n,exact,713114,Parques acuáticos y balnearios del sector público
+recreacion_turistica_proxy_n,exact,713998,Otros servicios recreativos prestados por el sector privado
+recreacion_turistica_proxy_n,exact,713999,Otros servicios recreativos prestados por el sector público
+agencias_tours_eventos_n,exact,561510,Agencias de viajes
+agencias_tours_eventos_n,exact,561520,Organización de excursiones y paquetes turísticos para agencias de viajes
+agencias_tours_eventos_n,exact,561590,Otros servicios de reservaciones
+agencias_tours_eventos_n,exact,561920,Organizadores de convenciones y ferias comerciales e industriales
+transporte_turistico_n,exact,485510,Alquiler de autobuses con chofer
+transporte_turistico_n,exact,487110,Transporte turístico por tierra
+transporte_turistico_n,exact,487210,Transporte turístico por agua

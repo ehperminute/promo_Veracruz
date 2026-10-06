@@ -5,3 +5,4 @@ jupyter>=1.0
 pytest>=8.0
 openpyxl>=3.1
 pyshp>=2.3
+beautifulsoup4>=4.12

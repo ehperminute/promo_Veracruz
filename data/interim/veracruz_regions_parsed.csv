@@ -1,0 +1,32 @@
+region,source_municipality_name,municipio,source_municipio_id,clave_municipio,source_snapshot
+Altas Montañas,Córdoba,Córdoba,44,30044,data/raw/veracruz_productos_2026-10-06.html
+Altas Montañas,Coscomatepec,Coscomatepec,47,30047,data/raw/veracruz_productos_2026-10-06.html
+Altas Montañas,Fortín de las Flores,Fortín,68,30068,data/raw/veracruz_productos_2026-10-06.html
+Altas Montañas,Orizaba,Orizaba,118,30118,data/raw/veracruz_productos_2026-10-06.html
+Altas Montañas,Zongolica,Zongolica,201,30201,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Coatepec,Coatepec,38,30038,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Xalapa,Xalapa,87,30087,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Jalcomulco,Jalcomulco,88,30088,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Xico,Xico,92,30092,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Naolinco,Naolinco,112,30112,data/raw/veracruz_productos_2026-10-06.html
+Cultura y Aventura,Perote,Perote,128,30128,data/raw/veracruz_productos_2026-10-06.html
+Huasteca,Pánuco,Pánuco,123,30123,data/raw/veracruz_productos_2026-10-06.html
+Huasteca,Tamiahua,Tamiahua,151,30151,data/raw/veracruz_productos_2026-10-06.html
+Huasteca,Tempoal,Tempoal,161,30161,data/raw/veracruz_productos_2026-10-06.html
+Huasteca,Tuxpan,Tuxpan,189,30189,data/raw/veracruz_productos_2026-10-06.html
+Los Tuxtlas,Catemaco,Catemaco,32,30032,data/raw/veracruz_productos_2026-10-06.html
+Los Tuxtlas,San Andrés Tuxtla,San Andrés Tuxtla,141,30141,data/raw/veracruz_productos_2026-10-06.html
+Los Tuxtlas,Santiago Tuxtla,Santiago Tuxtla,143,30143,data/raw/veracruz_productos_2026-10-06.html
+Olmeca,Coatzacoalcos,Coatzacoalcos,39,30039,data/raw/veracruz_productos_2026-10-06.html
+Olmeca,Las Choapas,Las Choapas,61,30061,data/raw/veracruz_productos_2026-10-06.html
+Olmeca,Minatitlán,Minatitlán,108,30108,data/raw/veracruz_productos_2026-10-06.html
+Primeros Pasos de Cortés,Alvarado,Alvarado,11,30011,data/raw/veracruz_productos_2026-10-06.html
+Primeros Pasos de Cortés,Boca del Río,Boca del Río,28,30028,data/raw/veracruz_productos_2026-10-06.html
+Primeros Pasos de Cortés,Tlacotalpan,Tlacotalpan,178,30178,data/raw/veracruz_productos_2026-10-06.html
+Primeros Pasos de Cortés,Veracruz,Veracruz,193,30193,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Misantla,Misantla,109,30109,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Nautla,Nautla,114,30114,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Papantla,Papantla,124,30124,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Poza Rica,Poza Rica de Hidalgo,131,30131,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Tecolutla,Tecolutla,158,30158,data/raw/veracruz_productos_2026-10-06.html
+Totonacapan,Zozocolco de Hidalgo,Zozocolco de Hidalgo,203,30203,data/raw/veracruz_productos_2026-10-06.html

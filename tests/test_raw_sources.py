@@ -17,6 +17,7 @@ REQUIRED_FILES = {
     "veracruz_productos_2026-10-06.html": 1_000,
     "veracruz_regiones_2026-10-06.html": 1_000,
     "veracruz_pueblos_magicos_2026-10-06.html": 1_000,
+    "veracruz_pueblos_magicos_2026-10-06_manual.html": 50_000,
 }
 
 

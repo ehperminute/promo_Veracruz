@@ -1,0 +1,296 @@
+source_card_index,producto,municipios,n_municipios,source_snapshot
+1,Todo Veracruz es Bello,Catemaco|Boca del Río|Alvarado|Actopan|Coatepec|Córdoba|Coscomatepec|La Antigua|Orizaba|Papantla|San Andrés Tuxtla|Santiago Tuxtla|Tlacotalpan|Ursulo Galván|Veracruz|Xalapa|Xico,17,data/raw/veracruz_productos_2026-10-06.html
+2,Al sabor de Boka,Boca del Río|Alvarado|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+3,Descubre Los Tuxtlas,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3,data/raw/veracruz_productos_2026-10-06.html
+4,Pueblos Mágicos del Totonacapan,Papantla|Zozocolco de Hidalgo,2,data/raw/veracruz_productos_2026-10-06.html
+5,Xalapa: Cultura y Tradiciones,Coatepec|Xalapa|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+6,Sierra del Café de las Montañas,Córdoba|Orizaba,2,data/raw/veracruz_productos_2026-10-06.html
+7,Aventura en Ríos,Boca del Río|Jalcomulco|La Antigua|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+8,"Salsas, Sones y Danzones",Boca del Río|Coatepec|Papantla|Veracruz|Xalapa|Xico,6,data/raw/veracruz_productos_2026-10-06.html
+9,"Salsas, Sones y Danzones",Boca del Río|Coatepec|Emiliano Zapata|Veracruz|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+10,"Salsas, Sones y Danzones",Boca del Río|Alvarado|Tlacotalpan|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+11,Tajín y Papantla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+12,Catemaco y Los Tuxtlas,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3,data/raw/veracruz_productos_2026-10-06.html
+13,Xalapa con Pueblos Magicos Xico y Coatepec,Coatepec|Emiliano Zapata|Xalapa|Xico,4,data/raw/veracruz_productos_2026-10-06.html
+14,Pueblos Mágicos en las Altas Montañas. Orizaba y Coscomatepec,Córdoba|Coscomatepec|Orizaba,3,data/raw/veracruz_productos_2026-10-06.html
+15,"Sierra del Café, Córdoba, Orizaba y Fortín",Córdoba|Fortín|Orizaba,3,data/raw/veracruz_productos_2026-10-06.html
+16,"Quiahuiztlan, Cempoala y La Antigua. La Ruta de Cortés",Actopan|La Antigua|Ursulo Galván,3,data/raw/veracruz_productos_2026-10-06.html
+17,"Cempoala, La Antigua y San Juan de Ulúa",La Antigua|Ursulo Galván|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+18,City Tour con San Juan de Ulúa y La Antigua,Boca del Río|La Antigua|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+19,City Tours con San Juan de Ulúa,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+20,Aventura en Dunas y Playas de Chachalacas,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+21,Travesía en Kayak a la Isla de Sacrificios,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+22,"Isla de Enmedio, Snorkel y Playa",Boca del Río|Alvarado,2,data/raw/veracruz_productos_2026-10-06.html
+23,Aventura en las Costas de los Tuxtlas,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+24,Buceo en Roca Partida,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+25,Cañón del Río Oro,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+26,Kayak en Roca Partida,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+27,Kayak y Rapel en Roca Partida,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+28,Rapel en Roca Partida,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+29,Cena Romántica,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+30,Recorrido Guiado por la Selva,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+31,Recorrido Botánico,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+32,Paquete de Salud Integral,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+33,Escapada Romántica,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+34,Paquete Romántico,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+35,Avistamiento de Aves,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+36,Hospedaje Sencillo y Tratamiento Corporal.,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+37,Ritual de Boda Olmeca,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+38,Tratamiento del Barro Mineral,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+39,Kayaks o Lancha de Remos,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+40,Temazcal Colectivo,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+41,Temazcal Privado,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+42,Limpia Espiritual,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+43,Masaje Relajante,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+44,La Magia de los Tuxtlas,Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+45,La Selva y El Mar de los Tuxtlas.,Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+46,"Manglares, Cascadas y Playas de los Tuxtlas",Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+47,Selva de Los Tuxtlas,Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+48,Tour en Lancha por el Manglar,Tamiahua|Tuxpan,2,data/raw/veracruz_productos_2026-10-06.html
+49,Paseo en Lancha y Kayak por el Manglar,Tamiahua,1,data/raw/veracruz_productos_2026-10-06.html
+50,Pesca de Camarón al Atardecer,Tamiahua,1,data/raw/veracruz_productos_2026-10-06.html
+51,La Antigua y Cempoala 2,La Antigua|Ursulo Galván|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+52,"Quiahuiztlán, La Antigua y Cempoala 2",Actopan|La Antigua|Ursulo Galván|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+53,Catemaco y Los Tuxtlas,Catemaco|San Andrés Tuxtla|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+54,Descenso en Ríos,Actopan|Jalcomulco|La Antigua|Tlapacoyan|Veracruz,5,data/raw/veracruz_productos_2026-10-06.html
+55,Ruta de Cortés,Coatepec|Emiliano Zapata|Veracruz|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+56,Conquista Veracruz,Catemaco|San Andrés Tuxtla|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+57,Tajín y Papantla,Papantla|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+58,Tlacotalpan,Tlacotalpan|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+59,Tour de Ciudad Corto,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+60,Tour de Ciudad Largo,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+61,Xalapa y Coatepec,Coatepec|Emiliano Zapata|Veracruz|Xalapa,4,data/raw/veracruz_productos_2026-10-06.html
+62,Xalapa con Aroma de Café,Coatepec|Emiliano Zapata|Veracruz|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+63,Senderos del Café,Emiliano Zapata|Xalapa|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+64,Nace el Río,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+65,Pueblos Mágicos,Coatepec|Xico,2,data/raw/veracruz_productos_2026-10-06.html
+66,La Magia de Veracruz en las Altas Montañas.,Calcahualco|Coscomatepec|Huatusco,3,data/raw/veracruz_productos_2026-10-06.html
+67,"Entre Brujos, Tabaco y Son.",Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+68,Misantla y la Magia de Veracruz,Misantla,1,data/raw/veracruz_productos_2026-10-06.html
+69,Xalapa y La Región Mágica,Coatepec|Xalapa|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+70,Rutas de las Haciendas de Xalapa y la región.,Coatepec|Emiliano Zapata|Xalapa|Xico,4,data/raw/veracruz_productos_2026-10-06.html
+71,De la Vainilla al Danzón.,Actopan|La Antigua|Papantla|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+72,"Toros, Flamenco……Mole",Xico,1,data/raw/veracruz_productos_2026-10-06.html
+73,"Sones, Sabores y Tradiciones de Invierno.",Acajete|Coatepec|Las Vigas de Ramírez|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+74,Embrújate con Lara,Catemaco|Alvarado|San Andrés Tuxtla|Tlacotalpan,4,data/raw/veracruz_productos_2026-10-06.html
+75,Sabores del Totonacapan a las Altas Montañas.,Coatepec|Coscomatepec|Emiliano Zapata|Huatusco|Misantla|Naolinco|Orizaba|Papantla|Xalapa|Xico,10,data/raw/veracruz_productos_2026-10-06.html
+76,Aventura en Jalcomulco,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+77,Ruta del Cofre de Perote,Perote,1,data/raw/veracruz_productos_2026-10-06.html
+78,Turismo Solidario en el Bosque de la Niebla,Tlalnelhuayocan|Xalapa,2,data/raw/veracruz_productos_2026-10-06.html
+79,Xalapa y Pueblos Mágicos cafetaleros,Coatepec|Xalapa|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+80,Servicio de Hotel,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+81,Servicio de Cabañas,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+82,Paquete 1 TUM,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+83,Paquete 2 W+STEN,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+84,Paquete 3 TUKUTEN,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+85,Paquete 4 MAKTASTEN,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+86,City Tour,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+87,Rafting Tour,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+88,Tour Tajín,Papantla|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+89,Tour Raíces,La Antigua|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+90,Tour Encanto,Catemaco|San Andrés Tuxtla,2,data/raw/veracruz_productos_2026-10-06.html
+91,Tour La Perla,Tlacotalpan,1,data/raw/veracruz_productos_2026-10-06.html
+92,Tour Mágico,Coatepec|Xico,2,data/raw/veracruz_productos_2026-10-06.html
+93,Tour Pueblo Mágico,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+94,Tour de Las Flores,Coatepec|Emiliano Zapata|Xalapa,3,data/raw/veracruz_productos_2026-10-06.html
+95,Tour Café,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+96,Tour Dunas,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+97,Tour Veracruzano,Boca del Río|Alvarado,2,data/raw/veracruz_productos_2026-10-06.html
+98,El Jarochazo City Tour,Boca del Río|Alvarado|La Antigua|Ursulo Galván|Veracruz,5,data/raw/veracruz_productos_2026-10-06.html
+99,El Ejecutivo,Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+100,Aventura Veracruzana,Jalcomulco|Ursulo Galván|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+101,Veracruz Mágico,Coatepec|Coscomatepec|Orizaba|Veracruz|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+102,Nuestras Raíces El Tajín,Actopan|La Antigua|Papantla|Ursulo Galván|Veracruz,5,data/raw/veracruz_productos_2026-10-06.html
+103,La Perla del Papaloapan,Alvarado|Tlacotalpan|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+104,La Magia de Veracruz,Catemaco|San Andrés Tuxtla|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+105,Sabor a Café,Coatepec|Naolinco|Veracruz|Xalapa,4,data/raw/veracruz_productos_2026-10-06.html
+106,Rafting Jalcomulco,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+107,Rappel,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+108,Sandboard,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+109,Snorkel,Alvarado,1,data/raw/veracruz_productos_2026-10-06.html
+110,Kayak,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+111,Avistamiento de Aves,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+112,Naolinco,Naolinco,1,data/raw/veracruz_productos_2026-10-06.html
+113,Senderos del Café,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+114,Veracruz Puerto,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+115,El Tajín,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+116,Xalapa,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+117,Quiahuiztlán,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+118,Ruta de Cortés,Actopan|La Antigua|Puente Nacional|Ursulo Galván,4,data/raw/veracruz_productos_2026-10-06.html
+119,Puente Nacional y su Historia,Puente Nacional,1,data/raw/veracruz_productos_2026-10-06.html
+120,Inmersión con Tiburones,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+121,Encuentro con Pingüinos,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+122,Aquarium del Puerto de Veracruz,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+123,"Ruta de Salud, Colores, Aromas y Sabores de Kachikin",Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+124,"Ruta de Salud, Colores, Aroma y Sabores de Kachikin",Papantla|Zozocolco de Hidalgo,2,data/raw/veracruz_productos_2026-10-06.html
+125,Senderismo y Medicina Tradicional,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+126,Orizaba,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+127,Orizaba,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+128,Orizaba,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+129,Vive Veracruz... desde sus raíces Totonacas hasta la conquista de Cortés,Actopan|La Antigua|Ursulo Galván|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+130,Un Recorrido Prehispánico,La Antigua|Ursulo Galván|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+131,Noche de leyendas bajo la luna,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+132,Dunas del Sabanal a Bordo,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+133,"Aventura Extrema, Arena y Mar",Ursulo Galván|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+134,"Encuentro entre Españoles e Indígenas en la Antigua, Ver.",La Antigua,1,data/raw/veracruz_productos_2026-10-06.html
+135,Vive el Tercer Corazón Totonaca,Actopan|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+136,Del Manglar a tu Paladar,Actopan,1,data/raw/veracruz_productos_2026-10-06.html
+137,"Tú lo pescas, tú lo comes",La Antigua,1,data/raw/veracruz_productos_2026-10-06.html
+138,"Ecos Veracruzanos Música, Tradición, Haciendas y Cultura",Actopan|Coatepec|Veracruz|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+139,Extended Stay,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+140,"Salsas, Sones y Danzones",Boca del Río|La Antigua|Ursulo Galván|Veracruz,4,data/raw/veracruz_productos_2026-10-06.html
+141,Rafting en el Río Actopan,Boca del Río|Actopan,2,data/raw/veracruz_productos_2026-10-06.html
+142,Rafting en Rio Pescados,Boca del Río|Jalcomulco,2,data/raw/veracruz_productos_2026-10-06.html
+143,Senderos del Café,Coatepec|Emiliano Zapata|Xalapa,3,data/raw/veracruz_productos_2026-10-06.html
+144,Un recorrido prehispánico,Actopan|La Antigua|Ursulo Galván,3,data/raw/veracruz_productos_2026-10-06.html
+145,Tour Senderos del Café,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+146,"Coatepec y Xico, Pueblos Mágicos",Coatepec|Xico,2,data/raw/veracruz_productos_2026-10-06.html
+147,Descubre Papantla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+148,Pueblos Mágicos de Altas Montañas,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+149,Veredas sustentables,Tlalnelhuayocan|Xalapa,2,data/raw/veracruz_productos_2026-10-06.html
+150,Pueblos Mágico del Totonacapan,Papantla|Zozocolco de Hidalgo,2,data/raw/veracruz_productos_2026-10-06.html
+151,Aviturismo,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+152,Bicicleteando en Tlacotalpan,Tlacotalpan,1,data/raw/veracruz_productos_2026-10-06.html
+153,Selva Encantada,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+154,Café con Historia,Amatlán de los Reyes,1,data/raw/veracruz_productos_2026-10-06.html
+155,Finca Cafetalera Agroecoturística,Amatlán de los Reyes,1,data/raw/veracruz_productos_2026-10-06.html
+156,Finca Cafetalera Orgánica,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+157,Café de Especialidad,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+158,Sendero por el río Atoyac,Atoyac,1,data/raw/veracruz_productos_2026-10-06.html
+159,Tour a San Juan de Ulúa,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+160,Tour a Catemaco y Los Tuxtlas desde Veracruz o Boca del Río,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3,data/raw/veracruz_productos_2026-10-06.html
+161,Tour a Tajín y Papantla desde Veracruz o Boca del Río,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+162,Tour a Mandinga: Paseo en Lancha y Restaurantes desde Veracruz,Alvarado,1,data/raw/veracruz_productos_2026-10-06.html
+163,Atractivos con Mandinga y Acuario en Veracruz,Alvarado|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+164,Centro Ecoturístico Jomxuk,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+165,"Laguna del Ostión, Jicacal",Pajapan,1,data/raw/veracruz_productos_2026-10-06.html
+166,Casa de Campo Barrillas,Coatzacoalcos|Pajapan,2,data/raw/veracruz_productos_2026-10-06.html
+167,Atractivos con Museos y Acuario,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+168,"Paquete Top Atractivos con Museos, Mandinga y Acuario en Veracruz",Alvarado|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+169,"Tour a Xalapa, Xico y Coatepec desde Veracruz o Boca del Río",Coatepec|Emiliano Zapata|Xalapa|Xico,4,data/raw/veracruz_productos_2026-10-06.html
+170,"Tour a La Antigua, Cempoala y Quiahuiztlán desde Veracruz o Boca del Río",Actopan|La Antigua|Ursulo Galván,3,data/raw/veracruz_productos_2026-10-06.html
+171,"Tour a Alvarado, Tlacotalpan y Agustín Lara",Alvarado|Tlacotalpan,2,data/raw/veracruz_productos_2026-10-06.html
+172,Tour del Café en Coatepec desde Veracruz o Boca del Río,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+173,Tour a los Rápidos de Jalcomulco desde Veracruz o Boca del Río,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+174,Tour de la Vainilla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+175,Cata de Cerveza de Vainilla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+176,Tour por Papantla y El Tajín,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+177,Playa Chaparrales,Cazones de Herrera,1,data/raw/veracruz_productos_2026-10-06.html
+178,Pueblos Mágicos y Cafetaleros con Hacienda,Coatepec|Emiliano Zapata|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+179,Orizaba Pueblo Mágico,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+180,Córdoba Centro Histórico con Aroma de Café,Córdoba,1,data/raw/veracruz_productos_2026-10-06.html
+181,Coscomatepec,Alpatláhuac|Coscomatepec,2,data/raw/veracruz_productos_2026-10-06.html
+182,Recorridos al Pico de Orizaba,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+183,Vuelo en Parapente,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+184,Paseo en Lancha,Zongolica,1,data/raw/veracruz_productos_2026-10-06.html
+185,Fortín Municipio De Flores,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+186,Disfruta y Vive La Naturaleza en Atoyac,Atoyac,1,data/raw/veracruz_productos_2026-10-06.html
+187,México en sus Orígenes,Amatlán de los Reyes,1,data/raw/veracruz_productos_2026-10-06.html
+188,Circuito Arqueología Totonaca,Papantla|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+189,Corredor Turístico de Xalapa,Coatepec|Xalapa|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+190,Génesis del Café,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+191,Club de Camping,Fortín,1,data/raw/veracruz_productos_2026-10-06.html
+192,Sujétate de mi Mano y Comencemos el Viaje,Atlahuilco,1,data/raw/veracruz_productos_2026-10-06.html
+193,Despidiendo la Solteria,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+194,Un sueño Hecho Realidad,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+195,Una Ofrenda de Amor,Atoyac,1,data/raw/veracruz_productos_2026-10-06.html
+196,"Aspira Amor, Expira Paz",Córdoba,1,data/raw/veracruz_productos_2026-10-06.html
+197,Del Comal a la Boca,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+198,Naturaleza y Cultura Olmeca,Hueyapan de Ocampo,1,data/raw/veracruz_productos_2026-10-06.html
+199,Tour de Barrios Prehispánicos,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+200,Tour de Ciudad Xalapa,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+201,Tour Mágico,Coatepec|Naolinco|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+202,Tour de Parques y Jardines en Xalapa,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+203,Catación de Café,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+204,"Sitios Arqueológicos, el Inicio de la Conquista",Actopan|La Antigua|Ursulo Galván,3,data/raw/veracruz_productos_2026-10-06.html
+205,"Tlacotalpan, Patrimonio de la Humanidad",Tlacotalpan,1,data/raw/veracruz_productos_2026-10-06.html
+206,Zozocolco Pueblo Mágico del Totonacapan,Zozocolco de Hidalgo,1,data/raw/veracruz_productos_2026-10-06.html
+207,Isla de Lobos,Tamiahua,1,data/raw/veracruz_productos_2026-10-06.html
+208,Tour Gastronómico,Coatepec|Xico,2,data/raw/veracruz_productos_2026-10-06.html
+209,Tour de Talleres Artesanales,Coatepec|Xico,2,data/raw/veracruz_productos_2026-10-06.html
+210,"Tour del Pulque, la Bebida de los Dioses",Las Vigas de Ramírez,1,data/raw/veracruz_productos_2026-10-06.html
+211,Aventúrate en Ceytaks,Hueyapan de Ocampo,1,data/raw/veracruz_productos_2026-10-06.html
+212,"Naolinco, Artículos de Piel y su Gastronomía",Naolinco,1,data/raw/veracruz_productos_2026-10-06.html
+213,Puerto de Veracruz y La Antigua,Boca del Río|La Antigua|Veracruz,3,data/raw/veracruz_productos_2026-10-06.html
+214,Vive Ceytaks,Hueyapan de Ocampo,1,data/raw/veracruz_productos_2026-10-06.html
+215,Observación de Aves,Emiliano Zapata,1,data/raw/veracruz_productos_2026-10-06.html
+216,Haciendas de Veracruz,Coatepec|Emiliano Zapata,2,data/raw/veracruz_productos_2026-10-06.html
+217,Express Tour Café,Coatepec,1,data/raw/veracruz_productos_2026-10-06.html
+218,Papantla con Tajín,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+219,Tour de Kayak en Túneles de Manglares,Actopan|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+220,Caminata de Alta Montaña,Acajete|Las Vigas de Ramírez,2,data/raw/veracruz_productos_2026-10-06.html
+221,Tour Deportes de Aventura en Veracruz,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+222,Caminatas Ecoturísticas a Cascadas,Coatepec|Emiliano Zapata|Jalcomulco|Teocelo|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+223,Caminata en Cañón,Jalcomulco,1,data/raw/veracruz_productos_2026-10-06.html
+224,Caminata Interpretativa,Actopan|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+225,Caminata Interpretativa al Mirador de la Cruz y sus Dunas,Actopan|Ursulo Galván,2,data/raw/veracruz_productos_2026-10-06.html
+226,Circuito Mágico con Aroma de Café,Coatepec|Córdoba|Coscomatepec|Fortín|Orizaba|Xalapa|Xico,7,data/raw/veracruz_productos_2026-10-06.html
+227,Degustación de Quesos y Fortaleza Histórica de San Carlos,Acajete|Perote,2,data/raw/veracruz_productos_2026-10-06.html
+228,Escalada Turística al Pico de Orizaba,Coscomatepec|Fortín|Orizaba,3,data/raw/veracruz_productos_2026-10-06.html
+229,Orizaba 1 día,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+230,Villas Pico 1 día,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+231,Villas Pico 2 días,Orizaba,1,data/raw/veracruz_productos_2026-10-06.html
+232,4 Barrios,Xalapa,1,data/raw/veracruz_productos_2026-10-06.html
+233,Café con Nace el Agua,Actopan|Coatepec|Xico,3,data/raw/veracruz_productos_2026-10-06.html
+234,Orígenes,Córdoba|Cuitláhuac|Yanga,3,data/raw/veracruz_productos_2026-10-06.html
+235,Raudales del Son,Chinameca|Catemaco|Jáltipan|Santiago Tuxtla|Soteapan,5,data/raw/veracruz_productos_2026-10-06.html
+236,Escapada Del Camino Real a la Noche de Mil Estrellas,Coatepec|Jilotepec|Perote|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+237,Con Esencia de Bosque,Coatepec|Jilotepec|Tlalnelhuayocan|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html
+238,Ceremonia de Sanación,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+239,Spa Garullo,San Rafael,1,data/raw/veracruz_productos_2026-10-06.html
+240,Cabañas Románticas,Los Reyes,1,data/raw/veracruz_productos_2026-10-06.html
+241,Herping Zoongolica,Los Reyes,1,data/raw/veracruz_productos_2026-10-06.html
+242,Tour 4X4,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+243,Clase de Sandboard,Ursulo Galván,1,data/raw/veracruz_productos_2026-10-06.html
+244,Curso de Buceo (Open Water),Boca del Río|Veracruz,2,data/raw/veracruz_productos_2026-10-06.html
+245,Costa y la Africanidad de los Tuxtlas,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+246,Paquete de Salud Integral,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+247,Recorrido Museo con Vainilla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+248,Taller de Artesanías con Degustación de Comida Tradicional,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+249,Siembra tu Vainilla y degusta la Gastronomía Totonaca,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+250,La Vainilla y la Gastronomía Totonaca,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+251,Disfruta Coatza,Coatzacoalcos,1,data/raw/veracruz_productos_2026-10-06.html
+252,Visita Las Barrillas.,Coatzacoalcos,1,data/raw/veracruz_productos_2026-10-06.html
+253,Alimentando el Alma,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+254,Con Aroma a Vainilla,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+255,Cascada El Marinero,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+256,Paquete Otoño,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+257,Cueva de Los Murciélagos,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+258,Comunidad del Marinero,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+259,Pozas del Río Coxcoapan,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+260,Caminata Los Trogones,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+261,Mirador Cerro del Marinero,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+262,El Indomable (Descenso en Río),Tlapacoyan,1,data/raw/veracruz_productos_2026-10-06.html
+263,Observación de Aves para Pajareros Principiantes,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+264,Hospedaje + Aquadiversión,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+265,Observación de Aves Para Pajareros Experimentados,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+266,Taller Gastronómico de Malanga,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+267,Campamento en el Cerro del Marinero,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+268,Pase Anual 2022,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+269,Día Aventurero,Tlapacoyan,1,data/raw/veracruz_productos_2026-10-06.html
+270,¡Paquete Aquafiesta!,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+271,Noche de Son Jarocho,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+272,Deep City Tour,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+273,Sabor a Café,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+274,Vive el Danzón,Veracruz,1,data/raw/veracruz_productos_2026-10-06.html
+275,Ecoturismo Campesino,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+276,Tour Misantla,Misantla,1,data/raw/veracruz_productos_2026-10-06.html
+277,Cañón Los Tejones,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+278,Rappel Cascada El Tucán,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+279,Cañón Las Palomas,Hueyapan de Ocampo,1,data/raw/veracruz_productos_2026-10-06.html
+280,Rappel Cascada Jem - Takxt,Soteapan,1,data/raw/veracruz_productos_2026-10-06.html
+281,Cultura Gastronómica,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+282,Sanación y Limpieza de Aura,Papantla,1,data/raw/veracruz_productos_2026-10-06.html
+283,Rappel Cueva del Pirata - Roca Partida,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+284,Playa Ermitas,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+285,Cañón Oro,San Andrés Tuxtla,1,data/raw/veracruz_productos_2026-10-06.html
+286,Manglar y Playa,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+287,Selva de Los Tuxtlas,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+288,Rappel Cascada Arcoíris,Catemaco,1,data/raw/veracruz_productos_2026-10-06.html
+289,Buceo Hooka,Tuxpan,1,data/raw/veracruz_productos_2026-10-06.html
+290,Vive la Magia de la Octava Montaña de México (Cofre De Perote),Xico,1,data/raw/veracruz_productos_2026-10-06.html
+291,De Aventura en un Pueblo MáXico,Xico,1,data/raw/veracruz_productos_2026-10-06.html
+292,Campamento Detox y de Reconexión a la Espiritualidad para Renacer,Xico,1,data/raw/veracruz_productos_2026-10-06.html
+293,Déjate Hechizar por los Sabores de Xico,Xico,1,data/raw/veracruz_productos_2026-10-06.html
+294,Caminos de Puro Son,Catemaco|San Andrés Tuxtla|Santiago Tuxtla,3,data/raw/veracruz_productos_2026-10-06.html
+295,Tours en Bicicleta del Río Pixquiac a la Montaña del Cofre.,Coatepec|Perote|Tlalnelhuayocan|Xalapa|Xico,5,data/raw/veracruz_productos_2026-10-06.html

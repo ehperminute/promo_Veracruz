@@ -6,6 +6,8 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = [
+    "build_source_registry.py",
+    "prepare_veracruz_web_reference.py",
     "prepare_datatur.py",
     "prepare_inah.py",
     "prepare_infrastructure.py",
@@ -13,6 +15,11 @@ SCRIPTS = [
     "build_destination_master.py",
 ]
 OUTPUTS = [
+    ROOT / "data" / "interim" / "source_registry_resolved.csv",
+    ROOT / "docs" / "DATA_SOURCES.md",
+    ROOT / "data" / "interim" / "veracruz_products_parsed.csv",
+    ROOT / "data" / "interim" / "veracruz_regions_parsed.csv",
+    ROOT / "data" / "interim" / "veracruz_pueblos_magicos_parsed.csv",
     ROOT / "data" / "interim" / "fact_datatur_centro_mes.csv",
     ROOT / "data" / "interim" / "datatur_veracruz_monthly.csv",
     ROOT / "data" / "interim" / "fact_inah_veracruz_mes.csv",
@@ -22,11 +29,15 @@ OUTPUTS = [
 ]
 TEST_FILES = [
     "tests/test_raw_sources.py",
+    "tests/test_source_registry.py",
+    "tests/test_veracruz_web_reference.py",
+    "tests/test_denue_activity_groups.py",
     "tests/test_destination_reference.py",
     "tests/test_datatur_pipeline.py",
     "tests/test_inah_pipeline.py",
     "tests/test_infrastructure_pipeline.py",
     "tests/test_destination_master.py",
+    "tests/test_repository_docs.py",
 ]
 
 
