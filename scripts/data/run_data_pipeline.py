@@ -13,6 +13,8 @@ SCRIPTS = [
     "prepare_infrastructure.py",
     "prepare_tourism_products.py",
     "build_destination_master.py",
+    "build_demand_series.py",
+    "prepare_origin_markets.py",
 ]
 OUTPUTS = [
     ROOT / "data" / "interim" / "source_registry_resolved.csv",
@@ -26,6 +28,8 @@ OUTPUTS = [
     ROOT / "data" / "interim" / "mart_infraestructura_municipio_veracruz.csv",
     ROOT / "data" / "interim" / "tourism_products.csv",
     ROOT / "data" / "processed" / "destination_master.csv",
+    ROOT / "data" / "processed" / "demand_series.csv",
+    ROOT / "data" / "processed" / "origin_market_opportunity.csv",
 ]
 TEST_FILES = [
     "tests/test_raw_sources.py",
@@ -37,6 +41,8 @@ TEST_FILES = [
     "tests/test_inah_pipeline.py",
     "tests/test_infrastructure_pipeline.py",
     "tests/test_destination_master.py",
+    "tests/test_demand_series.py",
+    "tests/test_origin_market_opportunity.py",
     "tests/test_repository_docs.py",
 ]
 

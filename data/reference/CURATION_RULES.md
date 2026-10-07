@@ -1,6 +1,6 @@
 # Reference and curation rules
 
-Version: 2026-10-06-v2
+Version: 2026-10-06-v3
 
 This directory contains **version-controlled project reference inputs**. Reference data are neither measured demand nor model outputs. They hold explicit code lists, reviewed mappings, and interpretive categories needed to transform frozen raw sources reproducibly.
 
@@ -44,10 +44,11 @@ The local proof-of-concept snapshots are:
 - `data/raw/veracruz_productos_2026-10-06.html`
 - `data/raw/veracruz_regiones_2026-10-06.html`
 - `data/raw/veracruz_pueblos_magicos_2026-10-06.html`
+- `data/raw/veracruz_pueblos_magicos_2026-10-06_manual.html`
 
 `prepare_veracruz_web_reference.py` parses local snapshots only; normal pipeline runs do not require the network.
 
-The Pueblos Mágicos gob.mx snapshot returned a **Radware CAPTCHA page** to Codespaces. It is retained unchanged as evidence of what the fetch returned. For the current proof of concept, the parser transparently falls back to the Pueblos Mágicos menu embedded in the frozen official `veracruz_productos_2026-10-06.html` page. The generated table records that fallback explicitly.
+The automated Pueblos Mágicos snapshot returned a **Radware CAPTCHA page** to Codespaces and is retained unchanged as evidence of the failed fetch. The manually browser-saved official page is the preferred parser input. The products-page Pueblos Mágicos menu remains a tested fallback if that manual snapshot is unavailable or invalid.
 
 The products snapshot currently yields the full set of product cards mechanically. The seven-region navigation menu is also parsed mechanically and retains the municipality identifiers exposed in the source URL.
 
@@ -94,11 +95,22 @@ A theme is coded `1` when reviewed destination evidence supports that theme. The
 
 `destination_reference.csv` must not contain derived/measured quantities such as annual visitor totals, DataTur arrivals/occupancy, DENUE counts, tourism GDP, cluster labels, predictions, or campaign outcomes. Those are regenerated downstream.
 
+## `origin_market_2025_validated.csv`
+
+Contains only direct 2024-2025 country-of-residence counts, 2025 shares, and source-reported growth from the fixed official DataTur report `RES_2025_12.pdf`. The report states that 2025 values were validated by the source in August 2026.
+
+This reference table deliberately contains **no marketing tier, targeting phase, persona, or campaign decision**. It is a small structured source transcription with the exact report URL retained on every row. `prepare_origin_markets.py` validates ranks, arithmetic, source URL, and official control totals before writing `data/processed/origin_market_opportunity.csv`.
+
+The figures describe foreign air-entry events to Mexico by country of residence. They are not Veracruz visitor counts.
+
 ## `source_registry.csv`
 
-Contains the expected raw filename, institution, URL, snapshot date, release/coverage note, project role, and expected SHA-256 checksum.
+Contains the source identifier, institution, URL, snapshot/version date, release/coverage note, project role, verification metadata, and `storage_mode`.
 
-`build_source_registry.py` recalculates every hash, fails on any mismatch or missing file, writes `data/interim/source_registry_resolved.csv`, and regenerates `docs/DATA_SOURCES.md`.
+- `local_raw`: immutable files in `data/raw/`; SHA-256 is recalculated and must match.
+- `remote_fixed`: an exact fixed official report URL used to ground a small version-controlled reference extract. It is not fetched during normal pipeline runs, so the pipeline remains offline and deterministic.
+
+`build_source_registry.py` verifies all local raw hashes, records fixed remote sources without silently downloading them, writes `data/interim/source_registry_resolved.csv`, and regenerates `docs/DATA_SOURCES.md`.
 
 ## Change rule
 
