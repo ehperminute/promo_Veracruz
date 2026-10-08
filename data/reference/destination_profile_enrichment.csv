@@ -1,0 +1,7 @@
+destination,field,new_value,evidence_source,evidence_note,review_date
+Carrillo Puerto,region_turistica_preliminar,Altas Montañas,https://www.veracruz.mx/region.php?id=5,Official Altas Montañas page lists Carrillo Puerto among the municipalities of the region.,2026-10-07
+Carrillo Puerto,theme_culture_history,1,https://www.veracruz.mx/destino.php?Municipio=31,"Official destination page documents the pre-Hispanic province of Cuauhtochco, historical buildings, traditions and music.",2026-10-07
+Carrillo Puerto,theme_gastronomy_coffee,1,https://www.veracruz.mx/destino.php?Municipio=31,Official destination page has a dedicated gastronomy section with local dishes.,2026-10-07
+La Antigua,theme_beach_coast,1,https://www.veracruz.mx/destino.php?Municipio=16,Official destination page lists Playa de Chalchihuecan as a tourism center.,2026-10-07
+La Antigua,theme_nature,1,https://www.veracruz.mx/destino.php?Municipio=16,"Official destination page describes Río Huitzilapan, exuberant riverside vegetation and boat/swimming/fishing activities; SECTUR also describes mangrove boat trips.",2026-10-07
+Poza Rica de Hidalgo,theme_nature,0,https://www.veracruz.gob.mx/turismo/regiones-turisticas/,"Reviewed tourism-specific sources characterize Poza Rica as an urban/petroleum-history and cultural destination/gateway; no nature-tourism attraction or activity is positively evidenced for the municipality. In S4, zero means not positively evidenced, not proven absence.",2026-10-07

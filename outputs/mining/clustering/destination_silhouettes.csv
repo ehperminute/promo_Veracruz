@@ -1,0 +1,56 @@
+destination,cluster,cluster_medoid,silhouette,borderline
+Acajete,1,Acajete,0.8571428571428571,False
+Emiliano Zapata,1,Acajete,0.8571428571428571,False
+Jilotepec,1,Acajete,0.8571428571428571,False
+Las Vigas de Ramírez,1,Acajete,0.8571428571428571,False
+Pánuco,1,Acajete,0.8571428571428571,False
+Tempoal,1,Acajete,0.8571428571428571,False
+Tlalnelhuayocan,1,Acajete,0.8571428571428571,False
+Xalapa,1,Acajete,1.3877787807814457e-16,True
+Actopan,2,Actopan,0.49999999999999994,False
+Carrillo Puerto,2,Actopan,-0.10000000000000002,True
+Ursulo Galván,2,Actopan,0.41666666666666663,False
+Atzalan,3,Atzalan,0.7692307692307692,False
+Castillo de Teayo,3,Atzalan,0.7692307692307692,False
+Misantla,3,Atzalan,0.7692307692307692,False
+Papantla,3,Atzalan,1.3877787807814454e-16,True
+Vega de Alatorre,3,Atzalan,0.7692307692307692,False
+Alvarado,4,Boca del Río,-0.2941176470588235,True
+Boca del Río,4,Boca del Río,0.575,False
+Poza Rica de Hidalgo,4,Boca del Río,-0.11764705882352938,True
+Tuxpan,4,Boca del Río,-0.3333333333333333,True
+Veracruz,4,Boca del Río,0.575,False
+Calcahualco,5,Calcahualco,0.6503496503496504,False
+Catemaco,5,Calcahualco,0.14502164502164502,False
+Cuitláhuac,5,Calcahualco,0.6503496503496504,False
+Fortín,5,Calcahualco,0.6503496503496504,False
+Huatusco,5,Calcahualco,0.6503496503496504,False
+Jalcomulco,5,Calcahualco,0.6503496503496504,False
+La Antigua,5,Calcahualco,-0.12500000000000014,True
+Perote,5,Calcahualco,0.6503496503496504,False
+San Andrés Tuxtla,5,Calcahualco,0.04545454545454525,True
+Tlapacoyan,5,Calcahualco,0.6503496503496504,False
+Yanga,5,Calcahualco,0.6503496503496504,False
+Zongolica,5,Calcahualco,0.6503496503496504,False
+Cazones de Herrera,6,Cazones de Herrera,1.0,False
+Nautla,6,Cazones de Herrera,1.0,False
+Tamiahua,6,Cazones de Herrera,1.0,False
+Tecolutla,6,Cazones de Herrera,1.0,False
+Chinameca,7,Chinameca,1.0,False
+Jáltipan,7,Chinameca,1.0,False
+Las Choapas,7,Chinameca,1.0,False
+Soteapan,7,Chinameca,1.0,False
+Coatepec,8,Coatepec,1.0,False
+Naolinco,8,Coatepec,1.0,False
+Zozocolco de Hidalgo,8,Coatepec,1.0,False
+Coatzacoalcos,9,Coatzacoalcos,1.0,False
+Minatitlán,9,Coatzacoalcos,1.0,False
+Coscomatepec,10,Coscomatepec,0.4444444444444446,False
+Córdoba,10,Coscomatepec,0.6666666666666666,False
+Orizaba,10,Coscomatepec,0.6666666666666666,False
+Xico,10,Coscomatepec,0.4444444444444446,False
+Jesús Carranza,11,Jesús Carranza,0.5833333333333333,False
+Santiago Tuxtla,11,Jesús Carranza,0.4139534883720931,False
+Texistepec,11,Jesús Carranza,0.5833333333333333,False
+Puente Nacional,12,Puente Nacional,1.0,False
+Tlacotalpan,12,Puente Nacional,1.0,False

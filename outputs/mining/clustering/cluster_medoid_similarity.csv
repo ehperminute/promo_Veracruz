@@ -1,0 +1,67 @@
+cluster_a,medoid_a,cluster_b,medoid_b,gower_distance,gower_similarity
+1,Acajete,3,Atzalan,0.2,0.8
+1,Acajete,5,Calcahualco,0.2,0.8
+1,Acajete,6,Cazones de Herrera,0.2,0.8
+3,Atzalan,11,Jesús Carranza,0.2,0.8
+5,Calcahualco,10,Coscomatepec,0.2,0.8
+8,Coatepec,10,Coscomatepec,0.2,0.8
+1,Acajete,7,Chinameca,0.25,0.75
+1,Acajete,8,Coatepec,0.25,0.75
+1,Acajete,12,Puente Nacional,0.25,0.75
+7,Chinameca,9,Coatzacoalcos,0.25,0.75
+7,Chinameca,11,Jesús Carranza,0.25,0.75
+2,Actopan,3,Atzalan,0.3333333333333333,0.6666666666666667
+2,Actopan,5,Calcahualco,0.3333333333333333,0.6666666666666667
+3,Atzalan,5,Calcahualco,0.3333333333333333,0.6666666666666667
+3,Atzalan,6,Cazones de Herrera,0.3333333333333333,0.6666666666666667
+4,Boca del Río,6,Cazones de Herrera,0.3333333333333333,0.6666666666666667
+5,Calcahualco,6,Cazones de Herrera,0.3333333333333333,0.6666666666666667
+1,Acajete,9,Coatzacoalcos,0.4,0.6
+1,Acajete,10,Coscomatepec,0.4,0.6
+1,Acajete,11,Jesús Carranza,0.4,0.6
+2,Actopan,12,Puente Nacional,0.4,0.6
+3,Atzalan,7,Chinameca,0.4,0.6
+3,Atzalan,8,Coatepec,0.4,0.6
+3,Atzalan,12,Puente Nacional,0.4,0.6
+4,Boca del Río,12,Puente Nacional,0.4,0.6
+5,Calcahualco,7,Chinameca,0.4,0.6
+5,Calcahualco,8,Coatepec,0.4,0.6
+5,Calcahualco,12,Puente Nacional,0.4,0.6
+6,Cazones de Herrera,7,Chinameca,0.4,0.6
+6,Cazones de Herrera,8,Coatepec,0.4,0.6
+6,Cazones de Herrera,12,Puente Nacional,0.4,0.6
+9,Coatzacoalcos,11,Jesús Carranza,0.4,0.6
+1,Acajete,2,Actopan,0.5,0.5
+1,Acajete,4,Boca del Río,0.5,0.5
+2,Actopan,10,Coscomatepec,0.5,0.5
+2,Actopan,11,Jesús Carranza,0.5,0.5
+3,Atzalan,9,Coatzacoalcos,0.5,0.5
+3,Atzalan,10,Coscomatepec,0.5,0.5
+4,Boca del Río,9,Coatzacoalcos,0.5,0.5
+5,Calcahualco,9,Coatzacoalcos,0.5,0.5
+5,Calcahualco,11,Jesús Carranza,0.5,0.5
+6,Cazones de Herrera,9,Coatzacoalcos,0.5,0.5
+6,Cazones de Herrera,10,Coscomatepec,0.5,0.5
+6,Cazones de Herrera,11,Jesús Carranza,0.5,0.5
+7,Chinameca,8,Coatepec,0.5,0.5
+7,Chinameca,12,Puente Nacional,0.5,0.5
+8,Coatepec,12,Puente Nacional,0.5,0.5
+2,Actopan,4,Boca del Río,0.5714285714285714,0.4285714285714286
+2,Actopan,6,Cazones de Herrera,0.5714285714285714,0.4285714285714286
+3,Atzalan,4,Boca del Río,0.5714285714285714,0.4285714285714286
+4,Boca del Río,5,Calcahualco,0.5714285714285714,0.4285714285714286
+7,Chinameca,10,Coscomatepec,0.6,0.4
+8,Coatepec,9,Coatzacoalcos,0.6,0.4
+8,Coatepec,11,Jesús Carranza,0.6,0.4
+9,Coatzacoalcos,12,Puente Nacional,0.6,0.4
+10,Coscomatepec,12,Puente Nacional,0.6,0.4
+11,Jesús Carranza,12,Puente Nacional,0.6,0.4
+2,Actopan,7,Chinameca,0.6666666666666666,0.33333333333333337
+2,Actopan,8,Coatepec,0.6666666666666666,0.33333333333333337
+4,Boca del Río,7,Chinameca,0.6666666666666666,0.33333333333333337
+4,Boca del Río,8,Coatepec,0.6666666666666666,0.33333333333333337
+9,Coatzacoalcos,10,Coscomatepec,0.6666666666666666,0.33333333333333337
+10,Coscomatepec,11,Jesús Carranza,0.6666666666666666,0.33333333333333337
+2,Actopan,9,Coatzacoalcos,0.7142857142857143,0.2857142857142857
+4,Boca del Río,10,Coscomatepec,0.7142857142857143,0.2857142857142857
+4,Boca del Río,11,Jesús Carranza,0.7142857142857143,0.2857142857142857

@@ -1,0 +1,23 @@
+antecedent,consequent,n_baskets,antecedent_count,consequent_count,pair_count,support,confidence,lift,interpretation
+Tlacotalpan,Alvarado,295,9,13,5,0.01694915254237288,0.5555555555555556,12.606837606837608,tourism-offer co-occurrence; not tourist movement
+Coscomatepec,Orizaba,295,8,21,6,0.020338983050847456,0.75,10.535714285714285,tourism-offer co-occurrence; not tourist movement
+Santiago Tuxtla,San Andrés Tuxtla,295,6,28,5,0.01694915254237288,0.8333333333333334,8.779761904761905,tourism-offer co-occurrence; not tourist movement
+Córdoba,Orizaba,295,8,21,5,0.01694915254237288,0.625,8.779761904761905,tourism-offer co-occurrence; not tourist movement
+Ursulo Galván,La Antigua,295,29,22,15,0.05084745762711865,0.5172413793103449,6.935736677115988,tourism-offer co-occurrence; not tourist movement
+La Antigua,Ursulo Galván,295,22,29,15,0.05084745762711865,0.6818181818181818,6.935736677115987,tourism-offer co-occurrence; not tourist movement
+Emiliano Zapata,Coatepec,295,15,40,13,0.04406779661016949,0.8666666666666667,6.391666666666667,tourism-offer co-occurrence; not tourist movement
+Emiliano Zapata,Xalapa,295,15,31,10,0.03389830508474576,0.6666666666666666,6.344086021505376,tourism-offer co-occurrence; not tourist movement
+Santiago Tuxtla,Catemaco,295,6,48,6,0.020338983050847456,1.0,6.145833333333334,tourism-offer co-occurrence; not tourist movement
+La Antigua,Actopan,295,22,24,11,0.03728813559322034,0.5,6.145833333333334,tourism-offer co-occurrence; not tourist movement
+Xico,Coatepec,295,35,40,29,0.09830508474576272,0.8285714285714286,6.110714285714286,tourism-offer co-occurrence; not tourist movement
+Coatepec,Xico,295,40,35,29,0.09830508474576272,0.725,6.110714285714286,tourism-offer co-occurrence; not tourist movement
+Emiliano Zapata,Xico,295,15,35,10,0.03389830508474576,0.6666666666666666,5.619047619047619,tourism-offer co-occurrence; not tourist movement
+Actopan,Ursulo Galván,295,24,29,13,0.04406779661016949,0.5416666666666666,5.510057471264367,tourism-offer co-occurrence; not tourist movement
+Xalapa,Coatepec,295,31,40,22,0.07457627118644068,0.7096774193548387,5.233870967741936,tourism-offer co-occurrence; not tourist movement
+Coatepec,Xalapa,295,40,31,22,0.07457627118644068,0.55,5.233870967741936,tourism-offer co-occurrence; not tourist movement
+Xalapa,Xico,295,31,35,19,0.06440677966101695,0.6129032258064516,5.1658986175115205,tourism-offer co-occurrence; not tourist movement
+Xico,Xalapa,295,35,31,19,0.06440677966101695,0.5428571428571428,5.1658986175115205,tourism-offer co-occurrence; not tourist movement
+Boca del Río,Veracruz,295,21,58,17,0.0576271186440678,0.8095238095238095,4.117405582922824,tourism-offer co-occurrence; not tourist movement
+San Andrés Tuxtla,Catemaco,295,28,48,15,0.05084745762711865,0.5357142857142857,3.2924107142857144,tourism-offer co-occurrence; not tourist movement
+La Antigua,Veracruz,295,22,58,14,0.04745762711864407,0.6363636363636364,3.2366771159874608,tourism-offer co-occurrence; not tourist movement
+Alvarado,Veracruz,295,13,58,7,0.023728813559322035,0.5384615384615384,2.738726790450928,tourism-offer co-occurrence; not tourist movement

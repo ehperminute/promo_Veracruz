@@ -78,3 +78,42 @@ Generated/interim artifacts must return from raw/reference inputs plus code.
 - Product association rules describe offer co-occurrence, not tourist movement.
 - Clusters represent analytical similarity, not automatically viable routes.
 - Synthetic or proposed campaign data are never treated as observed evidence.
+
+## S4 — Data Mining / Descriptive Analytics
+
+S4 was reworked after auditing the destination profiles. The earlier K-Means k=15/k=17 outputs are historical exploratory results only; the current pipeline uses a mixed-data method suited to the actual variables.
+
+```bash
+python scripts/mining/run_mining_pipeline.py --idempotence --test
+```
+
+Current workflow:
+
+- build a 55-destination S4 profile table from the canonical master;
+- derive official product-card coverage from **all 295 parsed cards** (the older 75-row table remains only for coursework reproducibility);
+- apply explicit reviewed profile repairs with provenance;
+- cluster tourism-character profiles with **Gower distance + PAM/k-medoids**;
+- evaluate **k=2 through k=20** using silhouette and fragmentation diagnostics;
+- expose cluster-to-cluster medoid similarity, per-destination silhouette and feature sensitivity;
+- run a separate broader Gower structural-analog analysis for undermeasured destinations;
+- mine offer co-occurrence rules from all 295 product cards.
+
+Current frozen-data result:
+
+- 55 destination profiles retained;
+- no high-priority profile gaps after the documented Carrillo Puerto repair;
+- after targeted profile review, **k=12** is the highest-silhouette PAM solution with no singleton clusters (silhouette ≈ **0.637**);
+- k=13 and above improve silhouette partly by introducing singleton fragmentation;
+- 42 undermeasured candidates;
+- 126 target-anchor structural analog comparisons;
+- 22 municipality association rules from all 295 official product cards;
+- S4 idempotence PASS;
+- 12 focused S4 rework tests PASS.
+
+See `docs/MINING_METHODS.md`, `docs/DESTINATION_PROFILE_AUDIT.md`, and `docs/DATA_CATALOG.md`. Clusters are similarity groups, not routes or observed demand classes.
+
+To run all currently implemented stages through S4:
+
+```bash
+python scripts/run_pipeline.py --idempotence --test
+```

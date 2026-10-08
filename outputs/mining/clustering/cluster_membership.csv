@@ -1,0 +1,56 @@
+destination,region_turistica_preliminar,model_role_v1,recommended_k,cluster,cluster_medoid,distance_to_medoid
+Acajete,Cultura y Aventura,Undermeasured analog target,12,1,Acajete,0.0
+Emiliano Zapata,Cultura y Aventura,Undermeasured analog target,12,1,Acajete,0.0
+Jilotepec,Cultura y Aventura,Undermeasured analog target,12,1,Acajete,0.0
+Las Vigas de Ramírez,Cultura y Aventura,Undermeasured analog target,12,1,Acajete,0.0
+Pánuco,Huasteca,Undermeasured analog target,12,1,Acajete,0.0
+Tempoal,Huasteca,Undermeasured analog target,12,1,Acajete,0.0
+Tlalnelhuayocan,Cultura y Aventura,Undermeasured analog target,12,1,Acajete,0.0
+Xalapa,Cultura y Aventura,Observed anchor / training evidence,12,1,Acajete,0.2
+Actopan,Primeros Pasos de Cortés,Observed anchor / training evidence,12,2,Actopan,0.0
+Carrillo Puerto,Altas Montañas,Observed anchor / training evidence,12,2,Actopan,0.2
+Ursulo Galván,Primeros Pasos de Cortés,Observed anchor / training evidence,12,2,Actopan,0.16666666666666666
+Atzalan,Totonacapan,Observed anchor / training evidence,12,3,Atzalan,0.0
+Castillo de Teayo,Huasteca,Observed anchor / training evidence,12,3,Atzalan,0.0
+Misantla,Totonacapan,Undermeasured analog target,12,3,Atzalan,0.0
+Papantla,Totonacapan,Observed anchor / training evidence,12,3,Atzalan,0.2
+Vega de Alatorre,Totonacapan,Observed anchor / training evidence,12,3,Atzalan,0.0
+Alvarado,Primeros Pasos de Cortés,Undermeasured analog target,12,4,Boca del Río,0.2
+Boca del Río,Primeros Pasos de Cortés,Observed anchor / training evidence,12,4,Boca del Río,0.0
+Poza Rica de Hidalgo,Totonacapan,Undermeasured analog target,12,4,Boca del Río,0.2
+Tuxpan,Huasteca,Undermeasured analog target,12,4,Boca del Río,0.16666666666666666
+Veracruz,Primeros Pasos de Cortés,Observed anchor / training evidence,12,4,Boca del Río,0.0
+Calcahualco,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Catemaco,Los Tuxtlas,Undermeasured analog target,12,5,Calcahualco,0.3333333333333333
+Cuitláhuac,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Fortín,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Huatusco,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Jalcomulco,Cultura y Aventura,Undermeasured analog target,12,5,Calcahualco,0.0
+La Antigua,Primeros Pasos de Cortés,Undermeasured analog target,12,5,Calcahualco,0.16666666666666666
+Perote,Cultura y Aventura,Undermeasured analog target,12,5,Calcahualco,0.0
+San Andrés Tuxtla,Los Tuxtlas,Undermeasured analog target,12,5,Calcahualco,0.3333333333333333
+Tlapacoyan,Totonacapan,Undermeasured analog target,12,5,Calcahualco,0.0
+Yanga,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Zongolica,Altas Montañas,Undermeasured analog target,12,5,Calcahualco,0.0
+Cazones de Herrera,Totonacapan,Undermeasured analog target,12,6,Cazones de Herrera,0.0
+Nautla,Totonacapan,Undermeasured analog target,12,6,Cazones de Herrera,0.0
+Tamiahua,Huasteca,Undermeasured analog target,12,6,Cazones de Herrera,0.0
+Tecolutla,Totonacapan,Undermeasured analog target,12,6,Cazones de Herrera,0.0
+Chinameca,Olmeca,Undermeasured analog target,12,7,Chinameca,0.0
+Jáltipan,Olmeca,Undermeasured analog target,12,7,Chinameca,0.0
+Las Choapas,Olmeca,Undermeasured analog target,12,7,Chinameca,0.0
+Soteapan,Olmeca,Undermeasured analog target,12,7,Chinameca,0.0
+Coatepec,Cultura y Aventura,Undermeasured analog target,12,8,Coatepec,0.0
+Naolinco,Cultura y Aventura,Undermeasured analog target,12,8,Coatepec,0.0
+Zozocolco de Hidalgo,Totonacapan,Undermeasured analog target,12,8,Coatepec,0.0
+Coatzacoalcos,Olmeca,Observed anchor / training evidence,12,9,Coatzacoalcos,0.0
+Minatitlán,Olmeca,Undermeasured analog target,12,9,Coatzacoalcos,0.0
+Coscomatepec,Altas Montañas,Undermeasured analog target,12,10,Coscomatepec,0.0
+Córdoba,Altas Montañas,Undermeasured analog target,12,10,Coscomatepec,0.16666666666666666
+Orizaba,Altas Montañas,Undermeasured analog target,12,10,Coscomatepec,0.16666666666666666
+Xico,Cultura y Aventura,Undermeasured analog target,12,10,Coscomatepec,0.0
+Jesús Carranza,Olmeca,Observed anchor / training evidence,12,11,Jesús Carranza,0.0
+Santiago Tuxtla,Los Tuxtlas,Undermeasured analog target,12,11,Jesús Carranza,0.2
+Texistepec,Olmeca,Observed anchor / training evidence,12,11,Jesús Carranza,0.0
+Puente Nacional,Primeros Pasos de Cortés,Undermeasured analog target,12,12,Puente Nacional,0.0
+Tlacotalpan,Primeros Pasos de Cortés,Undermeasured analog target,12,12,Puente Nacional,0.0

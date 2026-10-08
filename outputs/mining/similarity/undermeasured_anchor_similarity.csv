@@ -1,0 +1,127 @@
+target_destination,target_region,anchor_destination,anchor_region,similarity_rank,gower_structural_distance,gower_structural_similarity,interpretation
+Acajete,Cultura y Aventura,Castillo de Teayo,Huasteca,1,0.1819878183023734,0.8180121816976266,mixed-profile structural analog only; not demand evidence or route feasibility
+Acajete,Cultura y Aventura,Atzalan,Totonacapan,2,0.20126095993623255,0.7987390400637675,mixed-profile structural analog only; not demand evidence or route feasibility
+Acajete,Cultura y Aventura,Vega de Alatorre,Totonacapan,3,0.2577809277504969,0.7422190722495031,mixed-profile structural analog only; not demand evidence or route feasibility
+Alvarado,Primeros Pasos de Cortés,Boca del Río,Primeros Pasos de Cortés,1,0.23697084064466684,0.7630291593553331,mixed-profile structural analog only; not demand evidence or route feasibility
+Alvarado,Primeros Pasos de Cortés,Ursulo Galván,Primeros Pasos de Cortés,2,0.2719070483667553,0.7280929516332447,mixed-profile structural analog only; not demand evidence or route feasibility
+Alvarado,Primeros Pasos de Cortés,Veracruz,Primeros Pasos de Cortés,3,0.3078712089527245,0.6921287910472755,mixed-profile structural analog only; not demand evidence or route feasibility
+Calcahualco,Altas Montañas,Castillo de Teayo,Huasteca,1,0.2583806405590842,0.7416193594409157,mixed-profile structural analog only; not demand evidence or route feasibility
+Calcahualco,Altas Montañas,Carrillo Puerto,Altas Montañas,2,0.29779485796914423,0.7022051420308557,mixed-profile structural analog only; not demand evidence or route feasibility
+Calcahualco,Altas Montañas,Vega de Alatorre,Totonacapan,3,0.30663341617884365,0.6933665838211563,mixed-profile structural analog only; not demand evidence or route feasibility
+Catemaco,Los Tuxtlas,Coatzacoalcos,Olmeca,1,0.3689104599826424,0.6310895400173576,mixed-profile structural analog only; not demand evidence or route feasibility
+Catemaco,Los Tuxtlas,Actopan,Primeros Pasos de Cortés,2,0.43578415212448635,0.5642158478755137,mixed-profile structural analog only; not demand evidence or route feasibility
+Catemaco,Los Tuxtlas,Xalapa,Cultura y Aventura,3,0.4419672677566155,0.5580327322433845,mixed-profile structural analog only; not demand evidence or route feasibility
+Cazones de Herrera,Totonacapan,Castillo de Teayo,Huasteca,1,0.23181721386416645,0.7681827861358336,mixed-profile structural analog only; not demand evidence or route feasibility
+Cazones de Herrera,Totonacapan,Vega de Alatorre,Totonacapan,2,0.2513246562475126,0.7486753437524873,mixed-profile structural analog only; not demand evidence or route feasibility
+Cazones de Herrera,Totonacapan,Atzalan,Totonacapan,3,0.2799542262289118,0.7200457737710881,mixed-profile structural analog only; not demand evidence or route feasibility
+Chinameca,Olmeca,Texistepec,Olmeca,1,0.20028358925440737,0.7997164107455926,mixed-profile structural analog only; not demand evidence or route feasibility
+Chinameca,Olmeca,Jesús Carranza,Olmeca,2,0.21432459864756803,0.785675401352432,mixed-profile structural analog only; not demand evidence or route feasibility
+Chinameca,Olmeca,Castillo de Teayo,Huasteca,3,0.2700786605627075,0.7299213394372925,mixed-profile structural analog only; not demand evidence or route feasibility
+Coatepec,Cultura y Aventura,Papantla,Totonacapan,1,0.18902149676639082,0.8109785032336092,mixed-profile structural analog only; not demand evidence or route feasibility
+Coatepec,Cultura y Aventura,Xalapa,Cultura y Aventura,2,0.3163268216542476,0.6836731783457524,mixed-profile structural analog only; not demand evidence or route feasibility
+Coatepec,Cultura y Aventura,Vega de Alatorre,Totonacapan,3,0.3752246857574412,0.6247753142425587,mixed-profile structural analog only; not demand evidence or route feasibility
+Coscomatepec,Altas Montañas,Papantla,Totonacapan,1,0.2799505185471961,0.7200494814528039,mixed-profile structural analog only; not demand evidence or route feasibility
+Coscomatepec,Altas Montañas,Actopan,Primeros Pasos de Cortés,2,0.32642540694188793,0.6735745930581121,mixed-profile structural analog only; not demand evidence or route feasibility
+Coscomatepec,Altas Montañas,Vega de Alatorre,Totonacapan,3,0.3328644493423005,0.6671355506576995,mixed-profile structural analog only; not demand evidence or route feasibility
+Cuitláhuac,Altas Montañas,Castillo de Teayo,Huasteca,1,0.2321574728026312,0.7678425271973688,mixed-profile structural analog only; not demand evidence or route feasibility
+Cuitláhuac,Altas Montañas,Atzalan,Totonacapan,2,0.24310073718793615,0.7568992628120639,mixed-profile structural analog only; not demand evidence or route feasibility
+Cuitláhuac,Altas Montañas,Vega de Alatorre,Totonacapan,3,0.24508721979178963,0.7549127802082104,mixed-profile structural analog only; not demand evidence or route feasibility
+Córdoba,Altas Montañas,Xalapa,Cultura y Aventura,1,0.2169010419589849,0.783098958041015,mixed-profile structural analog only; not demand evidence or route feasibility
+Córdoba,Altas Montañas,Coatzacoalcos,Olmeca,2,0.30584568611709373,0.6941543138829063,mixed-profile structural analog only; not demand evidence or route feasibility
+Córdoba,Altas Montañas,Boca del Río,Primeros Pasos de Cortés,3,0.3205213173856198,0.6794786826143802,mixed-profile structural analog only; not demand evidence or route feasibility
+Emiliano Zapata,Cultura y Aventura,Vega de Alatorre,Totonacapan,1,0.23007326624150945,0.7699267337584905,mixed-profile structural analog only; not demand evidence or route feasibility
+Emiliano Zapata,Cultura y Aventura,Papantla,Totonacapan,2,0.28113020856784493,0.7188697914321551,mixed-profile structural analog only; not demand evidence or route feasibility
+Emiliano Zapata,Cultura y Aventura,Castillo de Teayo,Huasteca,3,0.28210896762152,0.71789103237848,mixed-profile structural analog only; not demand evidence or route feasibility
+Fortín,Altas Montañas,Vega de Alatorre,Totonacapan,1,0.287209492717018,0.712790507282982,mixed-profile structural analog only; not demand evidence or route feasibility
+Fortín,Altas Montañas,Ursulo Galván,Primeros Pasos de Cortés,2,0.29055749937791814,0.7094425006220819,mixed-profile structural analog only; not demand evidence or route feasibility
+Fortín,Altas Montañas,Actopan,Primeros Pasos de Cortés,3,0.2905903113631682,0.7094096886368317,mixed-profile structural analog only; not demand evidence or route feasibility
+Huatusco,Altas Montañas,Vega de Alatorre,Totonacapan,1,0.2604769711532269,0.7395230288467731,mixed-profile structural analog only; not demand evidence or route feasibility
+Huatusco,Altas Montañas,Actopan,Primeros Pasos de Cortés,2,0.2757808239762623,0.7242191760237378,mixed-profile structural analog only; not demand evidence or route feasibility
+Huatusco,Altas Montañas,Ursulo Galván,Primeros Pasos de Cortés,3,0.30267593885685906,0.6973240611431409,mixed-profile structural analog only; not demand evidence or route feasibility
+Jalcomulco,Cultura y Aventura,Actopan,Primeros Pasos de Cortés,1,0.31362182828386237,0.6863781717161377,mixed-profile structural analog only; not demand evidence or route feasibility
+Jalcomulco,Cultura y Aventura,Vega de Alatorre,Totonacapan,2,0.3380223068982937,0.6619776931017063,mixed-profile structural analog only; not demand evidence or route feasibility
+Jalcomulco,Cultura y Aventura,Ursulo Galván,Primeros Pasos de Cortés,3,0.36934179214898977,0.6306582078510102,mixed-profile structural analog only; not demand evidence or route feasibility
+Jilotepec,Cultura y Aventura,Castillo de Teayo,Huasteca,1,0.16270094375963956,0.8372990562403604,mixed-profile structural analog only; not demand evidence or route feasibility
+Jilotepec,Cultura y Aventura,Atzalan,Totonacapan,2,0.2083010615575996,0.7916989384424005,mixed-profile structural analog only; not demand evidence or route feasibility
+Jilotepec,Cultura y Aventura,Texistepec,Olmeca,3,0.25203660063830213,0.7479633993616979,mixed-profile structural analog only; not demand evidence or route feasibility
+Jáltipan,Olmeca,Jesús Carranza,Olmeca,1,0.2741801770527832,0.7258198229472168,mixed-profile structural analog only; not demand evidence or route feasibility
+Jáltipan,Olmeca,Coatzacoalcos,Olmeca,2,0.2973048088371625,0.7026951911628375,mixed-profile structural analog only; not demand evidence or route feasibility
+Jáltipan,Olmeca,Texistepec,Olmeca,3,0.3104790959080076,0.6895209040919924,mixed-profile structural analog only; not demand evidence or route feasibility
+La Antigua,Primeros Pasos de Cortés,Ursulo Galván,Primeros Pasos de Cortés,1,0.24456009178420451,0.7554399082157954,mixed-profile structural analog only; not demand evidence or route feasibility
+La Antigua,Primeros Pasos de Cortés,Boca del Río,Primeros Pasos de Cortés,2,0.3047857220481214,0.6952142779518786,mixed-profile structural analog only; not demand evidence or route feasibility
+La Antigua,Primeros Pasos de Cortés,Actopan,Primeros Pasos de Cortés,3,0.311660176692106,0.688339823307894,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Choapas,Olmeca,Jesús Carranza,Olmeca,1,0.21784840551980608,0.7821515944801939,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Choapas,Olmeca,Vega de Alatorre,Totonacapan,2,0.24916448660524224,0.7508355133947577,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Choapas,Olmeca,Texistepec,Olmeca,3,0.25413229619292615,0.7458677038070738,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Vigas de Ramírez,Cultura y Aventura,Castillo de Teayo,Huasteca,1,0.17117004163822738,0.8288299583617726,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Vigas de Ramírez,Cultura y Aventura,Atzalan,Totonacapan,2,0.21209432183429508,0.7879056781657049,mixed-profile structural analog only; not demand evidence or route feasibility
+Las Vigas de Ramírez,Cultura y Aventura,Vega de Alatorre,Totonacapan,3,0.23366246273734959,0.7663375372626504,mixed-profile structural analog only; not demand evidence or route feasibility
+Minatitlán,Olmeca,Coatzacoalcos,Olmeca,1,0.15823771876902654,0.8417622812309735,mixed-profile structural analog only; not demand evidence or route feasibility
+Minatitlán,Olmeca,Xalapa,Cultura y Aventura,2,0.25141896647327205,0.748581033526728,mixed-profile structural analog only; not demand evidence or route feasibility
+Minatitlán,Olmeca,Boca del Río,Primeros Pasos de Cortés,3,0.30655990096268243,0.6934400990373175,mixed-profile structural analog only; not demand evidence or route feasibility
+Misantla,Totonacapan,Vega de Alatorre,Totonacapan,1,0.10081717341508432,0.8991828265849157,mixed-profile structural analog only; not demand evidence or route feasibility
+Misantla,Totonacapan,Castillo de Teayo,Huasteca,2,0.17750216432294108,0.8224978356770589,mixed-profile structural analog only; not demand evidence or route feasibility
+Misantla,Totonacapan,Atzalan,Totonacapan,3,0.18462636744334424,0.8153736325566557,mixed-profile structural analog only; not demand evidence or route feasibility
+Naolinco,Cultura y Aventura,Papantla,Totonacapan,1,0.25396702808463395,0.746032971915366,mixed-profile structural analog only; not demand evidence or route feasibility
+Naolinco,Cultura y Aventura,Castillo de Teayo,Huasteca,2,0.27986545775324034,0.7201345422467597,mixed-profile structural analog only; not demand evidence or route feasibility
+Naolinco,Cultura y Aventura,Vega de Alatorre,Totonacapan,3,0.28966992473313796,0.710330075266862,mixed-profile structural analog only; not demand evidence or route feasibility
+Nautla,Totonacapan,Vega de Alatorre,Totonacapan,1,0.23232296467863986,0.7676770353213601,mixed-profile structural analog only; not demand evidence or route feasibility
+Nautla,Totonacapan,Castillo de Teayo,Huasteca,2,0.2530106074702549,0.746989392529745,mixed-profile structural analog only; not demand evidence or route feasibility
+Nautla,Totonacapan,Atzalan,Totonacapan,3,0.2962401037702146,0.7037598962297854,mixed-profile structural analog only; not demand evidence or route feasibility
+Orizaba,Altas Montañas,Xalapa,Cultura y Aventura,1,0.20866861012144117,0.7913313898785588,mixed-profile structural analog only; not demand evidence or route feasibility
+Orizaba,Altas Montañas,Boca del Río,Primeros Pasos de Cortés,2,0.3021212275737487,0.6978787724262513,mixed-profile structural analog only; not demand evidence or route feasibility
+Orizaba,Altas Montañas,Veracruz,Primeros Pasos de Cortés,3,0.32809190893515683,0.6719080910648432,mixed-profile structural analog only; not demand evidence or route feasibility
+Perote,Cultura y Aventura,Vega de Alatorre,Totonacapan,1,0.27166429668514636,0.7283357033148536,mixed-profile structural analog only; not demand evidence or route feasibility
+Perote,Cultura y Aventura,Ursulo Galván,Primeros Pasos de Cortés,2,0.2846361460951712,0.7153638539048288,mixed-profile structural analog only; not demand evidence or route feasibility
+Perote,Cultura y Aventura,Actopan,Primeros Pasos de Cortés,3,0.29771066416955183,0.7022893358304482,mixed-profile structural analog only; not demand evidence or route feasibility
+Poza Rica de Hidalgo,Totonacapan,Boca del Río,Primeros Pasos de Cortés,1,0.17480291517857235,0.8251970848214276,mixed-profile structural analog only; not demand evidence or route feasibility
+Poza Rica de Hidalgo,Totonacapan,Xalapa,Cultura y Aventura,2,0.24062198776325605,0.759378012236744,mixed-profile structural analog only; not demand evidence or route feasibility
+Poza Rica de Hidalgo,Totonacapan,Veracruz,Primeros Pasos de Cortés,3,0.24581016314232235,0.7541898368576776,mixed-profile structural analog only; not demand evidence or route feasibility
+Puente Nacional,Primeros Pasos de Cortés,Carrillo Puerto,Altas Montañas,1,0.23733269887613168,0.7626673011238683,mixed-profile structural analog only; not demand evidence or route feasibility
+Puente Nacional,Primeros Pasos de Cortés,Vega de Alatorre,Totonacapan,2,0.24374768346319967,0.7562523165368004,mixed-profile structural analog only; not demand evidence or route feasibility
+Puente Nacional,Primeros Pasos de Cortés,Castillo de Teayo,Huasteca,3,0.2644699928758367,0.7355300071241633,mixed-profile structural analog only; not demand evidence or route feasibility
+Pánuco,Huasteca,Vega de Alatorre,Totonacapan,1,0.18057706620084293,0.8194229337991571,mixed-profile structural analog only; not demand evidence or route feasibility
+Pánuco,Huasteca,Castillo de Teayo,Huasteca,2,0.221427600327767,0.778572399672233,mixed-profile structural analog only; not demand evidence or route feasibility
+Pánuco,Huasteca,Atzalan,Totonacapan,3,0.23315252645487947,0.7668474735451205,mixed-profile structural analog only; not demand evidence or route feasibility
+San Andrés Tuxtla,Los Tuxtlas,Ursulo Galván,Primeros Pasos de Cortés,1,0.3232464664564674,0.6767535335435326,mixed-profile structural analog only; not demand evidence or route feasibility
+San Andrés Tuxtla,Los Tuxtlas,Boca del Río,Primeros Pasos de Cortés,2,0.325042922380628,0.6749570776193721,mixed-profile structural analog only; not demand evidence or route feasibility
+San Andrés Tuxtla,Los Tuxtlas,Xalapa,Cultura y Aventura,3,0.3523461696634378,0.6476538303365622,mixed-profile structural analog only; not demand evidence or route feasibility
+Santiago Tuxtla,Los Tuxtlas,Actopan,Primeros Pasos de Cortés,1,0.18935767468063686,0.8106423253193631,mixed-profile structural analog only; not demand evidence or route feasibility
+Santiago Tuxtla,Los Tuxtlas,Vega de Alatorre,Totonacapan,2,0.1962141218806974,0.8037858781193026,mixed-profile structural analog only; not demand evidence or route feasibility
+Santiago Tuxtla,Los Tuxtlas,Jesús Carranza,Olmeca,3,0.2223340527770675,0.7776659472229325,mixed-profile structural analog only; not demand evidence or route feasibility
+Soteapan,Olmeca,Texistepec,Olmeca,1,0.22313765791774423,0.7768623420822558,mixed-profile structural analog only; not demand evidence or route feasibility
+Soteapan,Olmeca,Jesús Carranza,Olmeca,2,0.2304441885956915,0.7695558114043085,mixed-profile structural analog only; not demand evidence or route feasibility
+Soteapan,Olmeca,Castillo de Teayo,Huasteca,3,0.2910282235040997,0.7089717764959003,mixed-profile structural analog only; not demand evidence or route feasibility
+Tamiahua,Huasteca,Castillo de Teayo,Huasteca,1,0.33969714931226674,0.6603028506877333,mixed-profile structural analog only; not demand evidence or route feasibility
+Tamiahua,Huasteca,Vega de Alatorre,Totonacapan,2,0.34786719681499595,0.652132803185004,mixed-profile structural analog only; not demand evidence or route feasibility
+Tamiahua,Huasteca,Jesús Carranza,Olmeca,3,0.3707544426800338,0.6292455573199662,mixed-profile structural analog only; not demand evidence or route feasibility
+Tecolutla,Totonacapan,Vega de Alatorre,Totonacapan,1,0.31066240872994766,0.6893375912700523,mixed-profile structural analog only; not demand evidence or route feasibility
+Tecolutla,Totonacapan,Boca del Río,Primeros Pasos de Cortés,2,0.3366804688348548,0.6633195311651452,mixed-profile structural analog only; not demand evidence or route feasibility
+Tecolutla,Totonacapan,Coatzacoalcos,Olmeca,3,0.351342203930178,0.648657796069822,mixed-profile structural analog only; not demand evidence or route feasibility
+Tempoal,Huasteca,Vega de Alatorre,Totonacapan,1,0.15125634789441297,0.848743652105587,mixed-profile structural analog only; not demand evidence or route feasibility
+Tempoal,Huasteca,Castillo de Teayo,Huasteca,2,0.20233371051450236,0.7976662894854977,mixed-profile structural analog only; not demand evidence or route feasibility
+Tempoal,Huasteca,Atzalan,Totonacapan,3,0.2203845959856277,0.7796154040143723,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlacotalpan,Primeros Pasos de Cortés,Actopan,Primeros Pasos de Cortés,1,0.2991652528459956,0.7008347471540044,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlacotalpan,Primeros Pasos de Cortés,Vega de Alatorre,Totonacapan,2,0.3186639824217128,0.6813360175782872,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlacotalpan,Primeros Pasos de Cortés,Carrillo Puerto,Altas Montañas,3,0.34105623229375176,0.6589437677062482,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlalnelhuayocan,Cultura y Aventura,Castillo de Teayo,Huasteca,1,0.1855513941640302,0.8144486058359698,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlalnelhuayocan,Cultura y Aventura,Vega de Alatorre,Totonacapan,2,0.23782523441876954,0.7621747655812304,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlalnelhuayocan,Cultura y Aventura,Atzalan,Totonacapan,3,0.2530091754332531,0.7469908245667469,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlapacoyan,Totonacapan,Vega de Alatorre,Totonacapan,1,0.2574823404502411,0.7425176595497589,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlapacoyan,Totonacapan,Actopan,Primeros Pasos de Cortés,2,0.26337914056366457,0.7366208594363355,mixed-profile structural analog only; not demand evidence or route feasibility
+Tlapacoyan,Totonacapan,Ursulo Galván,Primeros Pasos de Cortés,3,0.30765240528855525,0.6923475947114448,mixed-profile structural analog only; not demand evidence or route feasibility
+Tuxpan,Huasteca,Boca del Río,Primeros Pasos de Cortés,1,0.16371964306309175,0.8362803569369083,mixed-profile structural analog only; not demand evidence or route feasibility
+Tuxpan,Huasteca,Xalapa,Cultura y Aventura,2,0.23096651747960031,0.7690334825203997,mixed-profile structural analog only; not demand evidence or route feasibility
+Tuxpan,Huasteca,Veracruz,Primeros Pasos de Cortés,3,0.24836050426685138,0.7516394957331486,mixed-profile structural analog only; not demand evidence or route feasibility
+Xico,Cultura y Aventura,Papantla,Totonacapan,1,0.27338074528733947,0.7266192547126605,mixed-profile structural analog only; not demand evidence or route feasibility
+Xico,Cultura y Aventura,Actopan,Primeros Pasos de Cortés,2,0.3043611542131881,0.6956388457868119,mixed-profile structural analog only; not demand evidence or route feasibility
+Xico,Cultura y Aventura,Ursulo Galván,Primeros Pasos de Cortés,3,0.3508750925605693,0.6491249074394307,mixed-profile structural analog only; not demand evidence or route feasibility
+Yanga,Altas Montañas,Castillo de Teayo,Huasteca,1,0.2098486763761073,0.7901513236238927,mixed-profile structural analog only; not demand evidence or route feasibility
+Yanga,Altas Montañas,Atzalan,Totonacapan,2,0.23429262543840135,0.7657073745615987,mixed-profile structural analog only; not demand evidence or route feasibility
+Yanga,Altas Montañas,Vega de Alatorre,Totonacapan,3,0.2632677371458682,0.7367322628541317,mixed-profile structural analog only; not demand evidence or route feasibility
+Zongolica,Altas Montañas,Castillo de Teayo,Huasteca,1,0.21837293343476596,0.7816270665652341,mixed-profile structural analog only; not demand evidence or route feasibility
+Zongolica,Altas Montañas,Vega de Alatorre,Totonacapan,2,0.24019709225708563,0.7598029077429144,mixed-profile structural analog only; not demand evidence or route feasibility
+Zongolica,Altas Montañas,Atzalan,Totonacapan,3,0.2495940341003031,0.7504059658996969,mixed-profile structural analog only; not demand evidence or route feasibility
+Zozocolco de Hidalgo,Totonacapan,Castillo de Teayo,Huasteca,1,0.27552479528491014,0.7244752047150899,mixed-profile structural analog only; not demand evidence or route feasibility
+Zozocolco de Hidalgo,Totonacapan,Vega de Alatorre,Totonacapan,2,0.2882365255337673,0.7117634744662327,mixed-profile structural analog only; not demand evidence or route feasibility
+Zozocolco de Hidalgo,Totonacapan,Atzalan,Totonacapan,3,0.32761971534693274,0.6723802846530673,mixed-profile structural analog only; not demand evidence or route feasibility

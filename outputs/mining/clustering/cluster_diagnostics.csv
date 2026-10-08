@@ -1,0 +1,20 @@
+k,silhouette,pam_total_dissimilarity,smallest_cluster,largest_cluster,median_cluster_size,singleton_clusters,recommended,selection_rule
+2,0.28413907496863144,11.57857142857143,19,36,27.5,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+3,0.3317776853455557,9.97857142857143,11,28,16.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+4,0.3447782155999284,8.411904761904763,5,23,13.5,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+5,0.3923955941258215,7.111904761904763,5,17,11.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+6,0.4305844212685777,6.22857142857143,5,14,9.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+7,0.4401800043182683,5.42857142857143,4,12,7.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+8,0.4762522976671574,4.82857142857143,3,12,5.5,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+9,0.5163159631056937,4.233333333333334,3,12,5.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+10,0.5604001851131994,3.7000000000000006,3,12,4.5,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+11,0.5937680030659976,3.2,2,12,4.0,0,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+12,0.6367264931865106,2.6999999999999997,2,12,4.0,0,True,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+13,0.6552374851455733,2.3666666666666667,1,11,4.0,1,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+14,0.6844138643219526,2.033333333333333,1,11,3.0,1,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+15,0.7308816673522556,1.7000000000000002,1,9,3.0,1,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+16,0.7326107226107226,1.5000000000000002,1,9,3.0,2,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+17,0.7324242424242424,1.2999999999999998,1,9,2.0,3,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+18,0.7475757575757574,1.0999999999999999,1,9,2.0,4,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+19,0.7587878787878789,0.8999999999999999,1,9,2.0,5,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately
+20,0.7696969696969698,0.7,1,9,2.0,6,False,maximize silhouette among singleton-free PAM solutions; interpretability reviewed separately

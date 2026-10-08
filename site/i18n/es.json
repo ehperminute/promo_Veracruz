@@ -1,13 +1,45 @@
 {
     "title": "Inteligencia Turística de Veracruz",
-    "subtitle": "Exploración de destinos turísticos de Veracruz basada en datos.",
+    "subtitle": "Exploración de destinos turísticos de Veracruz basada en datos",
+
     "nav_overview": "Resumen",
     "nav_destinations": "Destinos",
     "nav_methods": "Datos y métodos",
+
+    "language_label": "Idioma:",
+
     "overview_title": "Resumen",
+
     "overview_text": "Este proyecto combina datos turísticos, económicos y de destinos para analizar oportunidades turísticas en Veracruz.",
+
     "destinations_title": "Explorador de destinos",
+
     "destinations_text": "Explora características turísticas, similitudes entre destinos, productos turísticos oficiales y referentes nacionales.",
+
+    "search_placeholder": "Buscar destinos...",
+
+    "all_themes": "Todos los temas",
+
+    "pueblo_magico": "Pueblo Mágico",
+
+    "no_results": "Ningún destino coincide con los filtros seleccionados.",
+
+    "theme_beach_coast": "Playa y costa",
+    "theme_nature": "Naturaleza",
+    "theme_culture_history": "Cultura e historia",
+    "theme_archaeology": "Arqueología",
+    "theme_adventure": "Aventura",
+    "theme_gastronomy_coffee": "Gastronomía y café",
+    "theme_wellness_spiritual": "Bienestar y espiritualidad",
+    "theme_urban_services": "Servicios urbanos",
+
+    "tourism_profile": "Perfil turístico",
+
+    "analysis_section": "Resultados analíticos",
+
+    "analysis_placeholder": "Aquí se mostrarán la similitud local, la pertenencia al clúster, los referentes nacionales, la evidencia de demanda y posteriormente los resultados de pronóstico conforme se conecten con el flujo analítico.",
+
     "methods_title": "Datos y métodos",
+
     "methods_text": "Esta sección explica los conjuntos de datos, el flujo analítico, la agrupación, los pronósticos y otros métodos utilizados en el proyecto."
 }

@@ -3,80 +3,176 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Veracruz Tourism Intelligence</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+        rel="stylesheet"
+        href="css/styles.css?v=3"
+    >
 </head>
+
 
 <body>
 
     <header>
-        <h1>Veracruz Tourism Intelligence</h1>
 
-        <p class="subtitle">
-            Data-driven exploration of tourism destinations in Veracruz.
-        </p>
+        <div class="header-inner">
 
-        <nav>
-    <a href="#overview" data-i18n="nav_overview">Overview</a>
+            <h1 data-i18n="title">
+                Veracruz Tourism Intelligence
+            </h1>
 
-    <a href="#destinations" data-i18n="nav_destinations">
-        Destinations
-    </a>
+            <p
+                class="subtitle"
+                data-i18n="subtitle"
+            >
+                Data-driven exploration of tourism destinations in Veracruz
+            </p>
 
-    <a href="#methods" data-i18n="nav_methods">
-        Data & Methods
-    </a>
-</nav>
-        <label for="language-select">Language:</label>
 
-<select id="language-select">
-    <option value="en">English</option>
-    <option value="es">Español</option>
-    <option value="ja">日本語</option>
-</select>
+            <div class="header-toolbar">
+
+                <nav>
+
+                    <a
+                        href="#overview"
+                        data-i18n="nav_overview"
+                    >
+                        Overview
+                    </a>
+
+                    <a
+                        href="#destinations"
+                        data-i18n="nav_destinations"
+                    >
+                        Destinations
+                    </a>
+
+                    <a
+                        href="#methods"
+                        data-i18n="nav_methods"
+                    >
+                        Data & Methods
+                    </a>
+
+                </nav>
+
+
+                <div class="language-control">
+
+                    <label
+                        for="language-select"
+                        data-i18n="language_label"
+                    >
+                        Language:
+                    </label>
+
+                    <select id="language-select">
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="es">
+                            Español
+                        </option>
+
+                        <option value="ja">
+                            日本語
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
+
 
     <main>
 
         <section id="overview">
-            <h2>Overview</h2>
 
-            <p>
+            <h2 data-i18n="overview_title">
+                Overview
+            </h2>
+
+            <p data-i18n="overview_text">
                 This project combines tourism, economic and destination data
                 to analyze tourism opportunities in Veracruz.
             </p>
+
         </section>
 
-        <section id="destinations">
-            <h2>Destination Explorer</h2>
 
-            <p>
+        <section id="destinations">
+
+            <h2 data-i18n="destinations_title">
+                Destination Explorer
+            </h2>
+
+            <p data-i18n="destinations_text">
                 Explore tourism characteristics, destination similarities,
                 official tourism products and national analogues.
             </p>
-            <label for="destination-select">Choose a destination:</label>
 
-<select id="destination-select">
-    <option value="">-- Select --</option>
-</select>
 
-<div id="destination-details"></div>
+            <div class="explorer-controls">
+
+                <input
+                    id="destination-search"
+                    type="text"
+                    placeholder="Search destinations..."
+                    data-i18n-placeholder="search_placeholder"
+                >
+
+
+                <select id="theme-filter">
+
+                    <option value="">
+                        All themes
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="destination-list"
+                class="destination-grid"
+            ></div>
+
         </section>
 
-        <section id="methods">
-            <h2>Data & Methods</h2>
 
-            <p>
-                This section will explain the datasets, analytical pipeline,
+        <section id="methods">
+
+            <h2 data-i18n="methods_title">
+                Data & Methods
+            </h2>
+
+            <p data-i18n="methods_text">
+                This section explains the datasets, analytical pipeline,
                 clustering, forecasting and other methods used in the project.
             </p>
+
         </section>
 
     </main>
-<script src="js/app.js"></script>
+
+
+    <script src="js/app.js?v=3"></script>
+
 </body>
 
 </html>
