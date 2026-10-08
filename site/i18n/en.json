@@ -1,0 +1,13 @@
+{
+    "title": "Veracruz Tourism Intelligence",
+    "subtitle": "Data-driven exploration of tourism destinations in Veracruz.",
+    "nav_overview": "Overview",
+    "nav_destinations": "Destinations",
+    "nav_methods": "Data & Methods",
+    "overview_title": "Overview",
+    "overview_text": "This project combines tourism, economic and destination data to analyze tourism opportunities in Veracruz.",
+    "destinations_title": "Destination Explorer",
+    "destinations_text": "Explore tourism characteristics, destination similarities, official tourism products and national analogues.",
+    "methods_title": "Data & Methods",
+    "methods_text": "This section explains the datasets, analytical pipeline, clustering, forecasting and other methods used in the project."
+}

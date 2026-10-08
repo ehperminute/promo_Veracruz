@@ -1,0 +1,13 @@
+{
+    "title": "Inteligencia Turística de Veracruz",
+    "subtitle": "Exploración de destinos turísticos de Veracruz basada en datos.",
+    "nav_overview": "Resumen",
+    "nav_destinations": "Destinos",
+    "nav_methods": "Datos y métodos",
+    "overview_title": "Resumen",
+    "overview_text": "Este proyecto combina datos turísticos, económicos y de destinos para analizar oportunidades turísticas en Veracruz.",
+    "destinations_title": "Explorador de destinos",
+    "destinations_text": "Explora características turísticas, similitudes entre destinos, productos turísticos oficiales y referentes nacionales.",
+    "methods_title": "Datos y métodos",
+    "methods_text": "Esta sección explica los conjuntos de datos, el flujo analítico, la agrupación, los pronósticos y otros métodos utilizados en el proyecto."
+}

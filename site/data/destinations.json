@@ -1,0 +1,635 @@
+[
+  {
+    "name": "Acajete",
+    "municipality_code": "30001",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Actopan",
+    "municipality_code": "30004",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "culture_history",
+      "archaeology",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Alvarado",
+    "municipality_code": "30011",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Atzalan",
+    "municipality_code": "30023",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Boca del Río",
+    "municipality_code": "30028",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Calcahualco",
+    "municipality_code": "30029",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Carrillo Puerto",
+    "municipality_code": "30031",
+    "region": "Por verificar",
+    "pueblo_magico": false,
+    "themes": [
+      "archaeology"
+    ]
+  },
+  {
+    "name": "Castillo de Teayo",
+    "municipality_code": "30157",
+    "region": "Huasteca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Catemaco",
+    "municipality_code": "30032",
+    "region": "Los Tuxtlas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "wellness_spiritual"
+    ]
+  },
+  {
+    "name": "Cazones de Herrera",
+    "municipality_code": "30033",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Chinameca",
+    "municipality_code": "30059",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history"
+    ]
+  },
+  {
+    "name": "Coatepec",
+    "municipality_code": "30038",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Coatzacoalcos",
+    "municipality_code": "30039",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Coscomatepec",
+    "municipality_code": "30047",
+    "region": "Altas Montañas",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Cuitláhuac",
+    "municipality_code": "30053",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Córdoba",
+    "municipality_code": "30044",
+    "region": "Altas Montañas",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Emiliano Zapata",
+    "municipality_code": "30065",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Fortín",
+    "municipality_code": "30068",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Huatusco",
+    "municipality_code": "30071",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Jalcomulco",
+    "municipality_code": "30088",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Jesús Carranza",
+    "municipality_code": "30091",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology"
+    ]
+  },
+  {
+    "name": "Jilotepec",
+    "municipality_code": "30093",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Jáltipan",
+    "municipality_code": "30089",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history"
+    ]
+  },
+  {
+    "name": "La Antigua",
+    "municipality_code": "30016",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Las Choapas",
+    "municipality_code": "30061",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history"
+    ]
+  },
+  {
+    "name": "Las Vigas de Ramírez",
+    "municipality_code": "30132",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Minatitlán",
+    "municipality_code": "30108",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Misantla",
+    "municipality_code": "30109",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Naolinco",
+    "municipality_code": "30112",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Nautla",
+    "municipality_code": "30114",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Orizaba",
+    "municipality_code": "30118",
+    "region": "Altas Montañas",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Papantla",
+    "municipality_code": "30124",
+    "region": "Totonacapan",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Perote",
+    "municipality_code": "30128",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Poza Rica de Hidalgo",
+    "municipality_code": "30131",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Puente Nacional",
+    "municipality_code": "30134",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Pánuco",
+    "municipality_code": "30123",
+    "region": "Huasteca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "San Andrés Tuxtla",
+    "municipality_code": "30141",
+    "region": "Los Tuxtlas",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "adventure"
+    ]
+  },
+  {
+    "name": "Santiago Tuxtla",
+    "municipality_code": "30143",
+    "region": "Los Tuxtlas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "adventure"
+    ]
+  },
+  {
+    "name": "Soteapan",
+    "municipality_code": "30149",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history"
+    ]
+  },
+  {
+    "name": "Tamiahua",
+    "municipality_code": "30151",
+    "region": "Huasteca",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Tecolutla",
+    "municipality_code": "30158",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Tempoal",
+    "municipality_code": "30161",
+    "region": "Huasteca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Texistepec",
+    "municipality_code": "30172",
+    "region": "Olmeca",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology"
+    ]
+  },
+  {
+    "name": "Tlacotalpan",
+    "municipality_code": "30178",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Tlalnelhuayocan",
+    "municipality_code": "30182",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Tlapacoyan",
+    "municipality_code": "30183",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Tuxpan",
+    "municipality_code": "30189",
+    "region": "Huasteca",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Ursulo Galván",
+    "municipality_code": "30191",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "culture_history",
+      "archaeology",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Vega de Alatorre",
+    "municipality_code": "30192",
+    "region": "Totonacapan",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Veracruz",
+    "municipality_code": "30193",
+    "region": "Primeros Pasos de Cortés",
+    "pueblo_magico": false,
+    "themes": [
+      "beach_coast",
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Xalapa",
+    "municipality_code": "30087",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ]
+  },
+  {
+    "name": "Xico",
+    "municipality_code": "30092",
+    "region": "Cultura y Aventura",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Yanga",
+    "municipality_code": "30196",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Zongolica",
+    "municipality_code": "30201",
+    "region": "Altas Montañas",
+    "pueblo_magico": false,
+    "themes": [
+      "nature",
+      "culture_history",
+      "adventure",
+      "gastronomy_coffee"
+    ]
+  },
+  {
+    "name": "Zozocolco de Hidalgo",
+    "municipality_code": "30203",
+    "region": "Totonacapan",
+    "pueblo_magico": true,
+    "themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ]
+  }
+]

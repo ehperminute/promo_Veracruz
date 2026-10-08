@@ -1,0 +1,13 @@
+{
+    "title": "ベラクルス観光インテリジェンス",
+    "subtitle": "データに基づくベラクルス州の観光地分析。",
+    "nav_overview": "概要",
+    "nav_destinations": "観光地",
+    "nav_methods": "データと手法",
+    "overview_title": "概要",
+    "overview_text": "このプロジェクトでは、観光、経済、観光地に関するデータを組み合わせ、ベラクルス州の観光機会を分析します。",
+    "destinations_title": "観光地エクスプローラー",
+    "destinations_text": "観光地の特徴、類似する観光地、公式観光商品、国内の類似地域を確認できます。",
+    "methods_title": "データと手法",
+    "methods_text": "このセクションでは、データセット、分析の流れ、クラスタリング、予測などの手法を説明します。"
+}
