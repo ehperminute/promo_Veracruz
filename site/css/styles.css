@@ -1,10 +1,5 @@
-/* ---------------------------------------------
-   GENERAL
---------------------------------------------- */
-
 body {
     font-family: Arial, sans-serif;
-
     margin: 0;
 
     background: #f4f6f8;
@@ -12,14 +7,13 @@ body {
 }
 
 
-/* ---------------------------------------------
-   HEADER
---------------------------------------------- */
+/* HEADER */
 
 header {
     background: #ffffff;
 
-    border-bottom: 1px solid #d9e2ec;
+    border-bottom:
+        1px solid #d9e2ec;
 }
 
 
@@ -46,9 +40,7 @@ h1 {
 }
 
 
-/* ---------------------------------------------
-   NAVIGATION
---------------------------------------------- */
+/* NAV */
 
 .header-toolbar {
     display: flex;
@@ -87,10 +79,6 @@ nav a:hover {
 }
 
 
-/* ---------------------------------------------
-   LANGUAGE SELECTOR
---------------------------------------------- */
-
 .language-control {
     display: flex;
 
@@ -104,18 +92,17 @@ nav a:hover {
     padding: 7px 10px;
 
     font-family: inherit;
-    font-size: 14px;
 
-    border: 1px solid #bcccdc;
+    border:
+        1px solid #bcccdc;
+
     border-radius: 6px;
 
-    background: #ffffff;
+    background: white;
 }
 
 
-/* ---------------------------------------------
-   MAIN CONTENT
---------------------------------------------- */
+/* MAIN */
 
 main {
     max-width: 1100px;
@@ -131,19 +118,13 @@ section {
 }
 
 
-h2 {
-    margin-bottom: 12px;
-}
-
-
-/* ---------------------------------------------
-   EXPLORER CONTROLS
---------------------------------------------- */
+/* CONTROLS */
 
 .explorer-controls {
     display: grid;
 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:
+        2fr 1fr 1fr;
 
     gap: 12px;
 
@@ -155,45 +136,42 @@ h2 {
 .explorer-controls select {
     padding: 11px 12px;
 
+    box-sizing: border-box;
+
     font-family: inherit;
     font-size: 16px;
 
-    border: 1px solid #bcccdc;
+    border:
+        1px solid #bcccdc;
+
     border-radius: 6px;
 
     background: #ffffff;
 }
 
 
-#destination-search {
-    width: 100%;
-
-    box-sizing: border-box;
-}
-
-
-/* ---------------------------------------------
-   DESTINATION GRID
---------------------------------------------- */
+/* GRID */
 
 .destination-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
 
     gap: 18px;
 }
 
 
-/* ---------------------------------------------
-   DESTINATION CARDS
---------------------------------------------- */
+/* CARD */
 
 .destination-card {
     background: #ffffff;
 
-    border: 1px solid #d9e2ec;
+    border:
+        1px solid #d9e2ec;
 
     border-radius: 10px;
 
@@ -208,7 +186,8 @@ h2 {
 
 
 .destination-card:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 
     box-shadow:
         0 7px 18px
@@ -217,16 +196,29 @@ h2 {
 
 
 .destination-card:focus {
-    outline: 3px solid #93c5fd;
+    outline:
+        3px solid #93c5fd;
 
     outline-offset: 2px;
 }
 
 
-.destination-card h3 {
-    margin-top: 0;
+.card-heading {
+    display: flex;
 
-    margin-bottom: 8px;
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    gap: 10px;
+}
+
+
+.destination-card h3 {
+    margin:
+        0 0 8px 0;
 }
 
 
@@ -239,24 +231,54 @@ h2 {
 }
 
 
-/* ---------------------------------------------
-   THEME TAGS
---------------------------------------------- */
+/* CLUSTER */
 
-.theme-tags {
+.cluster-badge {
+    white-space: nowrap;
+
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    background: #dbeafe;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.cluster-large {
+    display: inline-block;
+
+    margin:
+        4px 0 18px 0;
+
+    padding: 7px 11px;
+
+    border-radius: 7px;
+
+    background: #dbeafe;
+
+    font-weight: bold;
+}
+
+
+/* THEMES */
+
+.theme-tags,
+.member-tags {
     display: flex;
 
     flex-wrap: wrap;
 
     gap: 7px;
 
-    margin-top: 14px;
+    margin-top: 12px;
 }
 
 
 .theme-tag {
-    display: inline-block;
-
     padding: 6px 10px;
 
     border-radius: 999px;
@@ -264,14 +286,21 @@ h2 {
     background: #e7eef7;
 
     font-size: 13px;
-
-    line-height: 1.2;
 }
 
 
-/* ---------------------------------------------
-   PUEBLO MAGICO BADGE
---------------------------------------------- */
+.member-tag {
+    padding: 6px 9px;
+
+    border-radius: 6px;
+
+    background: #f1f5f9;
+
+    font-size: 13px;
+}
+
+
+/* PUEBLO MAGICO */
 
 .pueblo-magico {
     display: inline-block;
@@ -290,23 +319,13 @@ h2 {
 }
 
 
-/* ---------------------------------------------
-   NO RESULTS
---------------------------------------------- */
-
-.no-results {
-    color: #52606d;
-}
-
-
-/* ---------------------------------------------
-   DESTINATION DETAIL DIALOG
---------------------------------------------- */
+/* DIALOG */
 
 .destination-dialog {
-    width: min(680px, 85vw);
+    width:
+        min(720px, 86vw);
 
-    max-height: 80vh;
+    max-height: 82vh;
 
     overflow-y: auto;
 
@@ -316,7 +335,7 @@ h2 {
 
     padding: 32px;
 
-    background: #ffffff;
+    background: white;
 
     color: #1f2933;
 
@@ -346,16 +365,13 @@ h2 {
 
     font-size: 30px;
 
-    line-height: 1;
-
     cursor: pointer;
 }
 
 
 .detail-header h2 {
-    margin-top: 0;
-
-    margin-bottom: 6px;
+    margin:
+        0 0 6px 0;
 
     font-size: 30px;
 }
@@ -377,24 +393,105 @@ h2 {
 
     padding-top: 20px;
 
-    border-top: 1px solid #d9e2ec;
+    border-top:
+        1px solid #d9e2ec;
 }
 
 
-.detail-future {
+.detail-section h4 {
+    margin-bottom: 8px;
+}
+
+
+.detail-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+
+.detail-stats div {
+    padding: 12px;
+
+    background: #f8fafc;
+
+    border-radius: 7px;
+}
+
+
+.detail-stats span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+.detail-stats strong {
+    font-size: 15px;
+}
+
+
+.borderline-label {
+    display: inline-block;
+
+    margin-top: 6px;
+
+    padding: 4px 6px;
+
+    border-radius: 4px;
+
+    background: #fef3c7;
+
+    font-size: 11px;
+}
+
+
+/* ANALOGUES */
+
+.analogue-list {
+    padding-left: 20px;
+}
+
+
+.analogue-list li {
+    margin-bottom: 9px;
+}
+
+
+.analogue-score {
+    margin-left: 8px;
+
     color: #52606d;
 
-    font-size: 14px;
-
-    line-height: 1.6;
+    font-size: 13px;
 }
 
 
-/* ---------------------------------------------
-   MOBILE
---------------------------------------------- */
+.method-note,
+.muted {
+    color: #64748b;
 
-@media (max-width: 650px) {
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
 
     .header-toolbar {
         flex-direction: column;
@@ -404,6 +501,11 @@ h2 {
 
 
     .explorer-controls {
+        grid-template-columns: 1fr;
+    }
+
+
+    .detail-stats {
         grid-template-columns: 1fr;
     }
 

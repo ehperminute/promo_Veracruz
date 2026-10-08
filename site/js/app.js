@@ -32,6 +32,12 @@ const themeFilter =
     );
 
 
+const clusterFilter =
+    document.getElementById(
+        "cluster-filter"
+    );
+
+
 const destinationList =
     document.getElementById(
         "destination-list"
@@ -45,12 +51,10 @@ const languageSelect =
 
 
 
-/* ---------------------------------------------
-   CREATE DETAIL DIALOG
---------------------------------------------- */
-
 const destinationDialog =
-    document.createElement("dialog");
+    document.createElement(
+        "dialog"
+    );
 
 
 destinationDialog.className =
@@ -63,10 +67,6 @@ document.body.appendChild(
 
 
 
-/* ---------------------------------------------
-   TRANSLATION
---------------------------------------------- */
-
 function translate(key) {
 
     return translations[key] || key;
@@ -77,42 +77,34 @@ function translate(key) {
 
 function updateStaticText() {
 
-    const elements =
-        document.querySelectorAll(
+    document
+        .querySelectorAll(
             "[data-i18n]"
-        );
+        )
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18n;
+
+            element.textContent =
+                translate(key);
+
+        });
 
 
-    elements.forEach(element => {
-
-        const key =
-            element.dataset.i18n;
-
-
-        element.textContent =
-            translate(key);
-
-    });
-
-
-    const placeholderElements =
-        document.querySelectorAll(
+    document
+        .querySelectorAll(
             "[data-i18n-placeholder]"
-        );
-
-
-    placeholderElements.forEach(
-        element => {
+        )
+        .forEach(element => {
 
             const key =
                 element.dataset.i18nPlaceholder;
 
-
             element.placeholder =
                 translate(key);
 
-        }
-    );
+        });
 
 
     document.title =
@@ -126,13 +118,9 @@ function updateStaticText() {
 
 
 
-/* ---------------------------------------------
-   THEME FILTER
---------------------------------------------- */
-
 function populateThemeFilter() {
 
-    const previousSelection =
+    const previous =
         themeFilter.value;
 
 
@@ -146,7 +134,6 @@ function populateThemeFilter() {
 
 
     allOption.value = "";
-
 
     allOption.textContent =
         translate("all_themes");
@@ -183,30 +170,96 @@ function populateThemeFilter() {
 
 
     themeFilter.value =
-        previousSelection;
+        previous;
 
 }
 
 
 
-/* ---------------------------------------------
-   THEME TAG HTML
---------------------------------------------- */
+function populateClusterFilter() {
 
-function createThemeTags(destination) {
+    const previous =
+        clusterFilter.value;
+
+
+    const clusters =
+        [
+            ...new Set(
+                destinations.map(
+                    destination =>
+                        destination.cluster.id
+                )
+            )
+        ].sort(
+            (a, b) => a - b
+        );
+
+
+    clusterFilter.innerHTML =
+        "";
+
+
+    const allOption =
+        document.createElement(
+            "option"
+        );
+
+
+    allOption.value = "";
+
+    allOption.textContent =
+        translate(
+            "all_clusters"
+        );
+
+
+    clusterFilter.appendChild(
+        allOption
+    );
+
+
+    clusters.forEach(cluster => {
+
+        const option =
+            document.createElement(
+                "option"
+            );
+
+
+        option.value =
+            String(cluster);
+
+
+        option.textContent =
+            `${translate("cluster")} ${cluster}`;
+
+
+        clusterFilter.appendChild(
+            option
+        );
+
+    });
+
+
+    clusterFilter.value =
+        previous;
+
+}
+
+
+
+function createThemeTags(
+    destination
+) {
 
     return destination.themes
         .map(
             theme => `
-
                 <span class="theme-tag">
-
                     ${translate(
                         `theme_${theme}`
                     )}
-
                 </span>
-
             `
         )
         .join("");
@@ -215,11 +268,92 @@ function createThemeTags(destination) {
 
 
 
-/* ---------------------------------------------
-   DESTINATION DETAIL
---------------------------------------------- */
+function createMemberTags(
+    destination
+) {
 
-function openDestination(destination) {
+    return destination.cluster.members
+        .map(
+            member => `
+                <span class="member-tag">
+                    ${member}
+                </span>
+            `
+        )
+        .join("");
+
+}
+
+
+
+function createStructuralAnalogues(
+    destination
+) {
+
+    if (
+        destination
+            .structural_analogues
+            .length === 0
+    ) {
+
+        return `
+            <p class="muted">
+                ${translate(
+                    "no_structural_analogues"
+                )}
+            </p>
+        `;
+
+    }
+
+
+    const items =
+        destination
+            .structural_analogues
+            .map(analogue => {
+
+                const percentage =
+                    (
+                        analogue.similarity *
+                        100
+                    ).toFixed(1);
+
+
+                return `
+                    <li>
+                        <strong>
+                            ${analogue.name}
+                        </strong>
+
+                        <span class="analogue-score">
+                            ${percentage}%
+                        </span>
+                    </li>
+                `;
+
+            })
+            .join("");
+
+
+    return `
+        <ul class="analogue-list">
+            ${items}
+        </ul>
+
+        <p class="method-note">
+            ${translate(
+                "structural_note"
+            )}
+        </p>
+    `;
+
+}
+
+
+
+function openDestination(
+    destination
+) {
 
     openDestinationName =
         destination.name;
@@ -231,19 +365,50 @@ function openDestination(destination) {
         );
 
 
+    const members =
+        createMemberTags(
+            destination
+        );
+
+
+    const analogues =
+        createStructuralAnalogues(
+            destination
+        );
+
+
     const puebloMagico =
         destination.pueblo_magico
             ? `
-
                 <p class="pueblo-magico">
-
                     ${translate(
                         "pueblo_magico"
                     )}
-
                 </p>
+            `
+            : "";
 
-              `
+
+    const silhouette =
+        destination.cluster.silhouette
+            .toFixed(3);
+
+
+    const medoidDistance =
+        destination.cluster
+            .distance_to_medoid
+            .toFixed(3);
+
+
+    const borderline =
+        destination.cluster.borderline
+            ? `
+                <span class="borderline-label">
+                    ${translate(
+                        "borderline"
+                    )}
+                </span>
+            `
             : "";
 
 
@@ -281,61 +446,156 @@ function openDestination(destination) {
                 )}
             </h3>
 
-
             <div class="theme-tags">
-
                 ${themes}
-
             </div>
 
         </div>
 
 
-        <div class="detail-section detail-future">
+        <div class="detail-section">
 
-            <strong>
+            <h3>
                 ${translate(
-                    "analysis_section"
+                    "local_similarity_group"
                 )}
-            </strong>
+            </h3>
 
-            <p>
-                ${translate(
-                    "analysis_placeholder"
-                )}
+
+            <p class="cluster-large">
+
+                ${translate("cluster")}
+                ${destination.cluster.id}
+
             </p>
+
+
+            <div class="detail-stats">
+
+                <div>
+
+                    <span>
+                        ${translate(
+                            "representative_destination"
+                        )}
+                    </span>
+
+                    <strong>
+                        ${destination.cluster.medoid}
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ${translate(
+                            "group_size"
+                        )}
+                    </span>
+
+                    <strong>
+                        ${destination.cluster.size}
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ${translate(
+                            "distance_to_medoid"
+                        )}
+                    </span>
+
+                    <strong>
+                        ${medoidDistance}
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ${translate(
+                            "silhouette"
+                        )}
+                    </span>
+
+                    <strong>
+                        ${silhouette}
+                    </strong>
+
+                    ${borderline}
+
+                </div>
+
+            </div>
+
+
+            <h4>
+                ${translate(
+                    "cluster_members"
+                )}
+            </h4>
+
+            <div class="member-tags">
+                ${members}
+            </div>
+
+
+            <p class="method-note">
+
+                ${translate(
+                    "cluster_note"
+                )}
+
+            </p>
+
+        </div>
+
+
+        <div class="detail-section">
+
+            <h3>
+                ${translate(
+                    "structural_analogues"
+                )}
+            </h3>
+
+            ${analogues}
 
         </div>
 
     `;
 
 
-    const closeButton =
-        document.getElementById(
+    document
+        .getElementById(
             "dialog-close"
+        )
+        .addEventListener(
+            "click",
+            () => {
+
+                destinationDialog.close();
+
+            }
         );
 
 
-    closeButton.addEventListener(
-        "click",
-        () => {
+    if (!destinationDialog.open) {
 
-            destinationDialog.close();
+        destinationDialog.showModal();
 
-        }
-    );
-
-
-    destinationDialog.showModal();
+    }
 
 }
 
 
-
-/* ---------------------------------------------
-   RE-RENDER OPEN DESTINATION AFTER
-   LANGUAGE CHANGE
---------------------------------------------- */
 
 function renderOpenDestination() {
 
@@ -366,10 +626,6 @@ function renderOpenDestination() {
 
 
 
-/* ---------------------------------------------
-   DESTINATION CARDS
---------------------------------------------- */
-
 function renderDestinations() {
 
     const searchText =
@@ -380,6 +636,10 @@ function renderDestinations() {
 
     const selectedTheme =
         themeFilter.value;
+
+
+    const selectedCluster =
+        clusterFilter.value;
 
 
     const filtered =
@@ -401,9 +661,17 @@ function renderDestinations() {
                     );
 
 
+                const matchesCluster =
+                    selectedCluster === "" ||
+                    String(
+                        destination.cluster.id
+                    ) === selectedCluster;
+
+
                 return (
                     matchesSearch &&
-                    matchesTheme
+                    matchesTheme &&
+                    matchesCluster
                 );
 
             }
@@ -455,9 +723,7 @@ function renderDestinations() {
                 "destination-card";
 
 
-            card.tabIndex =
-                0;
-
+            card.tabIndex = 0;
 
             card.setAttribute(
                 "role",
@@ -474,24 +740,31 @@ function renderDestinations() {
             const puebloMagico =
                 destination.pueblo_magico
                     ? `
-
                         <p class="pueblo-magico">
-
                             ${translate(
                                 "pueblo_magico"
                             )}
-
                         </p>
-
-                      `
+                    `
                     : "";
 
 
             card.innerHTML = `
 
-                <h3>
-                    ${destination.name}
-                </h3>
+                <div class="card-heading">
+
+                    <h3>
+                        ${destination.name}
+                    </h3>
+
+                    <span class="cluster-badge">
+
+                        ${translate("cluster")}
+                        ${destination.cluster.id}
+
+                    </span>
+
+                </div>
 
 
                 <p class="region">
@@ -500,9 +773,7 @@ function renderDestinations() {
 
 
                 <div class="theme-tags">
-
                     ${themes}
-
                 </div>
 
 
@@ -534,7 +805,6 @@ function renderDestinations() {
 
                         event.preventDefault();
 
-
                         openDestination(
                             destination
                         );
@@ -556,15 +826,11 @@ function renderDestinations() {
 
 
 
-/* ---------------------------------------------
-   LOAD DESTINATION DATA
---------------------------------------------- */
-
 async function loadDestinations() {
 
     const response =
         await fetch(
-            "data/destinations.json"
+            "data/destinations.json?v=4"
         );
 
 
@@ -584,17 +850,13 @@ async function loadDestinations() {
 
 
 
-/* ---------------------------------------------
-   LOAD LANGUAGE FILE
---------------------------------------------- */
-
 async function loadLanguage(
     language
 ) {
 
     const response =
         await fetch(
-            `i18n/${language}.json`
+            `i18n/${language}.json?v=4`
         );
 
 
@@ -617,22 +879,17 @@ async function loadLanguage(
 
     updateStaticText();
 
-
     populateThemeFilter();
 
+    populateClusterFilter();
 
     renderDestinations();
-
 
     renderOpenDestination();
 
 }
 
 
-
-/* ---------------------------------------------
-   EVENTS
---------------------------------------------- */
 
 searchInput.addEventListener(
     "input",
@@ -641,6 +898,12 @@ searchInput.addEventListener(
 
 
 themeFilter.addEventListener(
+    "change",
+    renderDestinations
+);
+
+
+clusterFilter.addEventListener(
     "change",
     renderDestinations
 );
@@ -681,24 +944,18 @@ destinationDialog.addEventListener(
     "close",
     () => {
 
-        openDestinationName =
-            null;
+        openDestinationName = null;
 
     }
 );
 
 
 
-/* ---------------------------------------------
-   INITIALIZE WEBSITE
---------------------------------------------- */
-
 async function init() {
 
     try {
 
         await loadDestinations();
-
 
         await loadLanguage(
             "en"
@@ -711,7 +968,6 @@ async function init() {
         console.error(
             error
         );
-
 
         destinationList.textContent =
             "Error loading website data.";

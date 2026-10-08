@@ -14,11 +14,14 @@
 
     "destinations_title": "Explorador de destinos",
 
-    "destinations_text": "Explora características turísticas, similitudes entre destinos, productos turísticos oficiales y referentes nacionales.",
+    "destinations_text": "Explora características turísticas, grupos de similitud local, referentes estructurales y otros resultados analíticos.",
 
     "search_placeholder": "Buscar destinos...",
 
     "all_themes": "Todos los temas",
+    "all_clusters": "Todos los clústeres",
+
+    "cluster": "Clúster",
 
     "pueblo_magico": "Pueblo Mágico",
 
@@ -35,9 +38,23 @@
 
     "tourism_profile": "Perfil turístico",
 
-    "analysis_section": "Resultados analíticos",
+    "local_similarity_group": "Grupo de similitud local",
 
-    "analysis_placeholder": "Aquí se mostrarán la similitud local, la pertenencia al clúster, los referentes nacionales, la evidencia de demanda y posteriormente los resultados de pronóstico conforme se conecten con el flujo analítico.",
+    "representative_destination": "Destino representativo",
+    "group_size": "Destinos en el grupo",
+    "distance_to_medoid": "Distancia al representante",
+    "silhouette": "Silueta",
+    "borderline": "Asignación limítrofe",
+
+    "cluster_members": "Destinos de este grupo",
+
+    "cluster_note": "Los clústeres representan similitud en el carácter turístico. No implican una ruta geográfica ni un itinerario de viaje.",
+
+    "structural_analogues": "Referentes estructurales en Veracruz",
+
+    "structural_note": "Estas comparaciones son únicamente referentes estructurales. La similitud no constituye evidencia de demanda ni viabilidad de una ruta.",
+
+    "no_structural_analogues": "Actualmente no se genera una comparación con referentes estructurales para este destino.",
 
     "methods_title": "Datos y métodos",
 

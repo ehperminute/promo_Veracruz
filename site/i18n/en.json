@@ -12,12 +12,17 @@
     "overview_text": "This project combines tourism, economic and destination data to analyze tourism opportunities in Veracruz.",
 
     "destinations_title": "Destination Explorer",
-    "destinations_text": "Explore tourism characteristics, destination similarities, official tourism products and national analogues.",
+    "destinations_text": "Explore tourism characteristics, local similarity groups, structural analogues and other analytical results.",
 
     "search_placeholder": "Search destinations...",
+
     "all_themes": "All themes",
+    "all_clusters": "All clusters",
+
+    "cluster": "Cluster",
 
     "pueblo_magico": "Pueblo Mágico",
+
     "no_results": "No destinations match the selected filters.",
 
     "theme_beach_coast": "Beach & coast",
@@ -31,9 +36,23 @@
 
     "tourism_profile": "Tourism profile",
 
-    "analysis_section": "Analytical results",
+    "local_similarity_group": "Local similarity group",
 
-    "analysis_placeholder": "Local similarity, cluster membership, national analogues, demand evidence and later forecasting results will appear here as they are connected to the analytical pipeline.",
+    "representative_destination": "Representative destination",
+    "group_size": "Destinations in group",
+    "distance_to_medoid": "Distance to representative",
+    "silhouette": "Silhouette",
+    "borderline": "Borderline assignment",
+
+    "cluster_members": "Destinations in this group",
+
+    "cluster_note": "Clusters represent similarity in tourism character. They do not imply a geographic route or travel itinerary.",
+
+    "structural_analogues": "Structural analogues in Veracruz",
+
+    "structural_note": "These comparisons are structural analogues only. Similarity does not constitute demand evidence or route feasibility.",
+
+    "no_structural_analogues": "No structural-anchor comparison is currently produced for this destination.",
 
     "methods_title": "Data & Methods",
 

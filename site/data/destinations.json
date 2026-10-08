@@ -8,6 +8,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.8180121816976266
+      },
+      {
+        "name": "Atzalan",
+        "rank": 2,
+        "similarity": 0.7987390400637675
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.7422190722495031
+      }
     ]
   },
   {
@@ -20,7 +57,23 @@
       "archaeology",
       "adventure",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 2,
+      "medoid": "Actopan",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.4999999999999999,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Actopan",
+        "Carrillo Puerto",
+        "Ursulo Galván"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Alvarado",
@@ -31,6 +84,40 @@
       "beach_coast",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 4,
+      "medoid": "Boca del Río",
+      "distance_to_medoid": 0.2,
+      "silhouette": -0.2941176470588235,
+      "borderline": true,
+      "size": 5,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Alvarado",
+        "Boca del Río",
+        "Poza Rica de Hidalgo",
+        "Tuxpan",
+        "Veracruz"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Boca del Río",
+        "rank": 1,
+        "similarity": 0.7630291593553331
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 2,
+        "similarity": 0.7280929516332447
+      },
+      {
+        "name": "Veracruz",
+        "rank": 3,
+        "similarity": 0.6921287910472755
+      }
     ]
   },
   {
@@ -43,7 +130,25 @@
       "culture_history",
       "archaeology",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 3,
+      "medoid": "Atzalan",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.7692307692307692,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Atzalan",
+        "Castillo de Teayo",
+        "Misantla",
+        "Papantla",
+        "Vega de Alatorre"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Boca del Río",
@@ -55,7 +160,25 @@
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 4,
+      "medoid": "Boca del Río",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.575,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Alvarado",
+        "Boca del Río",
+        "Poza Rica de Hidalgo",
+        "Tuxpan",
+        "Veracruz"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Calcahualco",
@@ -67,6 +190,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7416193594409157
+      },
+      {
+        "name": "Carrillo Puerto",
+        "rank": 2,
+        "similarity": 0.7022051420308557
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.6933665838211563
+      }
     ]
   },
   {
@@ -76,7 +240,23 @@
     "pueblo_magico": false,
     "themes": [
       "archaeology"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 2,
+      "medoid": "Actopan",
+      "distance_to_medoid": 0.2,
+      "silhouette": -0.1,
+      "borderline": true,
+      "size": 3,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Actopan",
+        "Carrillo Puerto",
+        "Ursulo Galván"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Castillo de Teayo",
@@ -88,7 +268,25 @@
       "culture_history",
       "archaeology",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 3,
+      "medoid": "Atzalan",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.7692307692307692,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Atzalan",
+        "Castillo de Teayo",
+        "Misantla",
+        "Papantla",
+        "Vega de Alatorre"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Catemaco",
@@ -100,6 +298,47 @@
       "culture_history",
       "adventure",
       "wellness_spiritual"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.3333333333333333,
+      "silhouette": 0.145021645021645,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Coatzacoalcos",
+        "rank": 1,
+        "similarity": 0.6310895400173576
+      },
+      {
+        "name": "Actopan",
+        "rank": 2,
+        "similarity": 0.5642158478755137
+      },
+      {
+        "name": "Xalapa",
+        "rank": 3,
+        "similarity": 0.5580327322433845
+      }
     ]
   },
   {
@@ -112,6 +351,39 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 6,
+      "medoid": "Cazones de Herrera",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Cazones de Herrera",
+        "Nautla",
+        "Tamiahua",
+        "Tecolutla"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7681827861358336
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7486753437524873
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7200457737710881
+      }
     ]
   },
   {
@@ -122,6 +394,39 @@
     "themes": [
       "nature",
       "culture_history"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 7,
+      "medoid": "Chinameca",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Chinameca",
+        "Jáltipan",
+        "Las Choapas",
+        "Soteapan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Texistepec",
+        "rank": 1,
+        "similarity": 0.7997164107455926
+      },
+      {
+        "name": "Jesús Carranza",
+        "rank": 2,
+        "similarity": 0.785675401352432
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 3,
+        "similarity": 0.7299213394372925
+      }
     ]
   },
   {
@@ -133,6 +438,38 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 8,
+      "medoid": "Coatepec",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Coatepec",
+        "Naolinco",
+        "Zozocolco de Hidalgo"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Papantla",
+        "rank": 1,
+        "similarity": 0.8109785032336092
+      },
+      {
+        "name": "Xalapa",
+        "rank": 2,
+        "similarity": 0.6836731783457524
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.6247753142425587
+      }
     ]
   },
   {
@@ -144,7 +481,22 @@
       "nature",
       "culture_history",
       "urban_services"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 9,
+      "medoid": "Coatzacoalcos",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 2,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Coatzacoalcos",
+        "Minatitlán"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Coscomatepec",
@@ -156,6 +508,39 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 10,
+      "medoid": "Coscomatepec",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.4444444444444446,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Coscomatepec",
+        "Córdoba",
+        "Orizaba",
+        "Xico"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Papantla",
+        "rank": 1,
+        "similarity": 0.7200494814528039
+      },
+      {
+        "name": "Actopan",
+        "rank": 2,
+        "similarity": 0.6735745930581121
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.6671355506576995
+      }
     ]
   },
   {
@@ -168,6 +553,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7678425271973688
+      },
+      {
+        "name": "Atzalan",
+        "rank": 2,
+        "similarity": 0.7568992628120639
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.7549127802082104
+      }
     ]
   },
   {
@@ -181,6 +607,39 @@
       "adventure",
       "gastronomy_coffee",
       "urban_services"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 10,
+      "medoid": "Coscomatepec",
+      "distance_to_medoid": 0.1666666666666666,
+      "silhouette": 0.6666666666666666,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Coscomatepec",
+        "Córdoba",
+        "Orizaba",
+        "Xico"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Xalapa",
+        "rank": 1,
+        "similarity": 0.783098958041015
+      },
+      {
+        "name": "Coatzacoalcos",
+        "rank": 2,
+        "similarity": 0.6941543138829063
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 3,
+        "similarity": 0.6794786826143802
+      }
     ]
   },
   {
@@ -192,6 +651,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.7699267337584905
+      },
+      {
+        "name": "Papantla",
+        "rank": 2,
+        "similarity": 0.7188697914321551
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 3,
+        "similarity": 0.71789103237848
+      }
     ]
   },
   {
@@ -204,6 +700,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.712790507282982
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 2,
+        "similarity": 0.7094425006220819
+      },
+      {
+        "name": "Actopan",
+        "rank": 3,
+        "similarity": 0.7094096886368317
+      }
     ]
   },
   {
@@ -216,6 +753,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.7395230288467731
+      },
+      {
+        "name": "Actopan",
+        "rank": 2,
+        "similarity": 0.7242191760237378
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 3,
+        "similarity": 0.6973240611431409
+      }
     ]
   },
   {
@@ -228,6 +806,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Actopan",
+        "rank": 1,
+        "similarity": 0.6863781717161377
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.6619776931017063
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 3,
+        "similarity": 0.6306582078510102
+      }
     ]
   },
   {
@@ -239,7 +858,23 @@
       "nature",
       "culture_history",
       "archaeology"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 11,
+      "medoid": "Jesús Carranza",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.5833333333333333,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Jesús Carranza",
+        "Santiago Tuxtla",
+        "Texistepec"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Jilotepec",
@@ -250,6 +885,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.8372990562403604
+      },
+      {
+        "name": "Atzalan",
+        "rank": 2,
+        "similarity": 0.7916989384424005
+      },
+      {
+        "name": "Texistepec",
+        "rank": 3,
+        "similarity": 0.7479633993616979
+      }
     ]
   },
   {
@@ -260,6 +932,39 @@
     "themes": [
       "nature",
       "culture_history"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 7,
+      "medoid": "Chinameca",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Chinameca",
+        "Jáltipan",
+        "Las Choapas",
+        "Soteapan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Jesús Carranza",
+        "rank": 1,
+        "similarity": 0.7258198229472168
+      },
+      {
+        "name": "Coatzacoalcos",
+        "rank": 2,
+        "similarity": 0.7026951911628375
+      },
+      {
+        "name": "Texistepec",
+        "rank": 3,
+        "similarity": 0.6895209040919924
+      }
     ]
   },
   {
@@ -271,6 +976,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.1666666666666666,
+      "silhouette": -0.1250000000000001,
+      "borderline": true,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Ursulo Galván",
+        "rank": 1,
+        "similarity": 0.7554399082157954
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 2,
+        "similarity": 0.6952142779518786
+      },
+      {
+        "name": "Actopan",
+        "rank": 3,
+        "similarity": 0.688339823307894
+      }
     ]
   },
   {
@@ -281,6 +1027,39 @@
     "themes": [
       "nature",
       "culture_history"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 7,
+      "medoid": "Chinameca",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Chinameca",
+        "Jáltipan",
+        "Las Choapas",
+        "Soteapan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Jesús Carranza",
+        "rank": 1,
+        "similarity": 0.7821515944801939
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7508355133947577
+      },
+      {
+        "name": "Texistepec",
+        "rank": 3,
+        "similarity": 0.7458677038070738
+      }
     ]
   },
   {
@@ -292,6 +1071,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.8288299583617726
+      },
+      {
+        "name": "Atzalan",
+        "rank": 2,
+        "similarity": 0.7879056781657049
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.7663375372626504
+      }
     ]
   },
   {
@@ -303,6 +1119,37 @@
       "nature",
       "culture_history",
       "urban_services"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 9,
+      "medoid": "Coatzacoalcos",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 2,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Coatzacoalcos",
+        "Minatitlán"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Coatzacoalcos",
+        "rank": 1,
+        "similarity": 0.8417622812309735
+      },
+      {
+        "name": "Xalapa",
+        "rank": 2,
+        "similarity": 0.748581033526728
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 3,
+        "similarity": 0.6934400990373175
+      }
     ]
   },
   {
@@ -315,6 +1162,40 @@
       "culture_history",
       "archaeology",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 3,
+      "medoid": "Atzalan",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.7692307692307692,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Atzalan",
+        "Castillo de Teayo",
+        "Misantla",
+        "Papantla",
+        "Vega de Alatorre"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.8991828265849157
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 2,
+        "similarity": 0.8224978356770589
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.8153736325566557
+      }
     ]
   },
   {
@@ -326,6 +1207,38 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 8,
+      "medoid": "Coatepec",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Coatepec",
+        "Naolinco",
+        "Zozocolco de Hidalgo"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Papantla",
+        "rank": 1,
+        "similarity": 0.746032971915366
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 2,
+        "similarity": 0.7201345422467597
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.710330075266862
+      }
     ]
   },
   {
@@ -338,6 +1251,39 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 6,
+      "medoid": "Cazones de Herrera",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Cazones de Herrera",
+        "Nautla",
+        "Tamiahua",
+        "Tecolutla"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.7676770353213601
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 2,
+        "similarity": 0.746989392529745
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7037598962297854
+      }
     ]
   },
   {
@@ -351,6 +1297,39 @@
       "adventure",
       "gastronomy_coffee",
       "urban_services"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 10,
+      "medoid": "Coscomatepec",
+      "distance_to_medoid": 0.1666666666666666,
+      "silhouette": 0.6666666666666666,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Coscomatepec",
+        "Córdoba",
+        "Orizaba",
+        "Xico"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Xalapa",
+        "rank": 1,
+        "similarity": 0.7913313898785588
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 2,
+        "similarity": 0.6978787724262513
+      },
+      {
+        "name": "Veracruz",
+        "rank": 3,
+        "similarity": 0.6719080910648432
+      }
     ]
   },
   {
@@ -363,7 +1342,25 @@
       "culture_history",
       "archaeology",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 3,
+      "medoid": "Atzalan",
+      "distance_to_medoid": 0.2,
+      "silhouette": 1.3877787807814454e-16,
+      "borderline": true,
+      "size": 5,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Atzalan",
+        "Castillo de Teayo",
+        "Misantla",
+        "Papantla",
+        "Vega de Alatorre"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Perote",
@@ -375,6 +1372,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.7283357033148536
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 2,
+        "similarity": 0.7153638539048288
+      },
+      {
+        "name": "Actopan",
+        "rank": 3,
+        "similarity": 0.7022893358304482
+      }
     ]
   },
   {
@@ -387,6 +1425,40 @@
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 4,
+      "medoid": "Boca del Río",
+      "distance_to_medoid": 0.2,
+      "silhouette": -0.1176470588235293,
+      "borderline": true,
+      "size": 5,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Alvarado",
+        "Boca del Río",
+        "Poza Rica de Hidalgo",
+        "Tuxpan",
+        "Veracruz"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Boca del Río",
+        "rank": 1,
+        "similarity": 0.8251970848214276
+      },
+      {
+        "name": "Xalapa",
+        "rank": 2,
+        "similarity": 0.759378012236744
+      },
+      {
+        "name": "Veracruz",
+        "rank": 3,
+        "similarity": 0.7541898368576776
+      }
     ]
   },
   {
@@ -397,6 +1469,37 @@
     "themes": [
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 12,
+      "medoid": "Puente Nacional",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 2,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Puente Nacional",
+        "Tlacotalpan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Carrillo Puerto",
+        "rank": 1,
+        "similarity": 0.7626673011238683
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7562523165368004
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 3,
+        "similarity": 0.7355300071241633
+      }
     ]
   },
   {
@@ -408,6 +1511,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.8194229337991571
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 2,
+        "similarity": 0.778572399672233
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7668474735451205
+      }
     ]
   },
   {
@@ -420,6 +1560,47 @@
       "nature",
       "culture_history",
       "adventure"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.3333333333333333,
+      "silhouette": 0.0454545454545452,
+      "borderline": true,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Ursulo Galván",
+        "rank": 1,
+        "similarity": 0.6767535335435326
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 2,
+        "similarity": 0.6749570776193721
+      },
+      {
+        "name": "Xalapa",
+        "rank": 3,
+        "similarity": 0.6476538303365622
+      }
     ]
   },
   {
@@ -432,6 +1613,38 @@
       "culture_history",
       "archaeology",
       "adventure"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 11,
+      "medoid": "Jesús Carranza",
+      "distance_to_medoid": 0.2,
+      "silhouette": 0.4139534883720931,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Jesús Carranza",
+        "Santiago Tuxtla",
+        "Texistepec"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Actopan",
+        "rank": 1,
+        "similarity": 0.8106423253193631
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.8037858781193026
+      },
+      {
+        "name": "Jesús Carranza",
+        "rank": 3,
+        "similarity": 0.7776659472229325
+      }
     ]
   },
   {
@@ -442,6 +1655,39 @@
     "themes": [
       "nature",
       "culture_history"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 7,
+      "medoid": "Chinameca",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Chinameca",
+        "Jáltipan",
+        "Las Choapas",
+        "Soteapan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Texistepec",
+        "rank": 1,
+        "similarity": 0.7768623420822558
+      },
+      {
+        "name": "Jesús Carranza",
+        "rank": 2,
+        "similarity": 0.7695558114043085
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 3,
+        "similarity": 0.7089717764959003
+      }
     ]
   },
   {
@@ -454,6 +1700,39 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 6,
+      "medoid": "Cazones de Herrera",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Cazones de Herrera",
+        "Nautla",
+        "Tamiahua",
+        "Tecolutla"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.6603028506877333
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.652132803185004
+      },
+      {
+        "name": "Jesús Carranza",
+        "rank": 3,
+        "similarity": 0.6292455573199662
+      }
     ]
   },
   {
@@ -466,6 +1745,39 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 6,
+      "medoid": "Cazones de Herrera",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Cazones de Herrera",
+        "Nautla",
+        "Tamiahua",
+        "Tecolutla"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.6893375912700523
+      },
+      {
+        "name": "Boca del Río",
+        "rank": 2,
+        "similarity": 0.6633195311651452
+      },
+      {
+        "name": "Coatzacoalcos",
+        "rank": 3,
+        "similarity": 0.648657796069822
+      }
     ]
   },
   {
@@ -477,6 +1789,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.848743652105587
+      },
+      {
+        "name": "Castillo de Teayo",
+        "rank": 2,
+        "similarity": 0.7976662894854977
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7796154040143723
+      }
     ]
   },
   {
@@ -488,7 +1837,23 @@
       "nature",
       "culture_history",
       "archaeology"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 11,
+      "medoid": "Jesús Carranza",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.5833333333333333,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Olmeca",
+      "members": [
+        "Jesús Carranza",
+        "Santiago Tuxtla",
+        "Texistepec"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Tlacotalpan",
@@ -498,6 +1863,37 @@
     "themes": [
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 12,
+      "medoid": "Puente Nacional",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 2,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Puente Nacional",
+        "Tlacotalpan"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Actopan",
+        "rank": 1,
+        "similarity": 0.7008347471540044
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.6813360175782872
+      },
+      {
+        "name": "Carrillo Puerto",
+        "rank": 3,
+        "similarity": 0.6589437677062482
+      }
     ]
   },
   {
@@ -509,6 +1905,43 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.8571428571428571,
+      "borderline": false,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.8144486058359698
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7621747655812304
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7469908245667469
+      }
     ]
   },
   {
@@ -521,6 +1954,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Vega de Alatorre",
+        "rank": 1,
+        "similarity": 0.7425176595497589
+      },
+      {
+        "name": "Actopan",
+        "rank": 2,
+        "similarity": 0.7366208594363355
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 3,
+        "similarity": 0.6923475947114448
+      }
     ]
   },
   {
@@ -534,6 +2008,40 @@
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 4,
+      "medoid": "Boca del Río",
+      "distance_to_medoid": 0.1666666666666666,
+      "silhouette": -0.3333333333333333,
+      "borderline": true,
+      "size": 5,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Alvarado",
+        "Boca del Río",
+        "Poza Rica de Hidalgo",
+        "Tuxpan",
+        "Veracruz"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Boca del Río",
+        "rank": 1,
+        "similarity": 0.8362803569369083
+      },
+      {
+        "name": "Xalapa",
+        "rank": 2,
+        "similarity": 0.7690334825203997
+      },
+      {
+        "name": "Veracruz",
+        "rank": 3,
+        "similarity": 0.7516394957331486
+      }
     ]
   },
   {
@@ -547,7 +2055,23 @@
       "archaeology",
       "adventure",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 2,
+      "medoid": "Actopan",
+      "distance_to_medoid": 0.1666666666666666,
+      "silhouette": 0.4166666666666666,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Actopan",
+        "Carrillo Puerto",
+        "Ursulo Galván"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Vega de Alatorre",
@@ -559,7 +2083,25 @@
       "culture_history",
       "archaeology",
       "gastronomy_coffee"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 3,
+      "medoid": "Atzalan",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.7692307692307692,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Totonacapan",
+      "members": [
+        "Atzalan",
+        "Castillo de Teayo",
+        "Misantla",
+        "Papantla",
+        "Vega de Alatorre"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Veracruz",
@@ -571,7 +2113,25 @@
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 4,
+      "medoid": "Boca del Río",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.575,
+      "borderline": false,
+      "size": 5,
+      "dominant_region": "Primeros Pasos de Cortés",
+      "members": [
+        "Alvarado",
+        "Boca del Río",
+        "Poza Rica de Hidalgo",
+        "Tuxpan",
+        "Veracruz"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Xalapa",
@@ -583,7 +2143,28 @@
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
-    ]
+    ],
+    "model_role": "Observed anchor / training evidence",
+    "cluster": {
+      "id": 1,
+      "medoid": "Acajete",
+      "distance_to_medoid": 0.2,
+      "silhouette": 1.3877787807814454e-16,
+      "borderline": true,
+      "size": 8,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Acajete",
+        "Emiliano Zapata",
+        "Jilotepec",
+        "Las Vigas de Ramírez",
+        "Pánuco",
+        "Tempoal",
+        "Tlalnelhuayocan",
+        "Xalapa"
+      ]
+    },
+    "structural_analogues": []
   },
   {
     "name": "Xico",
@@ -595,6 +2176,39 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 10,
+      "medoid": "Coscomatepec",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.4444444444444446,
+      "borderline": false,
+      "size": 4,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Coscomatepec",
+        "Córdoba",
+        "Orizaba",
+        "Xico"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Papantla",
+        "rank": 1,
+        "similarity": 0.7266192547126605
+      },
+      {
+        "name": "Actopan",
+        "rank": 2,
+        "similarity": 0.6956388457868119
+      },
+      {
+        "name": "Ursulo Galván",
+        "rank": 3,
+        "similarity": 0.6491249074394307
+      }
     ]
   },
   {
@@ -607,6 +2221,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7901513236238927
+      },
+      {
+        "name": "Atzalan",
+        "rank": 2,
+        "similarity": 0.7657073745615987
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 3,
+        "similarity": 0.7367322628541317
+      }
     ]
   },
   {
@@ -619,6 +2274,47 @@
       "culture_history",
       "adventure",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 5,
+      "medoid": "Calcahualco",
+      "distance_to_medoid": 0.0,
+      "silhouette": 0.6503496503496504,
+      "borderline": false,
+      "size": 12,
+      "dominant_region": "Altas Montañas",
+      "members": [
+        "Calcahualco",
+        "Catemaco",
+        "Cuitláhuac",
+        "Fortín",
+        "Huatusco",
+        "Jalcomulco",
+        "La Antigua",
+        "Perote",
+        "San Andrés Tuxtla",
+        "Tlapacoyan",
+        "Yanga",
+        "Zongolica"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7816270665652341
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7598029077429144
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.7504059658996969
+      }
     ]
   },
   {
@@ -630,6 +2326,38 @@
       "nature",
       "culture_history",
       "gastronomy_coffee"
+    ],
+    "model_role": "Undermeasured analog target",
+    "cluster": {
+      "id": 8,
+      "medoid": "Coatepec",
+      "distance_to_medoid": 0.0,
+      "silhouette": 1.0,
+      "borderline": false,
+      "size": 3,
+      "dominant_region": "Cultura y Aventura",
+      "members": [
+        "Coatepec",
+        "Naolinco",
+        "Zozocolco de Hidalgo"
+      ]
+    },
+    "structural_analogues": [
+      {
+        "name": "Castillo de Teayo",
+        "rank": 1,
+        "similarity": 0.7244752047150899
+      },
+      {
+        "name": "Vega de Alatorre",
+        "rank": 2,
+        "similarity": 0.7117634744662327
+      },
+      {
+        "name": "Atzalan",
+        "rank": 3,
+        "similarity": 0.6723802846530673
+      }
     ]
   }
 ]
