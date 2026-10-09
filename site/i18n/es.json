@@ -1,32 +1,20 @@
 {
     "title": "Inteligencia Turística de Veracruz",
     "subtitle": "Exploración de destinos turísticos de Veracruz basada en datos",
-
     "nav_overview": "Resumen",
     "nav_destinations": "Destinos",
     "nav_methods": "Datos y métodos",
-
     "language_label": "Idioma:",
-
     "overview_title": "Resumen",
-
     "overview_text": "Este proyecto combina datos turísticos, económicos y de destinos para analizar oportunidades turísticas en Veracruz.",
-
     "destinations_title": "Explorador de destinos",
-
     "destinations_text": "Explora características turísticas, grupos de similitud local, referentes estructurales y otros resultados analíticos.",
-
     "search_placeholder": "Buscar destinos...",
-
     "all_themes": "Todos los temas",
-    "all_clusters": "Todos los clústeres",
-
+    "all_clusters": "Todas las experiencias",
     "cluster": "Clúster",
-
     "pueblo_magico": "Pueblo Mágico",
-
     "no_results": "Ningún destino coincide con los filtros seleccionados.",
-
     "theme_beach_coast": "Playa y costa",
     "theme_nature": "Naturaleza",
     "theme_culture_history": "Cultura e historia",
@@ -35,28 +23,19 @@
     "theme_gastronomy_coffee": "Gastronomía y café",
     "theme_wellness_spiritual": "Bienestar y espiritualidad",
     "theme_urban_services": "Servicios urbanos",
-
     "tourism_profile": "Perfil turístico",
-
     "local_similarity_group": "Grupo de similitud local",
-
     "representative_destination": "Destino representativo",
     "group_size": "Destinos en el grupo",
     "distance_to_medoid": "Distancia al representante",
     "silhouette": "Silueta",
     "borderline": "Asignación limítrofe",
-
     "cluster_members": "Destinos de este grupo",
-
-    "cluster_note": "Los clústeres representan similitud en el carácter turístico. No implican una ruta geográfica ni un itinerario de viaje.",
-
+    "cluster_note": "Los nombres son descripciones editoriales de similitud turística; no son itinerarios verificados, clasificaciones de popularidad ni pruebas de baja afluencia.",
     "structural_analogues": "Referentes estructurales en Veracruz",
-
     "structural_note": "Estas comparaciones son únicamente referentes estructurales. La similitud no constituye evidencia de demanda ni viabilidad de una ruta.",
-
     "no_structural_analogues": "Actualmente no se genera una comparación con referentes estructurales para este destino.",
-
     "methods_title": "Datos y métodos",
-
-    "methods_text": "Esta sección explica los conjuntos de datos, el flujo analítico, la agrupación, los pronósticos y otros métodos utilizados en el proyecto."
+    "methods_text": "Esta sección explica los conjuntos de datos, el flujo analítico, la agrupación, los pronósticos y otros métodos utilizados en el proyecto.",
+    "cluster_reference": "ID del grupo analítico"
 }

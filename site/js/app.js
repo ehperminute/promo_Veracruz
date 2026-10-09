@@ -75,6 +75,17 @@ function translate(key) {
 
 
 
+function clusterName(destination) {
+    return destination.cluster.name?.[currentLanguage] ||
+        `${translate("cluster")} ${destination.cluster.id}`;
+}
+
+
+function clusterDescription(destination) {
+    return destination.cluster.description?.[currentLanguage] || "";
+}
+
+
 function updateStaticText() {
 
     document
@@ -230,8 +241,8 @@ function populateClusterFilter() {
             String(cluster);
 
 
-        option.textContent =
-            `${translate("cluster")} ${cluster}`;
+        const example = destinations.find(d => d.cluster.id === cluster);
+        option.textContent = example ? clusterName(example) : `${translate("cluster")} ${cluster}`;
 
 
         clusterFilter.appendChild(
@@ -464,10 +475,11 @@ function openDestination(
 
             <p class="cluster-large">
 
-                ${translate("cluster")}
-                ${destination.cluster.id}
+                ${clusterName(destination)}
 
             </p>
+            <p class="cluster-description">${clusterDescription(destination)}</p>
+            <p class="method-note">${translate("cluster_reference")}: ${destination.cluster.id}</p>
 
 
             <div class="detail-stats">
@@ -759,8 +771,7 @@ function renderDestinations() {
 
                     <span class="cluster-badge">
 
-                        ${translate("cluster")}
-                        ${destination.cluster.id}
+                        ${clusterName(destination)}
 
                     </span>
 
@@ -830,7 +841,7 @@ async function loadDestinations() {
 
     const response =
         await fetch(
-            "data/destinations.json?v=4"
+            "data/destinations.json?v=5"
         );
 
 
@@ -856,7 +867,7 @@ async function loadLanguage(
 
     const response =
         await fetch(
-            `i18n/${language}.json?v=4`
+            `i18n/${language}.json?v=5`
         );
 
 

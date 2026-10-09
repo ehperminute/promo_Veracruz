@@ -1,30 +1,20 @@
 {
     "title": "Veracruz Tourism Intelligence",
     "subtitle": "Data-driven exploration of tourism destinations in Veracruz",
-
     "nav_overview": "Overview",
     "nav_destinations": "Destinations",
     "nav_methods": "Data & Methods",
-
     "language_label": "Language:",
-
     "overview_title": "Overview",
     "overview_text": "This project combines tourism, economic and destination data to analyze tourism opportunities in Veracruz.",
-
     "destinations_title": "Destination Explorer",
     "destinations_text": "Explore tourism characteristics, local similarity groups, structural analogues and other analytical results.",
-
     "search_placeholder": "Search destinations...",
-
     "all_themes": "All themes",
-    "all_clusters": "All clusters",
-
+    "all_clusters": "All experiences",
     "cluster": "Cluster",
-
     "pueblo_magico": "Pueblo Mágico",
-
     "no_results": "No destinations match the selected filters.",
-
     "theme_beach_coast": "Beach & coast",
     "theme_nature": "Nature",
     "theme_culture_history": "Culture & history",
@@ -33,28 +23,19 @@
     "theme_gastronomy_coffee": "Gastronomy & coffee",
     "theme_wellness_spiritual": "Wellness & spiritual",
     "theme_urban_services": "Urban services",
-
     "tourism_profile": "Tourism profile",
-
     "local_similarity_group": "Local similarity group",
-
     "representative_destination": "Representative destination",
     "group_size": "Destinations in group",
     "distance_to_medoid": "Distance to representative",
     "silhouette": "Silhouette",
     "borderline": "Borderline assignment",
-
     "cluster_members": "Destinations in this group",
-
-    "cluster_note": "Clusters represent similarity in tourism character. They do not imply a geographic route or travel itinerary.",
-
+    "cluster_note": "Experience-group names are editorial descriptions of tourism-character similarity—not verified itineraries, popularity rankings, or evidence of low crowding.",
     "structural_analogues": "Structural analogues in Veracruz",
-
     "structural_note": "These comparisons are structural analogues only. Similarity does not constitute demand evidence or route feasibility.",
-
     "no_structural_analogues": "No structural-anchor comparison is currently produced for this destination.",
-
     "methods_title": "Data & Methods",
-
-    "methods_text": "This section explains the datasets, analytical pipeline, clustering, forecasting and other methods used in the project."
+    "methods_text": "This section explains the datasets, analytical pipeline, clustering, forecasting and other methods used in the project.",
+    "cluster_reference": "Analytical group ID"
 }

@@ -6,8 +6,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 
-DESTINATIONS_FILE = (
-    ROOT / "data" / "processed" / "destination_master.csv"
+S4_PROFILES_FILE = (
+    ROOT / "data" / "interim" / "destination_profiles_s4.csv"
 )
 
 MEMBERSHIP_FILE = (
@@ -49,6 +49,10 @@ OUTPUT_FILE = (
     / "destinations.json"
 )
 
+LABELS_FILE = (
+    ROOT / "data" / "reference" / "cluster_display_labels.csv"
+)
+
 
 THEME_COLUMNS = {
     "theme_beach_coast": "beach_coast",
@@ -76,7 +80,7 @@ def split_members(value):
 def main():
 
     destinations_df = pd.read_csv(
-        DESTINATIONS_FILE
+        S4_PROFILES_FILE
     )
 
     membership_df = pd.read_csv(
@@ -94,6 +98,25 @@ def main():
     similarity_df = pd.read_csv(
         SIMILARITY_FILE
     )
+
+    labels_df = pd.read_csv(LABELS_FILE, dtype={"cluster": int})
+    required_clusters = set(membership_df["cluster"].astype(int))
+    labeled_clusters = set(labels_df["cluster"].astype(int))
+    if not labels_df["cluster"].is_unique or required_clusters != labeled_clusters:
+        raise ValueError("Marketing group labels must uniquely cover all active clusters")
+
+    labels_lookup = labels_df.set_index("cluster").to_dict("index")
+    for _, member in membership_df.iterrows():
+        group_id = int(member["cluster"])
+        if labels_lookup[group_id]["expected_medoid"] != member["cluster_medoid"]:
+            raise ValueError(
+                f"Cluster {group_id} changed representative destination; review its public label"
+            )
+
+    if not destinations_df["destination"].is_unique:
+        raise ValueError("S4 destination profiles contain duplicate destinations")
+    if set(destinations_df["destination"]) != set(membership_df["destination"]):
+        raise ValueError("S4 profiles and cluster membership have different destinations")
 
 
     membership_lookup = (
@@ -176,6 +199,14 @@ def main():
             cluster_id
         ]
 
+        group_label = labels_lookup[cluster_id]
+        name = {lang: str(group_label[f"name_{lang}"]) for lang in ("en", "es", "ja")}
+        description = {
+            lang: str(group_label[f"description_{lang}"]) for lang in ("en", "es", "ja")
+        }
+        if any(not value.strip() or value == "nan" for value in (*name.values(), *description.values())):
+            raise ValueError(f"Missing translated label for cluster {cluster_id}")
+
 
         municipality_code = str(
             int(row["clave_municipio"])
@@ -210,6 +241,12 @@ def main():
 
                 "id":
                     cluster_id,
+
+                "name":
+                    name,
+
+                "description":
+                    description,
 
                 "medoid":
                     membership[
@@ -289,7 +326,7 @@ def main():
 
 
     print(
-        f"Exported {len(output)} destinations"
+        f"Exported {len(output)} destinations from refined S4 profiles"
     )
 
     print(

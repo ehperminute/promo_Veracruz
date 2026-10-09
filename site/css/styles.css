@@ -234,7 +234,7 @@ section {
 /* CLUSTER */
 
 .cluster-badge {
-    white-space: nowrap;
+    white-space: normal;
 
     padding: 5px 8px;
 
@@ -245,6 +245,9 @@ section {
     font-size: 12px;
 
     font-weight: bold;
+    line-height: 1.35;
+    text-align: center;
+    max-width: 190px;
 }
 
 
@@ -517,3 +520,7 @@ section {
     }
 
 }
+
+/* A public-facing cluster name may be longer than a numeric ID. */
+.card-heading h3 { flex: 1 1 130px; }
+.cluster-description { margin: 0 0 10px; color: #52606d; line-height: 1.5; }
