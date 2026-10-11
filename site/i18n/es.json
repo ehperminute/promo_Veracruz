@@ -96,5 +96,13 @@
   "lab_missing": "No hay datos para la demostración.",
   "more_in_experience": "Otros lugares de esta experiencia",
   "groups_not_routes": "Estos lugares comparten características turísticas; no constituyen automáticamente una ruta recomendada.",
-  "example_places": "Ejemplos"
+  "example_places": "Ejemplos",
+  "adventure_specific_title": "Actividades documentadas para explorar",
+  "adventure_availability_note": "Una fuente describe estas actividades. No se ha verificado el acceso, los operadores ni la disponibilidad actual de reservas.",
+  "adventure_source": "Fuente",
+  "photo_by": "Foto:",
+  "photo_not_available": "Fotografía todavía no verificada",
+  "reviewed_attractions_title": "Atractivos documentados",
+  "attraction_source": "Fuente oficial",
+  "attraction_evidence_note": "Estos atractivos aparecen en descripciones turísticas oficiales. No se ha comprobado el acceso ni la operación actual."
 }

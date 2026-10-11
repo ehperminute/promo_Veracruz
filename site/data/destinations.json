@@ -9,9 +9,46 @@
       "culture_history",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [
+      {
+        "id": "ATTR-0090",
+        "name": "Horno histórico de pan",
+        "description_es": "La ficha describe un horno de pan de antigüedad aproximada de tres siglos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=1"
+      },
+      {
+        "id": "ATTR-0091",
+        "name": "Iglesia de La Joya",
+        "description_es": "La ficha enumera una iglesia histórica en la localidad de La Joya.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=1"
+      },
+      {
+        "id": "ATTR-0092",
+        "name": "Iglesia de Acajete",
+        "description_es": "La ficha incluye la iglesia local entre los monumentos históricos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=1"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -55,12 +92,53 @@
     "themes": [
       "culture_history",
       "archaeology",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "culture_history",
+      "archaeology",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-001",
+        "activity": "Rafting",
+        "place": "Río Actopan",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-002",
+        "activity": "Kayak de aguas planas",
+        "place": "Actopan (manglares/aguas planas)",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-003",
+        "activity": "Rápel",
+        "place": "Villa Rica",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 2,
+      "name": {
+        "en": "Adventures Through History",
+        "es": "Aventuras del Pasado",
+        "ja": "歴史を探る冒険"
+      },
+      "description": {
+        "en": "Archaeological and historical heritage, with adventure activities in some destinations.",
+        "es": "Patrimonio arqueológico e histórico, con experiencias de aventura en parte del grupo.",
+        "ja": "考古・歴史遺産を中心に、一部の観光地では冒険体験も楽しめます。"
+      },
       "medoid": "Actopan",
       "distance_to_medoid": 0.0,
       "silhouette": 0.4999999999999999,
@@ -83,11 +161,73 @@
     "themes": [
       "beach_coast",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-004",
+        "activity": "Esnórquel",
+        "place": "Costa de Alvarado",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0171",
+        "name": "Iglesia de San Cristóbal",
+        "description_es": "La ficha enumera la iglesia histórica de San Cristóbal.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=11"
+      },
+      {
+        "id": "ATTR-0172",
+        "name": "Laguna de Alvarado",
+        "description_es": "La ficha describe navegación en la laguna y vegetación de manglar.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=11"
+      },
+      {
+        "id": "ATTR-0173",
+        "name": "Casa de Cultura Narciso Serradel Sevilla",
+        "description_es": "La ficha identifica la Casa de Cultura Narciso Serradel Sevilla.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=11"
+      },
+      {
+        "id": "ATTR-0174",
+        "name": "Arroz a la tumbada",
+        "description_es": "La ficha presenta arroz a la tumbada como platillo local.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=11"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_puerto_de_Alvarado.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:El_puerto_de_Alvarado.jpg",
+      "author": "Koffermejia",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Alvarado harbor",
+        "es": "Puerto de Alvarado",
+        "ja": "アルバラド港"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 4,
+      "name": {
+        "en": "Cities & Living Coast",
+        "es": "Ciudades y Costa Viva",
+        "ja": "街と活気ある海岸"
+      },
+      "description": {
+        "en": "Culture and gastronomy, with a coastal character in most destinations.",
+        "es": "Experiencias culturales y gastronómicas; la mayoría también tiene carácter costero.",
+        "ja": "文化と食が中心で、多くの観光地には海辺の魅力もあります。"
+      },
       "medoid": "Boca del Río",
       "distance_to_medoid": 0.2,
       "silhouette": -0.2941176470588235,
@@ -131,9 +271,41 @@
       "archaeology",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [
+      {
+        "id": "ATTR-0195",
+        "name": "Torre Solitaria de Atzalan",
+        "description_es": "La ficha municipal incluye la Torre Solitaria entre los recursos publicados.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=23"
+      },
+      {
+        "id": "ATTR-0196",
+        "name": "Templo histórico de Atzalan",
+        "description_es": "La ficha describe un templo y su historia durante el periodo colonial.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=23"
+      }
+    ],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 3,
+      "name": {
+        "en": "Archaeological Treasures",
+        "es": "Tesoros Arqueológicos",
+        "ja": "考古遺産の宝庫"
+      },
+      "description": {
+        "en": "Archaeology, nature and food traditions shared by these destinations.",
+        "es": "Arqueología, naturaleza y tradiciones gastronómicas compartidas.",
+        "ja": "考古遺産、自然、食文化を共通の魅力とする観光地。"
+      },
       "medoid": "Atzalan",
       "distance_to_medoid": 0.0,
       "silhouette": 0.7692307692307692,
@@ -159,11 +331,74 @@
       "beach_coast",
       "culture_history",
       "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "culture_history",
+      "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-BOCA",
+        "activity": "Kayak y paddle surf",
+        "place": "Costa de Oro",
+        "source": "Operador turístico; operación actual sin comprobar",
+        "source_url": "https://www.monkeyfish.com.mx/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0175",
+        "name": "Parroquia de Santa Ana",
+        "description_es": "La ficha describe la parroquia histórica de Santa Ana.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=28"
+      },
+      {
+        "id": "ATTR-0176",
+        "name": "World Trade Center Veracruz",
+        "description_es": "La ficha incluye el centro de convenciones WTC en sus recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=28"
+      },
+      {
+        "id": "ATTR-0177",
+        "name": "Museo Buque Cañonero C-07 Guanajuato",
+        "description_es": "La ficha incluye el museo buque cañonero en su listado de recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=28"
+      },
+      {
+        "id": "ATTR-0178",
+        "name": "Foro Boca",
+        "description_es": "La ficha incluye Foro Boca entre sus atractivos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=28"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Municipal_de_Boca_del_R%C3%ADo%2C_VER..jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Palacio_Municipal_de_Boca_del_R%C3%ADo%2C_VER..jpg",
+      "author": "Monica.leon18",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Boca del Río municipal palace",
+        "es": "Palacio Municipal de Boca del Río",
+        "ja": "ボカ・デル・リオ市庁舎"
+      }
+    },
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 4,
+      "name": {
+        "en": "Cities & Living Coast",
+        "es": "Ciudades y Costa Viva",
+        "ja": "街と活気ある海岸"
+      },
+      "description": {
+        "en": "Culture and gastronomy, with a coastal character in most destinations.",
+        "es": "Experiencias culturales y gastronómicas; la mayoría también tiene carácter costero.",
+        "ja": "文化と食が中心で、多くの観光地には海辺の魅力もあります。"
+      },
       "medoid": "Boca del Río",
       "distance_to_medoid": 0.0,
       "silhouette": 0.575,
@@ -188,12 +423,30 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -236,14 +489,34 @@
   {
     "name": "Carrillo Puerto",
     "municipality_code": "30031",
-    "region": "Por verificar",
+    "region": "Altas Montañas",
     "pueblo_magico": false,
     "themes": [
-      "archaeology"
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
     ],
+    "model_themes": [
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 2,
+      "name": {
+        "en": "Adventures Through History",
+        "es": "Aventuras del Pasado",
+        "ja": "歴史を探る冒険"
+      },
+      "description": {
+        "en": "Archaeological and historical heritage, with adventure activities in some destinations.",
+        "es": "Patrimonio arqueológico e histórico, con experiencias de aventura en parte del grupo.",
+        "ja": "考古・歴史遺産を中心に、一部の観光地では冒険体験も楽しめます。"
+      },
       "medoid": "Actopan",
       "distance_to_medoid": 0.2,
       "silhouette": -0.1,
@@ -269,9 +542,41 @@
       "archaeology",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [
+      {
+        "id": "ATTR-0197",
+        "name": "Pirámide de Castillo de Teayo",
+        "description_es": "La ficha describe la pirámide en la plaza principal del poblado.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=157"
+      },
+      {
+        "id": "ATTR-0198",
+        "name": "Museo de Castillo de Teayo",
+        "description_es": "La ficha registra un museo con piezas arqueológicas del sitio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=157"
+      }
+    ],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 3,
+      "name": {
+        "en": "Archaeological Treasures",
+        "es": "Tesoros Arqueológicos",
+        "ja": "考古遺産の宝庫"
+      },
+      "description": {
+        "en": "Archaeology, nature and food traditions shared by these destinations.",
+        "es": "Arqueología, naturaleza y tradiciones gastronómicas compartidas.",
+        "ja": "考古遺産、自然、食文化を共通の魅力とする観光地。"
+      },
       "medoid": "Atzalan",
       "distance_to_medoid": 0.0,
       "silhouette": 0.7692307692307692,
@@ -296,12 +601,106 @@
     "themes": [
       "nature",
       "culture_history",
+      "wellness_spiritual",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "wellness_spiritual"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-007",
+        "activity": "Cañonismo y descensos a rápel",
+        "place": "Cañón Los Tejones",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "AV-008",
+        "activity": "Rápel en cascada",
+        "place": "Cascada Arcoíris",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "NV-024",
+        "activity": "Senderismo en Cascada El Marinero",
+        "place": "Cascada El Marinero, Catemaco",
+        "source": "Cascada El Marinero (ficha)",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0093",
+        "name": "Laguna de Catemaco",
+        "description_es": "La ficha describe el lago y sus islas como elementos turísticos del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0094",
+        "name": "Reserva Ecológica Nanciyaga",
+        "description_es": "Se describen recorridos de observación de flora y actividades de temazcal en Nanciyaga.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0095",
+        "name": "Laguna de Sontecomapan",
+        "description_es": "La ficha ofrece información sobre recorridos en lancha y manglares en Sontecomapan.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0096",
+        "name": "Playa Hicacal",
+        "description_es": "Hicacal aparece entre las playas municipales mencionadas en la ficha oficial.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0097",
+        "name": "Playa Escondida",
+        "description_es": "Playa Escondida aparece entre las playas de Catemaco mencionadas en la ficha oficial.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0098",
+        "name": "Playa Monte Pío",
+        "description_es": "Monte Pío aparece entre las playas municipales enumeradas en la ficha.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      },
+      {
+        "id": "ATTR-0099",
+        "name": "Gastronomía lacustre: tegogolos y topotes",
+        "description_es": "La ficha describe preparaciones regionales con tegogolos y topotes del lago.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=32"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lago_de_Catemaco%2C_Veracruz_07.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lago_de_Catemaco%2C_Veracruz_07.jpg",
+      "author": "Isaacvp",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Lake Catemaco",
+        "es": "Lago de Catemaco",
+        "ja": "カテマコ湖"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.3333333333333333,
       "silhouette": 0.145021645021645,
@@ -350,11 +749,65 @@
       "beach_coast",
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-005",
+        "activity": "Buceo",
+        "place": "Barra de Cazones / arrecife",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+      },
+      {
+        "id": "AV-006",
+        "activity": "Rápel",
+        "place": "El Farallón",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0179",
+        "name": "Playa Boquitas",
+        "description_es": "La ficha menciona playa Boquitas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=33"
+      },
+      {
+        "id": "ATTR-0180",
+        "name": "Playa Sur",
+        "description_es": "La ficha enumera Playa Sur.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=33"
+      },
+      {
+        "id": "ATTR-0181",
+        "name": "Paseos en lancha por manglares de Cazones",
+        "description_es": "La ficha describe paseos por manglares desde la ribera.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=33"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 6,
+      "name": {
+        "en": "Coasts & Wild Nature",
+        "es": "Playas y Naturaleza Viva",
+        "ja": "海岸と豊かな自然"
+      },
+      "description": {
+        "en": "Coastal landscapes, nature, local culture and food traditions.",
+        "es": "Costas, naturaleza, cultura local y gastronomía.",
+        "ja": "海辺の景色、自然、地域文化、食の魅力。"
+      },
       "medoid": "Cazones de Herrera",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -395,9 +848,26 @@
       "nature",
       "culture_history"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 7,
+      "name": {
+        "en": "Nature & Heritage",
+        "es": "Naturaleza con Raíces",
+        "ja": "自然と地域の歴史"
+      },
+      "description": {
+        "en": "Nature and cultural heritage without assumptions about visitor numbers.",
+        "es": "Naturaleza e historia cultural, sin atribuir demanda turística no medida.",
+        "ja": "自然と地域の歴史・文化に注目したグループ。"
+      },
       "medoid": "Chinameca",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -437,11 +907,85 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-009",
+        "activity": "Cañonismo",
+        "place": "Coatepec (sin ubicación fina)",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0100",
+        "name": "Parroquia de San Jerónimo",
+        "description_es": "El portal enumera el templo de San Jerónimo entre los inmuebles históricos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      },
+      {
+        "id": "ATTR-0101",
+        "name": "Casa Museo de María Enriqueta",
+        "description_es": "La ficha menciona un museo instalado en la casa de María Enriqueta.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      },
+      {
+        "id": "ATTR-0102",
+        "name": "Cascada Bola de Oro",
+        "description_es": "La ficha oficial incluye un apartado de Cascada Bola de Oro.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      },
+      {
+        "id": "ATTR-0103",
+        "name": "Cascada La Granada",
+        "description_es": "La ficha oficial incluye un apartado de Cascada La Granada.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      },
+      {
+        "id": "ATTR-0104",
+        "name": "Ex Hacienda La Orduña",
+        "description_es": "La ficha oficial incluye la Ex Hacienda La Orduña entre sus recursos enlazados.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      },
+      {
+        "id": "ATTR-0105",
+        "name": "Museo de la Orquídea",
+        "description_es": "La ficha oficial enumera el Museo de la Orquídea.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=38"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CoatepecCentro.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CoatepecCentro.jpg",
+      "author": "Jose Francisco Del Valle Mojica",
+      "license": "CC BY 2.0",
+      "caption": {
+        "en": "Coatepec town center",
+        "es": "Vista del centro de Coatepec",
+        "ja": "コアテペック中心部"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 8,
+      "name": {
+        "en": "Flavorful Pueblos Mágicos",
+        "es": "Pueblos Mágicos con Sabor",
+        "ja": "食文化が魅力のプエブロ・マヒコ"
+      },
+      "description": {
+        "en": "Pueblos Mágicos sharing nature, culture and culinary traditions.",
+        "es": "Pueblos Mágicos que comparten naturaleza, cultura y gastronomía.",
+        "ja": "自然、文化、食を共通の魅力とするプエブロ・マヒコ。"
+      },
       "medoid": "Coatepec",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -480,11 +1024,74 @@
     "themes": [
       "nature",
       "culture_history",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-003",
+        "activity": "Kayak en laguna y manglar",
+        "place": "Las Barrillas / Laguna del Ostión",
+        "source": "Visita Las Barrillas (ficha oficial)",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "NV-004",
+        "activity": "Paddle surf",
+        "place": "Escolleras, Coatzacoalcos",
+        "source": "Diario del Istmo 2024",
+        "source_url": "https://diariodelistmo.com/coatzacoalcos/Asi-puedes-practicar-Kayak-Paddle-y-snorckell-en-las-Escolleras-de-Coatzacoalcos-20240521-0047.html"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0182",
+        "name": "Las Barrillas",
+        "description_es": "La ficha enumera Las Barrillas como lugar para pesca y natación.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=39"
+      },
+      {
+        "id": "ATTR-0183",
+        "name": "Río Coatzacoalcos",
+        "description_es": "La ficha describe oportunidades de actividades acuáticas en el río.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=39"
+      },
+      {
+        "id": "ATTR-0184",
+        "name": "Paseo de las Escolleras",
+        "description_es": "La ficha incluye el paseo de las escolleras entre sus recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=39"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coatzacoalcos%2C_Mexico.JPG?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coatzacoalcos%2C_Mexico.JPG",
+      "author": "Xicoamax",
+      "license": "CC BY-SA 3.0",
+      "caption": {
+        "en": "Coatzacoalcos waterfront",
+        "es": "Malecón de Coatzacoalcos",
+        "ja": "コアツァコアルコスの海岸通り"
+      }
+    },
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 9,
+      "name": {
+        "en": "Southern City Escapes",
+        "es": "Ciudades del Sur",
+        "ja": "南部の都市めぐり"
+      },
+      "description": {
+        "en": "Two southern urban centers with services and cultural heritage.",
+        "es": "Dos centros urbanos del sur con servicios y patrimonio cultural.",
+        "ja": "都市サービスと文化的な魅力を持つ州南部の二都市。"
+      },
       "medoid": "Coatzacoalcos",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -506,12 +1113,58 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-010",
+        "activity": "Ciclismo de montaña",
+        "place": "Coscomatepec",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0165",
+        "name": "Parque Nacional en el entorno del Pico de Orizaba",
+        "description_es": "La ficha presenta un parque nacional al norte del Pico de Orizaba.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=47"
+      },
+      {
+        "id": "ATTR-0166",
+        "name": "Capilla de San Diego",
+        "description_es": "La ficha incluye la capilla histórica de San Diego.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=47"
+      },
+      {
+        "id": "ATTR-0167",
+        "name": "Gastronomía de tlatonile y moles",
+        "description_es": "La ficha menciona tlatonile y moles como platillos típicos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=47"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 10,
+      "name": {
+        "en": "Magical Highlands",
+        "es": "Montañas Mágicas",
+        "ja": "魅惑の高原と山々"
+      },
+      "description": {
+        "en": "Pueblos Mágicos combining nature, adventure, culture and cuisine.",
+        "es": "Pueblos Mágicos unidos por naturaleza, aventura, cultura y gastronomía.",
+        "ja": "自然、冒険、文化、食を組み合わせたプエブロ・マヒコ。"
+      },
       "medoid": "Coscomatepec",
       "distance_to_medoid": 0.0,
       "silhouette": 0.4444444444444446,
@@ -551,12 +1204,30 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -604,13 +1275,83 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-005",
+        "activity": "Senderismo en Peñas de Gallego",
+        "place": "Peñas de Gallego / Camino Rancho Limón",
+        "source": "Turismo de Córdoba, recorridos turísticos",
+        "source_url": "https://turismo.cordoba.gob.mx/"
+      },
+      {
+        "id": "NV-006",
+        "activity": "Senderismo al Mirador Azul Cielo",
+        "place": "Cervantes y Lozada",
+        "source": "Turismo de Córdoba, recorridos turísticos",
+        "source_url": "https://turismo.cordoba.gob.mx/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0161",
+        "name": "Parque 21 de Mayo",
+        "description_es": "La ficha enumera la plaza de armas en Parque 21 de Mayo.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=44"
+      },
+      {
+        "id": "ATTR-0162",
+        "name": "Casa de los Condes de Ceballos",
+        "description_es": "La ficha identifica la casa histórica donde se firmaron los Tratados de Córdoba.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=44"
+      },
+      {
+        "id": "ATTR-0163",
+        "name": "Parque Ecológico Paso Coyol",
+        "description_es": "La ficha menciona Paso Coyol como parque ecológico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=44"
+      },
+      {
+        "id": "ATTR-0164",
+        "name": "Alameda Rafael Murillo Vidal",
+        "description_es": "La ficha enumera la Alameda como parque ecológico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=44"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_C%C3%B3rdoba_Veracruz..jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Catedral_de_C%C3%B3rdoba_Veracruz..jpg",
+      "author": "Abigailm",
+      "license": "CC BY-SA 3.0",
+      "caption": {
+        "en": "Córdoba cathedral",
+        "es": "Catedral de Córdoba",
+        "ja": "コルドバ大聖堂"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 10,
+      "name": {
+        "en": "Magical Highlands",
+        "es": "Montañas Mágicas",
+        "ja": "魅惑の高原と山々"
+      },
+      "description": {
+        "en": "Pueblos Mágicos combining nature, adventure, culture and cuisine.",
+        "es": "Pueblos Mágicos unidos por naturaleza, aventura, cultura y gastronomía.",
+        "ja": "自然、冒険、文化、食を組み合わせたプエブロ・マヒコ。"
+      },
       "medoid": "Coscomatepec",
       "distance_to_medoid": 0.1666666666666666,
       "silhouette": 0.6666666666666666,
@@ -650,11 +1391,38 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-EZ",
+        "activity": "Rápel y senderismo",
+        "place": "Chavarrillo / UMA La Majahua",
+        "source": "Plan municipal 2022-2025; evidencia histórica, acceso actual no confirmado",
+        "source_url": "https://www.veracruz.gob.mx/finanzas/wp-content/uploads/sites/2/2022/PMD/PMD%20Emiliano%20Zapata.Veracruz.2022-2025.pdf"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -698,12 +1466,65 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-011",
+        "activity": "Vuelo tándem en parapente",
+        "place": "Fortín / Altas Montañas",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "NV-023",
+        "activity": "Senderismo en Finca Siete Lunas",
+        "place": "Finca Siete Lunas, Fortín",
+        "source": "Fortín Municipio de Flores (ficha)",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0199",
+        "name": "Puente histórico de San Miguel",
+        "description_es": "La ficha describe el puente colonial de San Miguel sobre la barranca del Metlac.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=68"
+      },
+      {
+        "id": "ATTR-0200",
+        "name": "Invernaderos y floricultura de Fortín",
+        "description_es": "La ficha cita invernaderos y producción ornamental como atractivo local.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=68"
+      },
+      {
+        "id": "ATTR-0201",
+        "name": "Museo del Bonsái Tatsu Goro",
+        "description_es": "La ficha oficial incluye el Museo del Bonsái Tatsu Goro entre sus recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=68"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -751,12 +1572,39 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-HUA",
+        "activity": "Caminatas y ciclismo recreativo",
+        "place": "Alrededores de Huatusco",
+        "source": "Ficha Visit México; sin ruta precisa",
+        "source_url": "https://visitmexico.com/es/destino/17941/eshuatuscoenhuatusco"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -804,12 +1652,70 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-012",
+        "activity": "Rafting",
+        "place": "Río de los Pescados",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-013",
+        "activity": "Rápel",
+        "place": "Jalcomulco",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-014",
+        "activity": "Tirolesa",
+        "place": "Jalcomulco",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "NV-019",
+        "activity": "Ciclismo de montaña",
+        "place": "Jalcomulco",
+        "source": "SECTUR Aventura extrema 2025",
+        "source_url": "https://www.veracruz.gob.mx/turismo/2025/02/28/aventura-extrema-en-veracruz-los-mejores-destinos-para-deportes-al-aire-libre/"
+      }
+    ],
+    "attractions": [],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rio_Salvaje_Jalcomulco.jpeg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rio_Salvaje_Jalcomulco.jpeg",
+      "author": "Kiubu",
+      "license": "Public Domain",
+      "caption": {
+        "en": "Rafting in Jalcomulco",
+        "es": "Rafting en Jalcomulco",
+        "ja": "ハルコムルコでのラフティング"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -859,9 +1765,40 @@
       "culture_history",
       "archaeology"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology"
+    ],
+    "adventure_activities": [],
+    "attractions": [
+      {
+        "id": "ATTR-0202",
+        "name": "Zona arqueológica de Las Limas",
+        "description_es": "La ficha describe vestigios arqueológicos en la congregación de Las Limas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=91"
+      },
+      {
+        "id": "ATTR-0203",
+        "name": "Feria de Santa Lucrecia",
+        "description_es": "La ficha describe una feria dedicada a Santa Lucrecia.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=91"
+      }
+    ],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 11,
+      "name": {
+        "en": "Ancient Roots of the South",
+        "es": "Huellas Ancestrales del Sur",
+        "ja": "南部に残る古代の足跡"
+      },
+      "description": {
+        "en": "Archaeological heritage and cultural history in southern landscapes.",
+        "es": "Patrimonio arqueológico e historia cultural en paisajes del sur.",
+        "ja": "州南部の景観の中に残る考古遺産と文化の歴史。"
+      },
       "medoid": "Jesús Carranza",
       "distance_to_medoid": 0.0,
       "silhouette": 0.5833333333333333,
@@ -884,11 +1821,45 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-007",
+        "activity": "Rápel en Cascada El Salto",
+        "place": "Cascada El Salto, municipio de Jilotepec",
+        "source": "Programa Municipal Desarrollo Urbano de Jilotepec",
+        "source_url": "https://www.veracruz.gob.mx/desarrollosocial/wp-content/uploads/sites/12/2025/08/Gac2024-440-Viernes-01-TOMO-III-Ext-PMDU-JILOTEPEC.pdf"
+      },
+      {
+        "id": "NV-008",
+        "activity": "Senderismo en Cerro del Cuajilote",
+        "place": "Cerro del Cuajilote, Jilotepec",
+        "source": "Programa Municipal Desarrollo Urbano de Jilotepec",
+        "source_url": "https://www.veracruz.gob.mx/desarrollosocial/wp-content/uploads/sites/12/2025/08/Gac2024-440-Viernes-01-TOMO-III-Ext-PMDU-JILOTEPEC.pdf"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -933,9 +1904,26 @@
       "nature",
       "culture_history"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 7,
+      "name": {
+        "en": "Nature & Heritage",
+        "es": "Naturaleza con Raíces",
+        "ja": "自然と地域の歴史"
+      },
+      "description": {
+        "en": "Nature and cultural heritage without assumptions about visitor numbers.",
+        "es": "Naturaleza e historia cultural, sin atribuir demanda turística no medida.",
+        "ja": "自然と地域の歴史・文化に注目したグループ。"
+      },
       "medoid": "Chinameca",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -973,13 +1961,75 @@
     "region": "Primeros Pasos de Cortés",
     "pueblo_magico": false,
     "themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
       "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-015",
+        "activity": "Kayak",
+        "place": "Río Huitzilapan",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+      },
+      {
+        "id": "AV-016",
+        "activity": "Rafting",
+        "place": "Río Huitzilapan",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0157",
+        "name": "Ermita del Rosario",
+        "description_es": "La ficha describe la Ermita del Rosario como inmueble histórico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=16"
+      },
+      {
+        "id": "ATTR-0158",
+        "name": "Playa de Chalchihuecan",
+        "description_es": "La ficha describe la playa de Chalchihuecan.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=16"
+      },
+      {
+        "id": "ATTR-0159",
+        "name": "Casa de Hernán Cortés",
+        "description_es": "La ficha enumera las ruinas vinculadas históricamente a Cortés.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=16"
+      },
+      {
+        "id": "ATTR-0160",
+        "name": "Árbol La Ceiba",
+        "description_es": "La ficha menciona el árbol histórico La Ceiba.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=16"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.1666666666666666,
       "silhouette": -0.1250000000000001,
@@ -1028,9 +2078,26 @@
       "nature",
       "culture_history"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 7,
+      "name": {
+        "en": "Nature & Heritage",
+        "es": "Naturaleza con Raíces",
+        "ja": "自然と地域の歴史"
+      },
+      "description": {
+        "en": "Nature and cultural heritage without assumptions about visitor numbers.",
+        "es": "Naturaleza e historia cultural, sin atribuir demanda turística no medida.",
+        "ja": "自然と地域の歴史・文化に注目したグループ。"
+      },
       "medoid": "Chinameca",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1070,11 +2137,45 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-021",
+        "activity": "Ciclismo en Volcancillo",
+        "place": "Volcancillo, Las Vigas de Ramírez",
+        "source": "Destino Las Vigas, Veracruz.mx",
+        "source_url": "https://veracruz.mx/destino.php?Municipio=132"
+      },
+      {
+        "id": "NV-022",
+        "activity": "Alpinismo en Volcancillo",
+        "place": "Volcancillo, Las Vigas de Ramírez",
+        "source": "Destino Las Vigas, Veracruz.mx",
+        "source_url": "https://veracruz.mx/destino.php?Municipio=132"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -1120,9 +2221,27 @@
       "culture_history",
       "urban_services"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "urban_services"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 9,
+      "name": {
+        "en": "Southern City Escapes",
+        "es": "Ciudades del Sur",
+        "ja": "南部の都市めぐり"
+      },
+      "description": {
+        "en": "Two southern urban centers with services and cultural heritage.",
+        "es": "Dos centros urbanos del sur con servicios y patrimonio cultural.",
+        "ja": "都市サービスと文化的な魅力を持つ州南部の二都市。"
+      },
       "medoid": "Coatzacoalcos",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1161,11 +2280,49 @@
       "nature",
       "culture_history",
       "archaeology",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-MIS",
+        "activity": "Senderismo hacia Cerro de las Tres Cruces",
+        "place": "Misantla",
+        "source": "Ruta comunitaria; no prueba sendero autorizado ni oferta comercial",
+        "source_url": "https://es.wikiloc.com/rutas/senderismo/mexico/veracruz-llave/misantla"
+      }
+    ],
+    "attractions": [],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Misantla.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Misantla.jpg",
+      "author": "Airvillanueva",
+      "license": "CC BY-SA 3.0",
+      "caption": {
+        "en": "Church of the Assumption, Misantla",
+        "es": "Parroquia de la Asunción, Misantla",
+        "ja": "ミサントラの聖母被昇天教会"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 3,
+      "name": {
+        "en": "Archaeological Treasures",
+        "es": "Tesoros Arqueológicos",
+        "ja": "考古遺産の宝庫"
+      },
+      "description": {
+        "en": "Archaeology, nature and food traditions shared by these destinations.",
+        "es": "Arqueología, naturaleza y tradiciones gastronómicas compartidas.",
+        "ja": "考古遺産、自然、食文化を共通の魅力とする観光地。"
+      },
       "medoid": "Atzalan",
       "distance_to_medoid": 0.0,
       "silhouette": 0.7692307692307692,
@@ -1206,11 +2363,67 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-009",
+        "activity": "Senderismo interpretativo",
+        "place": "Reserva Ejidal Benito Juárez, Naolinco",
+        "source": "Naolinco, Artículos de Piel y su Gastronomía (ficha)",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0154",
+        "name": "Cascada El Órgano",
+        "description_es": "La ficha describe una cascada llamada El Órgano y su mirador.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=112"
+      },
+      {
+        "id": "ATTR-0155",
+        "name": "Alfarería de San Miguel Aguasuelos",
+        "description_es": "La ficha sugiere visitar Aguasuelos por su cerámica artesanal.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=112"
+      },
+      {
+        "id": "ATTR-0156",
+        "name": "Gastronomía tradicional de Naolinco",
+        "description_es": "La ficha menciona el mole, dulces y embutidos locales.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=112"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Naolinco%2C_Veracruz_%2837755844814%29.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Naolinco%2C_Veracruz_%2837755844814%29.jpg",
+      "author": "Comisión Mexicana de Filmaciones",
+      "license": "CC BY-SA 2.0",
+      "caption": {
+        "en": "Naolinco, Veracruz",
+        "es": "Naolinco, Veracruz",
+        "ja": "ナオリンコ"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 8,
+      "name": {
+        "en": "Flavorful Pueblos Mágicos",
+        "es": "Pueblos Mágicos con Sabor",
+        "ja": "食文化が魅力のプエブロ・マヒコ"
+      },
+      "description": {
+        "en": "Pueblos Mágicos sharing nature, culture and culinary traditions.",
+        "es": "Pueblos Mágicos que comparten naturaleza, cultura y gastronomía.",
+        "ja": "自然、文化、食を共通の魅力とするプエブロ・マヒコ。"
+      },
       "medoid": "Coatepec",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1250,11 +2463,39 @@
       "beach_coast",
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-NAUT",
+        "activity": "Recorridos en bicicleta y deportes acuáticos (sin especificar)",
+        "place": "Nautla",
+        "source": "Ficha Visit México; actividad acuática no especificada",
+        "source_url": "https://visitmexico.com/cn/destino/18167/esnautla-ennautla"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 6,
+      "name": {
+        "en": "Coasts & Wild Nature",
+        "es": "Playas y Naturaleza Viva",
+        "ja": "海岸と豊かな自然"
+      },
+      "description": {
+        "en": "Coastal landscapes, nature, local culture and food traditions.",
+        "es": "Costas, naturaleza, cultura local y gastronomía.",
+        "ja": "海辺の景色、自然、地域文化、食の魅力。"
+      },
       "medoid": "Cazones de Herrera",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1294,13 +2535,82 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-ORI",
+        "activity": "Tirolesa y senderismo",
+        "place": "Cerro del Borrego",
+        "source": "Portal turístico; servicio y horarios actuales sin comprobar",
+        "source_url": "https://www.orizaba.travel/teleferico-y-ecoparque-cerro-del-borrego/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0123",
+        "name": "Cañón del Río Blanco",
+        "description_es": "La ficha describe el cañón y la vegetación en el entorno del río Blanco.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=118"
+      },
+      {
+        "id": "ATTR-0124",
+        "name": "Palacio de Hierro",
+        "description_es": "La ficha incluye un recurso sobre el Palacio de Hierro.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=118"
+      },
+      {
+        "id": "ATTR-0125",
+        "name": "Teleférico de Orizaba",
+        "description_es": "La ficha incluye un recurso de teleférico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=118"
+      },
+      {
+        "id": "ATTR-0126",
+        "name": "Museo de Arte del Estado de Veracruz",
+        "description_es": "La ficha describe las colecciones de arte en el antiguo edificio de los frailes felipenses.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=118"
+      },
+      {
+        "id": "ATTR-0127",
+        "name": "Eco Parque Cerro del Borrego",
+        "description_es": "La ficha enlaza el Eco Parque Cerro del Borrego.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=118"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Telef%C3%A9rico_Orizaba.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Telef%C3%A9rico_Orizaba.jpg",
+      "author": "Chivista",
+      "license": "CC0 1.0",
+      "caption": {
+        "en": "Orizaba cable car",
+        "es": "Teleférico de Orizaba",
+        "ja": "オリサバのロープウェイ"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 10,
+      "name": {
+        "en": "Magical Highlands",
+        "es": "Montañas Mágicas",
+        "ja": "魅惑の高原と山々"
+      },
+      "description": {
+        "en": "Pueblos Mágicos combining nature, adventure, culture and cuisine.",
+        "es": "Pueblos Mágicos unidos por naturaleza, aventura, cultura y gastronomía.",
+        "ja": "自然、冒険、文化、食を組み合わせたプエブロ・マヒコ。"
+      },
       "medoid": "Coscomatepec",
       "distance_to_medoid": 0.1666666666666666,
       "silhouette": 0.6666666666666666,
@@ -1341,11 +2651,80 @@
       "nature",
       "culture_history",
       "archaeology",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-010",
+        "activity": "Senderismo de medicina tradicional",
+        "place": "Papantla, rutas de medicina tradicional",
+        "source": "Senderismo y Medicina Tradicional (ficha)",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0112",
+        "name": "Zona arqueológica El Tajín",
+        "description_es": "La ficha enumera El Tajín como zona arqueológica del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=124"
+      },
+      {
+        "id": "ATTR-0113",
+        "name": "Zona arqueológica Cuyuxquihui",
+        "description_es": "La ficha presenta Cuyuxquihui como sitio arqueológico con vestigios y bosque.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=124"
+      },
+      {
+        "id": "ATTR-0114",
+        "name": "Costa de Tenixtepec",
+        "description_es": "La ficha menciona playa en la bocana de Tenixtepec.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=124"
+      },
+      {
+        "id": "ATTR-0115",
+        "name": "Monumento al Volador",
+        "description_es": "La ficha incluye un enlace al Monumento al Volador.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=124"
+      },
+      {
+        "id": "ATTR-0116",
+        "name": "Museo Teodoro Cano",
+        "description_es": "La ficha incluye un enlace al Museo Teodoro Cano.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=124"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pir%C3%A1mide_de_los_Nichos_en_El_Tajin.JPG?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pir%C3%A1mide_de_los_Nichos_en_El_Tajin.JPG",
+      "author": "Pedro Montes Campos",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Pyramid of the Niches, El Tajín",
+        "es": "Pirámide de los Nichos, El Tajín",
+        "ja": "エル・タヒンの壁龕のピラミッド"
+      }
+    },
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 3,
+      "name": {
+        "en": "Archaeological Treasures",
+        "es": "Tesoros Arqueológicos",
+        "ja": "考古遺産の宝庫"
+      },
+      "description": {
+        "en": "Archaeology, nature and food traditions shared by these destinations.",
+        "es": "Arqueología, naturaleza y tradiciones gastronómicas compartidas.",
+        "ja": "考古遺産、自然、食文化を共通の魅力とする観光地。"
+      },
       "medoid": "Atzalan",
       "distance_to_medoid": 0.2,
       "silhouette": 1.3877787807814454e-16,
@@ -1370,12 +2749,94 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-017",
+        "activity": "Ciclismo de descenso",
+        "place": "Perote / laderas",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-018",
+        "activity": "Senderismo de media montaña",
+        "place": "Perote",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "NV-018",
+        "activity": "Cañonismo y rápel",
+        "place": "Cañón La Murcielaguera, Perote",
+        "source": "SECTUR Aventura extrema 2025",
+        "source_url": "https://www.veracruz.gob.mx/turismo/2025/02/28/aventura-extrema-en-veracruz-los-mejores-destinos-para-deportes-al-aire-libre/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0149",
+        "name": "Parque Nacional Cofre de Perote",
+        "description_es": "La ficha describe el parque nacional y sus paisajes de alta montaña.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=128"
+      },
+      {
+        "id": "ATTR-0150",
+        "name": "Ruinas prehispánicas de Pueblo Viejo",
+        "description_es": "La ficha enumera las ruinas de Pueblo Viejo.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=128"
+      },
+      {
+        "id": "ATTR-0151",
+        "name": "Parroquia de San Miguel Arcángel",
+        "description_es": "La ficha describe la ornamentación del templo de San Miguel.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=128"
+      },
+      {
+        "id": "ATTR-0152",
+        "name": "Ex Hacienda de Totalco",
+        "description_es": "La ficha incluye la antigua hacienda de Totalco entre sus recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=128"
+      },
+      {
+        "id": "ATTR-0153",
+        "name": "Centro Ecoturístico El Conejo",
+        "description_es": "La ficha incluye el Centro Ecoturístico El Conejo.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=128"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/00449_Fortaleza_de_San_Carlos_Perote%2C_Veracruz%2C_Mexico.JPG?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:00449_Fortaleza_de_San_Carlos_Perote%2C_Veracruz%2C_Mexico.JPG",
+      "author": "Idomi 06",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "San Carlos fortress",
+        "es": "Fortaleza de San Carlos",
+        "ja": "サン・カルロス要塞"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -1421,14 +2882,41 @@
     "region": "Totonacapan",
     "pueblo_magico": false,
     "themes": [
-      "nature",
       "culture_history",
       "gastronomy_coffee",
       "urban_services"
     ],
+    "model_themes": [
+      "culture_history",
+      "gastronomy_coffee",
+      "urban_services"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Centro_de_Poza_Rica%2C_Veracruz.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Centro_de_Poza_Rica%2C_Veracruz.jpg",
+      "author": "Omar Boussart",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Downtown Poza Rica",
+        "es": "Centro de Poza Rica",
+        "ja": "ポサ・リカ中心部"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 4,
+      "name": {
+        "en": "Cities & Living Coast",
+        "es": "Ciudades y Costa Viva",
+        "ja": "街と活気ある海岸"
+      },
+      "description": {
+        "en": "Culture and gastronomy, with a coastal character in most destinations.",
+        "es": "Experiencias culturales y gastronómicas; la mayoría también tiene carácter costero.",
+        "ja": "文化と食が中心で、多くの観光地には海辺の魅力もあります。"
+      },
       "medoid": "Boca del Río",
       "distance_to_medoid": 0.2,
       "silhouette": -0.1176470588235293,
@@ -1468,11 +2956,37 @@
     "pueblo_magico": false,
     "themes": [
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-011",
+        "activity": "Paseo en balsa recreativa",
+        "place": "Río junto al Hotel Puente Nacional",
+        "source": "Hotel Puente Nacional: actividades",
+        "source_url": "https://www.hotelpuentenacional.com/copia-de-instalaciones-y-actividades"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 12,
+      "name": {
+        "en": "A Taste of Tradition",
+        "es": "Tradiciones que se Saborean",
+        "ja": "伝統と郷土の味"
+      },
+      "description": {
+        "en": "History, culture and food traditions shared by two destinations.",
+        "es": "Historia, cultura y gastronomía de dos destinos veracruzanos.",
+        "ja": "二つの観光地に共通する歴史、文化、郷土料理。"
+      },
       "medoid": "Puente Nacional",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1510,11 +3024,38 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-012",
+        "activity": "Paseo a caballo",
+        "place": "Laguna de La Tortuga, municipio de Pánuco",
+        "source": "Destino Pánuco (turismo oficial)",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=123"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -1561,9 +3102,84 @@
       "culture_history",
       "adventure"
     ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "adventure"
+    ],
+    "adventure_activities": [
+      {
+        "id": "AV-019",
+        "activity": "Cañonismo",
+        "place": "San Andrés Tuxtla",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-020",
+        "activity": "Rápel en cascada",
+        "place": "Cascada El Tucán",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0144",
+        "name": "Laguna Encantada",
+        "description_es": "La ficha describe Laguna Encantada como atracción del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=141"
+      },
+      {
+        "id": "ATTR-0145",
+        "name": "Roca Partida",
+        "description_es": "La ficha enumera acantilados y zona de Roca Partida.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=141"
+      },
+      {
+        "id": "ATTR-0146",
+        "name": "Playa Arroyo de Lisa",
+        "description_es": "La ficha enumera Arroyo de Lisa entre las playas municipales.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=141"
+      },
+      {
+        "id": "ATTR-0147",
+        "name": "Museo Regional de San Andrés Tuxtla",
+        "description_es": "La ficha incluye el Museo Regional.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=141"
+      },
+      {
+        "id": "ATTR-0148",
+        "name": "Festival del Globo de Papel",
+        "description_es": "La ficha menciona festival dedicado a globos de papel.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=141"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salto_de_Eyipantla_waterfall.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Salto_de_Eyipantla_waterfall.jpg",
+      "author": "Marcel Hild",
+      "license": "Public Domain",
+      "caption": {
+        "en": "Eyipantla waterfall",
+        "es": "Salto de Eyipantla",
+        "ja": "エイパンツラの滝"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.3333333333333333,
       "silhouette": 0.0454545454545452,
@@ -1611,12 +3227,30 @@
     "themes": [
       "nature",
       "culture_history",
+      "archaeology"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "archaeology",
       "adventure"
     ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 11,
+      "name": {
+        "en": "Ancient Roots of the South",
+        "es": "Huellas Ancestrales del Sur",
+        "ja": "南部に残る古代の足跡"
+      },
+      "description": {
+        "en": "Archaeological heritage and cultural history in southern landscapes.",
+        "es": "Patrimonio arqueológico e historia cultural en paisajes del sur.",
+        "ja": "州南部の景観の中に残る考古遺産と文化の歴史。"
+      },
       "medoid": "Jesús Carranza",
       "distance_to_medoid": 0.2,
       "silhouette": 0.4139534883720931,
@@ -1654,11 +3288,51 @@
     "pueblo_magico": false,
     "themes": [
       "nature",
+      "culture_history",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
       "culture_history"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-021",
+        "activity": "Rápel en cascada",
+        "place": "Cascada Jem-Takxt",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "NV-016",
+        "activity": "Ciclismo de montaña",
+        "place": "Tsabats Nas, Soteapan",
+        "source": "SECTUR Encanto Olmeca 2025",
+        "source_url": "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+      },
+      {
+        "id": "NV-017",
+        "activity": "Senderismo interpretativo",
+        "place": "Tsabats Nas, Soteapan",
+        "source": "SECTUR Encanto Olmeca 2025",
+        "source_url": "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 7,
+      "name": {
+        "en": "Nature & Heritage",
+        "es": "Naturaleza con Raíces",
+        "ja": "自然と地域の歴史"
+      },
+      "description": {
+        "en": "Nature and cultural heritage without assumptions about visitor numbers.",
+        "es": "Naturaleza e historia cultural, sin atribuir demanda turística no medida.",
+        "ja": "自然と地域の歴史・文化に注目したグループ。"
+      },
       "medoid": "Chinameca",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1699,11 +3373,58 @@
       "beach_coast",
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-013",
+        "activity": "Paseo en kayak por manglares",
+        "place": "Laguna de Tamiahua",
+        "source": "Paseo en Lancha y Kayak por el Manglar",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0185",
+        "name": "Barra de Corazones",
+        "description_es": "La ficha describe Barra de Corazones como playa de arena fina.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=151"
+      },
+      {
+        "id": "ATTR-0186",
+        "name": "Ruinas de la Hacienda de San Sebastián",
+        "description_es": "La ficha enumera las ruinas históricas de la hacienda.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=151"
+      },
+      {
+        "id": "ATTR-0187",
+        "name": "Isla del Ídolo",
+        "description_es": "La ficha enumera la isla dentro de los recorridos por la laguna.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=151"
+      }
+    ],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 6,
+      "name": {
+        "en": "Coasts & Wild Nature",
+        "es": "Playas y Naturaleza Viva",
+        "ja": "海岸と豊かな自然"
+      },
+      "description": {
+        "en": "Coastal landscapes, nature, local culture and food traditions.",
+        "es": "Costas, naturaleza, cultura local y gastronomía.",
+        "ja": "海辺の景色、自然、地域文化、食の魅力。"
+      },
       "medoid": "Cazones de Herrera",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1744,11 +3465,68 @@
       "beach_coast",
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-TEC",
+        "activity": "Kayak y senderismo",
+        "place": "Ríos y esteros de Tecolutla",
+        "source": "Gobierno municipal; acceso actual sin comprobar",
+        "source_url": "https://tecolutla.gob.mx/2024/08/15/por-que-visitar-tecolutla-veracruz/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0188",
+        "name": "Las Ciénegas del Fuerte",
+        "description_es": "La ficha incluye Las Ciénegas del Fuerte entre sus recursos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=158"
+      },
+      {
+        "id": "ATTR-0189",
+        "name": "Museo Marino",
+        "description_es": "La ficha describe un museo con materiales marinos y fluviales.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=158"
+      },
+      {
+        "id": "ATTR-0190",
+        "name": "Parque Miguel Hidalgo",
+        "description_es": "La ficha incluye Parque Miguel Hidalgo como recurso local.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=158"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tecolutla_Beach.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tecolutla_Beach.jpg",
+      "author": "Ken Eckert",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Tecolutla beach",
+        "es": "Playa de Tecolutla",
+        "ja": "テコルトラのビーチ"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 6,
+      "name": {
+        "en": "Coasts & Wild Nature",
+        "es": "Playas y Naturaleza Viva",
+        "ja": "海岸と豊かな自然"
+      },
+      "description": {
+        "en": "Coastal landscapes, nature, local culture and food traditions.",
+        "es": "Costas, naturaleza, cultura local y gastronomía.",
+        "ja": "海辺の景色、自然、地域文化、食の魅力。"
+      },
       "medoid": "Cazones de Herrera",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1790,9 +3568,27 @@
       "culture_history",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -1838,9 +3634,27 @@
       "culture_history",
       "archaeology"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 11,
+      "name": {
+        "en": "Ancient Roots of the South",
+        "es": "Huellas Ancestrales del Sur",
+        "ja": "南部に残る古代の足跡"
+      },
+      "description": {
+        "en": "Archaeological heritage and cultural history in southern landscapes.",
+        "es": "Patrimonio arqueológico e historia cultural en paisajes del sur.",
+        "ja": "州南部の景観の中に残る考古遺産と文化の歴史。"
+      },
       "medoid": "Jesús Carranza",
       "distance_to_medoid": 0.0,
       "silhouette": 0.5833333333333333,
@@ -1864,9 +3678,67 @@
       "culture_history",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "culture_history",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [
+      {
+        "id": "ATTR-0128",
+        "name": "Parroquia de San Cristóbal",
+        "description_es": "La ficha incluye la Parroquia de San Cristóbal en sus atractivos enlazados.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=178"
+      },
+      {
+        "id": "ATTR-0129",
+        "name": "Santuario de Nuestra Señora de la Candelaria",
+        "description_es": "La ficha incluye el Santuario de la Virgen de la Candelaria.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=178"
+      },
+      {
+        "id": "ATTR-0130",
+        "name": "Teatro Netzahualcóyotl",
+        "description_es": "La ficha identifica el Teatro Netzahualcóyotl.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=178"
+      },
+      {
+        "id": "ATTR-0131",
+        "name": "Museo Salvador Ferrando",
+        "description_es": "La ficha incluye el Museo Salvador Ferrando.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=178"
+      },
+      {
+        "id": "ATTR-0132",
+        "name": "Paseos en lancha por el Papaloapan",
+        "description_es": "La ficha incluye recorridos en lancha por el río Papaloapan.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=178"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Centro_Tlacotalpan_Veracruz_02.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Centro_Tlacotalpan_Veracruz_02.jpg",
+      "author": "Lunita28mx",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Historic Tlacotalpan center",
+        "es": "Centro histórico de Tlacotalpan",
+        "ja": "トラコタルパン旧市街"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 12,
+      "name": {
+        "en": "A Taste of Tradition",
+        "es": "Tradiciones que se Saborean",
+        "ja": "伝統と郷土の味"
+      },
+      "description": {
+        "en": "History, culture and food traditions shared by two destinations.",
+        "es": "Historia, cultura y gastronomía de dos destinos veracruzanos.",
+        "ja": "二つの観光地に共通する歴史、文化、郷土料理。"
+      },
       "medoid": "Puente Nacional",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,
@@ -1906,9 +3778,27 @@
       "culture_history",
       "gastronomy_coffee"
     ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee"
+    ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.0,
       "silhouette": 0.8571428571428571,
@@ -1952,12 +3842,39 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-023",
+        "activity": "Rafting",
+        "place": "Río Filobobos",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -2007,11 +3924,81 @@
       "nature",
       "culture_history",
       "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-024",
+        "activity": "Buceo con sistema Hookah",
+        "place": "Zona arrecifal, Tuxpan",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0133",
+        "name": "Museo de la Amistad México-Cuba",
+        "description_es": "La ficha municipal menciona el Museo de la Amistad México-Cuba.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=189"
+      },
+      {
+        "id": "ATTR-0134",
+        "name": "Laguna de Tampamachoco",
+        "description_es": "La ficha incluye la Laguna de Tampamachoco.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=189"
+      },
+      {
+        "id": "ATTR-0135",
+        "name": "Río Tuxpan",
+        "description_es": "La ficha presenta el río como espacio para actividades acuáticas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=189"
+      },
+      {
+        "id": "ATTR-0136",
+        "name": "Catedral de Nuestra Señora de la Asunción",
+        "description_es": "La ficha incluye la catedral como recurso.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=189"
+      },
+      {
+        "id": "ATTR-0137",
+        "name": "Isla Lobos",
+        "description_es": "La ficha incluye Isla Lobos en sus atracciones enlazadas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=189"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuxpan.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tuxpan.jpg",
+      "author": "Josealberto Bigurra",
+      "license": "Public Domain",
+      "caption": {
+        "en": "Tuxpan river and town",
+        "es": "Río y ciudad de Tuxpan",
+        "ja": "トゥスパンの川と街"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 4,
+      "name": {
+        "en": "Cities & Living Coast",
+        "es": "Ciudades y Costa Viva",
+        "ja": "街と活気ある海岸"
+      },
+      "description": {
+        "en": "Culture and gastronomy, with a coastal character in most destinations.",
+        "es": "Experiencias culturales y gastronómicas; la mayoría también tiene carácter costero.",
+        "ja": "文化と食が中心で、多くの観光地には海辺の魅力もあります。"
+      },
       "medoid": "Boca del Río",
       "distance_to_medoid": 0.1666666666666666,
       "silhouette": -0.3333333333333333,
@@ -2053,12 +4040,54 @@
       "beach_coast",
       "culture_history",
       "archaeology",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "culture_history",
+      "archaeology",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-025",
+        "activity": "Sandboarding",
+        "place": "Dunas de Chachalacas",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "AV-026",
+        "activity": "Cuatrimotos",
+        "place": "Dunas de Chachalacas",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      },
+      {
+        "id": "NV-025",
+        "activity": "Parapente en Chachalacas",
+        "place": "Chachalacas, Úrsulo Galván",
+        "source": "SECTUR Ruta Primeros Pasos de Cortés 2025",
+        "source_url": "https://www.veracruz.gob.mx/turismo/2025/03/25/descubre-veracruz-a-traves-de-la-ruta-primeros-pasos-de-cortes-historia-aventura-y-naturaleza/"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 2,
+      "name": {
+        "en": "Adventures Through History",
+        "es": "Aventuras del Pasado",
+        "ja": "歴史を探る冒険"
+      },
+      "description": {
+        "en": "Archaeological and historical heritage, with adventure activities in some destinations.",
+        "es": "Patrimonio arqueológico e histórico, con experiencias de aventura en parte del grupo.",
+        "ja": "考古・歴史遺産を中心に、一部の観光地では冒険体験も楽しめます。"
+      },
       "medoid": "Actopan",
       "distance_to_medoid": 0.1666666666666666,
       "silhouette": 0.4166666666666666,
@@ -2082,11 +4111,64 @@
       "nature",
       "culture_history",
       "archaeology",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "archaeology",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "FOLLOW-VEGA",
+        "activity": "Senderismo guiado",
+        "place": "Santuario Playa Lechuguillas",
+        "source": "CONANP; acceso y guía actuales sin comprobar",
+        "source_url": "https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=201"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0191",
+        "name": "Museo de Las Higueras",
+        "description_es": "La ficha menciona el museo de Las Higueras.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=192"
+      },
+      {
+        "id": "ATTR-0192",
+        "name": "Playa Navarro",
+        "description_es": "La ficha incluye Playa Navarro en la costa del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=192"
+      },
+      {
+        "id": "ATTR-0193",
+        "name": "Reserva ecológica Santa Gertrudis",
+        "description_es": "La ficha incluye una reserva ecológica en Santa Gertrudis.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=192"
+      },
+      {
+        "id": "ATTR-0194",
+        "name": "Playa Lechuguillas",
+        "description_es": "La ficha enumera Lechuguillas entre las playas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=192"
+      }
+    ],
+    "photo": null,
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 3,
+      "name": {
+        "en": "Archaeological Treasures",
+        "es": "Tesoros Arqueológicos",
+        "ja": "考古遺産の宝庫"
+      },
+      "description": {
+        "en": "Archaeology, nature and food traditions shared by these destinations.",
+        "es": "Arqueología, naturaleza y tradiciones gastronómicas compartidas.",
+        "ja": "考古遺産、自然、食文化を共通の魅力とする観光地。"
+      },
       "medoid": "Atzalan",
       "distance_to_medoid": 0.0,
       "silhouette": 0.7692307692307692,
@@ -2112,11 +4194,86 @@
       "beach_coast",
       "culture_history",
       "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "beach_coast",
+      "culture_history",
+      "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-027",
+        "activity": "Kayak en mar",
+        "place": "Recorrido hacia Isla de Sacrificios",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0117",
+        "name": "Acuario de Veracruz",
+        "description_es": "La ficha enumera el acuario y su exhibición marina.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      },
+      {
+        "id": "ATTR-0118",
+        "name": "Los Portales de Veracruz",
+        "description_es": "La ficha identifica Los Portales como espacio de vida musical tradicional.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      },
+      {
+        "id": "ATTR-0119",
+        "name": "Baluarte de Santiago",
+        "description_es": "La ficha describe el Baluarte de Santiago como antiguo baluarte virreinal.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      },
+      {
+        "id": "ATTR-0120",
+        "name": "Parque Zamora",
+        "description_es": "La ficha sitúa en Parque Zamora actividades relacionadas con el danzón.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      },
+      {
+        "id": "ATTR-0121",
+        "name": "Playa Villa del Mar",
+        "description_es": "La ficha menciona Villa del Mar entre las playas y actividades del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      },
+      {
+        "id": "ATTR-0122",
+        "name": "Malecón de Veracruz",
+        "description_es": "La ficha menciona el malecón como espacio de paseo y actividad comercial.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=193"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malecon_Veracruz.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Malecon_Veracruz.jpg",
+      "author": "Koffermejia",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Veracruz waterfront",
+        "es": "Malecón de Veracruz",
+        "ja": "ベラクルスの海岸通り"
+      }
+    },
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 4,
+      "name": {
+        "en": "Cities & Living Coast",
+        "es": "Ciudades y Costa Viva",
+        "ja": "街と活気ある海岸"
+      },
+      "description": {
+        "en": "Culture and gastronomy, with a coastal character in most destinations.",
+        "es": "Experiencias culturales y gastronómicas; la mayoría también tiene carácter costero.",
+        "ja": "文化と食が中心で、多くの観光地には海辺の魅力もあります。"
+      },
       "medoid": "Boca del Río",
       "distance_to_medoid": 0.0,
       "silhouette": 0.575,
@@ -2142,11 +4299,86 @@
       "nature",
       "culture_history",
       "gastronomy_coffee",
+      "urban_services",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
+      "gastronomy_coffee",
       "urban_services"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-014",
+        "activity": "Senderismo por parque ecológico",
+        "place": "Macuiltépetl / El Haya",
+        "source": "SECTUR Xalapa ciudad de parques 2025",
+        "source_url": "https://www.veracruz.gob.mx/2025/08/29/recorre-xalapa-ciudad-de-parques-un-respiro-entre-la-urbanidad-y-la-naturaleza/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0138",
+        "name": "Museo de Antropología de Xalapa",
+        "description_es": "La ficha describe un museo con colecciones de culturas del estado.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      },
+      {
+        "id": "ATTR-0139",
+        "name": "Jardín Botánico",
+        "description_es": "La ficha menciona un jardín botánico dedicado a flora y fauna.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      },
+      {
+        "id": "ATTR-0140",
+        "name": "Paseo de Los Lagos",
+        "description_es": "La ficha identifica el paseo de lagos artificiales.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      },
+      {
+        "id": "ATTR-0141",
+        "name": "Parque Ecológico Macuiltépetl",
+        "description_es": "La ficha menciona el Macuiltépetl como parque ecológico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      },
+      {
+        "id": "ATTR-0142",
+        "name": "Jardín de las Esculturas",
+        "description_es": "La ficha describe un entorno de vegetación y esculturas.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      },
+      {
+        "id": "ATTR-0143",
+        "name": "Parque de los Tecajetes",
+        "description_es": "La ficha presenta Tecajetes entre los parques de la ciudad.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=87"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Calles_del_centro_de_Xalapa%2C_estado_de_Veracruz_26.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Calles_del_centro_de_Xalapa%2C_estado_de_Veracruz_26.jpg",
+      "author": "Correogsk",
+      "license": "CC BY-SA 3.0",
+      "caption": {
+        "en": "Downtown Xalapa",
+        "es": "Vista del centro de Xalapa",
+        "ja": "ハラパ中心部"
+      }
+    },
     "model_role": "Observed anchor / training evidence",
     "cluster": {
       "id": 1,
+      "name": {
+        "en": "Landscapes & Flavors",
+        "es": "Paisajes y Sabores",
+        "ja": "風景と郷土の味"
+      },
+      "description": {
+        "en": "Nature, culture and food traditions across several regions.",
+        "es": "Naturaleza, cultura y gastronomía en destinos de distintas regiones.",
+        "ja": "複数の地域に見られる自然、文化、郷土料理の魅力。"
+      },
       "medoid": "Acajete",
       "distance_to_medoid": 0.2,
       "silhouette": 1.3877787807814454e-16,
@@ -2174,12 +4406,93 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-028",
+        "activity": "Cañonismo",
+        "place": "Cañón de Micoxtla",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "AV-029",
+        "activity": "Senderismo",
+        "place": "Xico",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0106",
+        "name": "Cascada de Texolo",
+        "description_es": "La ficha describe la cascada de Texolo y su entorno de vegetación.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      },
+      {
+        "id": "ATTR-0107",
+        "name": "Parroquia de Santa María Magdalena",
+        "description_es": "La ficha describe la parroquia y su arquitectura histórica.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      },
+      {
+        "id": "ATTR-0108",
+        "name": "Museo del Danzante",
+        "description_es": "La ficha incluye el Museo del Danzante entre los museos del municipio.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      },
+      {
+        "id": "ATTR-0109",
+        "name": "Museo de Hoja de Maíz",
+        "description_es": "La ficha cita el Museo de Hoja de Maíz entre los museos.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      },
+      {
+        "id": "ATTR-0110",
+        "name": "Plaza de los Portales",
+        "description_es": "La ficha cita los portales como conjunto histórico.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      },
+      {
+        "id": "ATTR-0111",
+        "name": "Mole xiqueño",
+        "description_es": "La ficha incluye el mole xiqueño como especialidad gastronómica local.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=92"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cascada_texolo.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cascada_texolo.jpg",
+      "author": "Jonathan UG",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "Texolo waterfall",
+        "es": "Cascada de Texolo",
+        "ja": "テソロの滝"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 10,
+      "name": {
+        "en": "Magical Highlands",
+        "es": "Montañas Mágicas",
+        "ja": "魅惑の高原と山々"
+      },
+      "description": {
+        "en": "Pueblos Mágicos combining nature, adventure, culture and cuisine.",
+        "es": "Pueblos Mágicos unidos por naturaleza, aventura, cultura y gastronomía.",
+        "ja": "自然、冒険、文化、食を組み合わせたプエブロ・マヒコ。"
+      },
       "medoid": "Coscomatepec",
       "distance_to_medoid": 0.0,
       "silhouette": 0.4444444444444446,
@@ -2219,12 +4532,30 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -2272,12 +4603,75 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "adventure",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "AV-030",
+        "activity": "Paseo en kayak en caverna",
+        "place": "Nacimiento del Río Tonto",
+        "source": "Revisión previa; ver hecho_que_respalda",
+        "source_url": "https://www.veracruz.mx/productos.php"
+      },
+      {
+        "id": "NV-026",
+        "activity": "Espeleología y rápel",
+        "place": "Cavernas/sótanos de Zongolica",
+        "source": "SECTUR Regiones Turísticas",
+        "source_url": "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "ATTR-0168",
+        "name": "Puente natural El Boquerón",
+        "description_es": "La ficha describe el puente natural El Boquerón.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=201"
+      },
+      {
+        "id": "ATTR-0169",
+        "name": "Sótano de Popocatl",
+        "description_es": "La ficha menciona un sitio denominado Popocalt asociado con una cascada subterránea.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=201"
+      },
+      {
+        "id": "ATTR-0170",
+        "name": "Textiles tradicionales de Zongolica",
+        "description_es": "La ficha menciona tejidos de lana y otras artesanías regionales.",
+        "source_url": "https://www.veracruz.mx/destino.php?Municipio=201"
+      }
+    ],
+    "photo": {
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa_en_Zongolica%2C_Veracruz.jpg?width=960",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Casa_en_Zongolica%2C_Veracruz.jpg",
+      "author": "Isaacvp",
+      "license": "CC BY-SA 4.0",
+      "caption": {
+        "en": "House in Zongolica",
+        "es": "Casa tradicional de Zongolica",
+        "ja": "ソンゴリカの家"
+      }
+    },
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 5,
+      "name": {
+        "en": "Adventure in Nature",
+        "es": "Aventuras entre Paisajes",
+        "ja": "自然を楽しむ冒険"
+      },
+      "description": {
+        "en": "Nature and adventure connect destinations across different landscapes.",
+        "es": "Naturaleza y aventura como rasgos comunes, desde montañas hasta regiones selváticas.",
+        "ja": "山地から緑豊かな地域まで、自然と冒険を共通テーマとする観光地。"
+      },
       "medoid": "Calcahualco",
       "distance_to_medoid": 0.0,
       "silhouette": 0.6503496503496504,
@@ -2325,11 +4719,38 @@
     "themes": [
       "nature",
       "culture_history",
+      "gastronomy_coffee",
+      "adventure"
+    ],
+    "model_themes": [
+      "nature",
+      "culture_history",
       "gastronomy_coffee"
     ],
+    "adventure_activities": [
+      {
+        "id": "NV-015",
+        "activity": "Senderismo en senderos naturales",
+        "place": "Senderos naturales, municipio de Zozocolco",
+        "source": "Ayuntamiento Zozocolco: Turismo",
+        "source_url": "https://www.zozocolcodehidalgo.gob.mx/turismo"
+      }
+    ],
+    "attractions": [],
+    "photo": null,
     "model_role": "Undermeasured analog target",
     "cluster": {
       "id": 8,
+      "name": {
+        "en": "Flavorful Pueblos Mágicos",
+        "es": "Pueblos Mágicos con Sabor",
+        "ja": "食文化が魅力のプエブロ・マヒコ"
+      },
+      "description": {
+        "en": "Pueblos Mágicos sharing nature, culture and culinary traditions.",
+        "es": "Pueblos Mágicos que comparten naturaleza, cultura y gastronomía.",
+        "ja": "自然、文化、食を共通の魅力とするプエブロ・マヒコ。"
+      },
       "medoid": "Coatepec",
       "distance_to_medoid": 0.0,
       "silhouette": 1.0,

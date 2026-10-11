@@ -371,9 +371,11 @@ function explainClusterFeatures(destination) {
         return `<p class="method-note">${translate("representative_unavailable")}</p>`;
     }
 
-    const shared = destination.themes.filter(theme => representative.themes.includes(theme));
-    const destinationOnly = destination.themes.filter(theme => !representative.themes.includes(theme));
-    const representativeOnly = representative.themes.filter(theme => !destination.themes.includes(theme));
+    const a = destination.model_themes || destination.themes;
+    const b = representative.model_themes || representative.themes;
+    const shared = a.filter(theme => b.includes(theme));
+    const destinationOnly = a.filter(theme => !b.includes(theme));
+    const representativeOnly = b.filter(theme => !a.includes(theme));
     const describe = themes => themes.length
         ? themes.map(theme => translate(`theme_${theme}`)).join(", ")
         : translate("no_distinct_themes");
@@ -399,6 +401,56 @@ function explainClusterFeatures(destination) {
     `;
 }
 
+
+function renderAdventureActivities(destination) {
+    const list = Array.isArray(destination.adventure_activities)
+        ? destination.adventure_activities : [];
+    if (!list.length) return '';
+    // Use safe DOM escaping for source-controlled strings placed in markup.
+    const esc = value => String(value ?? '').replace(/[&<>"']/g,
+        c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+    const items = list.map(item => {
+        const link = /^https:\/\//.test(item.source_url)
+            ? `<a href="${esc(item.source_url)}" rel="noopener noreferrer" target="_blank">${translate('adventure_source')}</a>` : '';
+        return `<li class="adventure-activity-item"><strong>${esc(item.activity)}</strong>`
+            + (item.place ? ` — ${esc(item.place)}` : '')
+            + ` ${link}</li>`;
+    }).join('');
+    return `<section class="detail-section adventure-activities">`
+        + `<h3>${translate('adventure_specific_title')}</h3>`
+        + `<ul>${items}</ul><p class="method-note">${translate('adventure_availability_note')}</p></section>`;
+}
+
+
+// Photo provenance is included in site/data/destinations.json.
+// Broken external photo links are hidden; destination names remain visible.
+function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g,
+        c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
+}
+function photoBlock(destination, detail=false) {
+    const photo=destination.photo;
+    if (!photo || !photo.image_url) {
+        return detail ? `<div class="destination-photo-fallback">${translate('photo_not_available')}</div>` : '';
+    }
+    const caption=photo.caption?.[currentLanguage] || photo.caption?.es || destination.name;
+    const credit=detail
+        ? `<figcaption>${escapeHtml(caption)} · ${translate('photo_by')} ${escapeHtml(photo.author)} · ${escapeHtml(photo.license)} · <a href="${escapeHtml(photo.source_url)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></figcaption>`
+        : '';
+    return `<figure class="destination-photo ${detail ? 'destination-photo-detail' : 'destination-photo-card'}">`
+        + `<img loading="lazy" decoding="async" src="${escapeHtml(photo.image_url)}" alt="${escapeHtml(caption)}" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('photo-unavailable');this.remove();">`
+        + credit + `</figure>`;
+}
+function renderReviewedAttractions(destination) {
+    const list = Array.isArray(destination.attractions) ? destination.attractions : [];
+    if (!list.length) return '';
+    const items=list.map(x=>`<li><strong>${escapeHtml(x.name)}</strong>`
+        + (currentLanguage==='es' && x.description_es ? `<p>${escapeHtml(x.description_es)}</p>` : '')
+        + (String(x.source_url).startsWith('https://') ? ` · <a target="_blank" rel="noopener noreferrer" href="${escapeHtml(x.source_url)}">${translate('attraction_source')}</a>`:'')
+        + '</li>').join('');
+    return `<section class="detail-section reviewed-attractions"><h3>${translate('reviewed_attractions_title')}</h3>`
+        + `<ul>${items}</ul><p class="method-note">${translate('attraction_evidence_note')}</p></section>`;
+}
 
 function openDestination(
     destination
@@ -463,8 +515,9 @@ function openDestination(
 
     destinationDialog.innerHTML = `
         <button class="dialog-close" id="dialog-close" aria-label="Close">×</button>
+        ${photoBlock(destination, true)}
         <div class="detail-header">
-            <h2>${destination.name}</h2>
+            <h2>${escapeHtml(destination.name)}</h2>
             <p class="detail-region">${destination.region}</p>
             ${puebloMagico}
         </div>
@@ -472,6 +525,8 @@ function openDestination(
             <h3>${translate("tourism_profile")}</h3>
             <div class="theme-tags">${themes}</div>
         </div>
+        ${renderReviewedAttractions(destination)}
+        ${renderAdventureActivities(destination)}
         <div class="detail-section">
             <h3>${clusterName(destination)}</h3>
             <p class="cluster-description">${clusterDescription(destination)}</p>
@@ -555,12 +610,13 @@ function renderDestinations() {
         destinations.filter(
             destination => {
 
-                const matchesSearch =
-                    destination.name
-                        .toLowerCase()
-                        .includes(
-                            searchText
-                        );
+                const normalized = value => String(value ?? '').normalize('NFD')
+                    .replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                const indexText = [destination.name, destination.region,
+                    ...(destination.attractions || []).map(x=>x.name),
+                    ...(destination.adventure_activities || []).map(x=>x.activity)
+                ].join(' ');
+                const matchesSearch = normalized(indexText).includes(normalized(searchText));
 
 
                 const matchesTheme =
@@ -660,6 +716,7 @@ function renderDestinations() {
 
             card.innerHTML = `
 
+                ${photoBlock(destination)}
                 <div class="card-heading">
 
                     <h3>
@@ -738,7 +795,7 @@ async function loadDestinations() {
 
     const response =
         await fetch(
-            "data/destinations.json?v=7"
+            "data/destinations.json?v=8"
         );
 
 
@@ -764,7 +821,7 @@ async function loadLanguage(
 
     const response =
         await fetch(
-            `i18n/${language}.json?v=7`
+            `i18n/${language}.json?v=8`
         );
 
 
@@ -852,7 +909,8 @@ function renderExperienceGallery() {
 function explainPair(a,b) {
     let different = 0, comparable = 0;
     const rows = THEME_KEYS.map(key => {
-        const aa = a.themes.includes(key), bb = b.themes.includes(key);
+        const aa = (a.model_themes || a.themes).includes(key);
+        const bb = (b.model_themes || b.themes).includes(key);
         const considered = aa || bb;
         if (considered) { comparable += 1; if (aa !== bb) different += 1; }
         return {key, aa, bb, considered, different:aa !== bb};

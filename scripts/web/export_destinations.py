@@ -49,6 +49,11 @@ OUTPUT_FILE = (
     / "destinations.json"
 )
 
+ACTIVITY_EVIDENCE_FILE = ROOT / "data/evidence/s4_actividades_aventura_consolidadas.csv"
+ATTRACTIONS_FILE = ROOT / "data/evidence/s4_atractivos_fuentes_v2.csv"
+PHOTO_MANIFEST_FILE = ROOT / "data/reference/destination_photo_manifest.csv"
+FOLLOWUP_ACTIVITIES_FILE = ROOT / "data/evidence/s4_aventura_public_followup.csv"
+
 LABELS_FILE = (
     ROOT / "data" / "reference" / "cluster_display_labels.csv"
 )
@@ -98,6 +103,70 @@ def main():
     similarity_df = pd.read_csv(
         SIMILARITY_FILE
     )
+
+    if not ACTIVITY_EVIDENCE_FILE.exists():
+        raise FileNotFoundError(f"Missing adventure evidence: {ACTIVITY_EVIDENCE_FILE}")
+    adventure_df = pd.read_csv(ACTIVITY_EVIDENCE_FILE).fillna("")
+    adventure_df = adventure_df.loc[adventure_df["incluir_preview"].astype(int).eq(1)].copy()
+    if not adventure_df["id"].is_unique:
+        raise ValueError("Duplicate activity IDs")
+    # Only published/municipally attributed evidence becomes a public claim.
+    adventure_by_destination = {}
+    for _, activity in adventure_df.iterrows():
+        dest = str(activity["destino"])
+        adventure_by_destination.setdefault(dest, []).append({
+            "id": str(activity["id"]),
+            "activity": str(activity["actividad_concreta"]),
+            "place": str(activity["lugar_asociado"]),
+            "source": str(activity["titulo_fuente"]),
+            "source_url": str(activity["url_fuente"]),
+        })
+
+    # Post-pilot research is separately curated; historical events and proposals
+    # are NOT published as current experiences.
+    if not FOLLOWUP_ACTIVITIES_FILE.exists():
+        raise FileNotFoundError(f"Missing activity follow-up: {FOLLOWUP_ACTIVITIES_FILE}")
+    followup_df = pd.read_csv(FOLLOWUP_ACTIVITIES_FILE).fillna("")
+    if not followup_df["id"].is_unique:
+        raise ValueError("Duplicate follow-up evidence IDs")
+    for _, activity in followup_df.iterrows():
+        dest = str(activity["destino"])
+        adventure_by_destination.setdefault(dest, []).append({
+            "id": str(activity["id"]),
+            "activity": str(activity["actividad"]),
+            "place": str(activity["lugar"]),
+            "source": str(activity["nota_evidencia"]),
+            "source_url": str(activity["fuente_url"]),
+        })
+
+    if not ATTRACTIONS_FILE.exists():
+        raise FileNotFoundError(f"Missing reviewed attractions: {ATTRACTIONS_FILE}")
+    attractions_df = pd.read_csv(ATTRACTIONS_FILE).fillna("")
+    # Publish ONLY attraction text individually checked against official pages.
+    reviewed = attractions_df.loc[attractions_df["estado_cotejo_actual"].eq(
+        "TEXTO_RESPALDADO_EN_FUENTE_OFICIAL")].copy()
+    if not reviewed["id"].is_unique:
+        raise ValueError("Duplicate attraction evidence IDs")
+    attractions_by_destination = {}
+    for _, item in reviewed.iterrows():
+        name = str(item["destino"])
+        attractions_by_destination.setdefault(name, []).append({
+            "id": str(item["id"]),
+            "name": str(item["atractivo_concreto"]),
+            "description_es": str(item["dato_comprobable_parafraseado"]),
+            "source_url": str(item["url_fuente"]),
+        })
+
+    photos_df = pd.read_csv(PHOTO_MANIFEST_FILE).fillna("")
+    if not photos_df["destination"].is_unique:
+        raise ValueError("Duplicate photo destination")
+    photos_by_destination = photos_df.set_index("destination").to_dict("index")
+    # Only use verified Commons file pages as sources, never search-result thumbnails.
+    for destination, photo in photos_by_destination.items():
+        if not str(photo["file_page"]).startswith("https://commons.wikimedia.org/wiki/File:"):
+            raise ValueError(f"Unexpected image file page for {destination}")
+        if not str(photo["image_url"]).startswith("https://commons.wikimedia.org/wiki/Special:FilePath/"):
+            raise ValueError(f"Unexpected photo delivery URL for {destination}")
 
     labels_df = pd.read_csv(LABELS_FILE, dtype={"cluster": int})
     required_clusters = set(membership_df["cluster"].astype(int))
@@ -181,6 +250,13 @@ def main():
         ]
 
 
+        # The published PAM model keeps its original theme flags.
+        # On the public site, Adventure instead means a named, sourced activity.
+        model_themes = list(themes)
+        themes = [theme for theme in themes if theme != "adventure"]
+        if adventure_by_destination.get(destination_name):
+            themes.append("adventure")
+
         membership = membership_lookup[
             destination_name
         ]
@@ -233,6 +309,19 @@ def main():
 
             "themes":
                 themes,
+            "model_themes":
+                model_themes,
+
+            "adventure_activities": adventure_by_destination.get(destination_name, []),
+            "attractions": attractions_by_destination.get(destination_name, [])[:7],
+            "photo": ({
+                "image_url": photos_by_destination[destination_name]["image_url"],
+                "source_url": photos_by_destination[destination_name]["file_page"],
+                "author": photos_by_destination[destination_name]["author"],
+                "license": photos_by_destination[destination_name]["license"],
+                "caption": {lng: photos_by_destination[destination_name]["caption_"+lng]
+                            for lng in ("en", "es", "ja")},
+            } if destination_name in photos_by_destination else None),
 
             "model_role":
                 row["model_role_v1"],
