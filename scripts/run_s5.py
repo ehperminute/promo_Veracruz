@@ -16,6 +16,7 @@ from sklearn.preprocessing import StandardScaler
 
 def load_series(path):
     df = pd.read_csv(path)
+    df = df.rename(columns={"fecha": "date"})
     required = {'date', 'ocupacion_pct'}
     if not required.issubset(df.columns):
         raise ValueError(f'Missing columns {required - set(df.columns)}; got {list(df.columns)}')

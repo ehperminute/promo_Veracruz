@@ -1,0 +1,54 @@
+fecha,anio,mes,centro,ocupacion_pct,source_archive,source_sheet,excel_row
+2025-01-01,2025,1,Coatzacoalcos,43.59,2025-MES_01_Publico.zip,monthly_report,52
+2025-01-01,2025,1,Veracruz-Boca del Río,42.74,2025-MES_01_Publico.zip,monthly_report,29
+2025-01-01,2025,1,Xalapa,36.98,2025-MES_01_Publico.zip,monthly_report,83
+2025-02-01,2025,2,Coatzacoalcos,44.27,2025-MES_02_Publico.zip,monthly_report,52
+2025-02-01,2025,2,Veracruz-Boca del Río,40.49,2025-MES_02_Publico.zip,monthly_report,29
+2025-02-01,2025,2,Xalapa,44.44,2025-MES_02_Publico.zip,monthly_report,83
+2025-03-01,2025,3,Coatzacoalcos,47.75,2025-MES_03_Publico.zip,monthly_report,52
+2025-03-01,2025,3,Veracruz-Boca del Río,43.78,2025-MES_03_Publico.zip,monthly_report,29
+2025-03-01,2025,3,Xalapa,49.29,2025-MES_03_Publico.zip,monthly_report,83
+2025-04-01,2025,4,Coatzacoalcos,50.02,2025-MES_04_Publico.zip,monthly_report,52
+2025-04-01,2025,4,Veracruz-Boca del Río,57.34,2025-MES_04_Publico.zip,monthly_report,29
+2025-04-01,2025,4,Xalapa,44.95,2025-MES_04_Publico.zip,monthly_report,83
+2025-05-01,2025,5,Coatzacoalcos,47.59,2025-MES_05_Publico.zip,monthly_report,52
+2025-05-01,2025,5,Veracruz-Boca del Río,56.9,2025-MES_05_Publico.zip,monthly_report,29
+2025-05-01,2025,5,Xalapa,48.17,2025-MES_05_Publico.zip,monthly_report,83
+2025-06-01,2025,6,Coatzacoalcos,57.41,2025-MES_06_Publico.zip,monthly_report,52
+2025-06-01,2025,6,Veracruz-Boca del Río,47.37,2025-MES_06_Publico.zip,monthly_report,29
+2025-06-01,2025,6,Xalapa,53.82,2025-MES_06_Publico.zip,monthly_report,83
+2025-07-01,2025,7,Coatzacoalcos,55.01,2025-MES_07_Publico.zip,monthly_report,52
+2025-07-01,2025,7,Veracruz-Boca del Río,46.58,2025-MES_07_Publico.zip,monthly_report,29
+2025-07-01,2025,7,Xalapa,32.75,2025-MES_07_Publico.zip,monthly_report,83
+2025-08-01,2025,8,Coatzacoalcos,56.73,2025-MES_08_Publico.zip,monthly_report,52
+2025-08-01,2025,8,Veracruz-Boca del Río,57.46,2025-MES_08_Publico.zip,monthly_report,29
+2025-08-01,2025,8,Xalapa,60.98,2025-MES_08_Publico.zip,monthly_report,83
+2025-09-01,2025,9,Coatzacoalcos,47.79,2025-MES_09_Publico.zip,monthly_report,52
+2025-09-01,2025,9,Xalapa,49.7,2025-MES_09_Publico.zip,monthly_report,83
+2025-10-01,2025,10,Coatzacoalcos,48.24,2025-MES_10_Publico.zip,monthly_report,52
+2025-10-01,2025,10,Xalapa,38.78,2025-MES_10_Publico.zip,monthly_report,83
+2025-11-01,2025,11,Coatzacoalcos,49.68,2025-MES_11_Publico.zip,monthly_report,52
+2025-11-01,2025,11,Xalapa,44.37,2025-MES_11_Publico.zip,monthly_report,83
+2025-12-01,2025,12,Coatzacoalcos,40.01,2025-MES_12_Publico.zip,monthly_report,54
+2025-12-01,2025,12,Xalapa,47.15,2025-MES_12_Publico.zip,monthly_report,85
+2026-01-01,2026,1,Coatzacoalcos,43.49,2026-MES_01_Publico.zip,monthly_report,52
+2026-01-01,2026,1,Veracruz-Boca del Río,43.02,2026-MES_01_Publico.zip,monthly_report,29
+2026-01-01,2026,1,Xalapa,37.72,2026-MES_01_Publico.zip,monthly_report,83
+2026-02-01,2026,2,Coatzacoalcos,35.28,2026-MES_02_Publico.zip,monthly_report,52
+2026-02-01,2026,2,Veracruz-Boca del Río,39.51,2026-MES_02_Publico.zip,monthly_report,29
+2026-02-01,2026,2,Xalapa,37.54,2026-MES_02_Publico.zip,monthly_report,83
+2026-03-01,2026,3,Coatzacoalcos,40.64,2026-MES_03_Publico.zip,monthly_report,52
+2026-03-01,2026,3,Veracruz-Boca del Río,49.54,2026-MES_03_Publico.zip,monthly_report,29
+2026-03-01,2026,3,Xalapa,48.01,2026-MES_03_Publico.zip,monthly_report,83
+2026-04-01,2026,4,Coatzacoalcos,38.09,2026-MES_04_Publico.zip,monthly_report,52
+2026-04-01,2026,4,Veracruz-Boca del Río,42.76,2026-MES_04_Publico.zip,monthly_report,29
+2026-04-01,2026,4,Xalapa,39.91,2026-MES_04_Publico.zip,monthly_report,83
+2026-05-01,2026,5,Coatzacoalcos,45.85,2026-MES_05_Publico.zip,monthly_report,52
+2026-05-01,2026,5,Veracruz-Boca del Río,48.94,2026-MES_05_Publico.zip,monthly_report,29
+2026-05-01,2026,5,Xalapa,45.64,2026-MES_05_Publico.zip,monthly_report,83
+2026-06-01,2026,6,Coatzacoalcos,50.73,2026-MES_06_Publico.zip,monthly_report,52
+2026-06-01,2026,6,Veracruz-Boca del Río,40.08,2026-MES_06_Publico.zip,monthly_report,29
+2026-06-01,2026,6,Xalapa,40.01,2026-MES_06_Publico.zip,monthly_report,83
+2026-07-01,2026,7,Coatzacoalcos,52.72,2026-MES_07_Publico.zip,monthly_report,52
+2026-07-01,2026,7,Veracruz-Boca del Río,53.3,2026-MES_07_Publico.zip,monthly_report,29
+2026-07-01,2026,7,Xalapa,48.28,2026-MES_07_Publico.zip,monthly_report,83

@@ -1,0 +1,10 @@
+center,model,test_mae,validation_mae_of_chosen,params
+Coatzacoalcos,original_forest,3.041919979216956,,"{""max_depth"": 5, ""max_features"": 1.0, ""min_samples_leaf"": 3, ""n_estimators"": 120}"
+Coatzacoalcos,tuned_forest,2.791683753428579,3.4402761036231824,"{""max_depth"": null, ""max_features"": 1.0, ""min_samples_leaf"": 2, ""n_estimators"": 200}"
+Coatzacoalcos,last_month,2.7878266996716,,{}
+Veracruz-Boca del Río,original_forest,5.189981476625129,,"{""max_depth"": 5, ""max_features"": 1.0, ""min_samples_leaf"": 3, ""n_estimators"": 120}"
+Veracruz-Boca del Río,tuned_forest,5.339738571721301,6.723204880928942,"{""max_depth"": 5, ""max_features"": 1.0, ""min_samples_leaf"": 2, ""n_estimators"": 200}"
+Veracruz-Boca del Río,last_month,5.874281007889809,,{}
+Xalapa,original_forest,4.2018295255671445,,"{""max_depth"": 5, ""max_features"": 1.0, ""min_samples_leaf"": 3, ""n_estimators"": 120}"
+Xalapa,tuned_forest,4.1162145013572164,6.83880685551394,"{""max_depth"": 5, ""max_features"": 0.7, ""min_samples_leaf"": 2, ""n_estimators"": 200}"
+Xalapa,last_month,4.832996627963575,,{}

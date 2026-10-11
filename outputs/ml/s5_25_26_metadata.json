@@ -1,0 +1,16 @@
+{
+  "evaluation": "rolling one-month-ahead with models refitted using prior observed outcomes",
+  "test_period": "2025-01 through 2026-07",
+  "fixed_models": "Original forest and tuned parameters chosen from 2021-2022 validation",
+  "missing_data": "Missing center/month occupancy is never filled; missing lag features use training-only medians",
+  "baseline": "last_month omitted when immediately preceding observation is missing",
+  "center_counts": {
+    "Coatzacoalcos": 19,
+    "Veracruz-Boca del R\u00edo": 15,
+    "Xalapa": 19
+  },
+  "limitations": [
+    "Official reports may be provisional",
+    "No destination-level demand extrapolation"
+  ]
+}

@@ -1,0 +1,4 @@
+center,forecast_month,model,predicted_occupancy_pct,last_observation
+Coatzacoalcos,2025-01-01,last_month,44.909,2024-12-01
+Veracruz-Boca del Río,2025-01-01,random_forest,46.042,2024-12-01
+Xalapa,2025-01-01,random_forest,46.482,2024-12-01

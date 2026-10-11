@@ -1,0 +1,34 @@
+{
+  "target": "one-month-ahead hotel occupancy percentage, by DataTur hotel reporting center",
+  "input": "data/interim/datatur_veracruz_monthly.csv",
+  "source_coverage": {
+    "Coatzacoalcos": {
+      "first": "2016-01",
+      "last": "2024-12",
+      "n": 108
+    },
+    "Veracruz-Boca del Río": {
+      "first": "2016-01",
+      "last": "2024-12",
+      "n": 108
+    },
+    "Xalapa": {
+      "first": "2016-01",
+      "last": "2024-12",
+      "n": 108
+    }
+  },
+  "test_start_year": 2023,
+  "evaluation": "expanding-window, re-fit at every target month, no future inputs",
+  "selected_models": {
+    "Coatzacoalcos": "last_month",
+    "Veracruz-Boca del Río": "random_forest",
+    "Xalapa": "random_forest"
+  },
+  "limitations": [
+    "Not tourist visitor counts",
+    "Not forecasts for the other 52 destinations",
+    "No independent cross-city extrapolation validation",
+    "Next-month projections are anchored at the last input month, not necessarily the present"
+  ]
+}
