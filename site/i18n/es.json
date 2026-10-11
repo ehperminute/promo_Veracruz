@@ -104,5 +104,6 @@
   "photo_not_available": "Fotografía todavía no verificada",
   "reviewed_attractions_title": "Atractivos documentados",
   "attraction_source": "Fuente oficial",
-  "attraction_evidence_note": "Estos atractivos aparecen en descripciones turísticas oficiales. No se ha comprobado el acceso ni la operación actual."
+  "attraction_evidence_note": "Estos atractivos aparecen en descripciones turísticas oficiales. No se ha comprobado el acceso ni la operación actual.",
+  "nav_planner": "Planificador de campañas"
 }

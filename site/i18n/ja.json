@@ -104,5 +104,6 @@
   "photo_not_available": "確認済みの写真はありません",
   "reviewed_attractions_title": "資料で確認した観光スポット",
   "attraction_source": "公式情報",
-  "attraction_evidence_note": "公的な観光紹介に記載された場所です。現在のアクセスや営業状況は未確認です。"
+  "attraction_evidence_note": "公的な観光紹介に記載された場所です。現在のアクセスや営業状況は未確認です。",
+  "nav_planner": "キャンペーン計画"
 }
