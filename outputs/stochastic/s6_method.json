@@ -1,0 +1,14 @@
+{
+  "model": "tuned_forest",
+  "alpha": 0.1,
+  "description": "Absolute-error split conformal intervals, calibrated separately per center on earlier out-of-sample errors.",
+  "test_2024": "2023 calibration (12 errors per center) -> 2024 evaluation",
+  "test_2025_2026": "2023-2024 calibration (24 errors per center) -> Jan 2025-Jul 2026 evaluation",
+  "cautions": [
+    "Conformal nominal coverage needs exchangeability; time series shifts violate this assumption.",
+    "Small calibration samples; these intervals are empirical checks, not assured 90% coverage.",
+    "Missing new-period observations have not been imputed.",
+    "Only three measured hotel centers; not tourism visitation forecasts for other destinations.",
+    "Rolling S5 models update training, so intervals refer to one-step rolling predictions, not a frozen 2024 model."
+  ]
+}
