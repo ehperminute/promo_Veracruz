@@ -1,0 +1,13 @@
+destination,region,period,assumed_cost_mxn,lodging_establishments,official_card_count,datatur_center,observed_period_peak_pct,demand_data_status,theme_count
+Actopan,Primeros Pasos de Cortés,summer,5000,6,24,,,no_comparable_monthly_data,4
+Boca del Río,Primeros Pasos de Cortés,winter,5000,80,21,Veracruz-Boca del Río,43.02,observed_center_2025_26,4
+Catemaco,Los Tuxtlas,spring_holiday,5000,40,48,,,no_comparable_monthly_data,4
+Coatepec,Cultura y Aventura,winter,5000,29,40,,,no_comparable_monthly_data,3
+Orizaba,Altas Montañas,autumn,5000,69,21,,,no_comparable_monthly_data,5
+Papantla,Totonacapan,spring_holiday,5000,29,29,,,no_comparable_monthly_data,4
+San Andrés Tuxtla,Los Tuxtlas,summer,5000,28,28,,,no_comparable_monthly_data,4
+Santiago Tuxtla,Los Tuxtlas,winter,5000,8,6,,,no_comparable_monthly_data,4
+Ursulo Galván,Primeros Pasos de Cortés,autumn,5000,53,29,,,no_comparable_monthly_data,5
+Veracruz,Primeros Pasos de Cortés,spring_holiday,5000,200,58,Veracruz-Boca del Río,57.34,observed_center_2025_26,4
+Xalapa,Cultura y Aventura,summer,5000,123,31,Xalapa,60.98,observed_center_2025_26,4
+Xico,Cultura y Aventura,autumn,5000,15,35,,,no_comparable_monthly_data,4

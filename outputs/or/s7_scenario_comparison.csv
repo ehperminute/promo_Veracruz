@@ -1,0 +1,5 @@
+budget_mxn,assumed_cost_per_promotion_mxn,spent_mxn,num_promotions,distinct_destinations,regions_represented,total_regions,region_period_cells,theme_period_cells,reported_solver_status,peak_penalty_threshold_pct,selected_with_unknown_period_demand
+30000,5000,30000,6,6,4,7,6,24,Optimization terminated successfully. (HiGHS Status 7: Optimal),80,4
+60000,5000,60000,12,12,5,7,12,29,Optimization terminated successfully. (HiGHS Status 7: Optimal),80,9
+100000,5000,100000,20,20,7,7,20,29,Optimization terminated successfully. (HiGHS Status 7: Optimal),80,17
+200000,5000,200000,40,40,7,7,27,29,Optimization terminated successfully. (HiGHS Status 7: Optimal),80,37
