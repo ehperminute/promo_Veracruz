@@ -841,6 +841,8 @@ async function loadLanguage(
     currentLanguage =
         language;
 
+    try { localStorage.setItem("veracruz_language", language); } catch (_) {}
+
 
     updateStaticText();
 
@@ -1072,9 +1074,10 @@ async function init() {
 
         await loadDestinations();
 
-        await loadLanguage(
-            "en"
-        );
+        const saved = (() => { try { return localStorage.getItem("veracruz_language"); } catch (_) { return null; } })();
+        const lang = ["en","es","ja"].includes(saved) ? saved : "en";
+        languageSelect.value = lang;
+        await loadLanguage(lang);
 
     }
 

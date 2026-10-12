@@ -1,0 +1,1482 @@
+{
+  "source": "Python scipy.optimize.milp, S7 statewide framework",
+  "assumed_cost_mxn": 5000,
+  "budgets": {
+    "30000": [
+      {
+        "destination": "Catemaco",
+        "region": "Los Tuxtlas",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "40",
+        "official_card_count": "48",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "wellness_spiritual"
+        ]
+      },
+      {
+        "destination": "Córdoba",
+        "region": "Altas Montañas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "8",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Orizaba",
+        "region": "Altas Montañas",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "69",
+        "official_card_count": "21",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Ursulo Galván",
+        "region": "Primeros Pasos de Cortés",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "53",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Veracruz",
+        "region": "Primeros Pasos de Cortés",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "200",
+        "official_card_count": "58",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": 57.46,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xalapa",
+        "region": "Cultura y Aventura",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "123",
+        "official_card_count": "31",
+        "datatur_center": "Xalapa",
+        "observed_period_peak_pct": 49.29,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      }
+    ],
+    "60000": [
+      {
+        "destination": "Actopan",
+        "region": "Primeros Pasos de Cortés",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "6",
+        "official_card_count": "24",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Boca del Río",
+        "region": "Primeros Pasos de Cortés",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "21",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": 43.02,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Catemaco",
+        "region": "Los Tuxtlas",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "40",
+        "official_card_count": "48",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "wellness_spiritual"
+        ]
+      },
+      {
+        "destination": "Coatepec",
+        "region": "Cultura y Aventura",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "40",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Orizaba",
+        "region": "Altas Montañas",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "69",
+        "official_card_count": "21",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Papantla",
+        "region": "Totonacapan",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "San Andrés Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "28",
+        "official_card_count": "28",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Santiago Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "8",
+        "official_card_count": "6",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Ursulo Galván",
+        "region": "Primeros Pasos de Cortés",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "53",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Veracruz",
+        "region": "Primeros Pasos de Cortés",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "200",
+        "official_card_count": "58",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": 57.34,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xalapa",
+        "region": "Cultura y Aventura",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "123",
+        "official_card_count": "31",
+        "datatur_center": "Xalapa",
+        "observed_period_peak_pct": 60.98,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xico",
+        "region": "Cultura y Aventura",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "15",
+        "official_card_count": "35",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      }
+    ],
+    "100000": [
+      {
+        "destination": "Boca del Río",
+        "region": "Primeros Pasos de Cortés",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "21",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Catemaco",
+        "region": "Los Tuxtlas",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "40",
+        "official_card_count": "48",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "wellness_spiritual"
+        ]
+      },
+      {
+        "destination": "Coatepec",
+        "region": "Cultura y Aventura",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "40",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Coatzacoalcos",
+        "region": "Olmeca",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "84",
+        "official_card_count": "3",
+        "datatur_center": "Coatzacoalcos",
+        "observed_period_peak_pct": 49.68,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Córdoba",
+        "region": "Altas Montañas",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "8",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Emiliano Zapata",
+        "region": "Cultura y Aventura",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "12",
+        "official_card_count": "15",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Fortín",
+        "region": "Altas Montañas",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "12",
+        "official_card_count": "9",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "La Antigua",
+        "region": "Primeros Pasos de Cortés",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "11",
+        "official_card_count": "22",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Misantla",
+        "region": "Totonacapan",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "17",
+        "official_card_count": "3",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Orizaba",
+        "region": "Altas Montañas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "69",
+        "official_card_count": "21",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Papantla",
+        "region": "Totonacapan",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "San Andrés Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "28",
+        "official_card_count": "28",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Santiago Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "8",
+        "official_card_count": "6",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Tamiahua",
+        "region": "Huasteca",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "24",
+        "official_card_count": "4",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tecolutla",
+        "region": "Totonacapan",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "248",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tuxpan",
+        "region": "Huasteca",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "67",
+        "official_card_count": "2",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Ursulo Galván",
+        "region": "Primeros Pasos de Cortés",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "53",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Veracruz",
+        "region": "Primeros Pasos de Cortés",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "200",
+        "official_card_count": "58",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": 57.34,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xalapa",
+        "region": "Cultura y Aventura",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "123",
+        "official_card_count": "31",
+        "datatur_center": "Xalapa",
+        "observed_period_peak_pct": 60.98,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xico",
+        "region": "Cultura y Aventura",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "15",
+        "official_card_count": "35",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      }
+    ],
+    "200000": [
+      {
+        "destination": "Actopan",
+        "region": "Primeros Pasos de Cortés",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "6",
+        "official_card_count": "24",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Alvarado",
+        "region": "Primeros Pasos de Cortés",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "13",
+        "official_card_count": "13",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Boca del Río",
+        "region": "Primeros Pasos de Cortés",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "21",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Catemaco",
+        "region": "Los Tuxtlas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "40",
+        "official_card_count": "48",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "wellness_spiritual"
+        ]
+      },
+      {
+        "destination": "Coatepec",
+        "region": "Cultura y Aventura",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "40",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Coatzacoalcos",
+        "region": "Olmeca",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "84",
+        "official_card_count": "3",
+        "datatur_center": "Coatzacoalcos",
+        "observed_period_peak_pct": 49.68,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Coscomatepec",
+        "region": "Altas Montañas",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "4",
+        "official_card_count": "8",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Córdoba",
+        "region": "Altas Montañas",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "8",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Emiliano Zapata",
+        "region": "Cultura y Aventura",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "12",
+        "official_card_count": "15",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Fortín",
+        "region": "Altas Montañas",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "12",
+        "official_card_count": "9",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Huatusco",
+        "region": "Altas Montañas",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "15",
+        "official_card_count": "2",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Jalcomulco",
+        "region": "Cultura y Aventura",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "14",
+        "official_card_count": "11",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Jáltipan",
+        "region": "Olmeca",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "15",
+        "official_card_count": "1",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 2,
+        "themes": [
+          "nature",
+          "culture_history"
+        ]
+      },
+      {
+        "destination": "La Antigua",
+        "region": "Primeros Pasos de Cortés",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "11",
+        "official_card_count": "22",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Las Choapas",
+        "region": "Olmeca",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "22",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 2,
+        "themes": [
+          "nature",
+          "culture_history"
+        ]
+      },
+      {
+        "destination": "Las Vigas de Ramírez",
+        "region": "Cultura y Aventura",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "2",
+        "official_card_count": "3",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Minatitlán",
+        "region": "Olmeca",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "34",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Misantla",
+        "region": "Totonacapan",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "17",
+        "official_card_count": "3",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Naolinco",
+        "region": "Cultura y Aventura",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "5",
+        "official_card_count": "5",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Orizaba",
+        "region": "Altas Montañas",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "69",
+        "official_card_count": "21",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Papantla",
+        "region": "Totonacapan",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "29",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Perote",
+        "region": "Cultura y Aventura",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "20",
+        "official_card_count": "4",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Poza Rica de Hidalgo",
+        "region": "Totonacapan",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "80",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Puente Nacional",
+        "region": "Primeros Pasos de Cortés",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "5",
+        "official_card_count": "2",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 2,
+        "themes": [
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Pánuco",
+        "region": "Huasteca",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "16",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "San Andrés Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "28",
+        "official_card_count": "28",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Santiago Tuxtla",
+        "region": "Los Tuxtlas",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "8",
+        "official_card_count": "6",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "archaeology",
+          "adventure"
+        ]
+      },
+      {
+        "destination": "Soteapan",
+        "region": "Olmeca",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "2",
+        "official_card_count": "7",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 2,
+        "themes": [
+          "nature",
+          "culture_history"
+        ]
+      },
+      {
+        "destination": "Tamiahua",
+        "region": "Huasteca",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "24",
+        "official_card_count": "4",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tecolutla",
+        "region": "Totonacapan",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "248",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tempoal",
+        "region": "Huasteca",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "6",
+        "official_card_count": "0",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tlacotalpan",
+        "region": "Primeros Pasos de Cortés",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "12",
+        "official_card_count": "9",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 2,
+        "themes": [
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tlalnelhuayocan",
+        "region": "Cultura y Aventura",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "1",
+        "official_card_count": "4",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tlapacoyan",
+        "region": "Totonacapan",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "24",
+        "official_card_count": "3",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Tuxpan",
+        "region": "Huasteca",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "67",
+        "official_card_count": "2",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Ursulo Galván",
+        "region": "Primeros Pasos de Cortés",
+        "period": "winter",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "53",
+        "official_card_count": "29",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 5,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "archaeology",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Veracruz",
+        "region": "Primeros Pasos de Cortés",
+        "period": "spring_holiday",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "200",
+        "official_card_count": "58",
+        "datatur_center": "Veracruz-Boca del Río",
+        "observed_period_peak_pct": 57.34,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "beach_coast",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xalapa",
+        "region": "Cultura y Aventura",
+        "period": "summer",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "123",
+        "official_card_count": "31",
+        "datatur_center": "Xalapa",
+        "observed_period_peak_pct": 60.98,
+        "demand_data_status": "observed_center_2025_26",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee",
+          "urban_services"
+        ]
+      },
+      {
+        "destination": "Xico",
+        "region": "Cultura y Aventura",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "15",
+        "official_card_count": "35",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 4,
+        "themes": [
+          "nature",
+          "culture_history",
+          "adventure",
+          "gastronomy_coffee"
+        ]
+      },
+      {
+        "destination": "Zozocolco de Hidalgo",
+        "region": "Totonacapan",
+        "period": "autumn",
+        "assumed_cost_mxn": 5000,
+        "lodging_establishments": "3",
+        "official_card_count": "4",
+        "datatur_center": "",
+        "observed_period_peak_pct": null,
+        "demand_data_status": "no_comparable_monthly_data",
+        "theme_count": 3,
+        "themes": [
+          "nature",
+          "culture_history",
+          "gastronomy_coffee"
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "budget_mxn": "30000",
+      "assumed_cost_per_promotion_mxn": "5000",
+      "spent_mxn": "30000",
+      "num_promotions": "6",
+      "distinct_destinations": "6",
+      "regions_represented": "4",
+      "total_regions": "7",
+      "region_period_cells": "6",
+      "theme_period_cells": "24",
+      "reported_solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "peak_penalty_threshold_pct": "80",
+      "selected_with_unknown_period_demand": "4"
+    },
+    {
+      "budget_mxn": "60000",
+      "assumed_cost_per_promotion_mxn": "5000",
+      "spent_mxn": "60000",
+      "num_promotions": "12",
+      "distinct_destinations": "12",
+      "regions_represented": "5",
+      "total_regions": "7",
+      "region_period_cells": "12",
+      "theme_period_cells": "29",
+      "reported_solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "peak_penalty_threshold_pct": "80",
+      "selected_with_unknown_period_demand": "9"
+    },
+    {
+      "budget_mxn": "100000",
+      "assumed_cost_per_promotion_mxn": "5000",
+      "spent_mxn": "100000",
+      "num_promotions": "20",
+      "distinct_destinations": "20",
+      "regions_represented": "7",
+      "total_regions": "7",
+      "region_period_cells": "20",
+      "theme_period_cells": "29",
+      "reported_solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "peak_penalty_threshold_pct": "80",
+      "selected_with_unknown_period_demand": "17"
+    },
+    {
+      "budget_mxn": "200000",
+      "assumed_cost_per_promotion_mxn": "5000",
+      "spent_mxn": "200000",
+      "num_promotions": "40",
+      "distinct_destinations": "40",
+      "regions_represented": "7",
+      "total_regions": "7",
+      "region_period_cells": "27",
+      "theme_period_cells": "29",
+      "reported_solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "peak_penalty_threshold_pct": "80",
+      "selected_with_unknown_period_demand": "37"
+    }
+  ],
+  "total_destinations": 55,
+  "periods": [
+    "spring_holiday",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "theme_keys": [
+    "beach_coast",
+    "nature",
+    "culture_history",
+    "archaeology",
+    "adventure",
+    "gastronomy_coffee",
+    "wellness_spiritual",
+    "urban_services"
+  ]
+}
