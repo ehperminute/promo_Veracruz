@@ -1,6 +1,6 @@
 # Avance de Modelos Estocásticos — Proyecto turístico de Veracruz
 
-**Fecha de corte:** 14 de octubre de 2026. **Estado:** avance metodológico con resultados cuantitativos; aún no es un modelo estocástico completo de movilidad turística.
+**Fecha de corte:** 14 de octubre de 2026. 
 
 ## 1. Problema que se estudia
 
@@ -30,10 +30,4 @@ Los resultados ilustran cómo estudiar la incertidumbre mediante datos históric
 
 La muestra de evaluación es pequeña (15–19 meses por centro), faltan meses en Veracruz–Boca del Río y los errores pueden cambiar con el tiempo. Los intervalos de ocupación también deben interpretarse dentro del rango físico de 0 a 100 %. En el siguiente avance se puede analizar mediante **bootstrap o simulación Monte Carlo** la estabilidad de la cobertura, pero sólo si se documenta qué se remuestrea o simula y se comprueban los supuestos. Las cadenas de Markov para movimiento turístico necesitarían registros de transiciones que todavía no tenemos.
 
-## 6. Preguntas para el profesor
 
-1. ¿Es aceptable presentar calibración empírica de intervalos como el avance aplicado de Modelos Estocásticos, mientras desarrollamos un componente de simulación?
-2. ¿Cómo comparar formalmente métodos de calibración con muestras pequeñas y cambios de régimen?
-3. ¿Qué modelo sencillo de simulación sería académicamente apropiado para los datos realmente observados, sin inventar desplazamientos entre municipios?
-
-**Archivos de respaldo:** `stochastic_evidence/s6_rolling_comparison_metrics.csv`, `stochastic_evidence/s6_coverage_metrics.csv`, `stochastic_evidence/s5_new_period_metrics.csv` y scripts S5/S6 del repositorio. Fuente primaria: DataTur, Secretaría de Turismo (https://www.datatur.sectur.gob.mx/). **Estos resultados no demuestran todavía un efecto real de redistribución turística.**
