@@ -1,0 +1,213 @@
+﻿municipality_id,municipality,candidate_for_research,tourism_evidence_tier,observed_activity_tags_count,observed_activity_tags,official_catalog_municipality_rows,official_product_mentions,separate_cultural_heritage_or_new_official_leads,no_observed_activity_tags_means,current_availability
+30001,Acajete,1,direct,1,hiking,1,3,1,,not_verified
+30002,Acatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30003,Acayucan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30004,Actopan,1,direct,7,archaeological_visit | birdwatching | cultural_tour | diving_or_snorkeling_undifferentiated | kayaking | rafting | rappelling,5,24,2,,not_verified
+30005,Acula,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30006,Acultzingo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30007,Camarón de Tejeda,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30008,Alpatláhuac,1,direct,0,,0,1,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30009,Alto Lucero de Gutiérrez Barrios,1,direct,1,diving_or_snorkeling_undifferentiated,1,0,0,,not_verified
+30010,Altotonga,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30011,Alvarado,1,direct,6,archaeological_visit | coffee_route | diving_or_snorkeling_undifferentiated | guided_city_tour | kayaking | snorkeling,5,13,1,,not_verified
+30012,Amatitlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30013,Naranjos Amatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30014,Amatlán de los Reyes,1,direct,3,coffee_route | hiking | kayaking,4,3,0,,not_verified
+30015,Angel R. Cabada,1,direct,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30016,La Antigua,1,direct,4,archaeological_visit | guided_city_tour | kayaking | rafting,2,22,1,,not_verified
+30017,Apazapan,1,direct,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30018,Aquila,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30019,Astacinga,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30020,Atlahuilco,1,direct,1,artisan_workshop,1,1,0,,not_verified
+30021,Atoyac,1,direct,2,hiking | kayaking,2,3,0,,not_verified
+30022,Atzacan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30023,Atzalan,1,direct,1,kayaking,0,0,2,,not_verified
+30024,Tlaltetela,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30025,Ayahualulco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30026,Banderilla,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30027,Benito Juárez,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30028,Boca del Río,1,direct,5,coffee_route | cultural_tour | diving | kayaking | paddleboarding,5,21,1,,not_verified
+30029,Calcahualco,1,direct,4,hiking | horseback_riding | mountain_biking | rappelling,2,1,1,,not_verified
+30030,Camerino Z. Mendoza,1,direct,1,cultural_tour,1,0,0,,not_verified
+30031,Carrillo Puerto,1,not_established,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30032,Catemaco,1,direct,10,archaeological_visit | birdwatching | camping | canyoning | food_tasting_or_tour | guided_city_tour | hiking | horseback_riding | rappelling | traditional_wellness,12,48,1,,not_verified
+30033,Cazones de Herrera,1,direct,2,diving | rappelling,0,1,1,,not_verified
+30034,Cerro Azul,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30035,Citlaltépetl,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30036,Coacoatzintla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30037,Coahuitlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30038,Coatepec,1,direct,8,canyoning | coffee_route | food_tasting_or_tour | hiking | horseback_riding | orchid_observation | religious_tour | traditional_wellness,11,40,1,,not_verified
+30039,Coatzacoalcos,1,direct,2,kayaking | paddleboarding,0,3,1,,not_verified
+30040,Coatzintla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30041,Coetzala,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30042,Colipa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30043,Comapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30044,Córdoba,1,direct,3,coffee_route | cultural_tour | hiking,3,8,1,,not_verified
+30045,Cosamaloapan de Carpio,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30046,Cosautlán de Carvajal,1,direct,1,cycling,3,0,0,,not_verified
+30047,Coscomatepec,1,direct,3,coffee_route | hiking | mountain_biking,3,8,1,,not_verified
+30048,Cosoleacaque,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30049,Cotaxtla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30050,Coxquihui,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30051,Coyutla,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30052,Cuichapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30053,Cuitláhuac,1,direct,3,caving | mountain_biking | rappelling,0,1,1,,not_verified
+30054,Chacaltianguis,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30055,Chalma,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30056,Chiconamel,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30057,Chiconquiaco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30058,Chicontepec,1,direct,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30059,Chinameca,1,direct,0,,0,1,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30060,Chinampa de Gorostiza,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30061,Las Choapas,1,contextual,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30062,Chocamán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30063,Chontla,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30064,Chumatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30065,Emiliano Zapata,1,direct,3,coffee_route | hiking | rappelling,1,15,1,,not_verified
+30066,Espinal,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30067,Filomeno Mata,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30068,Fortín,1,direct,3,coffee_route | hiking | paragliding,2,9,1,,not_verified
+30069,Gutiérrez Zamora,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30070,Hidalgotitlán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30071,Huatusco,1,direct,5,climbing | coffee_route | cycling | hiking | religious_tour,2,2,1,,not_verified
+30072,Huayacocotla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30073,Hueyapan de Ocampo,1,direct,3,food_tasting_or_tour | hiking | indigenous_community_visit,4,4,0,,not_verified
+30074,Huiloapan de Cuauhtémoc,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30075,Ignacio de la Llave,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30076,Ilamatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30077,Isla,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30078,Ixcatepec,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30079,Ixhuacán de los Reyes,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30080,Ixhuatlán del Café,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30081,Ixhuatlancillo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30082,Ixhuatlán del Sureste,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30083,Ixhuatlán de Madero,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30084,Ixmatlahuacan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30085,Ixtaczoquitlán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30086,Jalacingo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30087,Xalapa,1,direct,4,coffee_route | guided_city_tour | hiking | orchid_observation,4,31,1,,not_verified
+30088,Jalcomulco,1,direct,7,canyoning | hiking | mountain_biking | rafting | rappelling | traditional_wellness | ziplining,4,11,1,,not_verified
+30089,Jáltipan,1,direct,0,,0,1,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30090,Jamapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30091,Jesús Carranza,1,not_established,2,camping | hiking,0,0,1,,not_verified
+30092,Xico,1,direct,8,camping | canyoning | coffee_route | cycling | food_tasting_or_tour | hiking | orchid_observation | traditional_wellness,10,35,1,,not_verified
+30093,Jilotepec,1,direct,2,hiking | rappelling,0,2,1,,not_verified
+30094,Juan Rodríguez Clara,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30095,Juchique de Ferrer,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30096,Landero y Coss,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30097,Lerdo de Tejada,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30098,Magdalena,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30099,Maltrata,1,direct,1,hiking,1,0,0,,not_verified
+30100,Manlio Fabio Altamirano,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30101,Mariano Escobedo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30102,Martínez de la Torre,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30103,Mecatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30104,Mecayapan,1,direct,1,indigenous_community_visit,2,0,1,,not_verified
+30105,Medellín de Bravo,1,direct,1,religious_tour,1,0,0,,not_verified
+30106,Miahuatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30107,Las Minas,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30108,Minatitlán,1,contextual,3,caving | kayaking | mountain_biking,0,0,1,,not_verified
+30109,Misantla,1,direct,1,hiking,0,3,1,,not_verified
+30110,Mixtla de Altamirano,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30111,Moloacán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30112,Naolinco,1,direct,4,artisan_workshop | coffee_route | hiking | orchid_observation,4,5,1,,not_verified
+30113,Naranjal,1,direct,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30114,Nautla,1,contextual,1,cycling,0,0,1,,not_verified
+30115,Nogales,1,direct,1,cultural_tour,1,0,1,,not_verified
+30116,Oluta,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30117,Omealca,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30118,Orizaba,1,direct,6,coffee_route | food_tasting_or_tour | guided_city_tour | hiking | religious_tour | ziplining,7,21,1,,not_verified
+30119,Otatitlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30120,Oteapan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30121,Ozuluama de Mascareñas,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30122,Pajapan,1,direct,0,,0,2,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30123,Pánuco,1,contextual,1,horseback_riding,0,0,1,,not_verified
+30124,Papantla,1,direct,5,archaeological_visit | coffee_route | guided_city_tour | hiking | traditional_wellness,7,29,4,,not_verified
+30125,Paso del Macho,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30126,Paso de Ovejas,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30127,La Perla,1,direct,2,cultural_tour | hiking,2,0,0,,not_verified
+30128,Perote,1,direct,5,canyoning | hiking | mountain_biking | rappelling | religious_tour,2,4,1,,not_verified
+30129,Platón Sánchez,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30130,Playa Vicente,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30131,Poza Rica de Hidalgo,1,direct,3,archaeological_visit | cultural_tour | mountain_biking,2,0,1,,not_verified
+30132,Las Vigas de Ramírez,1,direct,3,camping | cycling | hiking,4,3,1,,not_verified
+30133,Pueblo Viejo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30134,Puente Nacional,1,direct,2,birdwatching | rafting,1,2,1,,not_verified
+30135,Rafael Delgado,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30136,Rafael Lucio,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30137,Los Reyes,1,direct,1,herpetology_observation,2,2,0,,not_verified
+30138,Río Blanco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30139,Saltabarranca,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30140,San Andrés Tenejapan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30141,San Andrés Tuxtla,1,direct,11,birdwatching | camping | canyoning | cultural_tour | diving_or_snorkeling_undifferentiated | food_tasting_or_tour | guided_city_tour | hiking | kayaking | rappelling | turtle_conservation_visit,13,28,1,,not_verified
+30142,San Juan Evangelista,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30143,Santiago Tuxtla,1,direct,2,archaeological_visit | hiking,1,6,3,,not_verified
+30144,Sayula de Alemán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30145,Soconusco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30146,Sochiapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30147,Soledad Atzompa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30148,Soledad de Doblado,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30149,Soteapan,1,direct,5,hiking | indigenous_community_visit | mountain_biking | rappelling | traditional_wellness,2,7,1,,not_verified
+30150,Tamalín,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30151,Tamiahua,1,direct,3,diving_or_snorkeling_undifferentiated | fishing | kayaking,5,4,1,,not_verified
+30152,Tampico Alto,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30153,Tancoco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30154,Tantima,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30155,Tantoyuca,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30156,Tatatila,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30157,Castillo de Teayo,1,direct,0,,0,0,3,UNKNOWN_NOT_NO_TOURISM,not_verified
+30158,Tecolutla,1,contextual,3,diving | hiking | kayaking,0,0,1,,not_verified
+30159,Tehuipango,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30160,Álamo Temapache,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30161,Tempoal,1,contextual,0,,0,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30162,Tenampa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30163,Tenochtitlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30164,Teocelo,1,direct,2,canyoning | hiking,4,1,0,,not_verified
+30165,Tepatlaxco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30166,Tepetlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30167,Tepetzintla,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30168,Tequila,1,direct,0,,1,0,1,UNKNOWN_NOT_NO_TOURISM,not_verified
+30169,José Azueta,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30170,Texcatepec,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30171,Texhuacán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30172,Texistepec,1,direct,0,,0,0,2,UNKNOWN_NOT_NO_TOURISM,not_verified
+30173,Tezonapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30174,Tierra Blanca,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30175,Tihuatlán,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30176,Tlacojalpan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30177,Tlacolulan,1,direct,1,hiking,1,0,0,,not_verified
+30178,Tlacotalpan,1,direct,3,cycling | guided_city_tour | kayaking,3,9,2,,not_verified
+30179,Tlacotepec de Mejía,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30180,Tlachichilco,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30181,Tlalixcoyan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30182,Tlalnelhuayocan,1,direct,1,mountain_biking,0,4,1,,not_verified
+30183,Tlapacoyan,1,direct,1,rafting,2,3,1,,not_verified
+30184,Tlaquilpa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30185,Tlilapan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30186,Tomatlán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30187,Tonayán,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30188,Totutla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30189,Tuxpan,1,direct,4,cultural_tour | diving | diving_or_snorkeling_undifferentiated | fishing,4,2,1,,not_verified
+30190,Tuxtilla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30191,Ursulo Galván,1,direct,6,archaeological_visit | atv | guided_city_tour | paragliding | sandboarding | traditional_wellness,6,29,3,,not_verified
+30192,Vega de Alatorre,1,direct,1,hiking,0,0,3,,not_verified
+30193,Veracruz,1,direct,6,archaeological_visit | coffee_route | diving_or_snorkeling_undifferentiated | guided_city_tour | kayaking | religious_tour,9,58,1,,not_verified
+30194,Villa Aldama,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30195,Xoxocotla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30196,Yanga,1,direct,1,hiking,0,1,1,,not_verified
+30197,Yecuatla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30198,Zacualpan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30199,Zaragoza,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30200,Zentla,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30201,Zongolica,1,direct,5,caving | food_tasting_or_tour | hiking | kayaking | rappelling,4,1,1,,not_verified
+30202,Zontecomatlán de López y Fuentes,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30203,Zozocolco de Hidalgo,1,direct,4,archaeological_visit | cultural_tour | hiking | indigenous_community_visit,6,4,1,,not_verified
+30204,Agua Dulce,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30205,El Higo,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30206,Nanchital de Lázaro Cárdenas del Río,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30207,Tres Valles,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30208,Carlos A. Carrillo,1,contextual,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30209,Tatahuicapan de Juárez,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30210,Uxpanapa,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
+30211,San Rafael,1,direct,2,cultural_tour | traditional_wellness,2,1,0,,not_verified
+30212,Santiago Sochiapan,0,not_established,0,,0,0,0,UNKNOWN_NOT_NO_TOURISM,not_verified
