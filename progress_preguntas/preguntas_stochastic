@@ -1,0 +1,7 @@
+## 6. Preguntas para el profesor
+
+1. ¿Es aceptable presentar calibración empírica de intervalos como el avance aplicado de Modelos Estocásticos, mientras desarrollamos un componente de simulación?
+2. ¿Cómo comparar formalmente métodos de calibración con muestras pequeñas y cambios de régimen?
+3. ¿Qué modelo sencillo de simulación sería académicamente apropiado para los datos realmente observados, sin inventar desplazamientos entre municipios?
+
+**Archivos de respaldo:** `stochastic_evidence/s6_rolling_comparison_metrics.csv`, `stochastic_evidence/s6_coverage_metrics.csv`, `stochastic_evidence/s5_new_period_metrics.csv` y scripts S5/S6 del repositorio. Fuente primaria: DataTur, Secretaría de Turismo (https://www.datatur.sectur.gob.mx/). **Estos resultados no demuestran todavía un efecto real de redistribución turística.**
