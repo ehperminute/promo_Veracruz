@@ -1,0 +1,57 @@
+﻿raw_activity_tag,canonical_activity_tag,broad_family,catalog_section,source_tag_specificity,mapping_rule,is_direct_model_feature
+aquatic_experience,,water,Entorno acuático,umbrella,Umbrella category not a specific activity,0
+archaeological_heritage,archaeological_heritage,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+archaeological_site,archaeological_site,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+archaeological_site;_museum,archaeological_site;_museum,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+archaeological_site;_museum;_living_heritage,archaeological_site;_museum;_living_heritage,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+archaeological_visit,archaeological_visit,culture,Zonas arqueológicas,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+artisan_workshop,artisan_workshop,culture,Artesanía,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+atv,atv,adventure,Cuatrimotos,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+birdwatching,birdwatching,nature,Aviturismo,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+camping,camping,nature,Camping,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+canyoning,canyoning,adventure,Cañonismo,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+caving,caving,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+climbing,climbing,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+coffee_route,coffee_route,gastronomy,Ruta del café,section_combined,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+crafts,crafts,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+cultural_tour,cultural_tour,culture,Recorrido cultural,section_combined,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+cycling,cycling,adventure,Bici tour,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+diving,diving,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+diving_or_snorkeling,diving_or_snorkeling_undifferentiated,water,Buceo y snorkel,section_combined,Publication says either/both; do not infer specific dive or snorkel,1
+ecotourism,,nature,Ecoturismo,umbrella,Umbrella category not a specific activity,0
+festival_or_living_tradition,festival_or_living_tradition,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+fishing,fishing,water,Pesca,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+food_tasting_or_tour,food_tasting_or_tour,gastronomy,Gastronomía,section_combined,"Compound publication group, not atomically separated",1
+guided_city_tour,guided_city_tour,culture,City tour,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+guided_excursion,,culture,Excursiones,umbrella,Umbrella without a named activity,0
+herpetology_observation,herpetology_observation,nature,Herpetología,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+hiking,hiking,nature,Senderismo,specific,Same activity,1
+historic_architecture,historic_architecture,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+historic_architecture_or_monument,historic_architecture_or_monument,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+historic_architecture_visit,historic_architecture_visit,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+horseback_riding,horseback_riding,adventure,Cabalgata,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+indigenous_community_visit,indigenous_community_visit,community,Paraísos indígenas,section_combined,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+kayaking,kayaking,water,Kayak,specific,Same activity,1
+living_heritage_visit,living_heritage_visit,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+mountain_biking,mountain_biking,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+mountain_hiking,hiking,adventure,Senderismo de montaña,specific,"Mountain/high-altitude subtype; retain source wording, no parent-double-count",1
+multi_adventure_offer,,adventure,"Rafting, rápel y tirolesa",umbrella,Composite umbrella: does not prove three distinct services at each listed municipality,0
+museum_or_cultural_center,museum_or_cultural_center,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+museum_visit,museum_visit,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+nature_lodging,,accommodation,Descanso natural / hospedaje,attribute,Accommodation attribute not a visitor activity,0
+nearby_access_only,,source-specific; see claim,,prior_source,Nearby access is not an activity at this municipality,0
+orchid_observation,orchid_observation,nature,Turismo orquideófilo,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+other_named_cultural_feature,other_named_cultural_feature,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+paddleboarding,paddleboarding,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+paragliding,paragliding,adventure,Parapente,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+pueblo_magico,,designation,Pueblos mágicos,attribute,Administrative designation not visitor activity,0
+rafting,rafting,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+rappelling,rappelling,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+religious_tour,religious_tour,culture,Turismo religioso,section_combined,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+romance_tourism,,events,Turismo de romance,umbrella,Event/travel sector umbrella not specific activity,0
+sandboarding,sandboarding,adventure,Sandboarding,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+snorkeling,snorkeling,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+traditional_wellness,traditional_wellness,wellness,Sanación ancestral,section_combined,Preserve traditional context,1
+turtle_conservation_visit,turtle_conservation_visit,nature,Liberación de tortugas,specific,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1
+water_sports_unspecified,,source-specific; see claim,,prior_source,Activity type unspecified; cannot assign precise tag,0
+ziplining,ziplining,source-specific; see claim,,prior_source,Retain literal evidence-tag; flag overlapping/ambiguous types for model-specific handling,1

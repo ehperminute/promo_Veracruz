@@ -1,0 +1,33 @@
+﻿source_section,activity_tag,broad_family,tag_specificity,used_as_experience_feature
+Artesanía,artisan_workshop,culture,specific,True
+Aviturismo,birdwatching,nature,specific,True
+Buceo y snorkel,diving_or_snorkeling,water,section_combined,True
+Cabalgata,horseback_riding,adventure,specific,True
+Camping,camping,nature,specific,True
+Cañonismo,canyoning,adventure,specific,True
+Bici tour,cycling,adventure,specific,True
+City tour,guided_city_tour,culture,specific,True
+Cuatrimotos,atv,adventure,specific,True
+Ecoturismo,ecotourism,nature,umbrella,False
+Entorno acuático,aquatic_experience,water,umbrella,False
+Excursiones,guided_excursion,culture,umbrella,False
+Gastronomía,food_tasting_or_tour,gastronomy,section_combined,True
+Herpetología,herpetology_observation,nature,specific,True
+Descanso natural / hospedaje,nature_lodging,accommodation,attribute,False
+Kayak,kayaking,water,specific,True
+Liberación de tortugas,turtle_conservation_visit,nature,specific,True
+Paraísos indígenas,indigenous_community_visit,community,section_combined,True
+Parapente,paragliding,adventure,specific,True
+Pesca,fishing,water,specific,True
+Pueblos mágicos,pueblo_magico,designation,attribute,False
+"Rafting, rápel y tirolesa",multi_adventure_offer,adventure,umbrella,False
+Recorrido cultural,cultural_tour,culture,section_combined,True
+Ruta del café,coffee_route,gastronomy,section_combined,True
+Sanación ancestral,traditional_wellness,wellness,section_combined,True
+Sandboarding,sandboarding,adventure,specific,True
+Senderismo,hiking,nature,specific,True
+Senderismo de montaña,mountain_hiking,adventure,specific,True
+Turismo de romance,romance_tourism,events,umbrella,False
+Turismo orquideófilo,orchid_observation,nature,specific,True
+Turismo religioso,religious_tour,culture,section_combined,True
+Zonas arqueológicas,archaeological_visit,culture,specific,True

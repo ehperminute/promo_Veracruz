@@ -1,0 +1,13 @@
+﻿source_name,input_file,sha256,size_bytes,role
+INEGI AGEEML municipality reference,inputs/inegi_ageeml_utf8.csv,2f2d08c8a13b037203b8fd6822983d242f79cf787b904a1f9df101635f557387,276252,Administrative ID/name/population; not tourism supply
+Project 212 municipality source screening,inputs/scope_212_prior.csv,45927d735c09e766995e3e8734c0f618d502a399ae2cac2466f12ce36051c4f9,45339,Previously researched direct/contextual tourism evidence tiers; not a census of attractions
+Project DENUE municipal infrastructure mart,inputs/infra_212.csv,3973a5b20bfa8252719d567bfc376552fdbd917e48dead830b75a98e01ee8eea,16578,"Business counts, not capacity or vacancy"
+SECTUR Veracruz tourism product extract,inputs/tourism_cards_295.csv,5a13aaeb0596274bb1c3460e43fd69ed3d97db9807ebd777909b754b52694f09,28516,"295 marketed card titles with municipality mentions, not necessarily tour availability"
+SECTUR 2025 experiences tables,inputs/catalog_standard_rows_128.csv,8018fa409ce27d470b36f58b183ff55db56f6585487ab905637cf827a7c376dc,49494,128 source table municipality rows
+SECTUR 2025 recovered tables,inputs/catalog_recovered_rows_58.csv,3c0982674c330246364ecc5d39ee6a101cf64827aa3ec3bd29b29f4f63eb56fd,9203,58 special-layout municipality rows
+SECTUR 2025 directly verified missing table,inputs/catalog_manually_verified_rows.csv,d262e40a8b703f97a020ac7c565436aaa4f0492c18f4b925f5f94cba2960d89e,246,Los Reyes herpetology row on PDF spread 60–61
+SECTUR section taxonomy,inputs/catalog_taxonomy_32.csv,eb4914e8502bf8fa783f419766b8e374816f4b807400c506bab8d4a23471bc1f,1860,32 catalog section names and classifications
+Prior S4/S8 evidence with provenance,inputs/prior_55_evidence_879.csv,197170af62625a5cb19a1f6ce1a23b1c3f34cc499b791d52f6ffba9d0ca92257,346244,"879 source assertions, filtered into distinct record types"
+SECTUR published operator directory,inputs/catalog_provider_blocks_275.csv,cd02c75f86b1661bd4aa96e83ecb652208c023d066f3c472dafc371cb6ee821e,67436,"275 contact blocks, not verified unique providers"
+Original 55 destination reference,inputs/destination_reference_55.csv,f5244191383b9690d8b1ef3a565d96360e09874a2e3e8aedd903252fad660b2a,22277,"Historical curated set, not a statistically optimal universe"
+Prior catalog page text,inputs/catalog_page_text_66.csv,1ad6ff2c17b888b930fe6258f43ce85c3ac7fc70a82300e3789bfb437ad12de5,536994,66 PDF page text extractions; source page numbers
