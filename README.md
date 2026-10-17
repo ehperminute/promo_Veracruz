@@ -1,119 +1,66 @@
-# Veracruz Tourism Intelligence
+# Veracruz: populated map in existing homepage (17 October 2026)
 
-Semester-long Data Science project for analyzing tourism evidence in Veracruz with a reproducible S0→S9 pipeline.
+This package **integrates the map inside the existing site's homepage** above the current destination explorer. It is **NOT** a new `map.html` page and does **NOT** alter the old explorer, your marketing campaign Planner, original catalog files, translations, or research database.
 
-## Current stable milestone
+## Source recovered, not recreated
 
-Milestone 1 closes S0–S3:
+The populated map was generated from the attached **`VERACRUZ_PP3_SOURCE_FIRST_EVIDENCE_REPAIR_AND_OR_SENSITIVITY_2026-10-17(1).zip`** → `veracruz_pp3_master.sqlite` (SQLite SHA-256 `ceb935532c783c5eb8df5fd8abce5c975582fc3262e7d021f121d3a2496dda35`). This is newer than the statewide-OR and restored-description archives. Its input integrity check passed.
 
-- **S0 — Sources:** 13 immutable local raw snapshots plus one exact fixed official DataTur origin-market report registered with explicit provenance.
-- **S1 — Ingestion/cleaning:** deterministic parsers and normalization scripts.
-- **S2 — Curated interim tables:** DataTur month/center, INAH site/month, municipal infrastructure/economy, and tourism-product tables.
-- **S3 — Canonical processed tables:**
-  - `data/processed/destination_master.csv`
-  - `data/processed/demand_series.csv`
-  - `data/processed/origin_market_opportunity.csv`
+- All **212 municipalities** appear in the geographic export with an *approximate municipality reference point* each.
+- The initial map shows **61 municipalities having at least one accepted documented activity**, covering **216 municipality–activity pair records** and **78 distinct activity features**. A checkbox reveals all **212**.
+- The other **151** retain their place in the database; **lack of documented activities is not evidence of tourism absence**.
+- Of the 216 pairs, **55** retain original-source passage support; **161** are source-linked summaries awaiting original text. The UI labels this difference for each activity.
+- **295 official webpage product descriptions still have not been restored to their original wording** in this packaged master; do NOT treat paraphrases as originals. This export does not invent or substitute descriptions.
+- Map pins show **municipality-scale approximate points**, **not** actual geographic coordinates of activities, attractions, festival venues, municipal boundaries, or road-network stops. Travel optimization requires additional geocoding and road travel times.
 
-Interpretation boundaries and stage contracts are defined in `PROJECT_CONSTITUTION.md`.
+## Install in current repo (GitHub Pages)
 
-## What the two S3 support tables mean
+Extract the ZIP, then from the extracted folder or anywhere in a terminal:
 
-`demand_series.csv` is a standardized time-series table for later ML/stochastic work. It keeps DataTur hotel-center arrivals and INAH archaeological-site visits as separate measurement scopes; they must not be summed or treated as the same kind of demand.
-
-`origin_market_opportunity.csv` ranks the 25 leading countries of residence for foreign air-entry events to Mexico using DataTur's validated 2025 annual figures. It is national origin-market context for later marketing analysis, **not evidence of visits to Veracruz**. Marketing tiers/personas/campaign decisions are deliberately excluded from S3.
-
-## Rebuild S0–S3
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/data/run_data_pipeline.py --idempotence --test
+```
+python install_map.py /path/to/promo_Veracruz
 ```
 
-Expected frozen-input result:
+On Windows, for example:
 
-- 13 local raw sources verified by SHA-256
-- 1 fixed official remote report registered without making the normal pipeline network-dependent
-- 295 Veracruz tourism-product cards parsed
-- 31 municipality entries parsed from the seven-region navigation
-- 8 Pueblos Mágicos parsed from the manually browser-saved official page
-- 6,900 DataTur center-month rows
-- 324 Veracruz DataTur rows
-- 4,048 Veracruz INAH site-month rows
-- 212 municipal infrastructure rows
-- 75 selected tourism-product rows grounded in the frozen official web snapshot
-- 55 destination-master rows
-- 4,372 canonical observed-demand rows
-- 25 validated 2025 origin-market rows
-- idempotence PASS
-- 56 Milestone-1 tests PASS
-
-## Destructive reproducibility check
-
-```bash
-rm -rf data/interim
-rm -f \
-  data/processed/destination_master.csv \
-  data/processed/demand_series.csv \
-  data/processed/origin_market_opportunity.csv \
-  docs/DATA_SOURCES.md
-python scripts/data/run_data_pipeline.py --idempotence --test
+```
+py install_map.py C:\\Users\\you\\promo_Veracruz
 ```
 
-Generated/interim artifacts must return from raw/reference inputs plus code.
+The installer requires the existing `site/index.html` and inserts a map section immediately before the existing `destinations` section if present, otherwise before `</main>`. It creates `site/index.before-map.html` (once), and copies exactly **three** files into the site's existing tree:
 
-## Data classes
+- `site/data/map_points.geojson` — **populated** from recovered master;
+- `site/js/map-explorer.js` — scoped MapLibre map, marker groups, filters, bilingual activity names, search, source links;
+- `site/css/map-explorer.css` — scoped responsive map styling.
 
-- `data/raw/`: immutable source snapshots.
-- `data/reference/`: explicit mappings, direct source extracts, curation rules, code groups, and source registry.
-- `data/interim/`: mechanically generated cleaned/aggregated tables.
-- `data/processed/`: canonical analysis-ready tables.
-- `outputs/`: analytical/model results; not silent upstream inputs.
+It links MapLibre's CSS/JS assets by CDN in `index.html`; no frontend build tooling is required. It does **not** overwrite `destinations.json`, `app.js`, i18n JSON, Python pipeline outputs, or the Planner. Re-running is idempotent (no duplicate map section or imports). No internet is required to install, but the map tiles and CDN require internet to render in the browser.
 
-## Important interpretation rules
+To test locally, from repo root:
 
-- Missing DataTur coverage is missing measurement, not low tourism demand.
-- INAH counts are archaeological-site visits, not total municipal tourism.
-- DENUE measures service/infrastructure structure, not ecological carrying capacity.
-- Foreign origin-market counts describe air-entry events to Mexico, not Veracruz visits.
-- Product association rules describe offer co-occurrence, not tourist movement.
-- Clusters represent analytical similarity, not automatically viable routes.
-- Synthetic or proposed campaign data are never treated as observed evidence.
-
-## S4 — Data Mining / Descriptive Analytics
-
-S4 was reworked after auditing the destination profiles. The earlier K-Means k=15/k=17 outputs are historical exploratory results only; the current pipeline uses a mixed-data method suited to the actual variables.
-
-```bash
-python scripts/mining/run_mining_pipeline.py --idempotence --test
+```
+python -m http.server 8000 --directory site
 ```
 
-Current workflow:
+Open `http://localhost:8000`. Test filtering by *aventura* and *naturaleza*, switch ES/EN/JA using the existing language control, and click a municipality to see source-backed activities.
 
-- build a 55-destination S4 profile table from the canonical master;
-- derive official product-card coverage from **all 295 parsed cards** (the older 75-row table remains only for coursework reproducibility);
-- apply explicit reviewed profile repairs with provenance;
-- cluster tourism-character profiles with **Gower distance + PAM/k-medoids**;
-- evaluate **k=2 through k=20** using silhouette and fragmentation diagnostics;
-- expose cluster-to-cluster medoid similarity, per-destination silhouette and feature sensitivity;
-- run a separate broader Gower structural-analog analysis for undermeasured destinations;
-- mine offer co-occurrence rules from all 295 product cards.
+### Rollback
 
-Current frozen-data result:
+Restore `site/index.before-map.html` as `site/index.html`. Optionally delete the three `map-*` files and `data/map_points.geojson`. Your existing catalog never changes.
 
-- 55 destination profiles retained;
-- no high-priority profile gaps after the documented Carrillo Puerto repair;
-- after targeted profile review, **k=12** is the highest-silhouette PAM solution with no singleton clusters (silhouette ≈ **0.637**);
-- k=13 and above improve silhouette partly by introducing singleton fragmentation;
-- 42 undermeasured candidates;
-- 126 target-anchor structural analog comparisons;
-- 22 municipality association rules from all 295 official product cards;
-- S4 idempotence PASS;
-- 12 focused S4 rework tests PASS.
+### Rebuilding the GeoJSON later
 
-See `docs/MINING_METHODS.md`, `docs/DESTINATION_PROFILE_AUDIT.md`, and `docs/DATA_CATALOG.md`. Clusters are similarity groups, not routes or observed demand classes.
+The build script is provided under `tools/export_map_geojson.py` and **only reads** the SQLite database. It does not need to run to install this patch. To regenerate after a reviewed database change:
 
-To run all currently implemented stages through S4:
-
-```bash
-python scripts/run_pipeline.py --idempotence --test
 ```
+python tools/export_map_geojson.py /path/to/veracruz_pp3_master.sqlite --output site/data/map_points.geojson
+```
+
+The exporter checks database integrity, and refuses a database with unexpected municipality or accepted-evidence counts. Update checks deliberately when your database evolves.
+
+### Notes
+
+- Markers use a green pin plus multiple colored activity-category dots. A municipality with three families of experiences shows all three colors; it is not forced into one primary category.
+- At state zoom, nearby pins group into numbered bubbles; click to zoom into that group.
+- The default filter emphasizes documented experience coverage. All other municipalities are still accessible.
+- Basemap uses MapLibre GL JS with OpenStreetMap raster tiles for an educational prototype. For substantial public traffic, use a suitable compliant hosted tile service; do not assume OSM's free community tile server guarantees production capacity.
+- You should commit the new site files after visual inspection and then deploy via your existing GitHub Pages workflow.
