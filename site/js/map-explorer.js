@@ -49,11 +49,12 @@ root.innerHTML=`<div class="vx-top"><div><span class="vx-kicker">VERACRUZ · EXP
 const $ = id=>root.querySelector('#'+id);
 const mapObject=typeof maplibregl==='undefined'?null:new maplibregl.Map({
    container:'vx-map',center:[-96.4,19.5],zoom:6.05,minZoom:5,
+   scrollZoom:false, // Scrolling the homepage should not change the map zoom.
    style:{version:8,sources:{osm:{type:'raster',tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,
     attribution:'© OpenStreetMap contributors'}},layers:[{id:'osm-tiles',type:'raster',source:'osm'}]}
  });
 if(mapObject)mapObject.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-const state={features:[],filter:'',query:'',all:false,markers:[],selected:null,ready:false};
+const state={features:[],filter:'',query:'',all:false,selected:null,ready:false};
 const nameOf=a=>language()==='es'?a.name_es:(a.name_en||a.name_es);
 const orderedTypes=Object.keys(palette);
 function eligible(f){const p=f.properties;return (!state.filter||p.types.includes(state.filter)) && (state.all||p.activity_count>0) && (!state.query||clean([p.name,...p.activities.flatMap(a=>[a.name_es,a.name_en,a.id]),...p.types.map(k=>copy().types[k]||k)].join(' ')).includes(state.query));}
@@ -72,24 +73,97 @@ function openDetail(feature){state.selected=feature.id;const p=feature.propertie
     if(a.source_urls.length){const links=element('div','vx-links');a.source_urls.slice(0,3).forEach((url,i)=>{try{if(new URL(url).protocol!=='https:')return;}catch{return;}
       const link=element('a','',`${t.sources} ${i+1} ↗`);link.href=url;link.target='_blank';link.rel='noopener noreferrer';links.append(link);});li.append(links);}list.append(li);}detail.append(list);
  }else{detail.append(element('p','vx-note',t.absence));}
- detail.hidden=false;$('vx-side')?.scrollTo({top:0,behavior:'smooth'});detail.scrollIntoView?.({block:'nearest',behavior:'smooth'});
+ detail.hidden=false;$('vx-side')?.scrollTo({top:0,behavior:'smooth'}); // Do not scroll the whole page unexpectedly.
  if(mapObject){mapObject.flyTo({center:feature.geometry.coordinates,zoom:Math.max(mapObject.getZoom(),8.7),essential:true});}
 }
-function makePin(feature){const p=feature.properties;const b=element('button','vx-pin');b.type='button';b.title=p.name;b.setAttribute('aria-label',p.name);b.append(element('span','vx-pin-center',p.activity_count?'•':'·'));const colors=element('span','vx-pin-colors');for(const t of p.types.slice(0,4)) colors.append(dot(t));if(p.types.length>4)colors.append(element('small','',`+${p.types.length-4}`));b.append(colors);b.onclick=()=>openDetail(feature);return b;}
-function makeCluster(group){const b=element('button','vx-cluster',String(group.length));b.type='button';b.title=`${group.length} municipios`;b.onclick=()=>{if(!mapObject)return;const bb=new maplibregl.LngLatBounds();group.forEach(f=>bb.extend(f.geometry.coordinates));mapObject.fitBounds(bb,{padding:90,maxZoom:12,duration:500});};return b;}
-function clearMarkers(){state.markers.forEach(m=>m.remove());state.markers=[];}
-function drawMarkers(){if(!mapObject || !state.ready)return;clearMarkers();const candidates=visible();if(!candidates.length)return;
- // Screen-space clustering only at statewide and regional zooms (no category is lost).
- const groups=[];const zoom=mapObject.getZoom();const clusterThreshold=zoom<8.5?46:0;
- for(const f of candidates){const coordinate=f.geometry.coordinates;if(!clusterThreshold){groups.push([f]);continue;}
-   const xy=mapObject.project(coordinate);let found=null;for(const g of groups){const avg=g._xy;if(Math.hypot(avg.x-xy.x,avg.y-xy.y)<clusterThreshold){found=g;break;}}
-   if(found){found.push(f);const n=found.length;found._xy={x:found._xy.x+(xy.x-found._xy.x)/n,y:found._xy.y+(xy.y-found._xy.y)/n};}
-   else {const g=[f];g._xy={x:xy.x,y:xy.y};groups.push(g);}
- }
- for(const group of groups){const coord=group.length===1?group[0].geometry.coordinates:mapObject.unproject(group._xy).toArray();
-   const e=group.length===1?makePin(group[0]):makeCluster(group);
-   state.markers.push(new maplibregl.Marker({element:e,anchor:'center'}).setLngLat(coord).addTo(mapObject));
- }
+// Native MapLibre GeoJSON layers render with the basemap, unlike separately
+// positioned DOM marker buttons. This removes CSS/page-scroll drift.
+// The icons encode ALL available experience types as coloured segments.
+function badgeName(types){
+  const t=[...new Set(types||[])].filter(k=>Object.hasOwn(palette,k)).sort();
+  return t.length?'vx-badge-'+t.join('-'):'vx-badge-empty';
+}
+function registerBadge(types){
+  if(!mapObject)return;
+  const id=badgeName(types);
+  if(mapObject.hasImage(id))return;
+  const keys=[...new Set(types||[])].filter(k=>Object.hasOwn(palette,k)).sort();
+  const c=document.createElement('canvas'),size=88;
+  c.width=c.height=size;
+  const ctx=c.getContext('2d');
+  if(!ctx)return;
+  const center=size/2,ringRadius=31;
+  ctx.lineWidth=12;
+  if(keys.length){
+    keys.forEach((k,i)=>{
+      const full=2*Math.PI/keys.length;
+      const begin=-Math.PI/2+i*full+(keys.length===1?0:0.055);
+      const end=-Math.PI/2+(i+1)*full-(keys.length===1?0:0.055);
+      ctx.beginPath();ctx.arc(center,center,ringRadius,begin,end);
+      ctx.strokeStyle=palette[k];ctx.stroke();
+    });
+  }else{
+    ctx.beginPath();ctx.arc(center,center,ringRadius,0,2*Math.PI);
+    ctx.strokeStyle='#a4b1a8';ctx.stroke();
+  }
+  ctx.beginPath();ctx.arc(center,center,22,0,2*Math.PI);
+  ctx.fillStyle='#285b48';ctx.fill();
+  ctx.lineWidth=3;ctx.strokeStyle='#fff';ctx.stroke();
+  ctx.beginPath();ctx.arc(center,center,4,0,2*Math.PI);
+  ctx.fillStyle='#fff';ctx.fill();
+  mapObject.addImage(id,ctx.getImageData(0,0,size,size),{pixelRatio:2});
+}
+function mapFeatures(){
+  return {type:'FeatureCollection',features:visible().map(f=>({
+    type:'Feature',geometry:f.geometry,
+    properties:{key:String(f.id),badge:badgeName(f.properties.types)}
+  }))};
+}
+function refreshMapSource(){
+  if(!mapObject || !state.ready)return;
+  state.features.forEach(f=>registerBadge(f.properties.types));
+  const src=mapObject.getSource('vx-locations');
+  if(src)src.setData(mapFeatures());
+}
+function prepareMapLayers(){
+  if(state.ready)return;
+  mapObject.addSource('vx-locations',{
+    type:'geojson',data:{type:'FeatureCollection',features:[]},
+    cluster:true,clusterRadius:52,clusterMaxZoom:10
+  });
+  mapObject.addLayer({id:'vx-clusters',type:'circle',source:'vx-locations',
+    filter:['has','point_count'],paint:{
+      'circle-color':'#286953','circle-radius':['step',['get','point_count'],19,10,23,30,27],
+      'circle-stroke-color':'#eef6ef','circle-stroke-width':3
+    }
+  });
+  mapObject.addLayer({id:'vx-cluster-count',type:'symbol',source:'vx-locations',
+    filter:['has','point_count'],layout:{'text-field':['to-string',['get','point_count']],
+      'text-size':13,'text-allow-overlap':true},paint:{'text-color':'#fff'}
+  });
+  mapObject.addLayer({id:'vx-places',type:'symbol',source:'vx-locations',
+    filter:['!', ['has','point_count']],
+    layout:{'icon-image':['get','badge'],'icon-allow-overlap':true,
+      'icon-ignore-placement':true,'icon-size':1}
+  });
+  mapObject.on('click','vx-places',e=>{
+    const key=e.features?.[0]?.properties?.key;
+    const selected=state.features.find(f=>String(f.id)===String(key));
+    if(selected)openDetail(selected);
+  });
+  mapObject.on('click','vx-clusters',async e=>{
+    const cluster=e.features?.[0];if(!cluster)return;
+    try{
+      const zoom=await mapObject.getSource('vx-locations').getClusterExpansionZoom(cluster.properties.cluster_id);
+      mapObject.easeTo({center:cluster.geometry.coordinates,zoom:zoom+0.1,duration:550});
+    }catch(error){console.warn('Cluster expansion:',error);}
+  });
+  for(const id of ['vx-places','vx-clusters']){
+    mapObject.on('mouseenter',id,()=>{mapObject.getCanvas().style.cursor='pointer';});
+    mapObject.on('mouseleave',id,()=>{mapObject.getCanvas().style.cursor='';});
+  }
+  state.ready=true;
+  refreshMapSource();
 }
 function render(){const t=copy();$('vx-title').textContent=t.title;$('vx-subtitle').textContent=t.subtitle;
  $('vx-search').placeholder=t.search;$('vx-toggle-label').textContent=state.all?t.all:t.documented;
@@ -99,7 +173,7 @@ function render(){const t=copy();$('vx-title').textContent=t.title;$('vx-subtitl
  const list=$('vx-list');list.replaceChildren();for(const f of shown){const p=f.properties;const button=element('button','vx-result');button.type='button';const top=element('div','vx-result-top');top.append(element('strong','',p.name));top.append(element('span','vx-result-count',String(p.activity_count)));button.append(top);if(p.types.length){const tags=element('div','vx-mini-dots');for(const type of p.types)tags.append(dot(type));button.append(tags);}else button.append(element('span','vx-no-data',t.absence));button.onclick=()=>openDetail(f);list.append(button);}
  const leg=$('vx-legend');leg.replaceChildren();for(const k of orderedTypes){if(!state.features.some(f=>f.properties.types.includes(k)))continue;const tag=element('span','vx-legend-item');tag.append(dot(k),document.createTextNode(t.types[k]));leg.append(tag);}
  if(state.selected){const f=state.features.find(f=>String(f.id)===String(state.selected));if(f)openDetailWithoutMove(f);}
- drawMarkers();
+ refreshMapSource();
 }
 function openDetailWithoutMove(feature){ // Update language in an already open detail without triggering map movement.
  const m=mapObject;
@@ -113,7 +187,12 @@ $('vx-show-all').addEventListener('change',e=>{state.all=e.target.checked;render
 // Site translation may change through its own custom code; listen at document level.
 document.addEventListener('change',e=>{if(e.target!==$('vx-category')&&e.target!==$('vx-show-all')&&e.target!==$('vx-search'))render();});
 new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
-if(mapObject){mapObject.on('moveend',drawMarkers);mapObject.on('load',()=>{state.ready=true;drawMarkers();});mapObject.on('error',e=>console.warn('MapLibre basemap:',e.error?.message));}
+if(mapObject){
+ mapObject.on('load',prepareMapLayers);
+ mapObject.on('error',e=>console.warn('MapLibre basemap:',e.error?.message));
+ // CSS/layout changes to an embedded map do not always emit window.resize.
+ if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>mapObject.resize()).observe($('vx-map'));
+}
 fetch('data/map_points.geojson',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json();}).then(fc=>{
  if(fc.type!=='FeatureCollection'||!Array.isArray(fc.features))throw Error('Invalid GeoJSON');
  state.features=fc.features.filter(f=>f.geometry?.type==='Point'&&f.geometry.coordinates.length===2&&

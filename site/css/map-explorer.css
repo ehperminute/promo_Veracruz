@@ -52,3 +52,6 @@
 #veracruz-map-section .maplibregl-ctrl-attrib{font-size:10px}
 @media(max-width:790px){#veracruz-map-section .vx-body{height:auto;display:flex;flex-direction:column}#veracruz-map-section #vx-map{height:410px}#veracruz-map-section .vx-side{height:250px;border-left:0;border-top:1px solid var(--vx-border)}#veracruz-map-section .vx-top{align-items:start}#veracruz-map-section .vx-toggle{flex:1}}
 @media(max-width:520px){#veracruz-map-section #vx-map{height:365px}#veracruz-map-section .vx-toolbar{gap:8px}#veracruz-map-section #vx-category{max-width:none;flex:1}#veracruz-map-section .vx-search-wrap{flex-basis:100%}#veracruz-map-section .vx-explorer{border-radius:13px}}
+
+/* Markers are now rendered as native GL map layers, never DOM buttons. */
+#veracruz-map-section #vx-map canvas.maplibregl-canvas{max-width:none!important;max-height:none!important;}
