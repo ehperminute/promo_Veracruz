@@ -114,8 +114,7 @@ const mapObject=typeof maplibregl==='undefined'?null:new maplibregl.Map({
    scrollZoom:true,
    touchZoomRotate:true,
    touchPitch:false,
-   style:{version:8,sources:{osm:{type:'raster',tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,
-    attribution:'© OpenStreetMap contributors'}},layers:[{id:'osm-tiles',type:'raster',source:'osm'}]}
+   style:'https://tiles.openfreemap.org/styles/positron'
  });
 if(mapObject){
   mapObject.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
@@ -234,7 +233,7 @@ function mapFeatures(){
   return {type:'FeatureCollection',features:visible().map(f=>{
     const p=f.properties;
     const hit=matches(f)?1:0;
-    const props={key:String(f.id),badge:badgeName(p.types),hit,focus:highlighting()?hit:0};
+    const props={key:String(f.id),badge:badgeName(p.types),primary:p.types[0]||'other',hit,focus:highlighting()?hit:0};
     for(const key of orderedTypes)props['cat_'+key]=p.types.includes(key)?1:0;
     return {type:'Feature',geometry:f.geometry,properties:props};
   })};
@@ -288,6 +287,17 @@ function prepareMapLayers(){
     filter:['all',['!', ['has','point_count']],['==',['get','focus'],1]],
     paint:{'circle-radius':24,'circle-color':'#fff6ca',
       'circle-stroke-color':'#e4a432','circle-stroke-width':3,'circle-opacity':0.95}
+  });
+  // Independent geographic fallback: circles render even without custom icons.
+  mapObject.addLayer({id:'vx-place-dot-fallback',type:'circle',source:'vx-locations',
+    filter:['!', ['has','point_count']],
+    paint:{'circle-radius':11,
+      'circle-color':['match',['get','primary'],
+        'adventure','#dc7d3d','water','#188ba8','nature','#35856c',
+        'food','#c55e62','culture','#815caa','crafts','#a77b3c',
+        'wellness','#35a09a','scenic','#5978bd','#7e8587'],
+      'circle-opacity':['case',['==',['get','hit'],1],0.9,0.22],
+      'circle-stroke-color':'#ffffff','circle-stroke-width':2}
   });
   mapObject.addLayer({id:'vx-places',type:'symbol',source:'vx-locations',
     filter:['!', ['has','point_count']],
@@ -385,7 +395,20 @@ $('vx-show-all').addEventListener('change',e=>{state.all=e.target.checked;render
 document.addEventListener('change',e=>{if(e.target!==$('vx-category')&&e.target!==$('vx-region')&&e.target!==$('vx-activity')&&e.target!==$('vx-show-all')&&e.target!==$('vx-search'))render();});
 new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 if(mapObject){
- mapObject.on('load',prepareMapLayers);
+ // Install our data layers as soon as the STYLE (not all remote tiles) is ready.
+ // This event also fires after a future style change, when overlay layers need restoring.
+ const onVeracruzStyleReady = () => {
+   if (state.ready && mapObject.getSource('vx-locations')) return;
+   state.ready = false;
+   try { prepareMapLayers(); }
+   catch (error) {
+     console.error('[Veracruz map] Marker layer initialization failed:', error);
+     const status = document.getElementById('vx-status');
+     if (status) status.textContent = 'Map markers could not initialize: ' + error.message;
+   }
+ };
+ mapObject.on('style.load', onVeracruzStyleReady);
+ if (mapObject.isStyleLoaded()) onVeracruzStyleReady();
  mapObject.on('error',e=>console.warn('MapLibre basemap:',e.error?.message));
  // CSS/layout changes to an embedded map do not always emit window.resize.
  if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>mapObject.resize()).observe($('vx-map'));
