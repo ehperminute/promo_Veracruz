@@ -1,120 +1,101 @@
-/* Veracruz attraction explorer v2.
- * Source of truth: site/data/attractions.csv -> build_attractions.py -> attractions.geojson
- * This overlay only reads data. It never overwrites the municipality map or research database.
+/* Veracruz consolidated explorer: 31 mapped attractions + complete recovered evidence catalog.
+ * All geographic features come from attractions.geojson.  The catalog DOES NOT invent pins.
+ * Existing municipality markers/filters and description sources remain untouched.
  */
 (() => {
- 'use strict';
- const root=document.getElementById('veracruz-map-section');
- const map=window.__vx_attraction_map,lib=window.maplibregl;
- if(!root||!map||!lib){console.warn('[Attractions] Map not ready; check base script order.');return;}
- const search=root.querySelector('#vx-search'),side=root.querySelector('.vx-side'),status=root.querySelector('#vx-status');
- if(!search||!side||!status){console.warn('[Attractions] Missing explorer controls.');return;}
- const mainDetail=root.querySelector('#vx-detail'),mainList=root.querySelector('#vx-list');
- const lang=()=>['en','es','ja'].includes(document.documentElement.lang?.slice(0,2))?document.documentElement.lang.slice(0,2):'en';
- const tr={
- en:{attractions:'Attractions',results:'Matching attractions',none:'No named attractions match this search.',guide:'Destination guide',back:'Back to places',map:'Map point',source:'Geographic source',noVisit:'This is a mapped geographic point, not a verified visitor entrance.',area:'This marker represents an area, not a specific visitor entrance.',photos:'Photography',details:'Discover',practical:'Planning your visit',unknown:'Visitor access and opening information have not been confirmed.',see:'Read full guide',empty:'More details are being researched.'},
- es:{attractions:'Atractivos',results:'Atractivos encontrados',none:'No hay atractivos con ese nombre.',guide:'Guía del lugar',back:'Volver a los lugares',map:'Ubicación en el mapa',source:'Fuente geográfica',noVisit:'Se trata de una ubicación geográfica, no de una entrada verificada.',area:'Este marcador representa un área, no una entrada concreta.',photos:'Fotografía',details:'Descubre',practical:'Antes de visitar',unknown:'Todavía no se ha confirmado el acceso ni los horarios.',see:'Ver la guía',empty:'Seguimos investigando información de este lugar.'},
- ja:{attractions:'観光スポット',results:'検索結果',none:'該当する観光地はありません。',guide:'観光ガイド',back:'一覧に戻る',map:'地図上の位置',source:'位置情報の出典',noVisit:'この地点は入場口として確認されていません。',area:'この地点は広い地域を示しており、入場口ではありません。',photos:'写真',details:'見どころ',practical:'訪問のヒント',unknown:'入場条件と営業時間は未確認です。',see:'ガイドを見る',empty:'詳細は調査中です。'}
- };
- const t=()=>tr[lang()];
- const norm=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
- const div=(cls,tag='div')=>{const x=document.createElement(tag);x.className=cls;return x;};
- const label=(tag,cls,value)=>{const x=div(cls,tag);x.textContent=value;return x;};
- const safeLink=(url,text)=>{const a=document.createElement('a');a.textContent=text;a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
- const panel=div('vxa-panel','section');panel.hidden=true;panel.setAttribute('aria-label','Attractions');
- const toggle=div('vxa-toggle','button');toggle.type='button';
- status.insertAdjacentElement('afterend',toggle);toggle.insertAdjacentElement('afterend',panel);
- const guide=div('vxa-guide','section');guide.hidden=true;guide.setAttribute('aria-label','Attraction guide');panel.insertAdjacentElement('afterend',guide);
- let features=[],markers=[],expanded=false,active=null,popup=null;
- const nameOf=p=>p.name||p.attraction_name_original||'Attraction';
- const textOf=(p,k)=>p[k+'_'+lang()] || p[k+'_en'] || p[k+'_es'] || '';
- const iconOf=p=>p.icon||'📍';
- function clearSelection(){
-  active=null;guide.hidden=true; if(mainDetail)mainDetail.style.removeProperty('display');if(mainList)mainList.style.removeProperty('display');
-  if(popup){popup.remove();popup=null;}
-  for(const m of markers)m.el.classList.remove('vxa-selected');
-  renderList();
+'use strict';
+const root=document.getElementById('veracruz-map-section'),map=window.__vx_attraction_map,lib=window.maplibregl;
+if(!root||!map||!lib){console.warn('[Veracruz catalog] Base map unavailable');return;}
+const search=root.querySelector('#vx-search'),side=root.querySelector('.vx-side'),status=root.querySelector('#vx-status');
+if(!search||!side||!status){console.warn('[Veracruz catalog] Sidebar controls missing');return;}
+const mainDetail=root.querySelector('#vx-detail'),mainList=root.querySelector('#vx-list');
+const L={en:{map:'Mapped attractions',catalog:'Complete research catalog',all:'All records',place:'Named places',lead:'Locations, traditions & events',product:'Tourism products',matches:'Search results',nothing:'No records match your search.',back:'Back to results',location:'Location',area:'Municipality reference only — not the attraction entrance.',unknown:'Exact coordinates have not been verified. No pin was placed.',route:'This is a tour or multi-stop experience, not one geographic point.',original:'Original evidence / activity',source:'Original source',photo:'Photo source',info:'About this place',note:'Visiting information',more:'Show more',details:'Open guide',results:'results',explore:'Explore the original source',nearby:'Associated municipality',summary:'Published title / source text',notEntrance:'Map point is not a verified visitor entrance.'},es:{map:'Atractivos en el mapa',catalog:'Catálogo completo de investigación',all:'Todos',place:'Lugares identificados',lead:'Lugares, tradiciones y eventos',product:'Productos turísticos',matches:'Resultados de búsqueda',nothing:'No hay resultados.',back:'Volver a resultados',location:'Ubicación',area:'Referencia municipal aproximada: NO es la entrada del atractivo.',unknown:'No se han verificado coordenadas exactas; no se inventó ningún marcador.',route:'Es un recorrido o producto que puede abarcar varios sitios, no un único punto.',original:'Actividad o testimonio de origen',source:'Fuente original',photo:'Fuente de la foto',info:'Conoce este lugar',note:'Para tu visita',more:'Ver más',details:'Abrir guía',results:'resultados',explore:'Consultar la fuente original',nearby:'Municipio relacionado',summary:'Nombre publicado / evidencia original',notEntrance:'El punto del mapa no es una entrada de visitantes verificada.'},ja:{map:'地図上の観光名所',catalog:'資料全体を探す',all:'すべて',place:'名称のある場所',lead:'場所・行事・伝統',product:'観光商品',matches:'検索結果',nothing:'見つかりませんでした',back:'結果へ戻る',location:'位置',area:'市町村の参考地点です。観光スポットの入口ではありません。',unknown:'正確な位置は未確認のため地図ピンは表示しません。',route:'複数の場所にわたるツアーや観光商品です。',original:'出典の記載',source:'情報源',photo:'写真提供元',info:'この場所について',note:'訪問情報',more:'もっと見る',details:'ガイドを開く',results:'検索結果',explore:'元の資料を見る',nearby:'関連自治体',summary:'元の名称・資料',notEntrance:'訪問者用の入口は未確認です。'}};
+const lang=()=>['en','es','ja'].includes(document.documentElement.lang?.slice(0,2))?document.documentElement.lang.slice(0,2):'en', t=()=>L[lang()];
+const normal=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+const el=(tag,cls,content)=>{const e=document.createElement(tag); if(cls)e.className=cls;if(content!==undefined)e.textContent=content;return e;};
+const validURL=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol);}catch{return false;}};
+const link=(url,title)=>{const e=el('a','',title);if(validURL(url)){e.href=url;e.target='_blank';e.rel='noopener noreferrer';}return e;};
+const strip=s=>String(s||'').trim();
+const txt=(p,field)=>strip(p[field+'_'+lang()]||p[field+'_en']||p[field+'_es']||'');
+const cats=[['all','all'],['mapped','map'],['named_place','place'],['place_event_lead','lead'],['tourism_product','product']];
+const controls=el('div','vxc-controls');const toggle=el('button','vxc-toggle');toggle.type='button';toggle.textContent=t().catalog;
+const select=el('select','vxc-select');cats.forEach(([v,k])=>{const o=el('option','',t()[k]);o.value=v;select.append(o);});select.setAttribute('aria-label',t().catalog);controls.append(toggle,select);
+status.insertAdjacentElement('afterend',controls);
+const panel=el('section','vxc-panel');panel.hidden=true;controls.insertAdjacentElement('afterend',panel);
+const guide=el('article','vxc-guide');guide.hidden=true;panel.insertAdjacentElement('afterend',guide);
+let mapped=[],catalog=[],markers=[],expanded=false,active=null,paging=65;
+const selectedKind=()=>select.value;
+const asEntry=f=>({id:'MAP-'+(f.properties.id||f.id),name:f.properties.name,kind:'mapped',municipality:f.properties.municipality||'',source_url:f.properties.source_url||'',source_text_es:'',activity:f.properties.type||'',feature:f,lat:f.geometry.coordinates[1],lon:f.geometry.coordinates[0],geographic_precision:f.properties.status||'mapped_feature'});
+const entries=()=>[...mapped.map(asEntry),...catalog];
+function clearGuide(){active=null;guide.hidden=true;if(mainList)mainList.style.removeProperty('display');if(mainDetail)mainDetail.style.removeProperty('display');markers.forEach(m=>m.el.classList.remove('vxc-selected'));render();}
+function isMatch(e,q){return !q||normal([e.name,e.municipality,e.activity,e.source_text_es].join(' ')).includes(q);}
+function filtered(){const q=normal(search.value),kind=selectedKind();return entries().filter(x=>(kind==='all'||(kind==='mapped'?x.kind==='mapped':x.kind===kind))&&isMatch(x,q));}
+function sidebarHide(yes){root.classList.toggle('vxc-active',yes);if(mainList)mainList.style.display=yes?'none':'';if(mainDetail)mainDetail.style.display=yes?'none':'';}
+function guideFor(e){
+ active=e.id;sidebarHide(true);guide.hidden=false;panel.hidden=true;guide.replaceChildren();
+ const b=el('button','vxc-back','← '+t().back);b.type='button';b.addEventListener('click',clearGuide);guide.append(b);
+ let p=e.feature?.properties || e;
+ if(p.photo_url && validURL(p.photo_url)){
+  const fig=el('figure','vxc-figure'),img=el('img');img.src=p.photo_url;img.alt=e.name;img.loading='lazy';img.addEventListener('error',()=>fig.remove());fig.append(img);
+  if(p.photo_source_url && validURL(p.photo_source_url))fig.append(link(p.photo_source_url,p.photo_credit||t().photo));guide.append(fig);
  }
- function guideRender(f){
-  const p=f.properties;
-  guide.replaceChildren();
-  const back=label('button','vxa-back','← '+t().back);back.type='button';back.addEventListener('click',clearSelection);guide.append(back);
-  if(p.photo_url){
-   const fig=div('vxa-photo','figure'),img=document.createElement('img');img.loading='lazy';img.src=p.photo_url;img.alt=nameOf(p);img.referrerPolicy='no-referrer';
-   img.addEventListener('error',()=>{fig.remove();});fig.append(img);
-   const cap=div('','figcaption');cap.append(safeLink(p.photo_source_url,p.photo_credit||t().photos));fig.append(cap);guide.append(fig);
-  }
-  guide.append(label('h3','vxa-name',iconOf(p)+' '+nameOf(p)));
-  if(p.municipality)guide.append(label('p','vxa-municipality',p.municipality+' · '+p.type));
-  const intro=textOf(p,'description');if(intro)guide.append(label('p','vxa-intro',intro));
-  const detail=textOf(p,'details');if(detail){guide.append(label('h4','vxa-subhead',t().details));guide.append(label('p','vxa-bodytext',detail));}
-  const visit=textOf(p,'visit_note');if(visit){guide.append(label('h4','vxa-subhead',t().practical));guide.append(label('p','vxa-bodytext',visit));}
-  if(p.status!=='entrance_verified'){
-   const disclosure=div('vxa-disclosure','details');disclosure.append(label('summary','',t().map));disclosure.append(label('p','',p.status==='mapped_area'?t().area:t().noVisit));
-   guide.append(disclosure);
-  }
-  const links=div('vxa-links');
-  if(p.source_url)links.append(safeLink(p.source_url,t().source+' ↗'));
-  if(p.photo_source_url)links.append(safeLink(p.photo_source_url,t().photos+' ↗'));
-  guide.append(links);
-  guide.hidden=false;
-  if(mainDetail)mainDetail.style.display='none';if(mainList)mainList.style.display='none';
-  side.scrollTo({top:0,behavior:'smooth'});
+ guide.append(el('h3','vxc-title',(p.icon ? p.icon+' ':'')+e.name));
+ const sub=el('p','vxc-sub',e.municipality || e.activity || (e.kind==='tourism_product'?t().product:t().place));guide.append(sub);
+ if(e.kind==='mapped'){
+  const intro=txt(p,'description'),detail=txt(p,'details'),visit=txt(p,'visit_note');
+  if(intro)guide.append(el('p','vxc-intro',intro));
+  if(detail){guide.append(el('h4','',t().info));guide.append(el('p','vxc-body',detail));}
+  if(visit){guide.append(el('h4','',t().note));guide.append(el('p','vxc-body',visit));}
+  if(p.status!=='entrance_verified')guide.append(el('p','vxc-disclaimer',t().notEntrance));
+ }else{
+  if(e.activity)guide.append(el('p','vxc-intro',e.activity));
+  if(e.source_text_es){guide.append(el('h4','',t().summary));guide.append(el('p','vxc-body',e.source_text_es));}
+  const msg=e.kind==='tourism_product'?t().route:e.geographic_precision==='municipality_reference'?t().area:t().unknown;
+  guide.append(el('p','vxc-disclaimer',msg));
+  if(e.municipality)guide.append(el('p','vxc-sub',t().nearby+': '+e.municipality));
  }
- function minimalPopup(f){
-  const p=f.properties,holder=div('vxa-popup');
-  holder.append(label('strong','',iconOf(p)+' '+nameOf(p)));
-  holder.append(label('p','',p.municipality||p.type||''));
-  const b=label('button','vxa-open',t().see+' →');b.type='button';b.addEventListener('click',()=>guideRender(f));holder.append(b);
-  return holder;
+ if(validURL(e.source_url))guide.append(link(e.source_url,t().source+' ↗'));
+ const matched=markers.find(m=>m.id===e.id);if(matched)matched.el.classList.add('vxc-selected');
+ if(e.feature)map.flyTo({center:e.feature.geometry.coordinates,zoom:Math.max(10,map.getZoom()),essential:true});
+ else if(e.geographic_precision==='municipality_reference'&&e.lon&&e.lat)map.flyTo({center:[Number(e.lon),Number(e.lat)],zoom:Math.max(8,map.getZoom()),essential:true});
+ side.scrollTo({top:0,behavior:'smooth'});
+}
+function render(){
+ const q=normal(search.value),open=expanded || q.length>0;
+ toggle.textContent=(expanded?'▴ ':'▾ ')+t().catalog+' · '+catalog.length+' + '+mapped.length+' '+t().map.toLowerCase();
+ panel.hidden=!open || !guide.hidden;select.hidden=!open;
+ sidebarHide(open || !guide.hidden);
+ if(!open || !guide.hidden)return;
+ const matches=filtered();panel.replaceChildren();panel.append(el('h4','vxc-results',q?t().matches+' · '+matches.length:matches.length+' '+t().results));
+ if(!matches.length){panel.append(el('p','vxc-empty',t().nothing));return;}
+ for(const item of matches.slice(0,paging)){
+  const row=el('button','vxc-record');row.type='button';
+  const symbol=el('span','vxc-icon',item.kind==='mapped'?(item.feature.properties.icon||'📍'):item.kind==='named_place'?'◌':item.kind==='place_event_lead'?'◈':'◇');
+  const inner=el('span','vxc-record-main');inner.append(el('strong','',item.name));
+  inner.append(el('small','',[(item.kind==='mapped'?t().map:item.kind==='named_place'?t().place:item.kind==='place_event_lead'?t().lead:t().product),item.municipality].filter(Boolean).join(' · ')));
+  row.append(symbol,inner);row.addEventListener('click',()=>guideFor(item));panel.append(row);
  }
- function focus(f){
-  active=String(f.properties.id||f.id);const coords=f.geometry.coordinates;
-  map.flyTo({center:coords,zoom:Math.max(map.getZoom(),10),essential:true});
-  for(const m of markers)m.el.classList.toggle('vxa-selected',m.id===active);
-  // Clear municipality-only search before showing guide; its input listener hides guides.
-  if(search.value){search.value='';search.dispatchEvent(new Event('input',{bubbles:true}));}
-  if(popup)popup.remove();
-  popup=new lib.Popup({offset:20,maxWidth:'250px',closeButton:true}).setLngLat(coords).setDOMContent(minimalPopup(f)).addTo(map);
-  guideRender(f);renderList();
- }
- function marker(f){
-  const p=f.properties,el=div('vxa-marker');el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-label',nameOf(p));el.title=nameOf(p);
-  const core=div('vxa-marker-icon');core.textContent=iconOf(p);el.append(core);
-  const n=label('span','vxa-marker-label',nameOf(p));el.append(n);
-  el.addEventListener('click',e=>{e.stopPropagation();focus(f)});
-  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();focus(f);}});
-  new lib.Marker({element:el,anchor:'center',subpixelPositioning:true}).setLngLat(f.geometry.coordinates).addTo(map);
-  markers.push({el,id:String(p.id||f.id)});
- }
- function renderList(){
-  const q=norm(search.value),matches=features.filter(f=>norm(nameOf(f.properties)+' '+(f.properties.municipality||'')+' '+(f.properties.type||'')).includes(q));
-  const isOpen=Boolean(q)||expanded;
-  panel.hidden=!isOpen || !guide.hidden;
-  toggle.textContent=`${t().attractions} · ${features.length}  ${expanded?'▴':'▾'}`;
-  toggle.setAttribute('aria-expanded',String(expanded));
-  if(!isOpen || !guide.hidden) return;
-  panel.replaceChildren();panel.append(label('h4','',q?`${t().results} · ${matches.length}`:t().attractions));
-  if(!matches.length){panel.append(label('p','vxa-empty',t().none));return;}
-  for(const f of matches){
-   const p=f.properties,b=div('vxa-item','button');b.type='button';
-   b.append(label('span','vxa-item-icon',iconOf(p)));
-   const s=div('vxa-item-name');s.append(label('strong','',nameOf(p)),label('small','',p.municipality||p.type||''));b.append(s);
-   b.addEventListener('click',()=>focus(f));panel.append(b);
-  }
- }
- function zoomLabels(){
-  const z=map.getZoom();
-  for(const m of markers)m.el.classList.toggle('vxa-labels-on',z>=9.2 || m.id===active);
- }
- toggle.addEventListener('click',()=>{expanded=!expanded;clearSelection();renderList();});
- search.addEventListener('input',()=>{if(!guide.hidden){guide.hidden=true;if(mainDetail)mainDetail.style.removeProperty('display');if(mainList)mainList.style.removeProperty('display');}renderList();});
- search.addEventListener('keydown',e=>{if(e.key!=='Enter')return;const q=norm(search.value);const f=features.find(f=>q && norm(nameOf(f.properties)).includes(q));if(f){e.preventDefault();focus(f);}});
- map.on('zoom',zoomLabels);
- fetch('data/attractions.geojson',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(fc=>{
-  if(fc.type!=='FeatureCollection'||!Array.isArray(fc.features))throw Error('Invalid GeoJSON');
-  features=fc.features.filter(f=>f.geometry?.type==='Point'&&f.geometry.coordinates?.length===2&&f.geometry.coordinates.every(Number.isFinite));
-  features.forEach(marker);zoomLabels();renderList();
-  console.info('[Veracruz attractions] Loaded',features.length,'source-linked attraction points');
- }).catch(e=>{console.error('[Veracruz attractions]',e);toggle.textContent='Attractions: '+e.message;});
+ if(matches.length>paging){const more=el('button','vxc-more',t().more+' ('+(matches.length-paging)+')');more.addEventListener('click',()=>{paging+=65;render();});panel.append(more);}
+}
+function marker(f){const p=f.properties,e=el('div','vxa-marker');e.tabIndex=0;e.setAttribute('role','button');e.setAttribute('aria-label',p.name);e.title=p.name;
+ // MapLibre needs absolute positioned marker elements. Do not override its transform.
+ e.style.position='absolute';const core=el('span','vxa-marker-icon',p.icon||'📍');e.append(core,el('span','vxa-marker-label',p.name));
+ const entry=asEntry(f);
+ e.addEventListener('click',ev=>{ev.stopPropagation();guideFor(entry)});
+ e.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();guideFor(entry);}});
+ new lib.Marker({element:e,anchor:'center',subpixelPositioning:true}).setLngLat(f.geometry.coordinates).addTo(map);
+ markers.push({el:e,id:entry.id});
+}
+const zoomLabels=()=>{const z=map.getZoom();markers.forEach(m=>m.el.classList.toggle('vxa-labels-on',z>=9.2||m.id===active));};
+toggle.addEventListener('click',()=>{expanded=!expanded; paging=65;guide.hidden=true;render();});
+select.addEventListener('change',()=>{paging=65;guide.hidden=true;render();});
+search.addEventListener('input',()=>{paging=65;guide.hidden=true;render();});
+search.addEventListener('keydown',e=>{if(e.key!=='Enter'||!search.value.trim())return;const match=filtered()[0];if(match){e.preventDefault();guideFor(match);}});
+map.on('zoom',zoomLabels);
+Promise.all([fetch('data/attractions.geojson',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Attractions HTTP '+r.status))),fetch('data/tourism_catalog.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Catalog HTTP '+r.status)))]).then(([f,c])=>{
+ if(f.type!=='FeatureCollection'||!Array.isArray(f.features)||!Array.isArray(c.records))throw Error('Bad map/catalog data');
+ mapped=f.features.filter(v=>v.geometry?.type==='Point'&&v.geometry.coordinates?.length===2&&v.geometry.coordinates.every(Number.isFinite));
+ catalog=c.records; mapped.forEach(marker);zoomLabels();render();
+ console.info('[Veracruz] '+mapped.length+' mapped attractions; '+catalog.length+' recovered catalog records searchable.');
+}).catch(e=>{console.error('[Veracruz catalog]',e);toggle.textContent='Catalog error: '+e.message;});
 })();

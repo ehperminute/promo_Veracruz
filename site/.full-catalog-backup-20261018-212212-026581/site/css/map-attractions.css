@@ -1,0 +1,32 @@
+/* Attraction markers; geographic positioning remains controlled by MapLibre. */
+#veracruz-map-section .vxa-marker{position:absolute!important;top:0;left:0;display:block;width:32px;height:32px;cursor:pointer;overflow:visible;background:none!important;border:0!important;box-shadow:none!important;z-index:2}
+#veracruz-map-section .vxa-marker-icon{width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:17px;border-radius:11px;background:#155e53;color:white;border:2px solid white;box-shadow:0 2px 9px #143e4080}
+#veracruz-map-section .vxa-marker:hover .vxa-marker-icon,#veracruz-map-section .vxa-selected .vxa-marker-icon{box-shadow:0 0 0 3px #efb54b,0 3px 10px #143e4080}
+#veracruz-map-section .vxa-marker-label{display:none;position:absolute;top:36px;left:50%;transform:translateX(-50%);white-space:nowrap;color:#244639;font-size:11px;font-weight:700;background:#fffef4f5;padding:3px 7px;border-radius:5px;box-shadow:0 2px 7px #0002;pointer-events:none}
+#veracruz-map-section .vxa-labels-on .vxa-marker-label,#veracruz-map-section .vxa-marker:hover .vxa-marker-label{display:block}
+#veracruz-map-section .vxa-toggle{display:block;width:100%;text-align:left;padding:11px 15px;border:0;border-bottom:1px solid #dce7de;background:#eff7f1;color:#245b48;font-weight:700;font-size:13px;cursor:pointer}
+#veracruz-map-section .vxa-panel{border-bottom:1px solid #d7e5dd;background:#f9fcfa;padding:10px 13px;max-height:300px;overflow-y:auto}
+#veracruz-map-section .vxa-panel[hidden],#veracruz-map-section .vxa-guide[hidden]{display:none!important}
+#veracruz-map-section .vxa-panel h4{font-size:13px;margin:5px 0 8px;color:#245842}
+#veracruz-map-section .vxa-item{display:flex;align-items:center;gap:10px;border:0;border-bottom:1px solid #e7eee8;border-radius:6px;background:white;padding:9px 8px;text-align:left;width:100%;cursor:pointer;color:#244738}
+#veracruz-map-section .vxa-item:hover,#veracruz-map-section .vxa-item:focus{background:#eaf6ee}
+#veracruz-map-section .vxa-item-icon{font-size:22px}
+#veracruz-map-section .vxa-item-name{display:flex;flex-direction:column;gap:3px;font-size:13px}
+#veracruz-map-section .vxa-item-name small{font-size:11px;color:#637d6c}
+#veracruz-map-section .vxa-guide{background:#fff;padding:12px 16px 23px;color:#264a39;font-size:14px;line-height:1.65}
+#veracruz-map-section .vxa-back{background:#eff7f0;border:1px solid #c8e0d1;border-radius:7px;padding:7px 11px;color:#2d6953;cursor:pointer}
+#veracruz-map-section .vxa-photo{margin:15px 0 12px}
+#veracruz-map-section .vxa-photo img{display:block;width:100%;max-height:250px;object-fit:cover;border-radius:9px;background:#eaf0e9}
+#veracruz-map-section .vxa-photo figcaption{font-size:10px;color:#5a6e60;padding-top:4px}
+#veracruz-map-section .vxa-name{font-size:21px;line-height:1.28;margin:16px 0 5px;color:#174536}
+#veracruz-map-section .vxa-municipality{font-size:12px;color:#668070;margin:0 0 12px}
+#veracruz-map-section .vxa-intro{font-size:15px;font-weight:500;line-height:1.7;color:#355c4a;margin:8px 0 18px}
+#veracruz-map-section .vxa-subhead{font-size:14px;color:#23553f;margin:16px 0 4px}
+#veracruz-map-section .vxa-bodytext{margin:4px 0 10px;font-size:13px;line-height:1.7}
+#veracruz-map-section .vxa-disclosure{font-size:11px;margin:16px 0;padding:9px 10px;background:#f5f7f5;border-radius:6px}
+#veracruz-map-section .vxa-disclosure summary{cursor:pointer;color:#647d70}
+#veracruz-map-section .vxa-links{font-size:11px;display:flex;gap:11px;flex-wrap:wrap;border-top:1px solid #e7ede7;padding-top:9px}
+#veracruz-map-section .vxa-links a,#veracruz-map-section .vxa-photo a{color:#196b84;text-decoration:underline}
+#veracruz-map-section .vxa-popup strong{font-size:14px;color:#1a4432}
+#veracruz-map-section .vxa-popup p{font-size:11px;color:#5b7568;margin:5px 0}
+#veracruz-map-section .vxa-open{cursor:pointer;background:#1a6354;color:white;padding:6px 10px;border:0;border-radius:5px}
