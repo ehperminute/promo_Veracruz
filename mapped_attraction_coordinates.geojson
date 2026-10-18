@@ -1,0 +1,438 @@
+{
+  "type": "FeatureCollection",
+  "name": "Veracruz named tourism places—coordinates not necessarily visitor entrances",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PLC-739eb26b47aa8f41",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.41089,
+          19.7503
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-739eb26b47aa8f41",
+        "attraction_name_original": "Playa Muñecos",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "beach_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/W387750040",
+        "research_date": "2026-10-18",
+        "research_notes": "Beach polygon representative, not access trail or safe visitor entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-88bd4af5f976badc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.18868,
+          18.45929
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-88bd4af5f976badc",
+        "attraction_name_original": "Laguna Encantada",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "waterbody_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/30548974",
+        "research_date": "2026-10-18",
+        "research_notes": "Disambiguated Laguna la Encantada near San Andrés Tuxtla; not a boat departure/access point."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-de5cb7bab0d45188",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9944,
+          19.40189
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-de5cb7bab0d45188",
+        "attraction_name_original": "Cascada de Texolo",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "waterfall",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/N3671017598",
+        "research_date": "2026-10-18",
+        "research_notes": "Waterfall feature, not visitor approach or parking; separate mapped attraction point exists."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-75d49e94f88da95f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.10595,
+          18.84974
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-75d49e94f88da95f",
+        "attraction_name_original": "Palacio de Hierro",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "building_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/W552327838",
+        "research_date": "2026-10-18",
+        "research_notes": "Building footprint representative, not doorway."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-907421b8a1cad6e1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.32114,
+          19.32127
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-907421b8a1cad6e1",
+        "attraction_name_original": "Casa de Cortés",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "museum_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/N7147258586",
+        "research_date": "2026-10-18",
+        "research_notes": "Museum point; nearby historical-building feature has slightly different coordinates."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-6561976811ca5bc2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.31908,
+          19.46943
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-6561976811ca5bc2",
+        "attraction_name_original": "Dunas de Chachalacas",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "area_representative",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/W1241740824",
+        "research_date": "2026-10-18",
+        "research_notes": "OSM dune/sand polygon reference; NOT an entrance and not necessarily ATV departure point."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-98d4dc7f03bc6254",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.13137,
+          19.20939
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-98d4dc7f03bc6254",
+        "attraction_name_original": "San Juan de Ulúa",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "fort_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/19383044",
+        "research_date": "2026-10-18",
+        "research_notes": "Fort point, not access road or ticket entrance. Do not confuse with island point."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-e5bffdd7419c88bf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.57469,
+          21.63334
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-e5bffdd7419c88bf",
+        "attraction_name_original": "Laguna de Tamiahua",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "waterbody_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/19378426",
+        "research_date": "2026-10-18",
+        "research_notes": "Large lagoon reference; multiple access towns. Not suitable as a single road-stop."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-841640faab40c907",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2077,
+          18.38479
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-841640faab40c907",
+        "attraction_name_original": "El Salto de Eyipantla",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "waterfall",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/N1834318666",
+        "research_date": "2026-10-18",
+        "research_notes": "Waterfall node. Nearby locality called Salto de Eyipantla is a DIFFERENT point."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-910bbe4196b3266e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9278,
+          19.06517
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-910bbe4196b3266e",
+        "attraction_name_original": "Isla de Enmedio",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "island_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/30547054",
+        "research_date": "2026-10-18",
+        "research_notes": "Island reference, not landing point or public-access confirmation; disambiguated from sandbank of same name."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-b5b5d1afd92509c0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.06485,
+          18.40077
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-b5b5d1afd92509c0",
+        "attraction_name_original": "Lago de Catemaco",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "waterbody_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/19408508",
+        "research_date": "2026-10-18",
+        "research_notes": "Lake reference point only, cannot route vehicles to it."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-b94e2577e1106026",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.09198,
+          19.17538
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-b94e2577e1106026",
+        "attraction_name_original": "Isla de Sacrificios",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "island_reference",
+        "mapping_status": "mapped_general_area_NOT_routing_stop",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "source_url": "https://mapcarta.com/es/W41143662",
+        "research_date": "2026-10-18",
+        "research_notes": "Island reference; public access is restricted, DO NOT treat as visitable road stop."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-e1c9e67f7e258dc3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.94388889,
+          19.51222222
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-e1c9e67f7e258dc3",
+        "attraction_name_original": "Jardín Botánico F.J. Clavijero",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "garden_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "Wikidata",
+        "source_url": "https://www.wikidata.org/wiki/Q9010897",
+        "research_date": "2026-10-18",
+        "research_notes": "Coordinates derived from Wikidata DMS garden reference; entrance not checked."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-796745db38a6691f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.377492,
+          20.447225
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-796745db38a6691f",
+        "attraction_name_original": "El Tajín",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "site_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "INAH",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1905",
+        "research_date": "2026-10-18",
+        "research_notes": "INAH lists this as El Tajín locality; the access location still needs verification; not entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-f1845f7a76f2e840",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.403889,
+          19.447047
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-f1845f7a76f2e840",
+        "attraction_name_original": "Cempoala",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "archaeological_site_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "INAH",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1948",
+        "research_date": "2026-10-18",
+        "research_notes": "INAH archaeological-site point, not explicitly entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-9e7895668d31e1a6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.41522165,
+          19.67015025
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-9e7895668d31e1a6",
+        "attraction_name_original": "Quiahuiztlán",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "archaeological_site_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "INAH",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/2098",
+        "research_date": "2026-10-18",
+        "research_notes": "INAH archaeological-site point, not explicitly entrance."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-1332329626ad32ce",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.44006,
+          18.465703
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-1332329626ad32ce",
+        "attraction_name_original": "Tres Zapotes",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "archaeological_site_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "INAH",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1949",
+        "research_date": "2026-10-18",
+        "research_notes": "INAH archaeological-site point; locality has a separate coordinate."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-2df517ab5a9b9e97",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.76127504,
+          17.75173971
+        ]
+      },
+      "properties": {
+        "place_id": "PLC-2df517ab5a9b9e97",
+        "attraction_name_original": "San Lorenzo Tenochtitlán",
+        "crs": "EPSG:4326",
+        "mapped_feature_type": "archaeological_site_reference",
+        "mapping_status": "mapped_attraction_or_site",
+        "road_routing_ready": "no",
+        "visitor_entrance_verified": "no",
+        "source_provider": "INAH",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1950",
+        "research_date": "2026-10-18",
+        "research_notes": "INAH archaeological-site point; differs from locality coordinate."
+      }
+    }
+  ]
+}
