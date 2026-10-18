@@ -1,27 +1,21 @@
-# Veracruz map visible-marker and contextual-sidebar repair
+# Veracruz map — geographic labels and visitor-first guides
 
-This patch is designed specifically for the October 18 marker repair already installed in `promo_Veracruz`.
-It changes **only** `site/js/map-explorer.js`, `site/css/map-explorer.css`, and asset query versions in `site/index.html`.
-It does not change `map_points.geojson`, the tourism SQLite database, guides, descriptions, or the main destination explorer.
+Adds geographic names to map markers (collision-aware, shown progressively with zoom; always shown on hover/focus/selection). Adds a source-linked, visitor-friendly layout to all 216 experience guides. The 216 short introductions are **editorial scaffolding**, not a claim that all 216 guides have been independently written or translated; source-specific paragraphs appear where the evidence allows. Four commonly shown experiences have custom English/Spanish copy, including Playa Muñecos and Finca San Felipe. Sources remain visible under an expandable section. No opening hours, prices, or attraction coordinates are invented.
 
-## Install
+Existing `map_guide_notes.json`, restored source material, photo manifest, municipality coordinate GeoJSON and SQLite database are left intact. The new `map_editorial_notes.json` is a separate presentation-only file. The existing original-source addon remains supported.
 
-From repo root:
+## Installation
+
+Extract archive in repository root of `promo_Veracruz`, then run:
 
 ```bash
-unzip -o VERACRUZ_MAP_VISIBLE_MARKERS_SIDEBAR_2026-10-18.zip
-python install_map_ui.py
+python install.py
 ```
 
-The installer verifies existing JS/CSS checksums, creates timestamped backups, and safely refuses to overwrite an unfamiliar version. Refresh the site afterward.
+The installer checks SHA-256 hashes of the current JS/CSS to avoid destroying unexpected changes, and backs up modified files. The homepage loads versioned CSS/JS so mobile browsers do not retain old assets. A Ctrl+Shift+R or private tab can help refresh a stale session.
 
-## Changes
+If it refuses due to a mismatch, do not overwrite files manually; the current site code needs to be merged.
 
-1. Marker icons use divs with essential inline marker styling, eliminating default button appearance and avoiding reliance on cached marker CSS. They keep geographic MapLibre anchors, activity colors and filter selection.
-2. Cache-busted CSS and JS references in index.html ensure compatible asset versions.
-3. Contextual sidebar: municipalities within current view first, type names and named activities, explicitly labeled counts. Other places can be expanded without losing records.
-4. Opening a place now shows its detail instead of simultaneously rendering a 61-place directory below it.
+## Reality check
 
-Markers still represent municipality reference coordinates; they are *not* precise geolocated attractions. Activity counts mean documented municipality–activity links, not count of attractions.
-
-Testing note: JS syntax, sample GeoJSON integration and Chromium layout test performed with simulated MapLibre; we can't access your live Codespaces browser. The most direct cause indicated by screenshot is an unstyled browser-default button, plausibly from stale map CSS. There are no claims of verified live behavior.
+Markers represent **municipality reference coordinates** and the labels are **municipality names**, not verified attraction entrance points. The website should not promise that snorkeling or any other activity is possible at the marker coordinate. Complete location-specific guide articles and photos still need source-specific review; this patch focuses on real titles, readable navigation and honest copy.

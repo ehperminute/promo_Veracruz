@@ -122,7 +122,7 @@ if(mapObject){
   mapObject.touchZoomRotate.enable();
   mapObject.touchZoomRotate.disableRotation();
 }
-const state={features:[],filter:'',activity:'',query:'',all:false,selected:null,guide:'',region:'',regions:null,guideNotes:{},photos:{},navHistory:[],navIndex:-1,ready:false};
+const state={features:[],filter:'',activity:'',query:'',all:false,selected:null,guide:'',region:'',regions:null,guideNotes:{},editorials:{},photos:{},navHistory:[],navIndex:-1,ready:false};
 const nameOf=a=>language()==='es'?a.name_es:(a.name_en||a.name_es);
 const orderedTypes=Object.keys(palette);
 function eligible(f){const p=f.properties;return (state.all||p.activity_count>0) && (!state.region||state.regions?.membership?.[p.municipality_id]===state.region) && (!state.query||clean([p.name,...p.activities.flatMap(a=>[a.name_es,a.name_en,a.id]),...p.types.map(k=>copy().types[k]||k)].join(' ')).includes(state.query));}
@@ -154,7 +154,7 @@ function renderDetail(){
  close.onclick=()=>navigate({selected:null,guide:''});top.append(close);box.append(top);
  const region=state.regions?.membership?.[p.municipality_id];if(region){const b=element('button','vx-region-link',regionName(region)+' ↗');b.type='button';b.onclick=()=>navigate({region,selected:null,guide:''});box.append(b);}
  const chips=element('div','vx-tags');badges(p,chips);box.append(chips);
- const note=element('p','vx-note',e.dataWarning);box.append(note);
+ const note=element('p','vx-note',e.dataWarning);if(!state.guide)box.append(note);
  if(state.guide){
    const a=p.activities.find(x=>x.id===state.guide);
    if(a){
@@ -165,16 +165,31 @@ function renderDetail(){
        const fig=element('figure','vx-figure'),img=element('img','');img.src=hero.src;img.alt=hero.alt||humanActivity(a);
        img.loading='lazy';img.referrerPolicy='no-referrer';fig.append(img);const cap=element('figcaption','');const link=element('a','',hero.credit);link.href=hero.source;link.rel='noopener noreferrer';link.target='_blank';cap.append(link);fig.append(cap);box.append(fig);
      }
-     const intro=element('p','vx-guide-intro',language()==='es'?`En ${p.name}, las fuentes consultadas registran ${humanActivity(a).toLocaleLowerCase('es')}. Consulta los detalles documentados y confirma el lugar exacto antes de organizar tu visita.`:
-       language()==='ja'?`${p.name}で${humanActivity(a)}が資料に記録されています。訪問前に詳細な場所を確認してください。`:
-       `${humanActivity(a)} is documented in ${p.name}. Check the evidence below and confirm the exact location before planning your visit.`);
-     box.append(intro);
-     if(entry.source_phrases?.length){box.append(element('h4','',e.sourcePassage));
-       for(const phrase of entry.source_phrases)box.append(element('blockquote','vx-source-excerpt',phrase.es));
-     }else box.append(element('p','vx-note',e.emptyStory));
-     box.append(element('h4','',e.tips),element('p','vx-guide-intro',e.travelTip));
-     const links=element('div','vx-links');sourceLinks(a.source_urls,links);box.append(element('h4','',e.sourceLinks),links);
-     box.append(element('p','vx-note',e.about));
+     // Editorial visitor copy is stored separately from immutable source data.
+     // No attraction name, route, photo, price or opening hour is invented.
+     const guideKey=p.municipality_id+'::'+a.id;
+     const written=state.editorials?.[guideKey]||{};
+     const lang=language();
+     const words=written[lang]||written.en||{};
+     const eyebrow=element('p','vx-story-eyebrow',labelType(a.type)+'  ·  '+p.name);
+     box.insertBefore(eyebrow,header);
+     const lead=element('p','vx-story-lead',words.lead||visitorFallback(a,p,entry));
+     box.append(lead);
+     const specifics=words.detail||sourceSpecifics(entry,lang);
+     if(specifics && clean(specifics)!==clean(lead.textContent)){
+       box.append(element('p','vx-story-detail',specifics));
+     }
+     const info=element('div','vx-visit-note');
+     info.append(element('strong','',({es:'Para planear tu visita',en:'Plan your visit',ja:'訪問のヒント'})[lang]));
+     info.append(element('p','',({es:'Consulta el acceso y las condiciones locales antes de salir. El punto del mapa indica el municipio, no la entrada al atractivo.',en:'Check local access and conditions before setting out. The map pin locates the municipality, not the attraction entrance.',ja:'出発前にアクセスや現地条件を確認してください。地図のピンは施設入口ではなく自治体の代表位置です。'})[lang]));
+     box.append(info);
+     const evidence=element('details','vx-guide-evidence');
+     evidence.append(element('summary','',({es:'Ver fuentes y texto original',en:'Original descriptions & sources',ja:'原文と出典'})[lang]));
+     if(entry.source_phrases?.length){
+       for(const phrase of entry.source_phrases){const q=element('blockquote','vx-source-excerpt',phrase.es);q.lang='es';evidence.append(q);}
+     }
+     const src=element('div','vx-links');sourceLinks([...(entry.source_urls||[]),...(a.source_urls||[])],src);evidence.append(src);
+     box.append(evidence);
      const back=element('button','vx-secondary',e.broader);back.type='button';back.onclick=()=>navigate({guide:''});box.append(back);
    }
    return;
@@ -196,6 +211,21 @@ function renderDetail(){
 // not projected/positioned by our page and do not require style.load, sprites,
 // addSource, or the remote basemap glyph pipeline.
 // This replaces the failing native style-layer path with a verifiable baseline.
+
+function visitorFallback(a,p,entry){
+ const activity=humanActivity(a).toLocaleLowerCase(language()==='es'?'es':'en');
+ if(language()==='ja')return `${p.name}では${humanActivity(a)}に関する体験を探せます。見どころや元の資料をご覧ください。`;
+ if(language()==='es')return `Descubre otra faceta de ${p.name} a través de ${activity}. Encuentra los lugares mencionados por las fuentes y prepara una visita a tu ritmo.`;
+ return `See another side of ${p.name} through ${activity}. Explore the places mentioned in the source material and make this experience part of your Veracruz journey.`;
+}
+function sourceSpecifics(entry,lang){
+ const article=entry?.article||{};
+ let value=String(article[lang]||(!article.es?article.en:'')||'').trim();
+ if(/^Original catalog \(Spanish\):/i.test(value))return '';
+ if(/^(Municipality:|Same product|Government beach guide|Product includes|Original catalog|Ruins of)/i.test(value))return '';
+ // Show source-specific facts, but never internal provenance/claim identifiers as brochure prose.
+ return value.length>=40 && value.length<850 ? value : '';
+}
 const markerCache=new Map();
 function buildMarker(f){
   const p=f.properties;
@@ -232,12 +262,22 @@ function buildMarker(f){
     background:'#244b42',border:'1px solid #fff',boxSizing:'border-box'
   });
   ring.append(core);pin.append(ring);
+  // MapLibre owns the marker's coordinate transform. The label is a child,
+  // absolutely positioned next to its marker; no independent projection drift.
+  const nameTag=element('span','vx-pin-label',p.name);
+  nameTag.setAttribute('aria-hidden','true');
+  nameTag.style.display='none';
+  pin.append(nameTag);
   function selectPin(e){e.preventDefault();e.stopPropagation();openDetail(f);}
+  pin.addEventListener('mouseenter',()=>{const e=markerCache.get(String(f.id));if(e){e.hovered=true;updateMarkerLabels();}});
+  pin.addEventListener('mouseleave',()=>{const e=markerCache.get(String(f.id));if(e){e.hovered=false;updateMarkerLabels();}});
+  pin.addEventListener('focus',()=>{const e=markerCache.get(String(f.id));if(e){e.hovered=true;updateMarkerLabels();}});
+  pin.addEventListener('blur',()=>{const e=markerCache.get(String(f.id));if(e){e.hovered=false;updateMarkerLabels();}});
   pin.addEventListener('click',selectPin);
   pin.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){selectPin(e);}});
   const marker=new maplibregl.Marker({element:pin,anchor:'center',subpixelPositioning:true})
     .setLngLat(f.geometry.coordinates).addTo(mapObject);
-  markerCache.set(String(f.id),{marker,button:pin,ring});
+  markerCache.set(String(f.id),{marker,button:pin,ring,nameTag,feature:f,hovered:false});
 }
 function refreshMapSource(){
   if(!mapObject || !state.features.length)return;
@@ -271,8 +311,45 @@ function updateMarkerZoom(){
     entry.button.style.width=big?'31px':'25px';
     entry.button.style.height=big?'31px':'25px';
   }
+  updateMarkerLabels();
 }
-if(mapObject){mapObject.on('zoom',updateMarkerZoom);mapObject.on('moveend',()=>{if(state.features.length)renderResults();});}
+// Prioritize the selected place and relevant matches. At wider scales show fewer
+// labels to keep them readable; the label appears on hover, focus or selection.
+function updateMarkerLabels(){
+ if(!mapObject||!state.features.length)return;
+ const z=mapObject.getZoom(),canvas=mapObject.getCanvas?.();
+ const w=canvas?.clientWidth||$('vx-map').clientWidth||800;
+ const h=canvas?.clientHeight||$('vx-map').clientHeight||550;
+ const entries=[...markerCache.values()].filter(v=>eligible(v.feature));
+ entries.sort((a,b)=>
+  Number(b.hovered)-Number(a.hovered)||
+  Number(String(b.feature.id)===String(state.selected))-Number(String(a.feature.id)===String(state.selected))||
+  Number(highlighting()&&matches(b.feature))-Number(highlighting()&&matches(a.feature))||
+  a.feature.properties.name.length-b.feature.properties.name.length);
+ const occupied=[];
+ const limit=z<7?9:z<7.8?18:z<9?36:80;
+ let count=0;
+ for(const entry of markerCache.values())entry.nameTag.style.display='none';
+ for(const entry of entries){
+  const chosen=entry.hovered||String(entry.feature.id)===String(state.selected);
+  const matched=highlighting()&&matches(entry.feature);
+  if(!chosen && count>=limit)continue;
+  if(!chosen && !matched && highlighting() && z<8.6)continue;
+  const p=mapObject.project?.(entry.feature.geometry.coordinates);
+  if(p){
+   const label=entry.feature.properties.name;
+   const box={left:p.x+15,right:p.x+15+Math.min(188,label.length*6.6+20),top:p.y-13,bottom:p.y+13};
+   if(!chosen && (box.right>w-5||box.left<0||box.top<4||box.bottom>h-4))continue;
+   if(!chosen && occupied.some(q=>box.left<q.right+6&&box.right+6>q.left&&box.top<q.bottom+4&&box.bottom+4>q.top))continue;
+   occupied.push(box);
+  }
+  entry.nameTag.style.display='block';
+  entry.nameTag.style.fontWeight=chosen?'750':'600';
+  entry.nameTag.classList.toggle('vx-pin-label--selected',chosen);
+  count++;
+ }
+}
+if(mapObject){mapObject.on('zoom',updateMarkerZoom);mapObject.on('moveend',()=>{if(state.features.length){renderResults();updateMarkerLabels();}});}
 // Sidebar follows the geographic viewport instead of showing an unexplained
 // alphabetical table for the entire state. Nothing is removed from the data.
 let showOutsidePlaces=false;
@@ -393,13 +470,14 @@ Promise.all([
  fetch('data/map_points.geojson',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(`GeoJSON HTTP ${r.status}`);return r.json();}),
  fetch('data/map_regions.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(`Regions HTTP ${r.status}`);return r.json();}),
  fetch('data/map_guide_notes.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({})),
- fetch('data/map_photos.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}))
-]).then(([fc,regions,notes,photos])=>{
+ fetch('data/map_photos.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({})),
+ fetch('data/map_editorial_notes.json',{cache:'no-store'}).then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([fc,regions,notes,photos,editorials])=>{
  if(fc.type!=='FeatureCollection'||!Array.isArray(fc.features))throw Error('Invalid GeoJSON');
  state.features=fc.features.filter(f=>f.geometry?.type==='Point'&&f.geometry.coordinates.length===2&&
    f.geometry.coordinates.every(Number.isFinite)&&f.geometry.coordinates[0]>-100&&f.geometry.coordinates[0]<-93&&
    f.geometry.coordinates[1]>17&&f.geometry.coordinates[1]<23&&Array.isArray(f.properties?.activities)&&Array.isArray(f.properties?.types));
- state.regions=regions;state.guideNotes=notes;state.photos=photos;
+ state.regions=regions;state.guideNotes=notes;state.photos=photos;state.editorials=editorials;
  state.navHistory=[snapshot()];state.navIndex=0;
  render();if(mapObject&&state.features.length){const b=new maplibregl.LngLatBounds();state.features.forEach(f=>b.extend(f.geometry.coordinates));mapObject.fitBounds(b,{padding:42,maxZoom:6.6,duration:0});}
 }).catch(error=>{$('vx-status').textContent='Map catalog could not be loaded. '+error.message;console.error('Veracruz map:',error);});

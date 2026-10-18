@@ -1,0 +1,2545 @@
+{
+  "30004::archaeological_visit": {
+    "en": {
+      "lead": "Follow the traces of ancient Veracruz at Quiahuiztlán.",
+      "detail": "The Quiahuiztlán archaeological site is part of the historical Ruta de Cortés experience, alongside La Antigua and Cempoala. Here, archaeology connects with the coastal landscape of Actopan."
+    },
+    "es": {
+      "lead": "Sigue las huellas del Veracruz prehispánico en Quiahuiztlán.",
+      "detail": "La zona arqueológica forma parte de la Ruta de Cortés, junto con La Antigua y Cempoala: un recorrido para acercarte a las historias del litoral veracruzano."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30004::birdwatching": {
+    "en": {
+      "lead": "Look to the skies and waterways of Actopan for birdlife.",
+      "detail": "Veracruz’s experience catalog points to the lagoons of Actopan as part of the state’s birdwatching landscapes, where observing wildlife is also a way to discover the region’s biodiversity."
+    },
+    "es": {
+      "lead": "Alza la mirada y descubre las aves de las lagunas de Actopan.",
+      "detail": "El catálogo de experiencias destaca estos humedales como parte de los paisajes veracruzanos para la observación de aves y el acercamiento a la biodiversidad local."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30004::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Actopan.",
+      "detail": "Del Manglar a tu Paladar expressly offers a boat tour through La Mancha mangrove."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Actopan."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30004::rafting": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Actopan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Actopan."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30004::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Actopan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Actopan.",
+      "detail": "Ya seas principiante en el buceo o amante del snorkel, explora las aguas cristalinas y descubre el mundo submarino del buque hundido en Tamiahua, snorkelea en las playas de Villa Rica en Actopan, playa Muñecos en Alto Lucero o en la Laguna Encantada de San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30004::swimming": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Actopan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Actopan."
+    },
+    "ja": {
+      "lead": "Actopanの観光体験をご紹介します。"
+    }
+  },
+  "30009::snorkeling": {
+    "en": {
+      "lead": "Discover the waters near Playa Muñecos on the Alto Lucero coast.",
+      "detail": "The Veracruz tourism catalog highlights Playa Muñecos in Alto Lucero as a place to explore with a snorkel. Check local access and sea conditions before setting out."
+    },
+    "es": {
+      "lead": "Descubre el mundo marino junto a Playa Muñecos, en la costa de Alto Lucero.",
+      "detail": "El catálogo turístico de Veracruz menciona Playa Muñecos como uno de los sitios para practicar esnórquel. Consulta el acceso y las condiciones del mar antes de ir."
+    },
+    "ja": {
+      "lead": "アルト・ルセロのプラヤ・ムニェコス周辺で海の景色を楽しみましょう。",
+      "detail": "ベラクルス州の観光カタログは、プラヤ・ムニェコスをシュノーケリングの候補として挙げています。訪問前にアクセスと海況を確認してください。"
+    }
+  },
+  "30011::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Alvarado.",
+      "detail": "Al sabor de Boka: Boat crossing from Antón Lizardo to Isla de Enmedio. Boat to the island from Antón Lizardo. Guided mangrove boat excursion in Mandinga (not in departure city Veracruz)."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Alvarado."
+    },
+    "ja": {
+      "lead": "Alvaradoの観光体験をご紹介します。"
+    }
+  },
+  "30011::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Alvarado.",
+      "detail": "Al sabor de Boka: Boat reaches Isla de Enmedio from Antón Lizardo; snorkeling is offered there. Underwater observation on island at Antón Lizardo in Alvarado."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Alvarado."
+    },
+    "ja": {
+      "lead": "Alvaradoの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_cupping": {
+    "en": {
+      "lead": "Follow the aroma of Veracruz coffee to Finca San Felipe.",
+      "detail": "The coffee experience includes a nursery visit, an introduction to wet and dry processing methods, and a tasting of six samples. Farm activities change with the growing season."
+    },
+    "es": {
+      "lead": "Déjate guiar por el aroma del café de Veracruz en la Finca San Felipe.",
+      "detail": "La experiencia incluye una visita al vivero, una introducción al beneficio húmedo y seco del café y una catación de seis muestras. Las actividades agrícolas dependen de la temporada."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_depulping": {
+    "en": {
+      "lead": "Discover Amatlán de los Reyes through its flavors and traditions.",
+      "detail": "At San Felipe, visitors can take part in coffee depulping when the season allows, observe wet and dry processing, and explore the nursery."
+    },
+    "es": {
+      "lead": "Descubre Amatlán de los Reyes a través de sus sabores y tradiciones.",
+      "detail": "En la finca San Felipe se puede participar en el despulpe del café cuando corresponde a la temporada, además de conocer el beneficio húmedo y seco y recorrer el vivero."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_farm_visit": {
+    "en": {
+      "lead": "Discover Amatlán de los Reyes through its flavors and traditions.",
+      "detail": "In Amatlán de los Reyes, San Felipe offers a nursery and farm walk. The listing also describes Jardines de Asís, with fruit trees, gardens, ornamental plants and bees."
+    },
+    "es": {
+      "lead": "Descubre Amatlán de los Reyes a través de sus sabores y tradiciones.",
+      "detail": "En Amatlán de los Reyes, la finca San Felipe ofrece un recorrido por su vivero y áreas de cultivo; la visita también menciona los Jardines de Asís, con frutales, huertos, plantas de ornato y abejas."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_harvesting": {
+    "en": {
+      "lead": "Discover Amatlán de los Reyes through its flavors and traditions.",
+      "detail": "The San Felipe farm listing includes seasonal coffee harvesting and sorting, alongside a look at coffee processing."
+    },
+    "es": {
+      "lead": "Descubre Amatlán de los Reyes a través de sus sabores y tradiciones.",
+      "detail": "La ficha de la finca San Felipe incluye actividades de cosecha y selección de café en temporada, además de conocer los procesos de beneficio."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_planting": {
+    "en": {
+      "lead": "Discover Amatlán de los Reyes through its flavors and traditions.",
+      "detail": "Explore San Felipe’s nursery and, depending on the season, participate in coffee planting, harvesting, sorting or depulping."
+    },
+    "es": {
+      "lead": "Descubre Amatlán de los Reyes a través de sus sabores y tradiciones.",
+      "detail": "La experiencia de la finca San Felipe permite conocer el vivero y, según la temporada, participar en la siembra, cosecha, selección o despulpe del café."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30014::coffee_tasting": {
+    "en": {
+      "lead": "Discover Amatlán de los Reyes through its flavors and traditions.",
+      "detail": "The “Café con Historia” experience includes tasting different local coffee preparations, coffee honey and coffee liqueur, alongside an introduction to Amatlán’s history."
+    },
+    "es": {
+      "lead": "Descubre Amatlán de los Reyes a través de sus sabores y tradiciones.",
+      "detail": "La oferta «Café con Historia» incluye degustación de distintos métodos de filtrado de café local y productos como miel y ron de café, además de un recorrido relacionado con la historia de Amatlán."
+    },
+    "ja": {
+      "lead": "Amatlán de los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30017::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Apazapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Apazapan."
+    },
+    "ja": {
+      "lead": "Apazapanの観光体験をご紹介します。"
+    }
+  },
+  "30020::ceremony_honoring_mother_earth": {
+    "en": {
+      "lead": "Discover a different side of Atlahuilco.",
+      "detail": "Original catalog (Spanish): ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Atlahuilco.",
+      "detail": "ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "ja": {
+      "lead": "Atlahuilcoの観光体験をご紹介します。"
+    }
+  },
+  "30020::backstrap_loom_weaving": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Atlahuilco.",
+      "detail": "Original catalog (Spanish): ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Atlahuilco.",
+      "detail": "ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "ja": {
+      "lead": "Atlahuilcoの観光体験をご紹介します。"
+    }
+  },
+  "30020::clay_modelling_workshop": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Atlahuilco.",
+      "detail": "Original catalog (Spanish): ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Atlahuilco.",
+      "detail": "ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "ja": {
+      "lead": "Atlahuilcoの観光体験をご紹介します。"
+    }
+  },
+  "30020::natural_dye_production": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Atlahuilco.",
+      "detail": "Original catalog (Spanish): ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Atlahuilco.",
+      "detail": "ARTESANÍA 8 En Atlahuilco, vive la magia ancestral junto a mujeres artesanas: trabaja el telar de cintura, recolecta plantas para crear tintes naturales, moldea barro en talleres tradicionales y honra a la Madre Tierra en impresionantes cavernas."
+    },
+    "ja": {
+      "lead": "Atlahuilcoの観光体験をご紹介します。"
+    }
+  },
+  "30020::ancestral_ritual_participation": {
+    "en": {
+      "lead": "Find a slower rhythm in Atlahuilco.",
+      "detail": "Sujétate de mi Mano y Comencemos el Viaje: Pre-wedding ritual offered as part of wedding package, not a public daily activity."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Atlahuilco."
+    },
+    "ja": {
+      "lead": "Atlahuilcoの観光体験をご紹介します。"
+    }
+  },
+  "30021::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Atoyac."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Atoyac."
+    },
+    "ja": {
+      "lead": "Atoyacの観光体験をご紹介します。"
+    }
+  },
+  "30021::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Atoyac."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Atoyac."
+    },
+    "ja": {
+      "lead": "Atoyacの観光体験をご紹介します。"
+    }
+  },
+  "30021::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Atoyac.",
+      "detail": "Sendero por el río Atoyac: Optional kayak excursion. Optional return journey via kayak. Tour expressly offers optional kayaking on the river."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Atoyac."
+    },
+    "ja": {
+      "lead": "Atoyacの観光体験をご紹介します。"
+    }
+  },
+  "30021::ancestral_ritual_participation": {
+    "en": {
+      "lead": "Find a slower rhythm in Atoyac."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Atoyac."
+    },
+    "ja": {
+      "lead": "Atoyacの観光体験をご紹介します。"
+    }
+  },
+  "30023::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Atzalan.",
+      "detail": "Original catalog (Spanish): Municipio de Tlapacoyan (geográficamente Municipio de Atzalan), Veracruz."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Atzalan.",
+      "detail": "Municipio de Tlapacoyan (geográficamente Municipio de Atzalan), Veracruz. Vega de la Peña, Municipio de Tlapacoyan (geográficamente Municipio de Atzalan), Veracruz."
+    },
+    "ja": {
+      "lead": "Atzalanの観光体験をご紹介します。"
+    }
+  },
+  "30028::river_boat_navigation": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Boca del Río.",
+      "detail": "Original catalog (Spanish): desde paseos en lancha por el río Jamapa"
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Boca del Río."
+    },
+    "ja": {
+      "lead": "Boca del Ríoの観光体験をご紹介します。"
+    }
+  },
+  "30157::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Castillo de Teayo.",
+      "detail": "Original catalog (Spanish): Castillo de Teayo | Plaza de la pirámide s/n"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Castillo de Teayo."
+    },
+    "ja": {
+      "lead": "Castillo de Teayoの観光体験をご紹介します。"
+    }
+  },
+  "30032::traditional_cooking_workshop": {
+    "en": {
+      "lead": "Discover Catemaco through its flavors and traditions.",
+      "detail": "Taller Gastronómico de Malanga: Hands-on cooking using malanga after harvesting."
+    },
+    "es": {
+      "lead": "Descubre Catemaco a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::camping": {
+    "en": {
+      "lead": "Make room for a little adventure in Catemaco."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Catemaco.",
+      "detail": "Descansa en acogedoras cabañas o vive la experiencia del camping rodeado por los místicos bosques de niebla."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Catemaco."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Catemaco."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of Catemaco."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::ethnobotanical_learning": {
+    "en": {
+      "lead": "Explore the natural side of Catemaco.",
+      "detail": "Recorrido Botánico: Botanical tour describes native trees and medicinal plants."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::natural_pool_jumping": {
+    "en": {
+      "lead": "Discover a different side of Catemaco."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Catemaco.",
+      "detail": "Vive la adrenalina al máximo haciendo rappel en cascadas de más de 50 metros, saltando a pozas naturales, deslizándote en tirolesas y caminando entre cañones con aguas turquesa."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::mineral_clay_treatment": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Catemaco.",
+      "detail": "Recorrido Guiado por la Selva: Optional mineral-clay body treatment. Body treatment with mineral clay. Application of mineral clay body treatment offered."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Catemaco."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Catemaco."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::swimming": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Catemaco."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::ancestral_ritual_participation": {
+    "en": {
+      "lead": "Find a slower rhythm in Catemaco.",
+      "detail": "Ritual de Boda Olmeca: Ceremonial Olmec-themed wedding ritual with shaman. Guided spiritual healing ceremony with copal and medicinal plants."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::massage": {
+    "en": {
+      "lead": "Find a slower rhythm in Catemaco.",
+      "detail": "Masaje Relajante: Relaxing massage with aromatic oils."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::spiritual_cleansing_ritual": {
+    "en": {
+      "lead": "Find a slower rhythm in Catemaco."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30032::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Catemaco.",
+      "detail": "Paquete de Salud Integral: Temazcal ritual included. Temazcal as part of named wedding ritual. Collective temazcal described."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Catemaco."
+    },
+    "ja": {
+      "lead": "Catemacoの観光体験をご紹介します。"
+    }
+  },
+  "30033::scuba_diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Cazones de Herrera."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Cazones de Herrera."
+    },
+    "ja": {
+      "lead": "Cazones de Herreraの観光体験をご紹介します。"
+    }
+  },
+  "30033::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Cazones de Herrera."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Cazones de Herrera."
+    },
+    "ja": {
+      "lead": "Cazones de Herreraの観光体験をご紹介します。"
+    }
+  },
+  "30058::gastronomy_tasting_tour": {
+    "en": {
+      "lead": "Discover Chicontepec through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Chicontepec a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Chicontepecの観光体験をご紹介します。"
+    }
+  },
+  "30058::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Chicontepec."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Chicontepec."
+    },
+    "ja": {
+      "lead": "Chicontepecの観光体験をご紹介します。"
+    }
+  },
+  "30058::horseback_riding": {
+    "en": {
+      "lead": "Make room for a little adventure in Chicontepec."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Chicontepec."
+    },
+    "ja": {
+      "lead": "Chicontepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::coffee_cupping": {
+    "en": {
+      "lead": "Discover Coatepec through its flavors and traditions.",
+      "detail": "Tour Senderos del Café: Expert-guided coffee tasting/cupping. Coffee tasting included in guided museum tour. Product specifically includes a professional coffee cupping in Coatepec."
+    },
+    "es": {
+      "lead": "Descubre Coatepec a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::coffee_farm_visit": {
+    "en": {
+      "lead": "Discover Coatepec through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Coatepec a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::coffee_roasting": {
+    "en": {
+      "lead": "Discover Coatepec through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Coatepec a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::coffee_tasting": {
+    "en": {
+      "lead": "Discover Coatepec through its flavors and traditions.",
+      "detail": "Senderos del Café: Product describes visitor coffee cupping at Finca Roma and historical coffee hacienda in Coatepec."
+    },
+    "es": {
+      "lead": "Descubre Coatepec a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Coatepec.",
+      "detail": "Pueblos Mágicos: Orchid museum in Coatepec. Coatepec segment includes a visit to coffee museum and demonstration of preparation process."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Coatepec."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::orchid_museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Coatepec.",
+      "detail": "Coffee museum visit, Xico cascades, Coatepec orchid museum and El Lencero hacienda in Emiliano Zapata."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Coatepec."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::4x4_mountain_transfer": {
+    "en": {
+      "lead": "Make room for a little adventure in Coatepec.",
+      "detail": "Original catalog (Spanish): Vive una cabalgata única por el corazón del bosque de niebla en Coatepec, donde ascenderás en camionetas 4x4 hasta los 3500 metros para luego recorrer a caballo paisajes de alta montaña llenos de magia, biodiversidad y tradición."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Coatepec.",
+      "detail": "Vive una cabalgata única por el corazón del bosque de niebla en Coatepec, donde ascenderás en camionetas 4x4 hasta los 3500 metros para luego recorrer a caballo paisajes de alta montaña llenos de magia, biodiversidad y tradición."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::canyoning": {
+    "en": {
+      "lead": "Make room for a little adventure in Coatepec."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Coatepec."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30038::horseback_riding": {
+    "en": {
+      "lead": "Make room for a little adventure in Coatepec.",
+      "detail": "Original catalog (Spanish): Vive una cabalgata única por el corazón del bosque de niebla en Coatepec, donde ascenderás en camionetas 4x4 hasta los 3500 metros para luego recorrer a caballo paisajes de alta montaña llenos de magia, biodiversidad y tradición."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Coatepec.",
+      "detail": "Vive una cabalgata única por el corazón del bosque de niebla en Coatepec, donde ascenderás en camionetas 4x4 hasta los 3500 metros para luego recorrer a caballo paisajes de alta montaña llenos de magia, biodiversidad y tradición."
+    },
+    "ja": {
+      "lead": "Coatepecの観光体験をご紹介します。"
+    }
+  },
+  "30039::guided_city_tour": {
+    "en": {
+      "lead": "Step into the stories and traditions of Coatzacoalcos.",
+      "detail": "Disfruta Coatza describes a guided circuit around historic downtown and the waterfront."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Coatzacoalcos."
+    },
+    "ja": {
+      "lead": "Coatzacoalcosの観光体験をご紹介します。"
+    }
+  },
+  "30039::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Coatzacoalcos.",
+      "detail": "Disfruta Coatza specifically includes Olmec archaeology museum visit."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Coatzacoalcos."
+    },
+    "ja": {
+      "lead": "Coatzacoalcosの観光体験をご紹介します。"
+    }
+  },
+  "30039::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Coatzacoalcos.",
+      "detail": "Barrillas farmhouse is physically in Coatzacoalcos. Jicacal boat excursion is offered from nearby dock; do not assign Jicacal activities to Coatzacoalcos."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Coatzacoalcos."
+    },
+    "ja": {
+      "lead": "Coatzacoalcosの観光体験をご紹介します。"
+    }
+  },
+  "30039::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Coatzacoalcos.",
+      "detail": "Visita Las Barrillas.: Kayaking lagoon and mangroves."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Coatzacoalcos."
+    },
+    "ja": {
+      "lead": "Coatzacoalcosの観光体験をご紹介します。"
+    }
+  },
+  "30047::mountain_biking": {
+    "en": {
+      "lead": "Make room for a little adventure in Coscomatepec."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Coscomatepec."
+    },
+    "ja": {
+      "lead": "Coscomatepecの観光体験をご紹介します。"
+    }
+  },
+  "30044::coffee_cupping": {
+    "en": {
+      "lead": "Discover Córdoba through its flavors and traditions.",
+      "detail": "Sierra del Café, Córdoba, Orizaba y Fortín: Coffee tasting and cupping at museum in Córdoba."
+    },
+    "es": {
+      "lead": "Descubre Córdoba a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Córdobaの観光体験をご紹介します。"
+    }
+  },
+  "30044::coffee_tasting": {
+    "en": {
+      "lead": "Discover Córdoba through its flavors and traditions.",
+      "detail": "Product names coffee tasting at Córdoba coffee museum."
+    },
+    "es": {
+      "lead": "Descubre Córdoba a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Córdobaの観光体験をご紹介します。"
+    }
+  },
+  "30044::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Córdoba.",
+      "detail": "Córdoba Centro Histórico with Aroma de Café visits the coffee museum."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Córdoba."
+    },
+    "ja": {
+      "lead": "Córdobaの観光体験をご紹介します。"
+    }
+  },
+  "30044::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Córdoba."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Córdoba."
+    },
+    "ja": {
+      "lead": "Córdobaの観光体験をご紹介します。"
+    }
+  },
+  "30065::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of Emiliano Zapata.",
+      "detail": "Observación de Aves: Guided bird-focused outing with spotting scope and binoculars."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Emiliano Zapata."
+    },
+    "ja": {
+      "lead": "Emiliano Zapataの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_farm_visit": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions.",
+      "detail": "Finca Cafetalera Orgánica: Tour of organic coffee farm. Walking tour through coffee farm. Finca Cafetalera Orgánica offers a guided visit of organic coffee cultivation."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_grinding": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions.",
+      "detail": "Café de Especialidad: Grinding step demonstrated."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_harvesting": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions.",
+      "detail": "Génesis del Café: Coffee cherry cutting/harvesting."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_planting": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions.",
+      "detail": "Génesis del Café: Hands-on coffee planting in the farm."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_roasting": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions.",
+      "detail": "Café de Especialidad: Roasting shown at coffee farm. Hands-on coffee roasting in the farm."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::coffee_tasting": {
+    "en": {
+      "lead": "Discover Fortín through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Fortín a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::camping": {
+    "en": {
+      "lead": "Make room for a little adventure in Fortín.",
+      "detail": "Génesis del Café: Camping in the farm gardens."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Fortín."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Fortín."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Fortín."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::paragliding": {
+    "en": {
+      "lead": "Make room for a little adventure in Fortín."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Fortín."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30068::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Fortín.",
+      "detail": "Fortín Municipio de Flores specifically mentions temazcal service at Jardín de la Salud."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Fortín."
+    },
+    "ja": {
+      "lead": "Fortínの観光体験をご紹介します。"
+    }
+  },
+  "30071::coffee_farm_visit": {
+    "en": {
+      "lead": "Discover Huatusco through its flavors and traditions.",
+      "detail": "Original catalog (Spanish): en la finca Dos Arroyos, finca Kassandra"
+    },
+    "es": {
+      "lead": "Descubre Huatusco a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Huatuscoの観光体験をご紹介します。"
+    }
+  },
+  "30071::coffee_tasting": {
+    "en": {
+      "lead": "Discover Huatusco through its flavors and traditions.",
+      "detail": "Original catalog (Spanish): no olvides degustar uno en sus diferentes cafeterías y restaurantes"
+    },
+    "es": {
+      "lead": "Descubre Huatusco a través de sus sabores y tradiciones.",
+      "detail": "no olvides degustar uno en sus diferentes cafeterías y restaurantes"
+    },
+    "ja": {
+      "lead": "Huatuscoの観光体験をご紹介します。"
+    }
+  },
+  "30073::community_museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Hueyapan de Ocampo.",
+      "detail": "Naturaleza y Cultura Olmeca: Community museum visit in Hueyapan de Ocampo Nuntaj++yi experience."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Hueyapan de Ocampo."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Hueyapan de Ocampo."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in Hueyapan de Ocampo."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::wildlife_observation": {
+    "en": {
+      "lead": "Explore the natural side of Hueyapan de Ocampo.",
+      "detail": "Aventúrate en Ceytaks: Observing howler monkeys on interpretive trail."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::community_plant_nursery_visit": {
+    "en": {
+      "lead": "Discover a different side of Hueyapan de Ocampo."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30073::natural_pool_jumping": {
+    "en": {
+      "lead": "Discover a different side of Hueyapan de Ocampo."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Hueyapan de Ocampo."
+    },
+    "ja": {
+      "lead": "Hueyapan de Ocampoの観光体験をご紹介します。"
+    }
+  },
+  "30088::canyoning": {
+    "en": {
+      "lead": "Make room for a little adventure in Jalcomulco.",
+      "detail": "Original catalog (Spanish): Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Jalcomulco.",
+      "detail": "Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Jalcomulco."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Jalcomulco.",
+      "detail": "Aventura en Jalcomulco: Rappel offered as selectable activity. Rappel on natural rock."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in Jalcomulco.",
+      "detail": "Aventura en Jalcomulco: Zipline offered as selectable activity. Offers zipline."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Jalcomulco."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::rafting": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Jalcomulco.",
+      "detail": "Aventura en Jalcomulco: Descent of river Los Pescados. River rapids descent offered. Rafting at camp in Jalcomulco."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30088::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Jalcomulco.",
+      "detail": "Aventura en Jalcomulco: Temazcal offered as selectable activity. Traditional temazcal offered."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Jalcomulco."
+    },
+    "ja": {
+      "lead": "Jalcomulcoの観光体験をご紹介します。"
+    }
+  },
+  "30089::son_jarocho_festival_attendance": {
+    "en": {
+      "lead": "Step into the stories and traditions of Jáltipan.",
+      "detail": "Original catalog (Spanish): Jáltipan se llenará de música y tradición"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Jáltipan."
+    },
+    "ja": {
+      "lead": "Jáltipanの観光体験をご紹介します。"
+    }
+  },
+  "30016::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of La Antigua.",
+      "detail": "City Tour con San Juan de Ulúa y La Antigua: Historic buildings and Cortés-house site visited in La Antigua; distinguishes site visits from general city tour."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de La Antigua."
+    },
+    "ja": {
+      "lead": "La Antiguaの観光体験をご紹介します。"
+    }
+  },
+  "30016::colonial_heritage_church_house_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of La Antigua.",
+      "detail": "Historic La Antigua visit and archaeological stop at Cempoala; municipalities can be established independently by named sites."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de La Antigua.",
+      "detail": "Estos sitios te conectarán con las raíces indígenas de México, mientras que La Antigua te transportará al inicio de la época colonial, con la casa de Cortés y la primera iglesia católica del país."
+    },
+    "ja": {
+      "lead": "La Antiguaの観光体験をご紹介します。"
+    }
+  },
+  "30016::colonial_house_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of La Antigua."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de La Antigua."
+    },
+    "ja": {
+      "lead": "La Antiguaの観光体験をご紹介します。"
+    }
+  },
+  "30016::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in La Antigua."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en La Antigua."
+    },
+    "ja": {
+      "lead": "La Antiguaの観光体験をご紹介します。"
+    }
+  },
+  "30016::river_boat_navigation": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in La Antigua.",
+      "detail": "Multiple historic stops in La Antigua, sandboarding near Chachalacas, boat rides and local fishing experience on Huitzilapan river; specific launch location for some activities remains uncertain."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en La Antigua."
+    },
+    "ja": {
+      "lead": "La Antiguaの観光体験をご紹介します。"
+    }
+  },
+  "30132::aguamiel_extraction": {
+    "en": {
+      "lead": "Discover Las Vigas de Ramírez through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Las Vigas de Ramírez a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Las Vigas de Ramírezの観光体験をご紹介します。"
+    }
+  },
+  "30132::aguamiel_tasting": {
+    "en": {
+      "lead": "Discover Las Vigas de Ramírez through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Las Vigas de Ramírez a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Las Vigas de Ramírezの観光体験をご紹介します。"
+    }
+  },
+  "30137::herpetology_observation": {
+    "en": {
+      "lead": "Explore the natural side of Los Reyes.",
+      "detail": "Herping Zoongolica: Herpetofauna field expeditions on amphibians and reptiles."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Los Reyes."
+    },
+    "ja": {
+      "lead": "Los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30137::wildlife_field_research_expedition": {
+    "en": {
+      "lead": "Explore the natural side of Los Reyes.",
+      "detail": "Herping Zoongolica: Field research and photographic expedition by specialised group."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Los Reyes.",
+      "detail": "Acompañado por guías expertos y locales, participarás en expediciones de campo enfocadas en la observación e investigación de especies en su hábitat natural, complementadas con lo mejor de la gastronomía tradicional y productos artesanales de la región."
+    },
+    "ja": {
+      "lead": "Los Reyesの観光体験をご紹介します。"
+    }
+  },
+  "30104::cycling": {
+    "en": {
+      "lead": "Make room for a little adventure in Mecayapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30104::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Mecayapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30104::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in Mecayapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30104::turtle_hatchling_release": {
+    "en": {
+      "lead": "Explore the natural side of Mecayapan."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30104::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Mecayapan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30104::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Mecayapan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Mecayapan."
+    },
+    "ja": {
+      "lead": "Mecayapanの観光体験をご紹介します。"
+    }
+  },
+  "30108::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Minatitlán.",
+      "detail": "Original catalog (Spanish): Practica de kayak en el Río Uxpanapa en El Encajonado"
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Minatitlán.",
+      "detail": "Practica de kayak en el Río Uxpanapa en El Encajonado"
+    },
+    "ja": {
+      "lead": "Minatitlánの観光体験をご紹介します。"
+    }
+  },
+  "30108::river_boat_navigation": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Minatitlán.",
+      "detail": "Original catalog (Spanish): Recorrido en lancha en el Río Uxpanapa, Minatitlán Ver."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Minatitlán.",
+      "detail": "Recorrido en lancha en el Río Uxpanapa, Minatitlán Ver."
+    },
+    "ja": {
+      "lead": "Minatitlánの観光体験をご紹介します。"
+    }
+  },
+  "30109::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Misantla."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Misantla."
+    },
+    "ja": {
+      "lead": "Misantlaの観光体験をご紹介します。"
+    }
+  },
+  "30112::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Naolinco."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Naolinco."
+    },
+    "ja": {
+      "lead": "Naolincoの観光体験をご紹介します。"
+    }
+  },
+  "30112::leather_shoemaking_demonstration": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Naolinco."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Naolinco."
+    },
+    "ja": {
+      "lead": "Naolincoの観光体験をご紹介します。"
+    }
+  },
+  "30112::pottery_making_workshop": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Naolinco.",
+      "detail": "Original catalog (Spanish): Admira su destreza, aprende del proceso y crea tu propia pieza en una experiencia auténtica de turismo sostenible que impulsa el desarrollo comunitario."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Naolinco.",
+      "detail": "Admira su destreza, aprende del proceso y crea tu propia pieza en una experiencia auténtica de turismo sostenible que impulsa el desarrollo comunitario."
+    },
+    "ja": {
+      "lead": "Naolincoの観光体験をご紹介します。"
+    }
+  },
+  "30113::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Naranjal."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Naranjal."
+    },
+    "ja": {
+      "lead": "Naranjalの観光体験をご紹介します。"
+    }
+  },
+  "30113::wildlife_observation": {
+    "en": {
+      "lead": "Explore the natural side of Naranjal."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Naranjal."
+    },
+    "ja": {
+      "lead": "Naranjalの観光体験をご紹介します。"
+    }
+  },
+  "30114::cycling": {
+    "en": {
+      "lead": "Make room for a little adventure in Nautla.",
+      "detail": "Original catalog (Spanish): Aquí se puede practicar desde paseos por los manglares y recorridos en bicicleta hasta deportes acuáticos"
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Nautla.",
+      "detail": "Aquí se puede practicar desde paseos por los manglares y recorridos en bicicleta hasta deportes acuáticos"
+    },
+    "ja": {
+      "lead": "Nautlaの観光体験をご紹介します。"
+    }
+  },
+  "30114::mangrove_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Nautla.",
+      "detail": "Original catalog (Spanish): Aquí se puede practicar desde paseos por los manglares y recorridos en bicicleta hasta deportes acuáticos"
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Nautla.",
+      "detail": "Aquí se puede practicar desde paseos por los manglares y recorridos en bicicleta hasta deportes acuáticos"
+    },
+    "ja": {
+      "lead": "Nautlaの観光体験をご紹介します。"
+    }
+  },
+  "30115::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Nogales."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Nogales."
+    },
+    "ja": {
+      "lead": "Nogalesの観光体験をご紹介します。"
+    }
+  },
+  "30118::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Orizaba."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Orizaba."
+    },
+    "ja": {
+      "lead": "Orizabaの観光体験をご紹介します。"
+    }
+  },
+  "30118::cable_car_ride": {
+    "en": {
+      "lead": "See Orizaba from a different perspective."
+    },
+    "es": {
+      "lead": "Mira Orizaba desde otra perspectiva."
+    },
+    "ja": {
+      "lead": "Orizabaの観光体験をご紹介します。"
+    }
+  },
+  "30122::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Pajapan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Pajapan."
+    },
+    "ja": {
+      "lead": "Pajapanの観光体験をご紹介します。"
+    }
+  },
+  "30122::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Pajapan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Pajapan."
+    },
+    "ja": {
+      "lead": "Pajapanの観光体験をご紹介します。"
+    }
+  },
+  "30124::traditional_cooking_workshop": {
+    "en": {
+      "lead": "Discover Papantla through its flavors and traditions."
+    },
+    "es": {
+      "lead": "Descubre Papantla a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::vanilla_extract_workshop": {
+    "en": {
+      "lead": "Discover Papantla through its flavors and traditions.",
+      "detail": "La Vainilla y la Gastronomía Totonaca: Prepare own vanilla extract or liqueur. Learning to prepare natural vanilla extract."
+    },
+    "es": {
+      "lead": "Descubre Papantla a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::vanilla_planting": {
+    "en": {
+      "lead": "Discover Papantla through its flavors and traditions.",
+      "detail": "Siembra tu Vainilla y degusta la Gastronomía Totonaca: Hands-on vanilla cutting/planting workshop."
+    },
+    "es": {
+      "lead": "Descubre Papantla a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Papantla.",
+      "detail": "Pueblos Mágicos del Totonacapan: Tour includes the El Tajín archaeological site and Papantla town heritage stops; Veracruz is the lodging municipality. Archaeological site El Tajín visited. Explicit archaeological-site visit in Papantla."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::guided_city_tour": {
+    "en": {
+      "lead": "Step into the stories and traditions of Papantla.",
+      "detail": "Senderismo y Medicina Tradicional product describes a guided historic-center tour."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Papantla.",
+      "detail": "Tour includes the El Tajín archaeological site and Papantla town heritage stops; Veracruz is the lodging municipality."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Papantla.",
+      "detail": "Recorrido Museo con Vainilla: Guided visit to vanilla-history museum."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Papantla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::artisan_workshop": {
+    "en": {
+      "lead": "Discover a different side of Papantla.",
+      "detail": "Taller de Artesanías con Degustación de Comida Tradicional: Participants make a vanilla craft object."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::aromatherapy": {
+    "en": {
+      "lead": "Find a slower rhythm in Papantla."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::hydrotherapy": {
+    "en": {
+      "lead": "Find a slower rhythm in Papantla.",
+      "detail": "Senderismo y Medicina Tradicional: Product describes hydrotherapy as a participant activity. Kachikin itinerary specifically lists hydrotherapy. Senderismo y Medicina Tradicional specifically includes hydrotherapy."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::medicinal_plant_walk": {
+    "en": {
+      "lead": "Find a slower rhythm in Papantla.",
+      "detail": "Alimentando el Alma: Interpretive medicinal-plant walk."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::spiritual_cleansing_ritual": {
+    "en": {
+      "lead": "Find a slower rhythm in Papantla."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30124::traditional_medicine_experience": {
+    "en": {
+      "lead": "Find a slower rhythm in Papantla.",
+      "detail": "Senderismo y Medicina Tradicional: Medicinal plants explained in traditional medicine route."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Papantla."
+    },
+    "ja": {
+      "lead": "Papantlaの観光体験をご紹介します。"
+    }
+  },
+  "30131::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Poza Rica de Hidalgo.",
+      "detail": "Original catalog (Spanish): En su centro es posible recorrer el Palacio Municipal"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Poza Rica de Hidalgo.",
+      "detail": "En su centro es posible recorrer el Palacio Municipal"
+    },
+    "ja": {
+      "lead": "Poza Rica de Hidalgoの観光体験をご紹介します。"
+    }
+  },
+  "30134::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of Puente Nacional.",
+      "detail": "Original catalog (Spanish): Otro de los de los puntos clave dentro de las rutas migratorias de aves más importantes en Veracruz se encuentra en Chichicaxtle, convirtiéndola en un sitio privilegiado para el aviturismo."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Puente Nacional.",
+      "detail": "Otro de los de los puntos clave dentro de las rutas migratorias de aves más importantes en Veracruz se encuentra en Chichicaxtle, convirtiéndola en un sitio privilegiado para el aviturismo."
+    },
+    "ja": {
+      "lead": "Puente Nacionalの観光体験をご紹介します。"
+    }
+  },
+  "30123::gastronomy_tasting_tour": {
+    "en": {
+      "lead": "Discover Pánuco through its flavors and traditions.",
+      "detail": "Original catalog (Spanish): Aquí podrás degustar el zacahuil, las enchiladas huastecas"
+    },
+    "es": {
+      "lead": "Descubre Pánuco a través de sus sabores y tradiciones.",
+      "detail": "Aquí podrás degustar el zacahuil, las enchiladas huastecas"
+    },
+    "ja": {
+      "lead": "Pánucoの観光体験をご紹介します。"
+    }
+  },
+  "30141::traditional_cooking_workshop": {
+    "en": {
+      "lead": "Discover San Andrés Tuxtla through its flavors and traditions.",
+      "detail": "Costa y la Africanidad de los Tuxtlas: Hands-on malanga cooking workshop."
+    },
+    "es": {
+      "lead": "Descubre San Andrés Tuxtla a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::canyoning": {
+    "en": {
+      "lead": "Make room for a little adventure in San Andrés Tuxtla.",
+      "detail": "Cañón Oro: River canyon descent with rappelling and pool jumps."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en San Andrés Tuxtla.",
+      "detail": "Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in San Andrés Tuxtla.",
+      "detail": "Cañón del Río Oro: Includes walking on rocks in the canyon. Trail to beach."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::marine_cave_exploration": {
+    "en": {
+      "lead": "Make room for a little adventure in San Andrés Tuxtla.",
+      "detail": "Playa Ermitas: Visit to small sea caves described."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of San Andrés Tuxtla.",
+      "detail": "Aviturismo: Explicit birdwatching seeks local endangered/endemic birds. Aviturismo product offers guided searches for birds including the Tuxtla partridge-dove."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::waterfall_visit": {
+    "en": {
+      "lead": "Explore the natural side of San Andrés Tuxtla.",
+      "detail": "Veracruz colonial landmarks, San Andrés Tuxtla cigar factory and waterfall, and sightseeing toward Catemaco lake and Nanciyaga."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de San Andrés Tuxtla.",
+      "detail": "Visita la impresionante cascada de Eyipantla, todo ello mientras disfrutas de la cálida hospitalidad veracruzana."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::natural_pool_jumping": {
+    "en": {
+      "lead": "Discover a different side of San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in San Andrés Tuxtla.",
+      "detail": "Descubre Los Tuxtlas: Boat excursion to bird island. Boat tour to cave."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in San Andrés Tuxtla.",
+      "detail": "Kayak en Roca Partida: Kayak route specifically follows river to Gulf mouth and Roca Partida. Sea kayak excursion to Roca Partida."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30141::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en San Andrés Tuxtla.",
+      "detail": "Ya seas principiante en el buceo o amante del snorkel, explora las aguas cristalinas y descubre el mundo submarino del buque hundido en Tamiahua, snorkelea en las playas de Villa Rica en Actopan, playa Muñecos en Alto Lucero o en la Laguna Encantada de San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "San Andrés Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30211::hydrotherapy": {
+    "en": {
+      "lead": "Find a slower rhythm in San Rafael."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en San Rafael."
+    },
+    "ja": {
+      "lead": "San Rafaelの観光体験をご紹介します。"
+    }
+  },
+  "30143::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Santiago Tuxtla.",
+      "detail": "Descubre Los Tuxtlas: Museum visit expressly in Santiago Tuxtla."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Santiago Tuxtla."
+    },
+    "ja": {
+      "lead": "Santiago Tuxtlaの観光体験をご紹介します。"
+    }
+  },
+  "30149::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Soteapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30149::mountain_biking": {
+    "en": {
+      "lead": "Make room for a little adventure in Soteapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30149::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Soteapan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30149::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of Soteapan."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30149::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Soteapan."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30149::traditional_medicine_experience": {
+    "en": {
+      "lead": "Find a slower rhythm in Soteapan."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Soteapan."
+    },
+    "ja": {
+      "lead": "Soteapanの観光体験をご紹介します。"
+    }
+  },
+  "30151::camping": {
+    "en": {
+      "lead": "Make room for a little adventure in Tamiahua.",
+      "detail": "Product states visitors can spend a day camping on Isla de Lobos."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30151::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tamiahua."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30151::fishing": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tamiahua.",
+      "detail": "Pesca de Camarón al Atardecer: Hands-on traditional shrimp fishing with a fisher."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30151::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tamiahua.",
+      "detail": "Paseo en Lancha y Kayak por el Manglar: Kayaks navigate narrow estuaries with mangroves."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30151::scuba_diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tamiahua."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30151::sport_fishing": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tamiahua."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tamiahua.",
+      "detail": "PESCA Aventura ySabor enTamiahua yTuxpan Adéntrate en las aguas del norte de Veracruz y vive una experiencia única de pesca deportiva en Tuxpan y Tamiahua."
+    },
+    "ja": {
+      "lead": "Tamiahuaの観光体験をご紹介します。"
+    }
+  },
+  "30158::horseback_riding": {
+    "en": {
+      "lead": "Make room for a little adventure in Tecolutla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tecolutla."
+    },
+    "ja": {
+      "lead": "Tecolutlaの観光体験をご紹介します。"
+    }
+  },
+  "30158::birdwatching": {
+    "en": {
+      "lead": "Explore the natural side of Tecolutla."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Tecolutla."
+    },
+    "ja": {
+      "lead": "Tecolutlaの観光体験をご紹介します。"
+    }
+  },
+  "30158::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tecolutla."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tecolutla."
+    },
+    "ja": {
+      "lead": "Tecolutlaの観光体験をご紹介します。"
+    }
+  },
+  "30161::xantolo_festival_attendance": {
+    "en": {
+      "lead": "Step into the stories and traditions of Tempoal.",
+      "detail": "Original catalog (Spanish): Del 30 de octubre al 03 de noviembre Tempoal celebrará el Día de Muertos"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Tempoal.",
+      "detail": "Del 30 de octubre al 03 de noviembre Tempoal celebrará el Día de Muertos"
+    },
+    "ja": {
+      "lead": "Tempoalの観光体験をご紹介します。"
+    }
+  },
+  "30164::canyoning": {
+    "en": {
+      "lead": "Make room for a little adventure in Teocelo.",
+      "detail": "Original catalog (Spanish): Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Teocelo.",
+      "detail": "Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "Teoceloの観光体験をご紹介します。"
+    }
+  },
+  "30168::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Tequila."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tequila."
+    },
+    "ja": {
+      "lead": "Tequilaの観光体験をご紹介します。"
+    }
+  },
+  "30172::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Texistepec.",
+      "detail": "Original catalog (Spanish): Cuauhtémoc s/n, CP 93780 San Lorenzo Tenochtitlan, Municipio de Texistepec, Veracruz"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Texistepec.",
+      "detail": "Cuauhtémoc s/n, CP 93780 San Lorenzo Tenochtitlan, Municipio de Texistepec, Veracruz"
+    },
+    "ja": {
+      "lead": "Texistepecの観光体験をご紹介します。"
+    }
+  },
+  "30178::guided_city_tour": {
+    "en": {
+      "lead": "Step into the stories and traditions of Tlacotalpan.",
+      "detail": "Tlacotalpan Patrimonio describes a guided walk through named civic and cultural sites."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Tlacotalpan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30178::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Tlacotalpan.",
+      "detail": "Tlacotalpan Papaloapan River boat outing and guided town walk, with Alvarado harbor sightseeing as another stop."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Tlacotalpan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30178::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Tlacotalpan."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Tlacotalpan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30178::cycling": {
+    "en": {
+      "lead": "Make room for a little adventure in Tlacotalpan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tlacotalpan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30178::boat_excursion": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tlacotalpan.",
+      "detail": "Boat excursion described as OPTIONAL; published activity, not included in base tour."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tlacotalpan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30178::river_boat_navigation": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tlacotalpan.",
+      "detail": "Tlacotalpan Papaloapan River boat outing and guided town walk, with Alvarado harbor sightseeing as another stop."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tlacotalpan.",
+      "detail": "Pedalea entre fincas cafetaleras y niebla mística en Xico, déjate sorprender por la belleza de Tlacotalpan, recorriendo sus coloridas calles en bicicleta, visitando casas coloniales del siglo XIX, saboreando aperitivos típicos y navegando por el majestuoso Río Papaloapan."
+    },
+    "ja": {
+      "lead": "Tlacotalpanの観光体験をご紹介します。"
+    }
+  },
+  "30182::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Tlalnelhuayocan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tlalnelhuayocan."
+    },
+    "ja": {
+      "lead": "Tlalnelhuayocanの観光体験をご紹介します。"
+    }
+  },
+  "30183::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in Tlapacoyan."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Tlapacoyan."
+    },
+    "ja": {
+      "lead": "Tlapacoyanの観光体験をご紹介します。"
+    }
+  },
+  "30183::rafting": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tlapacoyan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tlapacoyan."
+    },
+    "ja": {
+      "lead": "Tlapacoyanの観光体験をご紹介します。"
+    }
+  },
+  "30189::hookah_diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tuxpan.",
+      "detail": "Buceo Hooka: Specific hookah diving with floating air tank; not ordinary surface snorkeling."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tuxpan."
+    },
+    "ja": {
+      "lead": "Tuxpanの観光体験をご紹介します。"
+    }
+  },
+  "30189::scuba_diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Tuxpan."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Tuxpan."
+    },
+    "ja": {
+      "lead": "Tuxpanの観光体験をご紹介します。"
+    }
+  },
+  "30191::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Ursulo Galván.",
+      "detail": "Quiahuiztlan, Cempoala y La Antigua. La Ruta de Cortés: Historic La Antigua visit and archaeological stop at Cempoala; municipalities can be established independently by named sites. Ancient Totonac Cempoala site. Cempoala named as itinerary archaeological visit."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Ursulo Galván."
+    },
+    "ja": {
+      "lead": "Ursulo Galvánの観光体験をご紹介します。"
+    }
+  },
+  "30191::atv": {
+    "en": {
+      "lead": "Make room for a little adventure in Ursulo Galván.",
+      "detail": "Aventura en Dunas y Playas de Chachalacas: Product offers quad-bike ride on the dunes. Quad bike excursion on dunes. Quad-bike ride at Chachalacas dunes."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Ursulo Galván."
+    },
+    "ja": {
+      "lead": "Ursulo Galvánの観光体験をご紹介します。"
+    }
+  },
+  "30191::sandboarding": {
+    "en": {
+      "lead": "Make room for a little adventure in Ursulo Galván."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Ursulo Galván."
+    },
+    "ja": {
+      "lead": "Ursulo Galvánの観光体験をご紹介します。"
+    }
+  },
+  "30192::archaeological_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Vega de Alatorre.",
+      "detail": "Original catalog (Spanish): Las Higueras C.P. 93965 Vega De Alatorre, Municipio de Vega de Alatorre"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Vega de Alatorre.",
+      "detail": "Las Higueras C.P. 93965 Vega De Alatorre, Municipio de Vega de Alatorre"
+    },
+    "ja": {
+      "lead": "Vega de Alatorreの観光体験をご紹介します。"
+    }
+  },
+  "30193::coffee_cupping": {
+    "en": {
+      "lead": "Discover Veracruz through its flavors and traditions.",
+      "detail": "Sabor a Café: Product specifically offers coffee cupping in Veracruz."
+    },
+    "es": {
+      "lead": "Descubre Veracruz a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::fortress_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Veracruz.",
+      "detail": "Cempoala, La Antigua y San Juan de Ulúa: Fortress visit in the Port of Veracruz. Fort visit in Veracruz."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::guided_city_tour": {
+    "en": {
+      "lead": "Step into the stories and traditions of Veracruz.",
+      "detail": "Deep City Tour offers a guided visit through historic patios and buildings."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Veracruz.",
+      "detail": "Short Veracruz port historical city tour including San Juan de Ulúa; Boca del Río also toured but fortress not in Boca."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::diving": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Veracruz.",
+      "detail": "Curso de Buceo (Open Water): Open-water scuba lessons on reefs; operator also lists Boca del Río as lodging, so dive-area source must be kept."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Veracruz.",
+      "detail": "Kayak product describes paddling toward Isla de Sacrificios in Veracruz."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30193::snorkeling": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Veracruz."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Veracruz."
+    },
+    "ja": {
+      "lead": "Veracruzの観光体験をご紹介します。"
+    }
+  },
+  "30087::guided_heritage_walk": {
+    "en": {
+      "lead": "Step into the stories and traditions of Xalapa.",
+      "detail": "Tour de Barrios Prehispánicos: Walking tour of pre-Hispanic neighborhoods of central Xalapa."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Xalapa."
+    },
+    "ja": {
+      "lead": "Xalapaの観光体験をご紹介します。"
+    }
+  },
+  "30087::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Xalapa."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Xalapa."
+    },
+    "ja": {
+      "lead": "Xalapaの観光体験をご紹介します。"
+    }
+  },
+  "30087::botanical_garden_visit": {
+    "en": {
+      "lead": "Explore the natural side of Xalapa."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Xalapa."
+    },
+    "ja": {
+      "lead": "Xalapaの観光体験をご紹介します。"
+    }
+  },
+  "30092::coffee_cupping": {
+    "en": {
+      "lead": "Discover Xico through its flavors and traditions.",
+      "detail": "Senderos del Café: Describes coffee cupping in Xico."
+    },
+    "es": {
+      "lead": "Descubre Xico a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::coffee_roasting": {
+    "en": {
+      "lead": "Discover Xico through its flavors and traditions.",
+      "detail": "Senderos del Café: Product specifically locates coffee roasting in Xico."
+    },
+    "es": {
+      "lead": "Descubre Xico a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::traditional_cooking_workshop": {
+    "en": {
+      "lead": "Discover Xico through its flavors and traditions.",
+      "detail": "Xico-focused hands-on mole process/tasting and Coatepec food/coffee circuit; generic coffee-production mention should not become a hands-on coffee-harvest claim."
+    },
+    "es": {
+      "lead": "Descubre Xico a través de sus sabores y tradiciones."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::guided_city_tour": {
+    "en": {
+      "lead": "Step into the stories and traditions of Xico.",
+      "detail": "De Aventura en un Pueblo MáXico: Guided village heritage walk."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Xico."
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::canyoning": {
+    "en": {
+      "lead": "Make room for a little adventure in Xico."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Xico.",
+      "detail": "Explora los rincones más espectaculares del estado, con rutas inolvidables por Teocelo, Xico, Jalcomulco y San Andrés Tuxtla."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Xico."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::rappelling": {
+    "en": {
+      "lead": "Make room for a little adventure in Xico.",
+      "detail": "De Aventura en un Pueblo MáXico: Rappelling on multiple waterfalls."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::ziplining": {
+    "en": {
+      "lead": "Make room for a little adventure in Xico.",
+      "detail": "De Aventura en un Pueblo MáXico: Zipline beside waterfall."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Xico.",
+      "detail": "Vive la adrenalina al máximo haciendo rappel en cascadas de más de 50 metros, saltando a pozas naturales, deslizándote en tirolesas y caminando entre cañones con aguas turquesa."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::waterfall_visit": {
+    "en": {
+      "lead": "Explore the natural side of Xico.",
+      "detail": "Historical sites in Veracruz, Xalapa museum/streets, Coatepec tourism and Xico sights including Texolo waterfall."
+    },
+    "es": {
+      "lead": "Acércate a la naturaleza de Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::natural_pool_jumping": {
+    "en": {
+      "lead": "Discover a different side of Xico.",
+      "detail": "De Aventura en un Pueblo MáXico: Jumping into pools during canyon route."
+    },
+    "es": {
+      "lead": "Descubre otra faceta de Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30092::temazcal": {
+    "en": {
+      "lead": "Find a slower rhythm in Xico.",
+      "detail": "Campamento Detox and spiritual reconnection includes a temazcal as an explicit wellness activity."
+    },
+    "es": {
+      "lead": "Disfruta un ritmo más pausado en Xico."
+    },
+    "ja": {
+      "lead": "Xicoの観光体験をご紹介します。"
+    }
+  },
+  "30196::museum_visit": {
+    "en": {
+      "lead": "Step into the stories and traditions of Yanga.",
+      "detail": "Original catalog (Spanish): Museo Regional de Palmillas (MRP) tenía pendiente abordar con mayor profundidad la afrodescendencia en la región central de Veracruz"
+    },
+    "es": {
+      "lead": "Acércate a las historias y tradiciones de Yanga.",
+      "detail": "Museo Regional de Palmillas (MRP) tenía pendiente abordar con mayor profundidad la afrodescendencia en la región central de Veracruz"
+    },
+    "ja": {
+      "lead": "Yangaの観光体験をご紹介します。"
+    }
+  },
+  "30201::kayaking": {
+    "en": {
+      "lead": "Discover another side of Veracruz by the water in Zongolica.",
+      "detail": "Product expressly offers kayaking as an alternative to the boat ride."
+    },
+    "es": {
+      "lead": "Descubre otro lado de Veracruz junto al agua en Zongolica."
+    },
+    "ja": {
+      "lead": "Zongolicaの観光体験をご紹介します。"
+    }
+  },
+  "30203::hiking": {
+    "en": {
+      "lead": "Make room for a little adventure in Zozocolco de Hidalgo."
+    },
+    "es": {
+      "lead": "Una aventura diferente te espera en Zozocolco de Hidalgo."
+    },
+    "ja": {
+      "lead": "Zozocolco de Hidalgoの観光体験をご紹介します。"
+    }
+  },
+  "30203::paper_balloon_workshop": {
+    "en": {
+      "lead": "Get closer to the creative traditions of Zozocolco de Hidalgo."
+    },
+    "es": {
+      "lead": "Conoce las tradiciones artesanales de Zozocolco de Hidalgo.",
+      "detail": "En Zozocolco, experimenta una inmersión en la cultura Totonaca, podrás nadar en pozas cristalinas y participar talleres de globos de papel."
+    },
+    "ja": {
+      "lead": "Zozocolco de Hidalgoの観光体験をご紹介します。"
+    }
+  }
+}
