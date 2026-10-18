@@ -199,26 +199,45 @@ function renderDetail(){
 const markerCache=new Map();
 function buildMarker(f){
   const p=f.properties;
-  const button=element('button','vx-geo-marker');
-  button.type='button';
-  button.setAttribute('aria-label',p.name);
-  button.title=p.name;
+  // A DIV avoids generic button styles from the host website.  Essential
+  // appearance is inline because the last site mixed cached JS and CSS.
+  const pin=element('div','vx-geo-marker');
+  pin.setAttribute('role','button');
+  pin.tabIndex=0;
+  pin.setAttribute('aria-label',p.name);
+  pin.title=p.name;
+  Object.assign(pin.style,{
+    width:'25px',height:'25px',display:'flex',alignItems:'center',
+    justifyContent:'center',border:'0',padding:'0',borderRadius:'50%',
+    background:'transparent',cursor:'pointer',overflow:'visible',
+    boxSizing:'border-box'
+  });
   const ring=element('span','vx-geo-ring');
   const keys=[...new Set(p.types||[])].filter(k=>Object.hasOwn(palette,k));
   const colors=keys.map(k=>palette[k]);
   if(colors.length){
-    const n=360/colors.length;
+    const step=360/colors.length;
     ring.style.background='conic-gradient('+colors.map((color,i)=>
-      color+' '+(i*n)+'deg '+((i+1)*n)+'deg').join(', ')+')';
-  }else ring.style.background='#9aa3a4';
-  ring.append(element('span','vx-geo-core'));
-  button.append(ring);
-  button.addEventListener('click',event=>{
-    event.preventDefault();event.stopPropagation();openDetail(f);
+      color+' '+(i*step)+'deg '+((i+1)*step)+'deg').join(', ')+')';
+  }else ring.style.background='#9ba6a4';
+  Object.assign(ring.style,{
+    display:'flex',width:'100%',height:'100%',borderRadius:'50%',
+    padding:'3px',alignItems:'center',justifyContent:'center',
+    border:'2px solid #fff',boxShadow:'0 2px 7px #09261c88',
+    boxSizing:'border-box'
   });
-  const marker=new maplibregl.Marker({element:button,anchor:'center',subpixelPositioning:true})
+  const core=element('span','vx-geo-core');
+  Object.assign(core.style,{
+    display:'block',width:'100%',height:'100%',borderRadius:'50%',
+    background:'#244b42',border:'1px solid #fff',boxSizing:'border-box'
+  });
+  ring.append(core);pin.append(ring);
+  function selectPin(e){e.preventDefault();e.stopPropagation();openDetail(f);}
+  pin.addEventListener('click',selectPin);
+  pin.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){selectPin(e);}});
+  const marker=new maplibregl.Marker({element:pin,anchor:'center',subpixelPositioning:true})
     .setLngLat(f.geometry.coordinates).addTo(mapObject);
-  markerCache.set(String(f.id),{marker,button});
+  markerCache.set(String(f.id),{marker,button:pin,ring});
 }
 function refreshMapSource(){
   if(!mapObject || !state.features.length)return;
@@ -233,6 +252,9 @@ function refreshMapSource(){
       entry.button.classList.toggle('vx-geo-marker--muted',show&&highlighting()&&!matches(f));
       entry.button.classList.toggle('vx-geo-marker--match',show&&highlighting()&&matches(f));
       entry.button.classList.toggle('vx-geo-marker--selected',String(state.selected)===String(f.id));
+      entry.button.style.opacity=show&&highlighting()&&!matches(f)?'.22':'1';
+      entry.ring.style.boxShadow=String(state.selected)===String(f.id)?'0 0 0 4px #ffc24b,0 2px 7px #09261c88':
+         show&&highlighting()&&matches(f)?'0 0 0 3px #f4b84d,0 2px 7px #09261c88':'0 2px 7px #09261c88';
     }
     updateMarkerZoom();
   }catch(error){
@@ -244,9 +266,67 @@ function refreshMapSource(){
 function updateMarkerZoom(){
   if(!mapObject)return;
   const big=mapObject.getZoom()>=8.1;
-  for(const entry of markerCache.values())entry.button.classList.toggle('vx-geo-marker--close',big);
+  for(const entry of markerCache.values()){
+    entry.button.classList.toggle('vx-geo-marker--close',big);
+    entry.button.style.width=big?'31px':'25px';
+    entry.button.style.height=big?'31px':'25px';
+  }
 }
-if(mapObject)mapObject.on('zoom',updateMarkerZoom);
+if(mapObject){mapObject.on('zoom',updateMarkerZoom);mapObject.on('moveend',()=>{if(state.features.length)renderResults();});}
+// Sidebar follows the geographic viewport instead of showing an unexplained
+// alphabetical table for the entire state. Nothing is removed from the data.
+let showOutsidePlaces=false;
+const panelWords={
+ en:{near:'In the current map view',away:'Elsewhere in Veracruz',activities:'documented activities',oneActivity:'documented activity',show:'Show other places',hide:'Hide other places',none:'No documented places in this view. Pan or zoom out.',select:'Select to view activities and sources'},
+ es:{near:'En el mapa actual',away:'En otras zonas de Veracruz',activities:'actividades documentadas',oneActivity:'actividad documentada',show:'Ver otros lugares',hide:'Ocultar otros lugares',none:'No hay lugares documentados en esta vista. Mueve o aleja el mapa.',select:'Selecciona para ver actividades y fuentes'},
+ ja:{near:'現在の地図内',away:'ベラクルス州のその他の地域',activities:'資料にある体験',oneActivity:'資料にある体験',show:'ほかの場所を表示',hide:'ほかの場所を閉じる',none:'この範囲には対象地点がありません。地図を動かすか縮小してください。',select:'選択して体験と出典を見る'}
+};
+function renderResults(){
+ const list=$('vx-list');if(!list)return;
+ list.replaceChildren();
+ // Details replace the list, rather than piling a destination article on top
+ // of sixty unexplained rows.
+ list.hidden=!!state.selected;
+ if(state.selected)return;
+ const tr=panelWords[language()]||panelWords.en;
+ const shown=visible();
+ const ordered=highlighting()?[...shown.filter(matches),...shown.filter(f=>!matches(f))]:shown;
+ const bounds=mapObject?.getBounds?.();
+ const inMap=f=>!bounds||bounds.contains(f.geometry.coordinates);
+ const near=ordered.filter(inMap),outside=ordered.filter(f=>!inMap(f));
+ const center=mapObject?.getCenter?.();
+ const distance=f=>center?Math.hypot(f.geometry.coordinates[0]-center.lng,f.geometry.coordinates[1]-center.lat):0;
+ near.sort((a,b)=>(highlighting()?Number(matches(b))-Number(matches(a)):0)||distance(a)-distance(b));
+ outside.sort((a,b)=>(highlighting()?Number(matches(b))-Number(matches(a)):0)||distance(a)-distance(b));
+ function row(f){
+  const p=f.properties;const hit=matches(f);
+  const btn=element('button','vx-result'+(highlighting()?(hit?' vx-is-match':' vx-is-muted'):''));
+  btn.type='button';btn.title=tr.select;
+  const top=element('div','vx-result-top');top.append(element('strong','',p.name));
+  const badge=element('span','vx-result-count',p.activity_count+' '+(p.activity_count===1?tr.oneActivity:tr.activities));
+  top.append(badge);btn.append(top);
+  if(p.types.length){
+   const typeLine=element('div','vx-map-type-line');
+   for(const type of p.types){const group=element('span','vx-type-word');group.append(dot(type),document.createTextNode(labelType(type)));typeLine.append(group);}
+   btn.append(typeLine);
+  }
+  if(p.activities.length){
+   const desc=element('div','vx-map-preview',p.activities.slice(0,3).map(activityLabel).join(' · ')+(p.activities.length>3?' · …':''));
+   btn.append(desc);
+  }else btn.append(element('div','vx-map-preview',copy().absence));
+  btn.onclick=()=>openDetail(f);list.append(btn);
+ }
+ function heading(title,n){const h=element('div','vx-map-list-heading',title+' · '+n);list.append(h);}
+ heading(tr.near,near.length);
+ if(!near.length)list.append(element('p','vx-map-list-empty',tr.none));
+ near.slice(0,60).forEach(row);
+ if(outside.length){
+  const toggle=element('button','vx-map-outside-toggle',(showOutsidePlaces?tr.hide:tr.show)+' ('+outside.length+')');
+  toggle.type='button';toggle.onclick=()=>{showOutsidePlaces=!showOutsidePlaces;renderResults();};
+  list.append(toggle);
+  if(showOutsidePlaces){heading(tr.away,outside.length);outside.forEach(row);}
+ }
+}
 function render(){
  const t=copy();$('vx-title').textContent=t.title;$('vx-subtitle').textContent=t.subtitle;
  $('vx-search').placeholder=t.search;$('vx-toggle-label').textContent=state.all?t.all:t.documented;
@@ -271,15 +351,7 @@ function render(){
  $('vx-top-count').textContent=state.features.length?`${state.features.length} municipios · ${state.features.reduce((n,f)=>n+f.properties.activity_count,0)} actividades vinculadas`:'';
  $('vx-focus').hidden=!highlighting()||match.length===0;
  $('vx-focus').textContent=t.focus;
- const list=$('vx-list');list.replaceChildren();
- const results=highlighting()?[...match,...shown.filter(f=>!matches(f))]:shown;
- for(const f of results){const p=f.properties;const hit=matches(f);
-  const button=element('button','vx-result'+(highlighting()?(hit?' vx-is-match':' vx-is-muted'):''));
-  button.type='button';const top=element('div','vx-result-top');top.append(element('strong','',p.name));top.append(element('span','vx-result-count',String(p.activity_count)));button.append(top);
-  if(p.types.length){const tags=element('div','vx-mini-dots');for(const type of p.types)tags.append(dot(type));button.append(tags);}
-  else button.append(element('span','vx-no-data',t.absence));
-  button.onclick=()=>openDetail(f);list.append(button);
- }
+ renderResults();
  const leg=$('vx-legend');leg.replaceChildren();
  for(const k of orderedTypes){if(!state.features.some(f=>f.properties.types.includes(k)))continue;
   const tag=element('button','vx-legend-item'+(state.filter===k?' vx-legend-active':''));
