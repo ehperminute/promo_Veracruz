@@ -127,7 +127,7 @@
 @media(prefers-reduced-motion:reduce){#veracruz-map-section .vx-geo-ring{transition:none}}
 
 /* 2026-10-18: markers also have essential inline styling to tolerate cached CSS. */
-#veracruz-map-section .vx-geo-marker{appearance:none; -webkit-appearance:none; position:relative;}
+#veracruz-map-section .vx-geo-marker{appearance:none; -webkit-appearance:none; position:absolute; top:0; left:0;}
 #veracruz-map-section .vx-map-list-heading{position:sticky;top:0;z-index:1;background:#eaf2ed;
  color:#2b5645;font-size:.78rem;font-weight:750;padding:11px 12px;border-radius:8px;margin:5px 4px 7px;}
 #veracruz-map-section .vx-result{padding:12px;gap:5px;}
