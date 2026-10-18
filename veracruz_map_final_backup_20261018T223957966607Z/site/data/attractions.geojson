@@ -1,0 +1,1126 @@
+{
+  "type": "FeatureCollection",
+  "name": "Veracruz named geographic features, not necessarily entrances",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PLC-739eb26b47aa8f41",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.41089,
+          19.7503
+        ]
+      },
+      "properties": {
+        "id": "PLC-739eb26b47aa8f41",
+        "name": "Playa Muñecos",
+        "type": "Beach",
+        "icon": "🏖️",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W387750040",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Alto Lucero de Gutiérrez Barrios",
+        "description_en": "Discover Playa Muñecos on the map of Veracruz.",
+        "description_es": "Descubre Playa Muñecos en el mapa de Veracruz.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Playa Muñecos"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-88bd4af5f976badc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.18868,
+          18.45929
+        ]
+      },
+      "properties": {
+        "id": "PLC-88bd4af5f976badc",
+        "name": "Laguna Encantada",
+        "type": "Lake or lagoon",
+        "icon": "🌊",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/30548974",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "municipality": "San Andrés Tuxtla",
+        "description_en": "Explore the waters and shoreline of Laguna Encantada.",
+        "description_es": "Conoce las aguas y las orillas de Laguna Encantada.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Laguna Encantada"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-de5cb7bab0d45188",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9944,
+          19.40189
+        ]
+      },
+      "properties": {
+        "id": "PLC-de5cb7bab0d45188",
+        "name": "Cascada de Texolo",
+        "type": "Waterfall",
+        "icon": "💧",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/N3671017598",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Xico",
+        "description_en": "Follow the sound of falling water into the green hills near Xico.",
+        "description_es": "Sigue el sonido del agua entre las montañas verdes cercanas a Xico.",
+        "details_en": "Texolo is a waterfall framed by steep terrain and lush vegetation. The geographic marker locates the falls; the approach trail or parking point has not been checked.",
+        "details_es": "Texolo es una cascada rodeada de pendientes y vegetación abundante. El marcador ubica la caída de agua; aún no hemos verificado el acceso ni el estacionamiento.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cascada_texolo.jpg?width=900",
+        "photo_credit": "Jonathan UG · CC BY-SA 4.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Cascada_texolo.jpg",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Cascada de Texolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-75d49e94f88da95f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.10595,
+          18.84974
+        ]
+      },
+      "properties": {
+        "id": "PLC-75d49e94f88da95f",
+        "name": "Palacio de Hierro",
+        "type": "Architectural heritage",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W552327838",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Orizaba",
+        "description_en": "Discover an unusual piece of architectural heritage in the heart of Orizaba.",
+        "description_es": "Descubre una singular joya arquitectónica en el corazón de Orizaba.",
+        "details_en": "The iron-built landmark is one of the city’s recognizable historic buildings. It makes a natural stop for an architectural walk through central Orizaba.",
+        "details_es": "El histórico edificio de hierro es uno de los lugares emblemáticos de la ciudad y una parada ideal para recorrer su arquitectura.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_de_Hierro,_Orizaba.jpg?width=900",
+        "photo_credit": "Lizquev123 · CC BY 4.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Palacio_de_Hierro,_Orizaba.jpg",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Palacio de Hierro"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-907421b8a1cad6e1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.32114,
+          19.32127
+        ]
+      },
+      "properties": {
+        "id": "PLC-907421b8a1cad6e1",
+        "name": "Casa de Cortés",
+        "type": "Historic building",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/N7147258586",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "La Antigua",
+        "description_en": "Trace early colonial history at La Antigua.",
+        "description_es": "Sigue las huellas de la historia colonial temprana en La Antigua.",
+        "details_en": "The site known as Casa de Cortés is associated with the historic settlement of La Antigua, one of the places connected with early colonial Veracruz.",
+        "details_es": "El lugar conocido como Casa de Cortés se relaciona con el asentamiento histórico de La Antigua y los primeros siglos de la historia colonial veracruzana.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Casa de Cortés"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-6561976811ca5bc2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.31908,
+          19.46943
+        ]
+      },
+      "properties": {
+        "id": "PLC-6561976811ca5bc2",
+        "name": "Dunas de Chachalacas",
+        "type": "Dune landscape",
+        "icon": "🏖️",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W1241740824",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Úrsulo Galván",
+        "description_en": "Discover the wide sand-dune landscape close to the Gulf Coast.",
+        "description_es": "Descubre el extenso paisaje de dunas cercano a la costa del Golfo.",
+        "details_en": "These dunes form an extensive area rather than a single attraction entrance. Choose a verified access point or local guide before planning an excursion.",
+        "details_es": "Las dunas ocupan una zona amplia, no una entrada única. Conviene localizar el acceso o servicio turístico concreto antes de planear la visita.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Dunas de Chachalacas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-98d4dc7f03bc6254",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.13137,
+          19.20939
+        ]
+      },
+      "properties": {
+        "id": "PLC-98d4dc7f03bc6254",
+        "name": "San Juan de Ulúa",
+        "type": "Historic fort",
+        "icon": "🏰",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/19383044",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Veracruz",
+        "description_en": "Step into the maritime history of Veracruz at San Juan de Ulúa.",
+        "description_es": "Adéntrate en la historia marítima de Veracruz en San Juan de Ulúa.",
+        "details_en": "The coastal fortress is closely connected to the history of the port and the Gulf of Mexico. Explore its structures and learn about the changing role of Veracruz across centuries.",
+        "details_es": "La fortaleza costera está íntimamente ligada al puerto y al Golfo de México. Conoce sus construcciones y la historia cambiante de Veracruz a través de los siglos.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fuerte_San_juan_de_ul%C3%BAa.JPG?width=900",
+        "photo_credit": "Juan Carlos Espinosa Rivera · CC BY-SA 3.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Fuerte_San_juan_de_ul%C3%BAa.JPG",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "San Juan de Ulúa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-e5bffdd7419c88bf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.57469,
+          21.63334
+        ]
+      },
+      "properties": {
+        "id": "PLC-e5bffdd7419c88bf",
+        "name": "Laguna de Tamiahua",
+        "type": "Lake or lagoon",
+        "icon": "🌊",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/19378426",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "municipality": "Tamiahua",
+        "description_en": "Explore the waters and shoreline of Laguna de Tamiahua.",
+        "description_es": "Conoce las aguas y las orillas de Laguna de Tamiahua.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Laguna de Tamiahua"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-841640faab40c907",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2077,
+          18.38479
+        ]
+      },
+      "properties": {
+        "id": "PLC-841640faab40c907",
+        "name": "El Salto de Eyipantla",
+        "type": "Waterfall",
+        "icon": "💧",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/N1834318666",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "San Andrés Tuxtla",
+        "description_en": "Discover one of the best-known waterfalls in the Los Tuxtlas landscape.",
+        "description_es": "Descubre una de las cascadas más conocidas del paisaje de Los Tuxtlas.",
+        "details_en": "The cascade drops through tropical scenery near San Andrés Tuxtla. The marker represents the waterfall itself, rather than a verified roadside arrival point.",
+        "details_es": "La caída de agua se abre paso entre un entorno tropical cerca de San Andrés Tuxtla. El marcador señala la cascada, no un acceso carretero verificado.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cascada_de_Eyipantla.jpg?width=900",
+        "photo_credit": "Didaskalia edu · CC BY-SA 4.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Cascada_de_Eyipantla.jpg",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "El Salto de Eyipantla"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-910bbe4196b3266e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.9278,
+          19.06517
+        ]
+      },
+      "properties": {
+        "id": "PLC-910bbe4196b3266e",
+        "name": "Isla de Enmedio",
+        "type": "Island",
+        "icon": "🌊",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/30547054",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "municipality": "Antón Lizardo / Alvarado",
+        "description_en": "Find Isla de Enmedio on the Gulf Coast map. Its surrounding waters and access need separate planning.",
+        "description_es": "Ubica Isla de Enmedio en el mapa del Golfo. Su entorno marino y su acceso requieren planificación específica.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Isla de Enmedio"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-b5b5d1afd92509c0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.06485,
+          18.40077
+        ]
+      },
+      "properties": {
+        "id": "PLC-b5b5d1afd92509c0",
+        "name": "Lago de Catemaco",
+        "type": "Lake or lagoon",
+        "icon": "🌊",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/19408508",
+        "source_provider": "GeoNames (via Mapcarta)",
+        "municipality": "Catemaco",
+        "description_en": "Enjoy the broad waters and tropical landscape surrounding Catemaco.",
+        "description_es": "Contempla las aguas abiertas y el paisaje tropical que rodea Catemaco.",
+        "details_en": "The map shows a representative point on the lake. Boat departures, docks and tour operators require separately checked locations.",
+        "details_es": "El mapa muestra un punto representativo del lago. Los muelles, embarcaderos y operadores necesitan ubicaciones verificadas por separado.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Lago de Catemaco"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-b94e2577e1106026",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.09198,
+          19.17538
+        ]
+      },
+      "properties": {
+        "id": "PLC-b94e2577e1106026",
+        "name": "Isla de Sacrificios",
+        "type": "Island",
+        "icon": "🌊",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W41143662",
+        "source_provider": "OpenStreetMap (via Mapcarta)",
+        "municipality": "Veracruz",
+        "description_en": "Find Isla de Sacrificios on the Gulf Coast map. Its surrounding waters and access need separate planning.",
+        "description_es": "Ubica Isla de Sacrificios en el mapa del Golfo. Su entorno marino y su acceso requieren planificación específica.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Isla de Sacrificios"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-e1c9e67f7e258dc3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.94388889,
+          19.51222222
+        ]
+      },
+      "properties": {
+        "id": "PLC-e1c9e67f7e258dc3",
+        "name": "Jardín Botánico F.J. Clavijero",
+        "type": "Botanical garden",
+        "icon": "🌿",
+        "status": "mapped_site",
+        "source_url": "https://www.wikidata.org/wiki/Q9010897",
+        "source_provider": "Wikidata",
+        "municipality": "Xalapa",
+        "description_en": "Explore the botanical diversity of the Xalapa highlands.",
+        "description_es": "Explora la diversidad botánica de las tierras altas de Xalapa.",
+        "details_en": "The botanical garden provides a place to appreciate regional plant life and ecological conservation near Xalapa.",
+        "details_es": "El jardín botánico permite conocer la flora regional y acercarse al trabajo de conservación ecológica cerca de Xalapa.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Jardín Botánico F.J. Clavijero"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-796745db38a6691f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.377492,
+          20.447225
+        ]
+      },
+      "properties": {
+        "id": "PLC-796745db38a6691f",
+        "name": "El Tajín",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1905",
+        "source_provider": "INAH",
+        "municipality": "Papantla",
+        "description_en": "Walk among the monumental remains of El Tajín, a remarkable archaeological landscape near Papantla.",
+        "description_es": "Descubre los vestigios monumentales de El Tajín, un paisaje arqueológico extraordinario cerca de Papantla.",
+        "details_en": "Explore an important pre-Hispanic centre of the Totonacapan region, known for its distinctive architecture and stone reliefs. The mapped point marks the archaeological site, not its confirmed visitor gate.",
+        "details_es": "Explora uno de los grandes centros prehispánicos del Totonacapan, reconocido por su arquitectura y relieves de piedra. El punto señala el sitio arqueológico, no una entrada confirmada.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg?width=900",
+        "photo_credit": "JEAFotoarte75 · CC BY-SA 4.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "El Tajín"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-f1845f7a76f2e840",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.403889,
+          19.447047
+        ]
+      },
+      "properties": {
+        "id": "PLC-f1845f7a76f2e840",
+        "name": "Cempoala",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1948",
+        "source_provider": "INAH",
+        "municipality": "Úrsulo Galván",
+        "description_en": "Explore the archaeological remains of Cempoala, an important historic place near the Gulf Coast.",
+        "description_es": "Recorre los vestigios de Cempoala, un importante sitio histórico cercano a la costa del Golfo.",
+        "details_en": "The site is linked to the Totonac heritage of central Veracruz and to the early encounters between indigenous communities and Europeans.",
+        "details_es": "El lugar se relaciona con la herencia totonaca del centro de Veracruz y con los primeros encuentros entre comunidades indígenas y europeos.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Cempoala"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-9e7895668d31e1a6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.41522165,
+          19.67015025
+        ]
+      },
+      "properties": {
+        "id": "PLC-9e7895668d31e1a6",
+        "name": "Quiahuiztlán",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/2098",
+        "source_provider": "INAH",
+        "municipality": "Actopan",
+        "description_en": "Archaeology and the Gulf Coast come together at Quiahuiztlán, near the shores of Actopan.",
+        "description_es": "En Quiahuiztlán, la arqueología se encuentra con el paisaje del Golfo, cerca de las costas de Actopan.",
+        "details_en": "This site forms part of the historic coastal landscape associated with the Ruta de Cortés. Its archaeological remains offer a different perspective on the history of Veracruz.",
+        "details_es": "El sitio forma parte del paisaje histórico costero relacionado con la Ruta de Cortés. Sus vestigios ofrecen otra perspectiva sobre la historia veracruzana.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quiahuiztlan_Archaeological_Site_-_Veracruz_-_Mexico_-_05_(16057710431).jpg?width=900",
+        "photo_credit": "Adam Jones · CC BY-SA 2.0",
+        "photo_source_url": "https://commons.wikimedia.org/wiki/File:Quiahuiztlan_Archaeological_Site_-_Veracruz_-_Mexico_-_05_(16057710431).jpg",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Quiahuiztlán"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-1332329626ad32ce",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.44006,
+          18.465703
+        ]
+      },
+      "properties": {
+        "id": "PLC-1332329626ad32ce",
+        "name": "Tres Zapotes",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1949",
+        "source_provider": "INAH",
+        "municipality": "Santiago Tuxtla",
+        "description_en": "Discover traces of an ancient Gulf Coast civilisation at Tres Zapotes.",
+        "description_es": "Descubre huellas de una antigua civilización de la costa del Golfo en Tres Zapotes.",
+        "details_en": "The archaeological landscape belongs to the long history of settlement in southern Veracruz. Visitor access should be confirmed before using this point for a trip.",
+        "details_es": "El paisaje arqueológico forma parte de una larga historia de poblamiento en el sur veracruzano. Es necesario confirmar el acceso antes de planear la visita.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Tres Zapotes"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PLC-2df517ab5a9b9e97",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.76127504,
+          17.75173971
+        ]
+      },
+      "properties": {
+        "id": "PLC-2df517ab5a9b9e97",
+        "name": "San Lorenzo Tenochtitlán",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://datos.inah.gob.mx/taxonomy/term/1950",
+        "source_provider": "INAH",
+        "municipality": "Texistepec",
+        "description_en": "Find the remains of San Lorenzo Tenochtitlán among the archaeological sites of Veracruz.",
+        "description_es": "Descubre los vestigios de San Lorenzo Tenochtitlán entre los sitios arqueológicos de Veracruz.",
+        "details_en": "",
+        "details_es": "",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "San Lorenzo Tenochtitlán"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-7b1a13f014ae",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.09326117345746,
+          18.850922739997575
+        ]
+      },
+      "properties": {
+        "id": "VER-7b1a13f014ae",
+        "name": "Museo de Arte del Estado de Veracruz",
+        "type": "Art museum",
+        "icon": "🎨",
+        "status": "mapped_site",
+        "source_url": "https://atlas.veracruzcultura.com/infraestructura-de-la-secver/museo-de-arte-del-estado-de-veracruz-maev/",
+        "source_provider": "Secretaría de Cultura Veracruz",
+        "municipality": "Orizaba",
+        "description_en": "Enter a former eighteenth-century religious complex that now houses the state art collection.",
+        "description_es": "Visita un antiguo conjunto religioso del siglo XVIII que hoy resguarda parte de la colección artística de Veracruz.",
+        "details_en": "The museum includes works from the eighteenth to twentieth centuries and a collection associated with Diego Rivera. The building is the former Oratorio de San Felipe Neri.",
+        "details_es": "El museo conserva obras de los siglos XVIII al XX, además de piezas vinculadas con Diego Rivera. Se encuentra en el antiguo Oratorio de San Felipe Neri.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Museo de Arte del Estado de Veracruz"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-2ecb47165d31",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.13704,
+          19.94024
+        ]
+      },
+      "properties": {
+        "id": "VER-2ecb47165d31",
+        "name": "Zona Arqueológica Cuajilote",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://lugares.inah.gob.mx/es/node/4391",
+        "source_provider": "INAH + GeoNames/Mapcarta",
+        "municipality": "Atzalan / Tlapacoyan",
+        "description_en": "Explore an archaeological settlement hidden among the river valleys of Filobobos.",
+        "description_es": "Explora un asentamiento arqueológico rodeado por los valles fluviales de Filobobos.",
+        "details_en": "Cuajilote preserves vestiges of Totonac history in the Filobobos region. INAH describes an approach from Tlapacoyan toward Santiago, followed by a walk; it is not a simple roadside stop.",
+        "details_es": "Cuajilote conserva vestigios de la historia totonaca de la región. El INAH describe un acceso desde Tlapacoyan hacia Santiago y después un trayecto a pie; no es una parada directa sobre la carretera.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Zona Arqueológica Cuajilote"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-036df14c49cf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.15124,
+          19.96778
+        ]
+      },
+      "properties": {
+        "id": "VER-036df14c49cf",
+        "name": "Zona Arqueológica Vega de la Peña",
+        "type": "Archaeological site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://lugares.inah.gob.mx/es/node/4483",
+        "source_provider": "INAH + GeoNames/Mapcarta",
+        "municipality": "Atzalan / Tlapacoyan",
+        "description_en": "Discover a pre-Hispanic trading centre beside the Filobobos River.",
+        "description_es": "Descubre un antiguo centro comercial prehispánico junto al río Filobobos.",
+        "details_en": "Vega de la Peña preserves plazas and ceremonial architecture associated with historical trade routes. INAH describes river crossings in the access route, so entrance planning is essential.",
+        "details_es": "Vega de la Peña conserva plazas y arquitectura ceremonial vinculadas a antiguas rutas de intercambio. El INAH menciona cruces de ríos en el acceso, por lo que la llegada requiere planificación.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Zona Arqueológica Vega de la Peña"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-6d5062f844e0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.89367,
+          19.52019
+        ]
+      },
+      "properties": {
+        "id": "VER-6d5062f844e0",
+        "name": "Jardín de las Esculturas",
+        "type": "Sculpture garden",
+        "icon": "🎨",
+        "status": "mapped_site",
+        "source_url": "https://sic.cultura.gob.mx/ficha.php?table=centro_cultural&table_id=941",
+        "source_provider": "Secretaría de Cultura + OpenStreetMap",
+        "municipality": "Xalapa",
+        "description_en": "Walk through a green space where sculptures and gardens share the landscape.",
+        "description_es": "Recorre un espacio verde donde esculturas y jardines comparten el paisaje.",
+        "details_en": "This cultural garden in Xalapa combines outdoor art with vegetation and hosts artistic and educational activities. It provides a quieter meeting point between nature and local creativity.",
+        "details_es": "Este jardín cultural de Xalapa reúne arte al aire libre, vegetación y actividades artísticas y educativas. Es un encuentro tranquilo entre naturaleza y creatividad local.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Jardín de las Esculturas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-e3a223867f92",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9146,
+          19.4327
+        ]
+      },
+      "properties": {
+        "id": "VER-e3a223867f92",
+        "name": "Museo del Café",
+        "type": "Coffee museum",
+        "icon": "☕",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/W348447114",
+        "source_provider": "OpenStreetMap",
+        "municipality": "Coatepec",
+        "description_en": "Follow the trail of coffee culture in the hills around Coatepec.",
+        "description_es": "Acércate a la cultura del café en las montañas cercanas a Coatepec.",
+        "details_en": "This mapped coffee museum is part of the region’s coffee-related visitor landscape. Check the current exhibitions and availability with the venue before travelling.",
+        "details_es": "Este museo del café forma parte del paisaje turístico cafetalero de la región. Conviene confirmar sus exposiciones y disponibilidad antes de salir.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Museo del Café"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VER-3accc9810b21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8785,
+          19.64726
+        ]
+      },
+      "properties": {
+        "id": "VER-3accc9810b21",
+        "name": "Cascada Naolinco",
+        "type": "Waterfall",
+        "icon": "💧",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/30516710",
+        "source_provider": "GeoNames via Mapcarta",
+        "municipality": "Naolinco",
+        "description_en": "Discover a waterfall among the hills around Naolinco.",
+        "description_es": "Descubre una cascada entre las montañas de los alrededores de Naolinco.",
+        "details_en": "The geographic record identifies a waterfall near Naolinco de Victoria. Trail conditions and any visitor access remain to be verified.",
+        "details_es": "La referencia geográfica identifica una caída de agua cerca de Naolinco de Victoria. Aún falta comprobar las condiciones del sendero y el acceso para visitantes.",
+        "visit_note_en": "Check visitor access and current conditions before travelling; this point is not yet verified as a vehicle arrival location.",
+        "visit_note_es": "Antes de viajar, confirma el acceso y las condiciones vigentes; este punto todavía no se ha verificado como lugar de llegada en vehículo.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Cascada Naolinco"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-MAX",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.9313,
+          19.55061
+        ]
+      },
+      "properties": {
+        "id": "NEW-MAX",
+        "name": "Museo de Antropología de Xalapa",
+        "type": "Museum",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/32816438",
+        "source_provider": "OpenStreetMap mapped building",
+        "municipality": "Xalapa",
+        "description_en": "Explore the archaeological heritage of Veracruz at Xalapa’s anthropology museum.",
+        "description_es": "Conoce el patrimonio arqueológico de Veracruz en el Museo de Antropología de Xalapa.",
+        "details_en": "The museum is a major collection of archaeological heritage in the state capital.",
+        "details_es": "El museo conserva importantes colecciones del patrimonio arqueológico veracruzano.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Museo de Antropología de Xalapa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-TEAYO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.63326,
+          20.75005
+        ]
+      },
+      "properties": {
+        "id": "NEW-TEAYO",
+        "name": "Pirámide de Castillo de Teayo",
+        "type": "Archaeological site",
+        "icon": "🗿",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W1134953593",
+        "source_provider": "OpenStreetMap mapped archaeological feature",
+        "municipality": "Castillo de Teayo",
+        "description_en": "Discover the archaeological pyramid in the heart of Castillo de Teayo.",
+        "description_es": "Descubre la pirámide arqueológica que se encuentra en Castillo de Teayo.",
+        "details_en": "The site reflects cultural exchange among pre-Hispanic populations of the Gulf region.",
+        "details_es": "El sitio refleja intercambios culturales entre pueblos prehispánicos de la región del Golfo.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Pirámide de Castillo de Teayo"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-CUYU",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.25594,
+          20.30974
+        ]
+      },
+      "properties": {
+        "id": "NEW-CUYU",
+        "name": "Zona Arqueológica Cuyuxquihui",
+        "type": "Archaeological site",
+        "icon": "🗿",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W1160833633",
+        "source_provider": "OpenStreetMap mapped archaeological site",
+        "municipality": "Papantla",
+        "description_en": "Explore the archaeological remains of Cuyuxquihui in the Totonac region.",
+        "description_es": "Explora los vestigios arqueológicos de Cuyuxquihui, en territorio totonaca.",
+        "details_en": "The mapped archaeological site lies in the Tecolutla valley.",
+        "details_es": "Este sitio arqueológico cartografiado se encuentra en el valle del Tecolutla.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Zona Arqueológica Cuyuxquihui"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-HIGU",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.62225473237615,
+          20.035066993173473
+        ]
+      },
+      "properties": {
+        "id": "NEW-HIGU",
+        "name": "Zona Arqueológica Las Higueras",
+        "type": "Archaeological site",
+        "icon": "🗿",
+        "status": "mapped_site",
+        "source_url": "https://atlas.veracruzcultura.com/material/zona-arqueologica-las-higueras/",
+        "source_provider": "Veracruz Cultural Heritage Atlas",
+        "municipality": "Vega de Alatorre",
+        "description_en": "Discover the archaeological site of Las Higueras, linked to the history of the Totonac coast.",
+        "description_es": "Descubre la zona arqueológica de Las Higueras y sus vínculos con la historia de la costa totonaca.",
+        "details_en": "The Veracruz cultural heritage atlas locates this site in Vega de Alatorre.",
+        "details_es": "El Atlas de Patrimonio Cultural de Veracruz ubica el sitio en Vega de Alatorre.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Zona Arqueológica Las Higueras"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-LENC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.81635,
+          19.4841
+        ]
+      },
+      "properties": {
+        "id": "NEW-LENC",
+        "name": "Museo El Lencero",
+        "type": "Museum",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/N3945174666",
+        "source_provider": "OpenStreetMap museum point",
+        "municipality": "Emiliano Zapata",
+        "description_en": "Visit the historic El Lencero museum near Xalapa.",
+        "description_es": "Visita el histórico Museo El Lencero, cerca de Xalapa.",
+        "details_en": "The museum is associated with the former hacienda estate near the state capital.",
+        "details_es": "El museo se vincula con la antigua hacienda cercana a la capital del estado.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Museo El Lencero"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-PERO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.24452,
+          19.57358
+        ]
+      },
+      "properties": {
+        "id": "NEW-PERO",
+        "name": "Fortaleza de San Carlos de Perote",
+        "type": "Historic fort",
+        "icon": "🏰",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W308321965",
+        "source_provider": "OpenStreetMap historic building",
+        "municipality": "Perote",
+        "description_en": "Discover the imposing eighteenth-century fortress in Perote.",
+        "description_es": "Descubre la imponente fortaleza del siglo XVIII en Perote.",
+        "details_en": "The fortress has also served other institutional uses over its long history.",
+        "details_es": "La fortaleza ha tenido distintos usos institucionales a lo largo de su historia.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Fortaleza de San Carlos de Perote"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-MACU",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.91821,
+          19.5494
+        ]
+      },
+      "properties": {
+        "id": "NEW-MACU",
+        "name": "Parque Ecológico Macuiltépetl",
+        "type": "Nature park",
+        "icon": "🌿",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/31153090",
+        "source_provider": "GeoNames mapped ecological park",
+        "municipality": "Xalapa",
+        "description_en": "Explore an urban green space on the slopes of Macuiltépetl in Xalapa.",
+        "description_es": "Explora un espacio verde urbano en las laderas del Macuiltépetl, en Xalapa.",
+        "details_en": "The park is part of a volcanic hill within the city.",
+        "details_es": "El parque forma parte de un cerro volcánico dentro de la ciudad.",
+        "visit_note_en": "Check current access and opening arrangements before travel.",
+        "visit_note_es": "Consulta las condiciones de acceso y los horarios vigentes antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Parque Ecológico Macuiltépetl"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-VRICA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.39577,
+          19.67706
+        ]
+      },
+      "properties": {
+        "id": "NEW-VRICA",
+        "name": "Playa de Villa Rica",
+        "type": "Beach",
+        "icon": "🏖️",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W447526289",
+        "source_provider": "OpenStreetMap mapped beach",
+        "municipality": "Actopan",
+        "description_en": "Discover Villa Rica beach along the Gulf coast.",
+        "description_es": "Descubre la playa de Villa Rica, junto a las aguas del Golfo de México.",
+        "details_en": "The mapped point represents the beach area; beach access requires local confirmation.",
+        "details_es": "El punto corresponde a la zona de playa; el acceso debe confirmarse localmente.",
+        "visit_note_en": "Check local access and safety conditions before travel.",
+        "visit_note_es": "Confirma acceso y condiciones de seguridad antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Playa de Villa Rica"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-MANCHA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.37827,
+          19.59345
+        ]
+      },
+      "properties": {
+        "id": "NEW-MANCHA",
+        "name": "Playa de La Mancha",
+        "type": "Beach",
+        "icon": "🏖️",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W414252529",
+        "source_provider": "OpenStreetMap mapped beach",
+        "municipality": "Actopan",
+        "description_en": "Visit the coastal landscape of La Mancha, with the sea and nearby lagoon environments.",
+        "description_es": "Visita el paisaje costero de La Mancha, con el mar y los ambientes lagunares cercanos.",
+        "details_en": "This mapped feature refers to the beach, not necessarily its public entrance.",
+        "details_es": "Este punto corresponde a la playa, no necesariamente a su entrada pública.",
+        "visit_note_en": "Check local access and safety conditions before travel.",
+        "visit_note_es": "Confirma acceso y condiciones de seguridad antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Playa de La Mancha"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-POPO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.95513,
+          18.75775
+        ]
+      },
+      "properties": {
+        "id": "NEW-POPO",
+        "name": "Sótano de Popocatl",
+        "type": "Protected cave area",
+        "icon": "🏞️",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W165468302",
+        "source_provider": "OpenStreetMap protected geographic area",
+        "municipality": "Zongolica region",
+        "description_en": "Learn about the remarkable Popocatl karst landscape in Veracruz’s mountains.",
+        "description_es": "Conoce el paisaje kárstico del Popocatl, en las montañas de Veracruz.",
+        "details_en": "The available point is a broad protected area, not a verified safe entrance to the cave.",
+        "details_es": "El punto corresponde a un área protegida amplia, NO a una entrada segura y verificada de la cueva.",
+        "visit_note_en": "Check local access and safety conditions before travel.",
+        "visit_note_es": "Confirma acceso y condiciones de seguridad antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_area",
+        "attraction_name_original": "Sótano de Popocatl"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "NEW-TUCAN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1489,
+          18.66116
+        ]
+      },
+      "properties": {
+        "id": "NEW-TUCAN",
+        "name": "Cascada El Tucán",
+        "type": "Waterfall",
+        "icon": "💧",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/N12895370803",
+        "source_provider": "OpenStreetMap mapped waterfall",
+        "municipality": "San Andrés Tuxtla",
+        "description_en": "Explore the waterfall landscape of El Tucán in the Los Tuxtlas region.",
+        "description_es": "Descubre el entorno de la cascada El Tucán, en la región de Los Tuxtlas.",
+        "details_en": "The map point marks the waterfall feature; foot access and conditions should be checked before visiting.",
+        "details_es": "El punto marca la cascada; conviene confirmar senderos y condiciones de acceso antes de visitarla.",
+        "visit_note_en": "Check local access and safety conditions before travel.",
+        "visit_note_es": "Confirma acceso y condiciones de seguridad antes de viajar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": "",
+        "mapping_status": "mapped_site",
+        "attraction_name_original": "Cascada El Tucán"
+      }
+    }
+  ]
+}

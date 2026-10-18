@@ -1,0 +1,2651 @@
+{
+  "retrieved_utc": "20261018T223957966607Z",
+  "endpoint": "offline_json",
+  "records_in_osm_response": 528,
+  "previous_curated_pins": 35,
+  "new_osm_pins": 464,
+  "catalog_matching_name_pins": 5,
+  "notes": "OSM mapped features are candidate destinations. Their source coordinates are NOT guaranteed entrance/parking locations. Original research catalogue remains unchanged.",
+  "review": [
+    {
+      "name": "Xiutetelco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/297697201"
+    },
+    {
+      "name": "Casa de Agustín Lara",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/610495622"
+    },
+    {
+      "name": "Huatusco el Viejo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1192834377"
+    },
+    {
+      "name": "Museo de Arqueología Olmeca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1216989794"
+    },
+    {
+      "name": "Museo del Faro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1273983557"
+    },
+    {
+      "name": "Cascadas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1307007170"
+    },
+    {
+      "name": "Cascadas de Tenexamaxa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1624342003"
+    },
+    {
+      "name": "Galería de Arte Contemporáneo de Xalapa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1693970430"
+    },
+    {
+      "name": "Piedra del Aguila",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1769011398"
+    },
+    {
+      "name": "Salto de Eyipantla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1834318666"
+    },
+    {
+      "name": "El Salto",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1851589216"
+    },
+    {
+      "name": "Las Brisas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1851589229"
+    },
+    {
+      "name": "Los Corales",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1854644381"
+    },
+    {
+      "name": "Nanciyaga",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1865183498"
+    },
+    {
+      "name": "Nacimiento Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1871056525"
+    },
+    {
+      "name": "El mural",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/1956155761"
+    },
+    {
+      "name": "Peña del Aire",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/2173579940"
+    },
+    {
+      "name": "Mirador",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/2366450079"
+    },
+    {
+      "name": "Mirador",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/2370025630"
+    },
+    {
+      "name": "Tlaxco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/2424804738"
+    },
+    {
+      "name": "EcoAldea Tamarindos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/2449489452"
+    },
+    {
+      "name": "Pirámides Cantona",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3210108494"
+    },
+    {
+      "name": "Teodoro Cano",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3350311918"
+    },
+    {
+      "name": "Cascada del Río Sedeño",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3366341220"
+    },
+    {
+      "name": "Museo Marino Tecolutla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3440531797"
+    },
+    {
+      "name": "Cafaselva, A.C.",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3520777831"
+    },
+    {
+      "name": "Vista a la cañada",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3533936608"
+    },
+    {
+      "name": "Vista al Cofre de Perote",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3533939071"
+    },
+    {
+      "name": "Quiosco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3536186956"
+    },
+    {
+      "name": "Manantial",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3608544676"
+    },
+    {
+      "name": "La Piedra Agujerada",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3620214133"
+    },
+    {
+      "name": "El Salto",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3620347308"
+    },
+    {
+      "name": "Cascada de Texolo",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/node/3671017598"
+    },
+    {
+      "name": "Casa De La Cultura Xicochimalco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3672593606"
+    },
+    {
+      "name": "Cascada de Texolo",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/node/3675036482"
+    },
+    {
+      "name": "Mirador",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3675036483"
+    },
+    {
+      "name": "Mirador",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/3675036484"
+    },
+    {
+      "name": "Cascada",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3701442904"
+    },
+    {
+      "name": "Herpetario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3812051930"
+    },
+    {
+      "name": "Manantial de Pocitos de la Cumbre",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3841592972"
+    },
+    {
+      "name": "Museo El Lencero",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/node/3945174666"
+    },
+    {
+      "name": "Cascada Bola de Oro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/3971968948"
+    },
+    {
+      "name": "La Cueva de la Orquídea",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4006146053"
+    },
+    {
+      "name": "Cascada",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4030674502"
+    },
+    {
+      "name": "Cascada",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/4030731590"
+    },
+    {
+      "name": "Cascada de Pancho Poza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4055577248"
+    },
+    {
+      "name": "Manantial San Lorenzo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4109130598"
+    },
+    {
+      "name": "Nace el Río",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4139302196"
+    },
+    {
+      "name": "Mirador del Cerro de las Culebras",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4141080242"
+    },
+    {
+      "name": "Gruta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4153469758"
+    },
+    {
+      "name": "Rincón de los Napas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4153508810"
+    },
+    {
+      "name": "Cascada de la Monja",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4202516225"
+    },
+    {
+      "name": "Cueva de la escalera",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4293181481"
+    },
+    {
+      "name": "Cascada de la Monja",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/4293776222"
+    },
+    {
+      "name": "Cascada de Tezozontla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4324427047"
+    },
+    {
+      "name": "Aduana de Tampico",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4340535189"
+    },
+    {
+      "name": "Parque xanat restaurant",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4420874089"
+    },
+    {
+      "name": "Casa de La Naturaleza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4459396548"
+    },
+    {
+      "name": "(pass del Rio y reserva animal)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4497671194"
+    },
+    {
+      "name": "Paseo del Río (Uma de animales), Orizaba, Ver.",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4497699489"
+    },
+    {
+      "name": "Cueva Peña de los Gavilanes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4508709221"
+    },
+    {
+      "name": "Cueva el Tetoro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4508709223"
+    },
+    {
+      "name": "Fortín de Órdenes Militares de Plan del Río",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4514558918"
+    },
+    {
+      "name": "Playa Hermosa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4519499706"
+    },
+    {
+      "name": "Cerro Cabezón",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4665832198"
+    },
+    {
+      "name": "Casa María Enriqueta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4741780958"
+    },
+    {
+      "name": "Museo de la evolución",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4782957521"
+    },
+    {
+      "name": "XLÚLUC IGUANARIO",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4806637053"
+    },
+    {
+      "name": "Flavia Galería",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/4984027542"
+    },
+    {
+      "name": "Museo Xolapancalli",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5271136532"
+    },
+    {
+      "name": "casitas veracruz",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5294612037"
+    },
+    {
+      "name": "Parque Natural recreativo caja de Agua",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5302788223"
+    },
+    {
+      "name": "Mirador del Expo Parque",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5319418495"
+    },
+    {
+      "name": "Replica tamaño real del T-Rex",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5319425599"
+    },
+    {
+      "name": "Replica tamaño real del Mamut",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5319425600"
+    },
+    {
+      "name": "Mirador el León",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5324977823"
+    },
+    {
+      "name": "Tirolesa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5324977824"
+    },
+    {
+      "name": "Mirrador del Gato",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5324985421"
+    },
+    {
+      "name": "Sirena de Ojo de Agua",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5330040418"
+    },
+    {
+      "name": "Cascada de San Antonio",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5330108871"
+    },
+    {
+      "name": "Unidad deportiva Salvador campa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5368706106"
+    },
+    {
+      "name": "Parque Nucleo Deportivo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5368733605"
+    },
+    {
+      "name": "fuente de plazoleta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5389033523"
+    },
+    {
+      "name": "Posa azul",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5481263336"
+    },
+    {
+      "name": "Voladores de Cuetzalan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5702918128"
+    },
+    {
+      "name": "Museo de sitio de Cuetzalan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5702918139"
+    },
+    {
+      "name": "parque",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5781048105"
+    },
+    {
+      "name": "Museo Salvador Ferrando",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5809188961"
+    },
+    {
+      "name": "Venta de tiquetes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5854194387"
+    },
+    {
+      "name": "Cueva de la escalera, salida",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5862561720"
+    },
+    {
+      "name": "Area verde en el fraccionamiento Las Flores",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5904440013"
+    },
+    {
+      "name": "Cerro San Juan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/5921712233"
+    },
+    {
+      "name": "Cascada del El Banco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6128603076"
+    },
+    {
+      "name": "Cascada Alta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6128603802"
+    },
+    {
+      "name": "Cascada de Chahuaco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6135171080"
+    },
+    {
+      "name": "Barrancas de Aguacatitla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6167242191"
+    },
+    {
+      "name": "Cañón Peña del Aire",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6170853685"
+    },
+    {
+      "name": "Museo Audiovisual de Historia Natural",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6177994488"
+    },
+    {
+      "name": "Cascada de Tepetlán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6270638816"
+    },
+    {
+      "name": "Piedra De Xipe",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6419620073"
+    },
+    {
+      "name": "UMA",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6638500688"
+    },
+    {
+      "name": "Fuente de Tlapacoyan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/6833212779"
+    },
+    {
+      "name": "Cascada del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7005359987"
+    },
+    {
+      "name": "Cascada del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/7005360021"
+    },
+    {
+      "name": "Museo El Cafétal Apan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7026837090"
+    },
+    {
+      "name": "Museo de la Orquídea",
+      "action": "catalog_name_match",
+      "source": "https://www.openstreetmap.org/node/7026895285"
+    },
+    {
+      "name": "Agualegre Balneario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7050320722"
+    },
+    {
+      "name": "Vega de la Pena",
+      "action": "catalog_name_match",
+      "source": "https://www.openstreetmap.org/node/7063542886"
+    },
+    {
+      "name": "El Cuajilote",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7063553385"
+    },
+    {
+      "name": "Museo de la Amistad Cuba y Mexico",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7063553386"
+    },
+    {
+      "name": "Puente Colgante",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7147258585"
+    },
+    {
+      "name": "casa de Cortes",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/node/7147258586"
+    },
+    {
+      "name": "Casa de Cultura \"Fernando Bustamante\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7215131245"
+    },
+    {
+      "name": "Cascada de la granada",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7229164856"
+    },
+    {
+      "name": "Museo y Centro ceremonial \"El Ahijado\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7233828574"
+    },
+    {
+      "name": "Cueva del gusanito",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7278451559"
+    },
+    {
+      "name": "Cueva de Pinoltepec",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7278474595"
+    },
+    {
+      "name": "Cueva de pinoltepec (salida)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7278474596"
+    },
+    {
+      "name": "Feria de Nochebuena Huejutla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7502317186"
+    },
+    {
+      "name": "Cascadas de Altepexi",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/7723329633"
+    },
+    {
+      "name": "Escapatory Veracruz",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8325444900"
+    },
+    {
+      "name": "COCO AVENTURA",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8361705902"
+    },
+    {
+      "name": "playa Privada Coco aventura",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8361705903"
+    },
+    {
+      "name": "Interjuegos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8365923310"
+    },
+    {
+      "name": "Pahuatlán del Valle",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8374423724"
+    },
+    {
+      "name": "Castillo Encantado",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8413335947"
+    },
+    {
+      "name": "Parque Ecoturístico Arcoiris",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8439518212"
+    },
+    {
+      "name": "Parque de Platón Sánchez",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8462385117"
+    },
+    {
+      "name": "Cascada Pahuatlán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8592664557"
+    },
+    {
+      "name": "Poza Azul de Pinoltepec",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8712128055"
+    },
+    {
+      "name": "Hacienda Zimpizahua",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/8972376935"
+    },
+    {
+      "name": "Cascada de Ixtlahuac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9104128589"
+    },
+    {
+      "name": "La murcielaguera",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9143467509"
+    },
+    {
+      "name": "El Boquerón",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9160425197"
+    },
+    {
+      "name": "Cueva de las golondrinas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9160425198"
+    },
+    {
+      "name": "Nacimiento del Río Tonto",
+      "action": "catalog_name_match",
+      "source": "https://www.openstreetmap.org/node/9160425199"
+    },
+    {
+      "name": "Cascada Atlahuitzía",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9160438509"
+    },
+    {
+      "name": "Cueva de Juan Sánchez (Cueva de Almolonga)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9171758925"
+    },
+    {
+      "name": "Mirador Las Mariposas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9280100905"
+    },
+    {
+      "name": "Volcan Los Atlixcos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9296515717"
+    },
+    {
+      "name": "Volcan Los Atlixcos",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/9296515917"
+    },
+    {
+      "name": "Rincón de Judas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9405826516"
+    },
+    {
+      "name": "Turibús \"El Torito\" de Tlacotalpan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9526443524"
+    },
+    {
+      "name": "Mirador",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9627789317"
+    },
+    {
+      "name": "Mirador",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/9627789517"
+    },
+    {
+      "name": "Tirolesa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9627789518"
+    },
+    {
+      "name": "Mirador la cuesta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9643727455"
+    },
+    {
+      "name": "Museo Memoria Histórica de Orizaba",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9669309350"
+    },
+    {
+      "name": "Salón de la Fama",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9669323452"
+    },
+    {
+      "name": "Cascada Hilos de Plata",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9817568847"
+    },
+    {
+      "name": "Museo de la Cerveza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9873265337"
+    },
+    {
+      "name": "Museo de Historia del Futbol",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9873265338"
+    },
+    {
+      "name": "Museo Neri Vela",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9873265339"
+    },
+    {
+      "name": "MURO Museo Raices Orizaba",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9873265340"
+    },
+    {
+      "name": "Casa de Leyendas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9873265341"
+    },
+    {
+      "name": "Cascada de Chopantla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9891935817"
+    },
+    {
+      "name": "Cascada Arcoíris",
+      "action": "catalog_name_match",
+      "source": "https://www.openstreetmap.org/node/9891959317"
+    },
+    {
+      "name": "La garganta del diablo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9896460519"
+    },
+    {
+      "name": "Casa de la Cultura",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/9968754091"
+    },
+    {
+      "name": "Voladores de Papantla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10035812019"
+    },
+    {
+      "name": "Letras de Cosamaloapan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10041232921"
+    },
+    {
+      "name": "Cascada velo de novia asececa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10234914417"
+    },
+    {
+      "name": "Cascada El Bravo (o el Salto)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10247965710"
+    },
+    {
+      "name": "Puente en el río",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10247969509"
+    },
+    {
+      "name": "Sitio Arqueológico de Tres Zapotes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10736049422"
+    },
+    {
+      "name": "La Mojarra",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10834294890"
+    },
+    {
+      "name": "Piramide de Las Flores",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/10863300809"
+    },
+    {
+      "name": "La Granja Del Abuelo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11065095471"
+    },
+    {
+      "name": "Monumento A La Armada De Mexico",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11067779167"
+    },
+    {
+      "name": "Letras Coatza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11067779168"
+    },
+    {
+      "name": "Parque de la Sociedad",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11067779201"
+    },
+    {
+      "name": "Cascada Popocatl",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11087430802"
+    },
+    {
+      "name": "Cascada de Guadalupe",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11087481052"
+    },
+    {
+      "name": "Cascadas de tonalixco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11087507037"
+    },
+    {
+      "name": "Cascadas Los Sótanos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11087510534"
+    },
+    {
+      "name": "Cascada de Jilotepec",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11089208150"
+    },
+    {
+      "name": "Sayula",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11089397621"
+    },
+    {
+      "name": "Gran Patio Tuxpan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11090604951"
+    },
+    {
+      "name": "Museo Comunitario de Cuacnopalan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11093491826"
+    },
+    {
+      "name": "Parroquia San Sebastián Mártir",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11093491854"
+    },
+    {
+      "name": "Museo Comunitario Tlamayocan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11384851076"
+    },
+    {
+      "name": "Cascada \"Cocalzingo\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11413611307"
+    },
+    {
+      "name": "ex hacienda San Juan hueyapan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11415257369"
+    },
+    {
+      "name": "Fuerte abandonado",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11476785170"
+    },
+    {
+      "name": "El Castillito",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11538113094"
+    },
+    {
+      "name": "Cueva de la Garganta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11582257928"
+    },
+    {
+      "name": "Aguas Termales \"San Bartolo\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11760269169"
+    },
+    {
+      "name": "Cascada Pata Mole",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11938085781"
+    },
+    {
+      "name": "Prismas Basálticos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/11938091329"
+    },
+    {
+      "name": "Cabús 44445",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12087634215"
+    },
+    {
+      "name": "Canopy",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12310137084"
+    },
+    {
+      "name": "Canopy",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/node/12310137085"
+    },
+    {
+      "name": "Chiringuitos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12310137089"
+    },
+    {
+      "name": "Mirador Covacha",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12470705013"
+    },
+    {
+      "name": "El Zapotal",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12483484418"
+    },
+    {
+      "name": "Mirador de los Pájaros Luises",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12537376645"
+    },
+    {
+      "name": "Nacimineto de agua",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12560618086"
+    },
+    {
+      "name": "Mirador de la Cascada del Río Sedeño",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12588947981"
+    },
+    {
+      "name": "Mirador Cerro El Gentil",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12614248721"
+    },
+    {
+      "name": "Cascada Jabalí",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12715009714"
+    },
+    {
+      "name": "Ancla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12818456873"
+    },
+    {
+      "name": "Letras COATZA",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12871919045"
+    },
+    {
+      "name": "Northern temple group",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850302"
+    },
+    {
+      "name": "Southern cemetery archeological site",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850303"
+    },
+    {
+      "name": "Main temple and cemetery group",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850304"
+    },
+    {
+      "name": "Abandoned waterpark",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850305"
+    },
+    {
+      "name": "Eagle's nest rock castle (end of trail)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850401"
+    },
+    {
+      "name": "Replica gate with giant",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12889850601"
+    },
+    {
+      "name": "Cascada Palenque",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12895360602"
+    },
+    {
+      "name": "Top of waterfall",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12895369301"
+    },
+    {
+      "name": "Best waterfall view",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12895369401"
+    },
+    {
+      "name": "Cascada El tucán",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/node/12895370803"
+    },
+    {
+      "name": "Cascades Gemelas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12895370901"
+    },
+    {
+      "name": "Ripley's Believe it or not",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12898469701"
+    },
+    {
+      "name": "Wax museum",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12898469801"
+    },
+    {
+      "name": "Museo de Sitio de Tehuacán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12926588656"
+    },
+    {
+      "name": "Gruta de Lourdes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12945429436"
+    },
+    {
+      "name": "Museo Regional de la Sierra Alta de Zacualtipán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/12981089229"
+    },
+    {
+      "name": "El Tesoro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13354264201"
+    },
+    {
+      "name": "Las Cañadas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13368144859"
+    },
+    {
+      "name": "Chincholin",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13401551354"
+    },
+    {
+      "name": "Playa Hermita",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13401572655"
+    },
+    {
+      "name": "Cascada de los Turcos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13433192127"
+    },
+    {
+      "name": "La Primavera",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13446680981"
+    },
+    {
+      "name": "Gruta de Totomochapa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13536860945"
+    },
+    {
+      "name": "Por definir",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13653860163"
+    },
+    {
+      "name": "Calzada de la Pitaya y Loma Escondida",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/13765785015"
+    },
+    {
+      "name": "Cascada de Tocuapa El Chorrón",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/14124110201"
+    },
+    {
+      "name": "Parroquia San Francisco De Asis",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/14184012302"
+    },
+    {
+      "name": "Cascada de la escalera",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/14208265893"
+    },
+    {
+      "name": "Cascada de Hielo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/node/14265704602"
+    },
+    {
+      "name": "Filobobos / Cuajilote",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/26703338"
+    },
+    {
+      "name": "Filobobos / Cuajilote",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/26703657"
+    },
+    {
+      "name": "Yohualichan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/26706438"
+    },
+    {
+      "name": "Zona Arqueológica \"El Tajín\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/27042143"
+    },
+    {
+      "name": "Paxil",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/27042817"
+    },
+    {
+      "name": "Parque Zoológico Miguel Ángel de Quevedo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/41088970"
+    },
+    {
+      "name": "Destinado a Reserva Ecologica Tatocapan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/59687760"
+    },
+    {
+      "name": "Predios El Bastonal, Los Chaneques y Agua Caliente",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/59687762"
+    },
+    {
+      "name": "Explanada de la Expoferia",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/98001441"
+    },
+    {
+      "name": "Pirámide Del Malecón de Coatzacoalcos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/105682920"
+    },
+    {
+      "name": "Sitio Arqueológico de Cempoala",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/125417849"
+    },
+    {
+      "name": "Sitio Arqueológico de Quiahuiztlán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/125420227"
+    },
+    {
+      "name": "Pirámide secreta (?)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/125432798"
+    },
+    {
+      "name": "Hacienda Pacho Nuevo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/138741370"
+    },
+    {
+      "name": "Cantona",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/157026335"
+    },
+    {
+      "name": "La Venta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/157406029"
+    },
+    {
+      "name": "Playa Miramar",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/164610661"
+    },
+    {
+      "name": "Pirámide de los Nichos (Edificio 1)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/173533084"
+    },
+    {
+      "name": "Edificio 5",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/173533085"
+    },
+    {
+      "name": "Edificio 23",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/173533086"
+    },
+    {
+      "name": "Edificio 3",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/173533087"
+    },
+    {
+      "name": "San Lorenzo Tenochtitlan",
+      "action": "catalog_name_match",
+      "source": "https://www.openstreetmap.org/way/201100898"
+    },
+    {
+      "name": "Museo Fauna de Veracruz",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/227358573"
+    },
+    {
+      "name": "Museo Histórico Naval",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/284073103"
+    },
+    {
+      "name": "Museo Tampico 1829",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/303570804"
+    },
+    {
+      "name": "Fortaleza de San Carlos de Perote",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/308321965"
+    },
+    {
+      "name": "Museo de Sitio",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/314524643"
+    },
+    {
+      "name": "Edificio 16",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387958"
+    },
+    {
+      "name": "Edificio 20",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387959"
+    },
+    {
+      "name": "Edificio 18",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387960"
+    },
+    {
+      "name": "Edificio 19",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387961"
+    },
+    {
+      "name": "Edificio 17",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387962"
+    },
+    {
+      "name": "Edificio 27",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387963"
+    },
+    {
+      "name": "Edificio 26",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387964"
+    },
+    {
+      "name": "Edificio 6",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387965"
+    },
+    {
+      "name": "Edificio 2",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387966"
+    },
+    {
+      "name": "Edificio 4",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387967"
+    },
+    {
+      "name": "Edificio 12",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387968"
+    },
+    {
+      "name": "Edificio 7",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387969"
+    },
+    {
+      "name": "Edificio 8",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387971"
+    },
+    {
+      "name": "Edificio 10",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387972"
+    },
+    {
+      "name": "Edificio 11",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387973"
+    },
+    {
+      "name": "Edificio 11",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/330387974"
+    },
+    {
+      "name": "Edificio 13",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387975"
+    },
+    {
+      "name": "Edificio 14",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387976"
+    },
+    {
+      "name": "Edificio 15",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387978"
+    },
+    {
+      "name": "Edificio 22",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387980"
+    },
+    {
+      "name": "Edificio 36",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387981"
+    },
+    {
+      "name": "Edificio 34",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387983"
+    },
+    {
+      "name": "Edificio 35",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387986"
+    },
+    {
+      "name": "Edificio 24",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387988"
+    },
+    {
+      "name": "Edificio 25",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387989"
+    },
+    {
+      "name": "Edificio A",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387992"
+    },
+    {
+      "name": "Edificio C",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387994"
+    },
+    {
+      "name": "Edificio B",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387996"
+    },
+    {
+      "name": "Edificio E",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330387999"
+    },
+    {
+      "name": "Edificio K",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/330388001"
+    },
+    {
+      "name": "Zona Arqueológica \"El Tajín\"",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/333655063"
+    },
+    {
+      "name": "Juego de Pelota",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/333878005"
+    },
+    {
+      "name": "Juego de Pelota",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/333878006"
+    },
+    {
+      "name": "Playa Maracaibo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/338161198"
+    },
+    {
+      "name": "Playa Raudal de las Flores",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/338189251"
+    },
+    {
+      "name": "Museo del Café",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/348447114"
+    },
+    {
+      "name": "Centro Histórico",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/353905864"
+    },
+    {
+      "name": "Plaza de Toros",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/362184060"
+    },
+    {
+      "name": "Museo de Antropología de Xalapa",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/367905094"
+    },
+    {
+      "name": "Zona arqueológica de San Juan Xiutetelco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/369854510"
+    },
+    {
+      "name": "La Pirámide",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/371571433"
+    },
+    {
+      "name": "La Pirámide",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/371571434"
+    },
+    {
+      "name": "La Pirámide",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/371571435"
+    },
+    {
+      "name": "Playa de Chachalacas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/372185031"
+    },
+    {
+      "name": "Playa Muñecos",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/387750040"
+    },
+    {
+      "name": "Ex Hacienda de Antonio López de Santa Anna",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/391310739"
+    },
+    {
+      "name": "Balneario Carrizal",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/400530730"
+    },
+    {
+      "name": "Antiguo Zoológico de Las Ánimas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/401242778"
+    },
+    {
+      "name": "Quinta Santa Lourdes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/408369795"
+    },
+    {
+      "name": "Quinta Los Polos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/408369798"
+    },
+    {
+      "name": "Mata Redonda",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/408369817"
+    },
+    {
+      "name": "Quinta Vado",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/408369819"
+    },
+    {
+      "name": "Mariposario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/412521693"
+    },
+    {
+      "name": "Playa de La Mancha",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/414252529"
+    },
+    {
+      "name": "Edificio I",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/417895857"
+    },
+    {
+      "name": "Edificio Y",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/417895861"
+    },
+    {
+      "name": "Juego del Pelota Norte",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/417895868"
+    },
+    {
+      "name": "La gran avenida",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/423002716"
+    },
+    {
+      "name": "El arco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/423002720"
+    },
+    {
+      "name": "Museo Regional Tuxtleco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/424188842"
+    },
+    {
+      "name": "Galería Ramón Alva de la Canal",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/425184479"
+    },
+    {
+      "name": "Museo Tres Zapotes",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/425249675"
+    },
+    {
+      "name": "Playa Lechuguillas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/431800385"
+    },
+    {
+      "name": "Puerta del Papaloapan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/436436586"
+    },
+    {
+      "name": "Playa de Villa Rica",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/447526289"
+    },
+    {
+      "name": "Playa Los Amarillos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/448840017"
+    },
+    {
+      "name": "Playa Juan Ángel",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/448841153"
+    },
+    {
+      "name": "El Solito",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/448893228"
+    },
+    {
+      "name": "Ojo de Agua",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/484586154"
+    },
+    {
+      "name": "Museo del Sotavento / Casa de Cultura \"Narcisa Lopez Quintero\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/493133544"
+    },
+    {
+      "name": "Sitio Olmeca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/506317462"
+    },
+    {
+      "name": "Museo Tatsugoro Bonsái Fortín",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/523807005"
+    },
+    {
+      "name": "Polifórum Mier y Pesado",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/523852851"
+    },
+    {
+      "name": "Paseo del Río",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/549281926"
+    },
+    {
+      "name": "Mirador",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/550523881"
+    },
+    {
+      "name": "Calle de la Laguna",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/550952877"
+    },
+    {
+      "name": "Calle Estibadores",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/550952929"
+    },
+    {
+      "name": "Pirámide",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/552038136"
+    },
+    {
+      "name": "Palacio de Hierro",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/552327838"
+    },
+    {
+      "name": "Museo comunitario de historia y etnografía de Almolonga, Naolinco.",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/564433584"
+    },
+    {
+      "name": "Playa Regatas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/573327088"
+    },
+    {
+      "name": "Patio  de la Jacaranda",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/612072405"
+    },
+    {
+      "name": "Kiosko",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/612073311"
+    },
+    {
+      "name": "De la Laguna",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/625319331"
+    },
+    {
+      "name": "Museo del Café",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/634176851"
+    },
+    {
+      "name": "Museo Casa de Xalapa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/659857847"
+    },
+    {
+      "name": "Reserva Estatal Predio Barragán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/660258910"
+    },
+    {
+      "name": "Ex-Hacienda de Apulco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/675063245"
+    },
+    {
+      "name": "Antiguo Hospital Militar San Carlos",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/701662958"
+    },
+    {
+      "name": "Museo Regional",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/706807176"
+    },
+    {
+      "name": "Playa Coatza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/730332996"
+    },
+    {
+      "name": "Xalapa Antiguo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/779444651"
+    },
+    {
+      "name": "Calle Estibadores",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/803894960"
+    },
+    {
+      "name": "Museo de Sitio",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/810038378"
+    },
+    {
+      "name": "Museo de Sitio La Venta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/810104348"
+    },
+    {
+      "name": "Casa Consistorial",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/829904426"
+    },
+    {
+      "name": "Museo de la Hotelería Mexicana",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/835344855"
+    },
+    {
+      "name": "Boeing 727-200 \"El Cuatro Vientos\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/841529931"
+    },
+    {
+      "name": "Museo La Venta",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/886499448"
+    },
+    {
+      "name": "Museo Comunitario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/887877927"
+    },
+    {
+      "name": "Reserva de la Biosfera Barranca de Metztitlán",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/917269510"
+    },
+    {
+      "name": "Museo de Yahualica",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/940585183"
+    },
+    {
+      "name": "Apizaquito",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1020384341"
+    },
+    {
+      "name": "Fototeca de Veracruz",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1041269542"
+    },
+    {
+      "name": "Museo de la Ciudad",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1041714179"
+    },
+    {
+      "name": "Museo de Arte Popular de Veracruz",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1052161654"
+    },
+    {
+      "name": "Casa Doña Falla Museo de la Música Veracruzana",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1070836022"
+    },
+    {
+      "name": "Museo Recinto de La Reforma",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1078309240"
+    },
+    {
+      "name": "Auditorio Api",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1078309271"
+    },
+    {
+      "name": "Casa de la Cultura \"Aurora Ferat de Zamacona\"",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1087606874"
+    },
+    {
+      "name": "Reserva Animal Leones",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1121289982"
+    },
+    {
+      "name": "Moons (pass del Rio y reserva animal)",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1121289983"
+    },
+    {
+      "name": "Reserva Animal Jaguares",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1121289984"
+    },
+    {
+      "name": "Tobogán de la Montaña",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1134664110"
+    },
+    {
+      "name": "Piramide del Castillo del Teayo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1134953593"
+    },
+    {
+      "name": "Aviario De Orizaba",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1152496144"
+    },
+    {
+      "name": "Cocodrilario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1152497126"
+    },
+    {
+      "name": "Zona arqueológica de Cuyuxquihui",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1160833633"
+    },
+    {
+      "name": "Reloj de la Ford",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1191697639"
+    },
+    {
+      "name": "uestra Señora del Perpetuo Socorro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1192739720"
+    },
+    {
+      "name": "Área de Protección de Flora y Fauna Sistema Arrecifal Lobos-Tuxpan",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1206992529"
+    },
+    {
+      "name": "Reserva Kolijke",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215646284"
+    },
+    {
+      "name": "ADVC Ozuma y Cuahuloma",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215651266"
+    },
+    {
+      "name": "Calapa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215651267"
+    },
+    {
+      "name": "ADVC Ozuma y Cuahuloma",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215651268"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882714"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882717"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882719"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882721"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882724"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215882725"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215882728"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215882729"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215882730"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215882732"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215888376"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215888377"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215888378"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1215888379"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215888380"
+    },
+    {
+      "name": "Parque Ecológico Tuzandépetl",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215889412"
+    },
+    {
+      "name": "Parque Ecológico Tuzandépetl",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215889415"
+    },
+    {
+      "name": "Parque Ecológico Tuzandépetl",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1215889728"
+    },
+    {
+      "name": "Paraje El Frijolillo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216136301"
+    },
+    {
+      "name": "Área de Conservación del Ejido Cerro de Oro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216136864"
+    },
+    {
+      "name": "Reserva Ejidal Vista Hermosa",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216951627"
+    },
+    {
+      "name": "Cerro Chango",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216951629"
+    },
+    {
+      "name": "Área de Conservación de la Ribera de Cajonos del Ejido Plan de San Luis",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216951630"
+    },
+    {
+      "name": "Área de Conservación de la Ribera de Cajonos del Ejido Plan de San Luis",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1216951631"
+    },
+    {
+      "name": "Área Natural Protegida La Vega Escondida",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1221213104"
+    },
+    {
+      "name": "Zona Arqueológica de Quachilolco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1227701290"
+    },
+    {
+      "name": "Zona arqueológica de Temalayuca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1227702021"
+    },
+    {
+      "name": "Reserva Ecológica Estatal La Sabana",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1228967895"
+    },
+    {
+      "name": "Reserva Ecológica Dunas de San Isidro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235510593"
+    },
+    {
+      "name": "Santuario del Loro Huasteco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235537204"
+    },
+    {
+      "name": "Reserva Ecológica Sierra de Otontepec",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235538447"
+    },
+    {
+      "name": "Parque Estatal Ciénaga del Fuerte",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235544729"
+    },
+    {
+      "name": "Área Natural Protegida Río Filobobos y su Entorno",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235547854"
+    },
+    {
+      "name": "Reserva Ecológica Cerro del Algodón",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235549953"
+    },
+    {
+      "name": "Reserva Ecológica Río Pancho Poza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235552619"
+    },
+    {
+      "name": "Reserva Ecológica San Antonio Limón Totalco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235558806"
+    },
+    {
+      "name": "Área Reservada para la Recreación y Educación Ecológica San Juan del Monte",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235560394"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568768"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568769"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568770"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568771"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568772"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568773"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568774"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568775"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568776"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568777"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568778"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568779"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568780"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568781"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568782"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568783"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568784"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568785"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568786"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568787"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568788"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568789"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568790"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568791"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568792"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568793"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568794"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568795"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235568796"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568797"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568798"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Lagunas Interdunarias",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235568799"
+    },
+    {
+      "name": "Reserva Ecológica Arroyo Moreno",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235578855"
+    },
+    {
+      "name": "Reserva Ecológica Tembladeras-Laguna Olmeca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235588429"
+    },
+    {
+      "name": "Reserva Ecológica Tembladeras-Laguna Olmeca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235588430"
+    },
+    {
+      "name": "Reserva Ecológica Tembladeras-Laguna Olmeca",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1235588431"
+    },
+    {
+      "name": "Reserva Ecológica Tembladeras-Laguna Olmeca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1235588432"
+    },
+    {
+      "name": "Reserva Ecológica La Martinica",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1236744659"
+    },
+    {
+      "name": "Área de Conservación Ecológica Cerro de la Galaxia",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1236745604"
+    },
+    {
+      "name": "Parque Ecológico Macuiltépetl",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/1236749185"
+    },
+    {
+      "name": "Parque Natura El Tejar Garnica",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1236751964"
+    },
+    {
+      "name": "Parque Natura El Tejar Garnica",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1236751965"
+    },
+    {
+      "name": "Reserva Ecológica Cerro de las Culebras",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237583629"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680206"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680207"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680208"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680209"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680210"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680211"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680212"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680213"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680214"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/way/1237680215"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237680216"
+    },
+    {
+      "name": "Reserva Ecológica Metlac Río Blanco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237681173"
+    },
+    {
+      "name": "Reserva Ecológica Metlac Río Blanco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1237681174"
+    },
+    {
+      "name": "Reserva Estatal Tancojol",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1239281268"
+    },
+    {
+      "name": "Parque Estatal El Bosque Adolfo Roque Bautista",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1239282496"
+    },
+    {
+      "name": "Dunas de Chachalacas",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/way/1241740824"
+    },
+    {
+      "name": "Reserva Estatal Cerro Colorado",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1247058746"
+    },
+    {
+      "name": "Parque Estatal Lagos de Tepeyahualco y Guadalupe Victoria",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1247473466"
+    },
+    {
+      "name": "Zona de Preservación Ecológica Arroyo Nogales",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1249294722"
+    },
+    {
+      "name": "Zona de Preservación Ecológica Chicamole",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1249296543"
+    },
+    {
+      "name": "Zona de Preservación Ecológica Pirámides de Ecuatitla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1249303241"
+    },
+    {
+      "name": "Zona de Preservación Ecológica Zacatepec",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1249340088"
+    },
+    {
+      "name": "Zona de Preservación Ecológica Cascada de Cuatenáhuatl",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1249342165"
+    },
+    {
+      "name": "Fuente Danzante",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1291863374"
+    },
+    {
+      "name": "Basamento circular en Tecacahuaco",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1296741292"
+    },
+    {
+      "name": "Foro Niebla",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1321999107"
+    },
+    {
+      "name": "Atalaya de cristal",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1322056090"
+    },
+    {
+      "name": "Zona Arqueológica de San Miguel",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1354739931"
+    },
+    {
+      "name": "Mariposario del INECOL",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1384184365"
+    },
+    {
+      "name": "Coatza Jurásico",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1393606564"
+    },
+    {
+      "name": "Zona arqueológica Tehuacán Ndachjian",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1396688150"
+    },
+    {
+      "name": "Museo de la Ciudad",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1463185703"
+    },
+    {
+      "name": "Mini Zoologico de Pio Barrán Barteli",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1463257746"
+    },
+    {
+      "name": "Playa Arroyo de la Liza",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1464925860"
+    },
+    {
+      "name": "Playa Costa de Oro",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1464925861"
+    },
+    {
+      "name": "Plaa Hermosay",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1464972988"
+    },
+    {
+      "name": "Playa Montepío",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1464988720"
+    },
+    {
+      "name": "Playa Balzapote",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1465191751"
+    },
+    {
+      "name": "Las Ruinas del Castillo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1473527395"
+    },
+    {
+      "name": "Museo Regional Comunitario",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1474292199"
+    },
+    {
+      "name": "Centro Ecoturistico Aljojuca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/way/1486719728"
+    },
+    {
+      "name": "Playa La Bamba",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/2579276"
+    },
+    {
+      "name": "Playa Martí",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/2579281"
+    },
+    {
+      "name": "Playa Dunas Doradas",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/5688342"
+    },
+    {
+      "name": "Cerro del Borrego",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/7512713"
+    },
+    {
+      "name": "Galeria El Arte",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/14210716"
+    },
+    {
+      "name": "Museo de Córdoba",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/14468844"
+    },
+    {
+      "name": "Playa Chalchihueca",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16073925"
+    },
+    {
+      "name": "Playa Mocambo",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16079610"
+    },
+    {
+      "name": "Playa Tumbao",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16079613"
+    },
+    {
+      "name": "Playa Vicente Fox",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16079615"
+    },
+    {
+      "name": "Playa Tortuga",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16079826"
+    },
+    {
+      "name": "Playa Penacho del Indio",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16079830"
+    },
+    {
+      "name": "Villa del Mar",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16093181"
+    },
+    {
+      "name": "Playa Gaviota",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16093409"
+    },
+    {
+      "name": "San Juan de Ulúa",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/relation/16117528"
+    },
+    {
+      "name": "Isla Salmedina",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16119701"
+    },
+    {
+      "name": "Parque Nacional Sistema Arrecifal Veracruzano",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16248921"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/relation/16497185"
+    },
+    {
+      "name": "Reserva Ecológica Cuenca Alta del Río Atoyac",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/relation/16497186"
+    },
+    {
+      "name": "Área Natural Protegida Archipiélago de Bosques y Selvas de la Región Capital",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/16951943"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/relation/17137868"
+    },
+    {
+      "name": "Parque Ecológico Jaguaroundi",
+      "action": "duplicate_OSM",
+      "source": "https://www.openstreetmap.org/relation/17137869"
+    },
+    {
+      "name": "Museo de Arte del Estado de Veracruz",
+      "action": "already_curated",
+      "source": "https://www.openstreetmap.org/relation/17425448"
+    },
+    {
+      "name": "Baluarte de Santiago",
+      "action": "OSM_added_unmatched",
+      "source": "https://www.openstreetmap.org/relation/19231374"
+    }
+  ]
+}

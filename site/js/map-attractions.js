@@ -84,12 +84,15 @@ function marker(f){const p=f.properties,e=el('div','vxa-marker');e.tabIndex=0;e.
  e.addEventListener('click',ev=>{ev.stopPropagation();guideFor(entry)});
  e.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();guideFor(entry);}});
  new lib.Marker({element:e,anchor:'center',subpixelPositioning:true}).setLngLat(f.geometry.coordinates).addTo(map);
- markers.push({el:e,id:entry.id});
+ markers.push({el:e,id:entry.id,osm:entry.id.startsWith('MAP-OSM-'),name:normal(p.name)});
 }
-const zoomLabels=()=>{const z=map.getZoom();markers.forEach(m=>m.el.classList.toggle('vxa-labels-on',z>=9.2||m.id===active));};
+const zoomLabels=()=>{const z=map.getZoom(),q=normal(search.value);markers.forEach(m=>{
+ m.el.classList.toggle('vxa-labels-on',z>=9.2||m.id===active||(q&&m.name.includes(q)));
+ if(m.osm)m.el.style.display=(z>=9.0||m.id===active||(q&&m.name.includes(q)))?'':'none';
+});};
 toggle.addEventListener('click',()=>{expanded=!expanded; paging=65;guide.hidden=true;render();});
 select.addEventListener('change',()=>{paging=65;guide.hidden=true;render();});
-search.addEventListener('input',()=>{paging=65;guide.hidden=true;render();});
+search.addEventListener('input',()=>{paging=65;guide.hidden=true;render();zoomLabels();});
 search.addEventListener('keydown',e=>{if(e.key!=='Enter'||!search.value.trim())return;const match=filtered()[0];if(match){e.preventDefault();guideFor(match);}});
 map.on('zoom',zoomLabels);
 Promise.all([fetch('data/attractions.geojson',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Attractions HTTP '+r.status))),fetch('data/tourism_catalog.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Catalog HTTP '+r.status)))]).then(([f,c])=>{

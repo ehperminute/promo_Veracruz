@@ -6,3 +6,6 @@ __pycache__/
 data/external/*.csv
 data/external/*.zip
 data/external/*.xlsx
+
+/.veracruz_osm_checkpoints/
+*.osm.pbf
