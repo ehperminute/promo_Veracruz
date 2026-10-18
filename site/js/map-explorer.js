@@ -192,138 +192,61 @@ function renderDetail(){
   }box.append(list);
  }else box.append(element('p','vx-note',t.absence));
 }
-// Native MapLibre GeoJSON layers render with the basemap, unlike separately
-// positioned DOM marker buttons. This removes CSS/page-scroll drift.
-// The icons encode ALL available experience types as coloured segments.
-function badgeName(types){
-  const t=[...new Set(types||[])].filter(k=>Object.hasOwn(palette,k)).sort();
-  return t.length?'vx-badge-'+t.join('-'):'vx-badge-empty';
-}
-function registerBadge(types){
-  if(!mapObject)return;
-  const id=badgeName(types);
-  if(mapObject.hasImage(id))return;
-  const keys=[...new Set(types||[])].filter(k=>Object.hasOwn(palette,k)).sort();
-  const c=document.createElement('canvas'),size=88;
-  c.width=c.height=size;
-  const ctx=c.getContext('2d');
-  if(!ctx)return;
-  const center=size/2,ringRadius=31;
-  ctx.lineWidth=12;
-  if(keys.length){
-    keys.forEach((k,i)=>{
-      const full=2*Math.PI/keys.length;
-      const begin=-Math.PI/2+i*full+(keys.length===1?0:0.055);
-      const end=-Math.PI/2+(i+1)*full-(keys.length===1?0:0.055);
-      ctx.beginPath();ctx.arc(center,center,ringRadius,begin,end);
-      ctx.strokeStyle=palette[k];ctx.stroke();
-    });
-  }else{
-    ctx.beginPath();ctx.arc(center,center,ringRadius,0,2*Math.PI);
-    ctx.strokeStyle='#a4b1a8';ctx.stroke();
-  }
-  ctx.beginPath();ctx.arc(center,center,22,0,2*Math.PI);
-  ctx.fillStyle='#285b48';ctx.fill();
-  ctx.lineWidth=3;ctx.strokeStyle='#fff';ctx.stroke();
-  ctx.beginPath();ctx.arc(center,center,4,0,2*Math.PI);
-  ctx.fillStyle='#fff';ctx.fill();
-  mapObject.addImage(id,ctx.getImageData(0,0,size,size),{pixelRatio:2});
-}
-function mapFeatures(){
-  return {type:'FeatureCollection',features:visible().map(f=>{
-    const p=f.properties;
-    const hit=matches(f)?1:0;
-    const props={key:String(f.id),badge:badgeName(p.types),primary:p.types[0]||'other',hit,focus:highlighting()?hit:0};
-    for(const key of orderedTypes)props['cat_'+key]=p.types.includes(key)?1:0;
-    return {type:'Feature',geometry:f.geometry,properties:props};
-  })};
+// Stable, geographic MapLibre markers. These are anchored by MapLibre itself,
+// not projected/positioned by our page and do not require style.load, sprites,
+// addSource, or the remote basemap glyph pipeline.
+// This replaces the failing native style-layer path with a verifiable baseline.
+const markerCache=new Map();
+function buildMarker(f){
+  const p=f.properties;
+  const button=element('button','vx-geo-marker');
+  button.type='button';
+  button.setAttribute('aria-label',p.name);
+  button.title=p.name;
+  const ring=element('span','vx-geo-ring');
+  const keys=[...new Set(p.types||[])].filter(k=>Object.hasOwn(palette,k));
+  const colors=keys.map(k=>palette[k]);
+  if(colors.length){
+    const n=360/colors.length;
+    ring.style.background='conic-gradient('+colors.map((color,i)=>
+      color+' '+(i*n)+'deg '+((i+1)*n)+'deg').join(', ')+')';
+  }else ring.style.background='#9aa3a4';
+  ring.append(element('span','vx-geo-core'));
+  button.append(ring);
+  button.addEventListener('click',event=>{
+    event.preventDefault();event.stopPropagation();openDetail(f);
+  });
+  const marker=new maplibregl.Marker({element:button,anchor:'center',subpixelPositioning:true})
+    .setLngLat(f.geometry.coordinates).addTo(mapObject);
+  markerCache.set(String(f.id),{marker,button});
 }
 function refreshMapSource(){
-  if(!mapObject || !state.ready)return;
-  state.features.forEach(f=>registerBadge(f.properties.types));
-  const src=mapObject.getSource('vx-locations');
-  if(src)src.setData(mapFeatures());
-}
-function prepareMapLayers(){
-  if(state.ready)return;
-  const aggregates={hit_count:['+',['get','hit']],focus_count:['+',['get','focus']]};
-  for(const key of orderedTypes)aggregates['cat_'+key]=['+',['get','cat_'+key]];
-  mapObject.addSource('vx-locations',{
-    type:'geojson',data:{type:'FeatureCollection',features:[]},
-    cluster:true,clusterRadius:52,clusterMaxZoom:10,clusterProperties:aggregates
-  });
-  // MapLibre clusters used to be green-only. These rings indicate the actual
-  // experience themes among ALL contained municipalities, even at state zoom.
-  mapObject.addLayer({id:'vx-cluster-halo',type:'circle',source:'vx-locations',
-    filter:['all',['has','point_count'],['>', ['get','focus_count'],0]],
-    paint:{'circle-radius':['step',['get','point_count'],26,10,31,30,35],
-      'circle-color':'#fff7cf','circle-stroke-color':'#f3b64c','circle-stroke-width':3}
-  });
-  mapObject.addLayer({id:'vx-clusters',type:'circle',source:'vx-locations',
-    filter:['has','point_count'],paint:{
-      'circle-color':'#286953','circle-radius':['step',['get','point_count'],19,10,23,30,27],
-      'circle-opacity':['case',['>', ['get','hit_count'],0],1,0.27],
-      'circle-stroke-color':'#eef6ef','circle-stroke-width':2
+  if(!mapObject || !state.features.length)return;
+  try{
+    // 212 locality reference markers at most, 61 shown initially. Reuse existing
+    // MapLibre objects across filters; do not recalculate screen coordinates.
+    for(const f of state.features){
+      if(!markerCache.has(String(f.id)))buildMarker(f);
+      const entry=markerCache.get(String(f.id));
+      const show=eligible(f);
+      entry.button.style.display=show?'':'none';
+      entry.button.classList.toggle('vx-geo-marker--muted',show&&highlighting()&&!matches(f));
+      entry.button.classList.toggle('vx-geo-marker--match',show&&highlighting()&&matches(f));
+      entry.button.classList.toggle('vx-geo-marker--selected',String(state.selected)===String(f.id));
     }
-  });
-  // Each category appears as a small coloured satellite dot around a cluster.
-  // circle-translate is screen-relative and rendered by MapLibre with its map.
-  orderedTypes.forEach((key,i)=>{
-    const a=(-90+i*360/orderedTypes.length)*Math.PI/180;
-    mapObject.addLayer({id:'vx-cluster-theme-'+key,type:'circle',source:'vx-locations',
-      filter:['all',['has','point_count'],['>', ['get','cat_'+key],0]],
-      paint:{'circle-radius':4.8,'circle-color':palette[key],
-        'circle-opacity':['case',['>', ['get','hit_count'],0],1,0.25],
-        'circle-stroke-color':'#ffffff','circle-stroke-width':1.2,
-        'circle-translate':[Math.round(Math.cos(a)*29),Math.round(Math.sin(a)*29)]}
-    });
-  });
-  mapObject.addLayer({id:'vx-cluster-count',type:'symbol',source:'vx-locations',
-    filter:['has','point_count'],layout:{'text-field':['to-string',['get','point_count']],
-      'text-size':13,'text-allow-overlap':true},paint:{'text-color':'#fff',
-      'text-opacity':['case',['>', ['get','hit_count'],0],1,0.35]}
-  });
-  mapObject.addLayer({id:'vx-place-focus',type:'circle',source:'vx-locations',
-    filter:['all',['!', ['has','point_count']],['==',['get','focus'],1]],
-    paint:{'circle-radius':24,'circle-color':'#fff6ca',
-      'circle-stroke-color':'#e4a432','circle-stroke-width':3,'circle-opacity':0.95}
-  });
-  // Independent geographic fallback: circles render even without custom icons.
-  mapObject.addLayer({id:'vx-place-dot-fallback',type:'circle',source:'vx-locations',
-    filter:['!', ['has','point_count']],
-    paint:{'circle-radius':11,
-      'circle-color':['match',['get','primary'],
-        'adventure','#dc7d3d','water','#188ba8','nature','#35856c',
-        'food','#c55e62','culture','#815caa','crafts','#a77b3c',
-        'wellness','#35a09a','scenic','#5978bd','#7e8587'],
-      'circle-opacity':['case',['==',['get','hit'],1],0.9,0.22],
-      'circle-stroke-color':'#ffffff','circle-stroke-width':2}
-  });
-  mapObject.addLayer({id:'vx-places',type:'symbol',source:'vx-locations',
-    filter:['!', ['has','point_count']],
-    layout:{'icon-image':['get','badge'],'icon-allow-overlap':true,
-      'icon-ignore-placement':true,'icon-size':1},
-    paint:{'icon-opacity':['case',['==',['get','hit'],1],1,0.22]}
-  });
-  mapObject.on('click','vx-places',e=>{
-    const key=e.features?.[0]?.properties?.key;
-    const selected=state.features.find(f=>String(f.id)===String(key));
-    if(selected)openDetail(selected);
-  });
-  mapObject.on('click','vx-clusters',async e=>{
-    const cluster=e.features?.[0];if(!cluster)return;
-    try{
-      const zoom=await mapObject.getSource('vx-locations').getClusterExpansionZoom(cluster.properties.cluster_id);
-      mapObject.easeTo({center:cluster.geometry.coordinates,zoom:zoom+0.1,duration:550});
-    }catch(error){console.warn('Cluster expansion:',error);}
-  });
-  for(const id of ['vx-places','vx-clusters']){
-    mapObject.on('mouseenter',id,()=>{mapObject.getCanvas().style.cursor='pointer';});
-    mapObject.on('mouseleave',id,()=>{mapObject.getCanvas().style.cursor='';});
+    updateMarkerZoom();
+  }catch(error){
+    console.error('[Veracruz map] Marker creation failed:',error);
+    const status=document.getElementById('vx-status');
+    if(status)status.textContent='Marker error: '+error.message;
   }
-  state.ready=true;
-  refreshMapSource();
 }
+function updateMarkerZoom(){
+  if(!mapObject)return;
+  const big=mapObject.getZoom()>=8.1;
+  for(const entry of markerCache.values())entry.button.classList.toggle('vx-geo-marker--close',big);
+}
+if(mapObject)mapObject.on('zoom',updateMarkerZoom);
 function render(){
  const t=copy();$('vx-title').textContent=t.title;$('vx-subtitle').textContent=t.subtitle;
  $('vx-search').placeholder=t.search;$('vx-toggle-label').textContent=state.all?t.all:t.documented;
@@ -365,11 +288,6 @@ function render(){
  }
  renderBreadcrumbs();renderDetail();
  refreshMapSource();
- if(mapObject&&state.ready){
-   mapObject.setLayoutProperty('vx-cluster-count','text-field',highlighting()?
-     ['concat',['to-string',['get','hit_count']], '/', ['to-string',['get','point_count']]]:
-     ['to-string',['get','point_count']]);
- }
 }
 $('vx-search').addEventListener('input',e=>{state.query=clean(e.target.value);render();});
 $('vx-category').addEventListener('change',e=>{navigate({filter:e.target.value,selected:null,guide:''});});
@@ -395,22 +313,8 @@ $('vx-show-all').addEventListener('change',e=>{state.all=e.target.checked;render
 document.addEventListener('change',e=>{if(e.target!==$('vx-category')&&e.target!==$('vx-region')&&e.target!==$('vx-activity')&&e.target!==$('vx-show-all')&&e.target!==$('vx-search'))render();});
 new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 if(mapObject){
- // Install our data layers as soon as the STYLE (not all remote tiles) is ready.
- // This event also fires after a future style change, when overlay layers need restoring.
- const onVeracruzStyleReady = () => {
-   if (state.ready && mapObject.getSource('vx-locations')) return;
-   state.ready = false;
-   try { prepareMapLayers(); }
-   catch (error) {
-     console.error('[Veracruz map] Marker layer initialization failed:', error);
-     const status = document.getElementById('vx-status');
-     if (status) status.textContent = 'Map markers could not initialize: ' + error.message;
-   }
- };
- mapObject.on('style.load', onVeracruzStyleReady);
- if (mapObject.isStyleLoaded()) onVeracruzStyleReady();
+ // Markers now attach directly to map projection, regardless of style-load timing.
  mapObject.on('error',e=>console.warn('MapLibre basemap:',e.error?.message));
- // CSS/layout changes to an embedded map do not always emit window.resize.
  if(typeof ResizeObserver!=='undefined')new ResizeObserver(()=>mapObject.resize()).observe($('vx-map'));
 }
 Promise.all([
