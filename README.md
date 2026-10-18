@@ -1,56 +1,34 @@
-# Veracruz — Attraction-level geocoding, first research batch (2026-10-18)
+# Veracruz — integrated attraction layer (batch 1)
 
-Source: recovered latest `veracruz_pp3_master.sqlite` (49 records in `places`). This is an **additive, unmerged audit**: it does not modify or replace the original database, website descriptions, or municipality GeoJSON.
+This is an integration patch for the **existing `promo_Veracruz/site/index.html` map**. It adds 18 previously researched named attraction references from `VERACRUZ_ATTRACTION_GEOCODING_BATCH1_2026-10-18` directly to the page. It does not replace municipal maps, guide content, existing source datasets or the SQLite database.
 
-- Named places in recovered master: **49**.
-- Named records matched to published location objects: **18**.
-- Still unresolved / ambiguous: **31**.
-- Visitor entrances verified in this batch: **0**. Do **not** use these points directly as driving destinations yet.
+## Install in Codespaces
 
-## Files
-- `named_places_coordinate_audit.csv`: ALL 49 original named-place records with blank coordinates preserved where uncertain.
-- `mapped_attraction_coordinates.csv`: 18 records with source URL per row.
-- `mapped_attraction_coordinates.geojson`: mapped points for a separate **attraction map layer** (longitude, latitude EPSG:4326).
+Put the ZIP in the **root of `promo_Veracruz`** and run:
 
-## Geographic meaning
-Published archaeological site coordinates, waterfall nodes, building reference points, beach/polygon representative coordinates, island and lake reference points have **different meanings**. `mapped_feature_type`, `visitor_entrance_verified`, and `road_routing_ready` expose this difference. A point coordinate does not guarantee entrance accuracy; even 6 decimal digits are not proof of meter-level positional precision.
+```bash
+unzip -o VERACRUZ_ATTRACTIONS_ON_MAP_2026-10-18.zip
+python install_attractions.py
+```
 
-The El Tajín INAH point is labeled as locality in its entry, not explicitly the ticket-gate point; verify the actual visitor access separately. Distinguish Salto de Eyipantla waterfall from the nearby village. Avoid routing to isolated islands or lake centroids. Isla de Sacrificios has restricted public access according to published geographic guidance.
+With a local server already running, refresh the website (no server restart required). The installer makes a dated backup of `site/index.html` and the original `site/js/map-explorer.js` in `site/.before-attractions-.../`.
 
-## Next step before Dijkstra on actual roads
-1. Obtain accessible entrance / dock / parking coordinates for a selected initial region (e.g. Xalapa–Xico, then Veracruz–Actopan).
-2. Snap each **entrance** to a verified road/trail node; store entrance source, type of access and permissions.
-3. Extract routable OSM road network offline and calculate travel-time-weighted paths. Keep abstract tourism/municipal coordinates out of turn-by-turn driving.
+**Test:** Search `El Tajín` in the existing *Veracruz Explorer* search field. A separate **Attraction results** section appears in the right panel. Click `El Tajín`, or press Enter, to zoom to the site and open its source card. Search `Quiahuiztlán` or `Quiahuiztlan` to test accent-insensitive lookup. Expand **Mapped attractions · 18** in the right panel to browse all mapped attractions.
 
-## Remaining records requiring more research
-- San Miguel Aguasuelos
-- Los Tuxtlas
-- lagunas de Actopan
-- La Mancha
-- Chichicaxtle
-- Villa Rica
-- sunken vessel
-- Mandinga
-- Museo de Arte del Estado
-- Puerto de Veracruz
-- Finca Santa Martha
-- river entering cave
-- river headwaters
-- Manglares de Mandinga
-- Tamiahua estuaries
-- Los Tuxtlas camp/beach
-- Cerro de las Antenas / Fortín de las Flores
-- Filobobos
-- Sierra de Zongolica / Roca Partida / Cueva del Pirata
-- Veracruz (multiple locations)
-- Fincas de Fortín de las Flores y Córdoba
-- Finca San Felipe
-- Naolinco / Xico / Coatepec
-- Pico de Orizaba / Cofre de Perote
-- Zongolica / unspecified
-- Sótano de Popocatl / unknown
-- Atlahuitzia
-- cloud forest
-- Museo de la Orquídea
-- unspecified Ramsar wetland
-- Casa de Cortés / early church
+## What it adds
+
+- `site/data/attractions_batch1.geojson` — the **18 source-linked geocoded attraction and geographic-area records** from the prior research batch.
+- `site/js/map-attractions.js`, `site/css/map-attractions.css` — distinct attraction markers and their names, source popups and search integration.
+- A tiny one-line expose of the existing MapLibre instance in `site/js/map-explorer.js`, so the addon uses the **same map**. One `<link>` and one `<script>` added to `site/index.html`.
+
+**Important:** Attraction coordinates represent the mapped feature or general geographic area, **not verified entrances**. All batch-1 records say routing entrance NOT verified. Islands and large waterbodies are not drivable stops. This patch does not claim they are ready for Dijkstra road routing. The existing municipality source remains separate.
+
+## Troubleshooting
+
+If the map works but the attraction list reports unavailable, check the browser Console for `[Veracruz attractions]` errors and confirm that `site/data/attractions_batch1.geojson` is being served. The JS and CSS URLs are versioned to bypass stale caching. If the installer says STOP, it makes no changes and the existing JS file needs a merge; send that exact version instead of overwriting it manually.
+
+## Offline tests completed
+
+- Installer succeeds and a repeated run is a no-op.
+- JavaScript passes `node --check`.
+- Chromium test with a simulated MapLibre implementation: loads 18 records, resolves El Tajín on click, resolves `Quiahuiztlan` by Enter, flies to the correct coordinates and shows source cards. A real deployed MapLibre rendering test was not available here.

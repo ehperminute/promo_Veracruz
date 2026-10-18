@@ -116,6 +116,7 @@ const mapObject=typeof maplibregl==='undefined'?null:new maplibregl.Map({
    touchPitch:false,
    style:'https://tiles.openfreemap.org/styles/positron'
  });
+window.__vx_attraction_map = mapObject;
 if(mapObject){
   mapObject.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   // Two-finger pinch remains available, but accidental map rotation is disabled.
