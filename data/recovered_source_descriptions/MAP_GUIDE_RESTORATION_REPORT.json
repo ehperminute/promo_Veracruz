@@ -1,0 +1,12 @@
+{
+  "all_original_product_descriptions": 295,
+  "published_map_guides": 216,
+  "guides_with_direct_official_product_text": 157,
+  "guides_using_other_evidence": 59,
+  "full_original_text_database": "/workspaces/promo_Veracruz/data/recovered_source_descriptions/veracruz_pp3_master_with_originals.sqlite",
+  "static_site_guide_data": "/workspaces/promo_Veracruz/site/data/map_guide_notes.json",
+  "homepage_script_tag_added": true,
+  "map_explorer_js_untouched": true,
+  "generated_at_utc": "20261018T174707Z",
+  "important": "Original source text is Spanish; the existing short English guides remain editorial summaries. Multi-municipality packages may reference other towns."
+}

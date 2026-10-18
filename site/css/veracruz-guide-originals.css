@@ -1,0 +1,8 @@
+/* Separate, reversible guide add-on styles. Does not change MapLibre or marker CSS. */
+.vx-restored-product-sources {border-top: 1px solid #d6e3dc; margin: 14px 0 18px; padding-top: 12px;}
+.vx-restored-product-sources > h4 {margin: 0 0 9px; font-size: 1rem;}
+.vx-restored-product-sources details {border:1px solid #d5e4db; background: #fff; border-radius: 10px; padding: 10px 12px; margin: 8px 0;}
+.vx-restored-product-sources summary {font-weight: 650; cursor:pointer; line-height:1.4;}
+.vx-restored-product-sources .vx-original-preview {font-size: 0.9rem; line-height: 1.5; white-space: normal;}
+.vx-restored-product-sources .vx-note {font-size:0.78rem; color:#5c6a63;}
+.vx-restored-product-sources a {display:inline-block; margin-top:4px;}

@@ -1,0 +1,13 @@
+{
+  "total_product_cards": 295,
+  "restored_original_descriptions": 295,
+  "unarchived_original_descriptions": 0,
+  "regenerated_passages_replaced": 472,
+  "run_succeeded": true,
+  "source_sha256": "0483a351060d107a027e9a075e1838db1852ca13af04b36f8190aa7408ade3bf",
+  "source_origin": "verified_2026_10_06_snapshot",
+  "error": null,
+  "historical_snapshot_sha256_expected": "0483a351060d107a027e9a075e1838db1852ca13af04b36f8190aa7408ade3bf",
+  "database_integrity": "ok",
+  "foreign_key_errors": 0
+}
