@@ -28,7 +28,7 @@
  const note=make('p','vxr-note',text().limited+' '+text().compare);panel.append(note);
  const side=ROOT.querySelector('.vx-side');if(!side)return;
  const anchor=ROOT.querySelector('#vx-status');if(anchor)anchor.insertAdjacentElement('afterend',panel);else side.prepend(panel);
- let graph=null,stops=[],layer=null,activeRoute=null;
+ let graph=null,stops=[],activeRoute=null,routeSvg=null,routeNeedsFrame=false,routeEventsAdded=false;
  fields.hidden=true;stopsHeader.hidden=true;stopsList.hidden=true;addRow.hidden=true;actions.hidden=true;
  function setStatus(s,bad=false){message.textContent=s;message.classList.toggle('vxr-error',bad)}
  function eligibleSites(){return graph?.sites||[]}
@@ -51,17 +51,53 @@
    throw new Error(text().none);
  }
  function distApprox(a,b){const lat1=a[1]*Math.PI/180,lat2=b[1]*Math.PI/180,dlat=lat2-lat1,dlon=(b[0]-a[0])*Math.PI/180,h=Math.sin(dlat/2)**2+Math.cos(lat1)*Math.cos(lat2)*Math.sin(dlon/2)**2;return 12742.0176*Math.asin(Math.min(1,Math.sqrt(h)));}
- function renderOverlay(){const map=window.__vx_attraction_map;if(!map||!activeRoute)return;
-   try{
-    const id='vx-browser-route';const data={type:'FeatureCollection',features:[{type:'Feature',properties:{kind:'route'},geometry:{type:'LineString',coordinates:activeRoute.coordinates}},...activeRoute.sites.map((s,i)=>({type:'Feature',properties:{kind:'stop',index:String(i+1)},geometry:{type:'Point',coordinates:s.at}}))]};
-    if(map.getSource(id)){map.getSource(id).setData(data);return;}
-    map.addSource(id,{type:'geojson',data});
-    map.addLayer({id:id+'-line',type:'line',source:id,filter:['==',['get','kind'],'route'],paint:{'line-color':'#2563a6','line-width':5,'line-opacity':0.92}});
-    map.addLayer({id:id+'-points',type:'circle',source:id,filter:['==',['get','kind'],'stop'],paint:{'circle-color':'#e38a2c','circle-radius':10,'circle-stroke-color':'#fff','circle-stroke-width':3}});
-    map.addLayer({id:id+'-labels',type:'symbol',source:id,filter:['==',['get','kind'],'stop'],layout:{'text-field':['get','index'],'text-size':12,'text-allow-overlap':true},paint:{'text-color':'#12293a'}});
-   }catch(err){console.warn('[Veracruz route overlay]',err);setStatus('Route computed, but map drawing failed: '+err.message,true)}
+ // Draw geographic polylines in a transparent SVG inside the MapLibre container.
+ // This does not depend on the basemap style-loading lifecycle or layer IDs.
+ const NS='http://www.w3.org/2000/svg';
+ function svgEl(tag){return document.createElementNS(NS,tag);}
+ function clearOverlay(){if(routeSvg){routeSvg.remove();routeSvg=null;}routeNeedsFrame=false;}
+ function refreshOverlay(){
+   if(!activeRoute||!routeSvg)return;
+   const map=window.__vx_attraction_map,container=map?.getContainer?.();
+   if(!map||!container||!map.project)throw Error('Map projection is unavailable');
+   const w=container.clientWidth,h=container.clientHeight;
+   if(!w||!h)return;
+   routeSvg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+   const projected=activeRoute.coordinates.map(p=>map.project(p));
+   if(projected.some(p=>!Number.isFinite(p.x)||!Number.isFinite(p.y)))throw Error('Invalid projected road coordinates');
+   const line=projected.map((p,i)=>`${i?'L':'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+   routeSvg.querySelector('.vxr-route-halo').setAttribute('d',line);
+   routeSvg.querySelector('.vxr-route-line').setAttribute('d',line);
+   const markers=routeSvg.querySelector('.vxr-route-stops');markers.replaceChildren();
+   activeRoute.sites.forEach((site,i)=>{
+     const p=map.project(site.at);
+     const halo=svgEl('circle');halo.setAttribute('cx',p.x);halo.setAttribute('cy',p.y);halo.setAttribute('r','13');halo.setAttribute('fill','#fff');markers.append(halo);
+     const c=svgEl('circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r','10');c.setAttribute('fill','#da7a20');markers.append(c);
+     const label=svgEl('text');label.setAttribute('x',p.x);label.setAttribute('y',p.y+4);label.setAttribute('fill','#fff');label.setAttribute('font-size','12');label.setAttribute('font-family','sans-serif');label.setAttribute('font-weight','bold');label.setAttribute('text-anchor','middle');label.textContent=String(i+1);markers.append(label);
+   });
  }
- function wipe(){activeRoute=null;results.replaceChildren();nearby.replaceChildren();try{const m=window.__vx_attraction_map;if(m?.getSource('vx-browser-route'))m.getSource('vx-browser-route').setData({type:'FeatureCollection',features:[]})}catch(_e){}setStatus(text().ready);}
+ function scheduleRefresh(){
+   if(routeNeedsFrame||!routeSvg)return;
+   routeNeedsFrame=true;
+   requestAnimationFrame(()=>{routeNeedsFrame=false;if(!routeSvg)return;try{refreshOverlay()}catch(err){setStatus('Route display error: '+err.message,true);console.error('[Veracruz routing SVG]',err)}});
+ }
+ function renderOverlay(){
+   const map=window.__vx_attraction_map,container=map?.getContainer?.();
+   if(!map||!container||!map.project)throw Error('Cannot draw a route: MapLibre map projection is unavailable.');
+   if(!activeRoute||activeRoute.coordinates.length<2)throw Error('Not enough road points to draw a route.');
+   clearOverlay();
+   const svg=svgEl('svg');svg.setAttribute('aria-hidden','true');svg.setAttribute('class','vxr-geographic-overlay');
+   Object.assign(svg.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none',overflow:'hidden',zIndex:'12'});
+   const halo=svgEl('path');halo.setAttribute('class','vxr-route-halo');halo.setAttribute('fill','none');halo.setAttribute('stroke','#ffffff');halo.setAttribute('stroke-width','9');halo.setAttribute('stroke-linecap','round');halo.setAttribute('stroke-linejoin','round');
+   const line=svgEl('path');line.setAttribute('class','vxr-route-line');line.setAttribute('fill','none');line.setAttribute('stroke','#1757d2');line.setAttribute('stroke-width','5');line.setAttribute('stroke-linecap','round');line.setAttribute('stroke-linejoin','round');
+   const markers=svgEl('g');markers.setAttribute('class','vxr-route-stops');svg.append(halo,line,markers);container.append(svg);routeSvg=svg;
+   if(!routeEventsAdded){
+     for(const event of ['move','zoom','resize','rotate','pitch'])map.on(event,scheduleRefresh);
+     routeEventsAdded=true;
+   }
+   refreshOverlay();
+ }
+ function wipe(){activeRoute=null;clearOverlay();results.replaceChildren();nearby.replaceChildren();setStatus(text().ready);}
  function renderSuggestions(routeSites,points){nearby.replaceChildren();let chosen=new Set(routeSites.map(s=>s.id)),mid=points.filter((_,i)=>i%Math.max(1,Math.floor(points.length/300))===0);
    const candidates=eligibleSites().filter(s=>!chosen.has(s.id)).map(s=>({s,d:Math.min(...mid.map(p=>distApprox(s.at,p)))})).filter(x=>x.d<=6).sort((a,b)=>a.d-b.d).slice(0,6);
    if(!candidates.length)return;
@@ -72,10 +108,12 @@
    const sites=ids.map(id=>eligibleSites().find(s=>s.id===id));if(sites.some(s=>!s)){setStatus(text().same,true);return;}
    setStatus(text().processing);try{let sum=0,explored=0,path=[];
     for(let i=0;i<sites.length-1;i++){let r=dijkstra(sites[i].node,sites[i+1].node);sum+=r.km;explored+=r.explored;path.push(...(i?r.path.slice(1):r.path));}
-    const coordinates=path.map(idx=>graph.positions[idx]);activeRoute={coordinates,sites};renderOverlay();
+    const coordinates=path.map(idx=>graph.positions[idx]);
+    if(coordinates.length<2||new Set(coordinates.map(p=>p.join(","))).size<2)throw Error("These attractions connect to the same road node; select a different pair.");
+    activeRoute={coordinates,sites};renderOverlay();
     const map=window.__vx_attraction_map;if(map){let west=Infinity,east=-Infinity,south=Infinity,north=-Infinity;for(const [lon,lat] of coordinates){west=Math.min(west,lon);east=Math.max(east,lon);south=Math.min(south,lat);north=Math.max(north,lat);}if(Number.isFinite(west)){map.fitBounds([[west,south],[east,north]],{padding:70,maxZoom:13,duration:500});}}
-    results.replaceChildren();const strong=make('strong','',text().result+': '+sum.toFixed(2)+' '+text().distance);results.append(strong,make('p','vxr-note',text().snap));setStatus(text().ready);renderSuggestions(sites,coordinates);
-   }catch(err){console.error('[Veracruz Dijkstra]',err);setStatus(err.message,true);}
+    results.replaceChildren();const strong=make('strong','',text().result+': '+sum.toFixed(2)+' '+text().distance);results.append(strong,make('p','vxr-note',text().snap));setStatus(text().result+": "+sum.toFixed(2)+" "+text().distance+" · route drawn");renderSuggestions(sites,coordinates);
+   }catch(err){console.error('[Veracruz Dijkstra]',err);activeRoute=null;clearOverlay();setStatus(err.message,true);}
  }
  addButton.addEventListener('click',()=>{if(stopChooser.value&&!stops.includes(stopChooser.value)&&!([startSelect.value,finishSelect.value].includes(stopChooser.value))){stops.push(stopChooser.value);renderStops();wipe();}});
  clearButton.addEventListener('click',()=>{stops=[];renderStops();wipe();});runButton.addEventListener('click',calculate);
@@ -87,7 +125,7 @@
     graph=data;optionList(startSelect);optionList(finishSelect);if(graph.sites.length>1)finishSelect.value=graph.sites[1].id;renderStops();
     fields.hidden=false;stopsHeader.hidden=false;stopsList.hidden=false;addRow.hidden=false;actions.hidden=false;
     setStatus(text().ready);note.textContent=text().limited+' · '+graph.sites.length+' '+text().available+'. '+text().compare;
-    const map=window.__vx_attraction_map;if(map){map.on('style.load',renderOverlay)}
+    // Route overlay is independent of MapLibre's style.load lifecycle.
    }catch(err){console.warn('[Veracruz route graph]',err);setStatus(text().wait+' '+text().error,true);}
  }
  initialize();
