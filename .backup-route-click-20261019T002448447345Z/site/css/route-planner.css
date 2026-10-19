@@ -1,0 +1,60 @@
+#veracruz-map-section .vxr-panel{padding:16px;margin:12px 0;border:1px solid #cadbd1;border-radius:14px;background:#f7faf8;color:#17372f;font:inherit;max-width:100%;box-sizing:border-box}
+#veracruz-map-section .vxr-heading{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+#veracruz-map-section .vxr-heading h3{font-size:1.05rem;margin:0;font-weight:700}
+#veracruz-map-section .vxr-heading small{font-size:.78rem;opacity:.7}
+#veracruz-map-section .vxr-panel label{display:flex;flex-direction:column;gap:5px;font-size:.84rem;font-weight:600}
+#veracruz-map-section .vxr-fields{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0}
+#veracruz-map-section .vxr-select{font:inherit;padding:9px;border:1px solid #bccfc4;border-radius:9px;width:100%;max-width:100%;background:#fff;color:#16342d}
+#veracruz-map-section .vxr-subheading{font-weight:650;font-size:.87rem;margin:12px 0 6px}
+#veracruz-map-section .vxr-add{display:flex;gap:8px}
+#veracruz-map-section .vxr-add .vxr-select{flex:1;min-width:0}
+#veracruz-map-section .vxr-actions{display:flex;gap:8px;margin:13px 0;flex-wrap:wrap}
+#veracruz-map-section .vxr-panel button{font:inherit;border:1px solid #a9bdad;border-radius:9px;cursor:pointer;padding:8px 12px;background:#fff;color:#16382c}
+#veracruz-map-section .vxr-panel button.vxr-primary{background:#175f4c;border-color:#175f4c;color:white;font-weight:650}
+#veracruz-map-section .vxr-panel button:disabled{opacity:.5;cursor:not-allowed}
+#veracruz-map-section .vxr-message,#veracruz-map-section .vxr-note{font-size:.81rem;line-height:1.45;color:#55685e;margin:10px 0}
+#veracruz-map-section .vxr-message.vxr-error{color:#a33b29}
+#veracruz-map-section .vxr-stops{display:grid;gap:5px}
+#veracruz-map-section .vxr-stop,#veracruz-map-section .vxr-near-row{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:.83rem}
+#veracruz-map-section .vxr-panel button.vxr-mini{padding:4px 8px;font-size:.75rem}
+#veracruz-map-section .vxr-results{font-size:.94rem;margin-top:12px}
+#veracruz-map-section .vxr-nearby{border-top:1px solid #d3e1d8;margin-top:8px;padding-top:4px}
+#veracruz-map-section .vxr-nearby h4{font-size:.85rem;margin:8px 0}
+@media(max-width:470px){#veracruz-map-section .vxr-fields{grid-template-columns:1fr}}
+
+/* Searchable, bounded attraction choices */
+#veracruz-map-section .vxr-hint{font-size:.83rem;line-height:1.45;margin:9px 0;color:#426056}
+#veracruz-map-section .vxr-pick-buttons{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0}
+#veracruz-map-section .vxr-panel button.vxr-pick{padding:7px 9px;font-size:.75rem;flex:1 1 auto}
+#veracruz-map-section .vxr-panel button.vxr-pick.active{background:#175f4c;color:#fff;border-color:#175f4c}
+#veracruz-map-section .vxr-panel .vxr-hidden-select{display:none !important}
+#veracruz-map-section .vxr-combo{position:relative;min-width:0}
+#veracruz-map-section .vxr-query{box-sizing:border-box;width:100%;border:1px solid #aabbaf;border-radius:9px;padding:10px 9px;font:inherit;font-size:.85rem;min-width:0;background:#fff;color:#17372f}
+#veracruz-map-section .vxr-query:focus{outline:2px solid #4c9a89;outline-offset:1px}
+#veracruz-map-section .vxr-search-label{min-width:0}
+#veracruz-map-section .vxr-suggestions{position:absolute;z-index:120;top:calc(100% + 3px);left:0;right:0;max-height:195px;overflow-y:auto;border:1px solid #aac3b5;border-radius:10px;background:white;box-shadow:0 6px 22px #0002}
+#veracruz-map-section .vxr-suggestions[hidden]{display:none !important}
+#veracruz-map-section .vxr-panel .vxr-suggestion{display:block;width:100%;border:0;border-radius:0;border-bottom:1px solid #edf2ee;text-align:left;font-size:.81rem;padding:9px;background:white;color:#15392e}
+#veracruz-map-section .vxr-panel .vxr-suggestion:hover,#veracruz-map-section .vxr-panel .vxr-suggestion:focus{background:#ebf4ef}
+#veracruz-map-section .vxr-no-match{padding:9px;font-size:.8rem}
+#veracruz-map-section .vxr-add .vxr-search-label{flex:1;min-width:0}
+#veracruz-map-section .vxr-panel button.vxr-swap{padding:5px 9px;margin:0 0 4px;font-size:.76rem}
+#veracruz-map-section .vxr-stop-actions{display:flex;gap:3px}
+#veracruz-map-section .vxr-results{border-radius:10px;background:#e6f3ed;padding:12px;margin:10px 0}
+#veracruz-map-section .vxr-results:empty{display:none}
+#veracruz-map-section .vxr-distance{display:block;font-size:1.12rem}
+#veracruz-map-section .vxr-time{font-size:.85rem;margin:5px 0}
+#vx-map .vxr-map-summary{position:absolute;z-index:18;left:12px;top:66px;background:rgba(255,255,255,.96);border:1px solid #b9d2c1;border-radius:10px;box-shadow:0 3px 15px #0002;padding:9px 12px;pointer-events:none;color:#194c3c;display:flex;flex-direction:column;gap:1px}
+#vx-map .vxr-map-summary strong{font-size:1rem}
+#vx-map .vxr-map-summary small{font-size:.75rem;color:#5d7066}
+@media(max-width:650px){#veracruz-map-section .vxr-fields{grid-template-columns:1fr}#vx-map .vxr-map-summary{top:60px;left:6px;padding:6px 8px}}
+
+/* Guided, clearly distinct route-selection markers; never override MapLibre transforms. */
+#veracruz-map-section .vxr-map-help{font-size:.82rem;color:#335f4e;line-height:1.5;margin:5px 0 8px}
+#veracruz-map-section .vxr-route-site-pin{position:absolute!important;top:0;left:0;border:0!important;background:transparent!important;padding:0!important;width:38px;height:38px;overflow:visible;cursor:pointer;z-index:40;box-shadow:none!important;border-radius:50%;}
+#veracruz-map-section .vxr-route-site-icon{display:flex;align-items:center;justify-content:center;background:#fff8ea;color:#21372e;font-size:17px;width:36px;height:36px;border-radius:50%;border:3px solid #E39A2E;box-shadow:0 2px 9px #0005;box-sizing:border-box;}
+#veracruz-map-section .vxr-route-site-pin:hover .vxr-route-site-icon,#veracruz-map-section .vxr-route-site-pin:focus-visible .vxr-route-site-icon{outline:2px solid #165f49;outline-offset:2px}
+#veracruz-map-section .vxr-route-site-pin.chosen .vxr-route-site-icon{background:#197562;color:white;border-color:#fff;box-shadow:0 0 0 3px #e69d27,0 2px 9px #0005}
+#veracruz-map-section .vxr-route-site-name{position:absolute;left:50%;top:40px;transform:translateX(-50%);display:block;white-space:nowrap;font:700 11px system-ui,sans-serif;background:rgba(255,255,255,.95);padding:4px 7px;border:1px solid #e4c18a;border-radius:7px;box-shadow:0 2px 8px #0002;color:#264c3b;pointer-events:none}
+#veracruz-map-section .vxr-pick-buttons{margin:8px 0}
+#veracruz-map-section .vxr-panel button.vxr-pick{flex:1;font-size:.86rem;font-weight:650}

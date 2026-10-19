@@ -61,24 +61,24 @@
    const es=currentLang()==='es';
    for(const site of eligibleSites()){
      const pin=make('button','vxr-route-site-pin');pin.type='button';pin.title=site.name;pin.setAttribute('aria-label',site.name);
-     pin.style.position='absolute';pin.style.top='0';pin.style.left='0';
+     pin.style.position='absolute';pin.style.top='0';pin.style.left='0';pin.dataset.routeSiteId=site.id;
      const icon=make('span','vxr-route-site-icon',site.icon||'📍');
      const name=make('span','vxr-route-site-name',site.name);
      pin.append(icon,name);
      const id=site.id;
      if(id===startSelect.value||id===finishSelect.value||stops.includes(id))pin.classList.add('chosen');
-     pin.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();event.stopImmediatePropagation();
-        if(picking)changeSite(picking,getSite(id));
-     });
+     // The root capture listener below handles clicks so other map handlers cannot intercept them.
+     // The marker's stable data-route-site-id survives label and icon changes.
      const marker=new lib.Marker({element:pin,anchor:'center'}).setLngLat(site.at).addTo(map);
      selectablePins.push(marker);
    }
  }
  function setPicking(kind){
    picking=kind;
+   ROOT.classList.toggle('vxr-picking',Boolean(kind));
    selectOnMap.classList.toggle('active',Boolean(kind));
    selectOnMap.setAttribute('aria-pressed',String(Boolean(kind)));
-   selectOnMap.textContent=kind?(currentLang()==='es'?'Terminar selección':currentLang()==='ja'?'選択を終了':'Done selecting'):(currentLang()==='es'?'Seleccionar puntos en el mapa':currentLang()==='ja'?'地図から場所を選択':'Select places on map');
+   selectOnMap.textContent=kind?(currentLang()==='es'?'Cancelar selección en el mapa':currentLang()==='ja'?'地図での選択を終了':'Exit map selection'):(currentLang()==='es'?'Seleccionar puntos en el mapa':currentLang()==='ja'?'地図から場所を選択':'Select places on map');
    mapHelp.textContent=phaseHint(kind);
    refreshSelectablePins();
  }
@@ -117,15 +117,30 @@
  }
  attachSearch(fromBox,startSelect,'start');attachSearch(toBox,finishSelect,'end');attachSearch(stopBox,stopChooser,'stop');
  swapBtn.addEventListener('click',()=>{const a=getSite(startSelect.value),b=getSite(finishSelect.value);startSelect.value=b?.id||'';finishSelect.value=a?.id||'';fromBox.input.value=b?.name||'';toBox.input.value=a?.name||'';renderStops();wipe()});
- // Capture clicks before destination-guide handlers consume them.
+ // One early capture handler for both the gold route pins and the original attraction markers.
+ // It always derives the next phase from the filled fields, not from stale mode state.
  ROOT.addEventListener('click',event=>{
    if(!graph||!picking)return;
-   const marker=event.target.closest?.('.vxa-marker');if(!marker)return;
-   const name=marker.getAttribute('aria-label')||marker.title||marker.querySelector('.vxa-marker-label')?.textContent||'';
-   const matching=eligibleSites().filter(s=>fold(s.name)===fold(name));
+   const routePin=event.target.closest?.('.vxr-route-site-pin');
+   const attraction=routePin?null:event.target.closest?.('.vxa-marker');
+   if(!routePin&&!attraction)return;
+   let site=null;
+   if(routePin)site=getSite(routePin.dataset.routeSiteId);
+   else {
+     const name=attraction.getAttribute('aria-label')||attraction.title||attraction.querySelector('.vxa-marker-label')?.textContent||'';
+     site=eligibleSites().find(s=>fold(s.name)===fold(name));
+   }
    event.preventDefault();event.stopImmediatePropagation();
-   if(!matching.length){setStatus(text().outside,true);return;}
-   changeSite(picking,matching[0]);
+   if(!site){setStatus(text().outside,true);return;}
+   if(!startSelect.value){changeSite('start',site);return;}
+   if(!finishSelect.value){
+     if(site.id===startSelect.value){setStatus(currentLang()==='es'?'Elige un destino diferente de la salida.':'Choose a different destination from your starting point.',true);return;}
+     changeSite('end',site);return;
+   }
+   if(site.id===startSelect.value||site.id===finishSelect.value){
+     setStatus(currentLang()==='es'?'Ese punto ya forma parte de la ruta.':'This point is already on your route.',true);return;
+   }
+   changeSite('stop',site);
  },true);
  function renderStops(){stopsList.replaceChildren();for(let i=0;i<stops.length;i++){
    const s=getSite(stops[i]);if(!s)continue;

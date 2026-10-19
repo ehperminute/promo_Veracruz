@@ -58,3 +58,12 @@
 #veracruz-map-section .vxr-route-site-name{position:absolute;left:50%;top:40px;transform:translateX(-50%);display:block;white-space:nowrap;font:700 11px system-ui,sans-serif;background:rgba(255,255,255,.95);padding:4px 7px;border:1px solid #e4c18a;border-radius:7px;box-shadow:0 2px 8px #0002;color:#264c3b;pointer-events:none}
 #veracruz-map-section .vxr-pick-buttons{margin:8px 0}
 #veracruz-map-section .vxr-panel button.vxr-pick{flex:1;font-size:.86rem;font-weight:650}
+
+/* Route-selection overlay: quiet background names, selectable gold dots above attraction pins. */
+#veracruz-map-section.vxr-picking .vxa-marker-label {display:none!important}
+#veracruz-map-section.vxr-picking .vxa-marker:not(.vxc-selected) {opacity:.35}
+#veracruz-map-section .vxr-route-site-pin {z-index:1000!important;pointer-events:auto!important}
+#veracruz-map-section .vxr-route-site-name {display:none!important}
+#veracruz-map-section .vxr-route-site-pin:hover .vxr-route-site-name,
+#veracruz-map-section .vxr-route-site-pin:focus-visible .vxr-route-site-name,
+#veracruz-map-section .vxr-route-site-pin.chosen .vxr-route-site-name {display:block!important}
