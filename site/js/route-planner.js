@@ -15,9 +15,12 @@
  const head=make('div','vxr-heading'),heading=make('h3','',text().title),tag=make('small','',text().region);
  head.append(heading,tag);panel.append(head);
  const message=make('p','vxr-message',text().loading);panel.append(message);
- const how=make('p','vxr-hint',text().choose);panel.append(how);
- const pickButtons=make('div','vxr-pick-buttons'),chooseStart=make('button','vxr-pick active',text().chooseStart),chooseEnd=make('button','vxr-pick',text().chooseEnd),chooseStop=make('button','vxr-pick',text().chooseStop);
- [chooseStart,chooseEnd,chooseStop].forEach(b=>{b.type='button';b.setAttribute('aria-pressed','false');pickButtons.append(b)});panel.append(pickButtons);
+ const how=make('p','vxr-hint',currentLang()==='es'?'Elige salida y llegada en el mapa o escribiendo el nombre. Solo funciona en Xalapa–Coatepec–Xico.':currentLang()==='ja'?'地図か検索欄で出発地と目的地を選びます。現在はハラパ周辺のみ。':'Choose start and destination on the map or by name. Routing is currently limited to Xalapa–Coatepec–Xico.');panel.append(how);
+ const pickButtons=make('div','vxr-pick-buttons');
+ const selectOnMap=make('button','vxr-pick',currentLang()==='es'?'Seleccionar puntos en el mapa':currentLang()==='ja'?'地図から場所を選択':'Select places on map');
+ selectOnMap.type='button';selectOnMap.setAttribute('aria-pressed','false');
+ pickButtons.append(selectOnMap);panel.append(pickButtons);
+ const mapHelp=make('p','vxr-map-help');pickButtons.insertAdjacentElement('afterend',mapHelp);
  const fields=make('div','vxr-fields');
  const startSelect=make('select','vxr-hidden-select'),finishSelect=make('select','vxr-hidden-select'),stopChooser=make('select','vxr-hidden-select');
  [startSelect,finishSelect,stopChooser].forEach(x=>{x.hidden=true;x.tabIndex=-1});
@@ -35,17 +38,51 @@
  const note=make('p','vxr-note',text().limited+' '+text().compare);panel.append(note);
  const side=ROOT.querySelector('.vx-side');if(!side)return;
  const anchor=ROOT.querySelector('#vx-status');if(anchor)anchor.insertAdjacentElement('afterend',panel);else side.prepend(panel);
- let graph=null,stops=[],activeRoute=null,routeSvg=null,routeNeedsFrame=false,routeEventsAdded=false,picking=null,summaryBadge=null;
+ let graph=null,stops=[],activeRoute=null,routeSvg=null,routeNeedsFrame=false,routeEventsAdded=false,picking=null,summaryBadge=null,selectablePins=[];
  fields.hidden=true;stopsHeader.hidden=true;stopsList.hidden=true;addRow.hidden=true;actions.hidden=true;pickButtons.hidden=true;swapBtn.hidden=true;
  function setStatus(s,bad=false){message.textContent=s;message.classList.toggle('vxr-error',bad)}
  function eligibleSites(){return graph?.sites||[]}
  const fold=(s)=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
  const getSite=(id)=>eligibleSites().find(s=>s.id===id);
  function optionList(sel,exclude=[]){const current=sel.value;sel.replaceChildren();const blank=make('option','','');blank.value='';sel.append(blank);eligibleSites().forEach(s=>{const o=make('option','',s.name);o.value=s.id;o.disabled=exclude.includes(s.id);sel.append(o)});sel.value=eligibleSites().some(s=>s.id===current&&!exclude.includes(s.id))?current:''}
- function setPicking(kind){picking=kind;[[chooseStart,'start'],[chooseEnd,'end'],[chooseStop,'stop']].forEach(([btn,k])=>{btn.classList.toggle('active',k===kind);btn.setAttribute('aria-pressed',String(k===kind))})}
- chooseStart.addEventListener('click',()=>setPicking('start'));
- chooseEnd.addEventListener('click',()=>setPicking('end'));
- chooseStop.addEventListener('click',()=>setPicking('stop'));
+ function phaseHint(kind){
+   const es=currentLang()==='es',ja=currentLang()==='ja';
+   if(kind==='start')return es?'1/2: toca un marcador dorado para elegir la salida.':ja?'1/2: 金色のマーカーで出発地を選んでください。':'1/2: tap a gold marker to choose the start.';
+   if(kind==='end')return es?'2/2: ahora toca otro marcador dorado para elegir la llegada.':ja?'2/2: 別の金色のマーカーで目的地を選んでください。':'2/2: now tap another gold marker to choose the destination.';
+   if(kind==='stop')return es?'Toca marcadores dorados para añadir paradas opcionales.':ja?'金色のマーカーで立ち寄り先を追加できます。':'Tap gold markers to add optional stops.';
+   return es?'Los marcadores dorados indican los atractivos conectados a la red vial regional.':ja?'金色のマーカーだけが現在の地域道路網で利用できます。':'Gold markers indicate attractions connected to this regional road network.';
+ }
+ function dropSelectablePins(){for(const marker of selectablePins)marker.remove();selectablePins=[];}
+ function refreshSelectablePins(){
+   dropSelectablePins();
+   if(!picking||!graph)return;
+   const map=window.__vx_attraction_map,lib=window.maplibregl;
+   if(!map||!lib?.Marker){setStatus('The map is not ready for marker selection; use the search boxes instead.',true);return;}
+   const es=currentLang()==='es';
+   for(const site of eligibleSites()){
+     const pin=make('button','vxr-route-site-pin');pin.type='button';pin.title=site.name;pin.setAttribute('aria-label',site.name);
+     pin.style.position='absolute';pin.style.top='0';pin.style.left='0';
+     const icon=make('span','vxr-route-site-icon',site.icon||'📍');
+     const name=make('span','vxr-route-site-name',site.name);
+     pin.append(icon,name);
+     const id=site.id;
+     if(id===startSelect.value||id===finishSelect.value||stops.includes(id))pin.classList.add('chosen');
+     pin.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();event.stopImmediatePropagation();
+        if(picking)changeSite(picking,getSite(id));
+     });
+     const marker=new lib.Marker({element:pin,anchor:'center'}).setLngLat(site.at).addTo(map);
+     selectablePins.push(marker);
+   }
+ }
+ function setPicking(kind){
+   picking=kind;
+   selectOnMap.classList.toggle('active',Boolean(kind));
+   selectOnMap.setAttribute('aria-pressed',String(Boolean(kind)));
+   selectOnMap.textContent=kind?(currentLang()==='es'?'Terminar selección':currentLang()==='ja'?'選択を終了':'Done selecting'):(currentLang()==='es'?'Seleccionar puntos en el mapa':currentLang()==='ja'?'地図から場所を選択':'Select places on map');
+   mapHelp.textContent=phaseHint(kind);
+   refreshSelectablePins();
+ }
+ selectOnMap.addEventListener('click',()=>setPicking(picking?null:!startSelect.value?'start':!finishSelect.value?'end':'stop'));
  function changeSite(kind,site){
    if(!site)return;
    if(kind==='stop'){
@@ -57,13 +94,13 @@
    select.value=site.id;control.input.value=site.name;control.menu.hidden=true;control.input.setAttribute('aria-expanded','false');
    // The same destination cannot simultaneously be an intermediate stop.
    stops=stops.filter(id=>id!==site.id);renderStops();wipe();
-   if(kind==='start'){setPicking('end');setStatus(text().pickStart)} else {setPicking(null);setStatus(text().pickEnd)}
+   if(kind==='start'){setPicking('end');setStatus(phaseHint('end'))} else {setPicking(null);setStatus(text().pickEnd)}
  }
  function updateMenu(box,selector,mode){
    const query=fold(box.input.value),matches=eligibleSites().filter(s=>!query||fold(s.name).includes(query)).slice(0,7);
    box.menu.replaceChildren();
    if(!matches.length)box.menu.append(make('p','vxr-no-match',text().noMatches));
-   matches.forEach(s=>{const b=make('button','vxr-suggestion',(s.icon||'📍')+' '+s.name);b.type='button';b.setAttribute('role','option');b.addEventListener('pointerdown',e=>e.preventDefault());b.addEventListener('click',()=>{if(mode==='stop'){stopChooser.value=s.id;box.input.value=s.name;box.menu.hidden=true;addButton.disabled=false}else changeSite(mode,s)});box.menu.append(b)});
+   matches.forEach(s=>{const b=make('button','vxr-suggestion',(s.icon||'📍')+' '+s.name+' · '+text().region);b.type='button';b.setAttribute('role','option');b.addEventListener('pointerdown',e=>e.preventDefault());b.addEventListener('click',()=>{if(mode==='stop'){stopChooser.value=s.id;box.input.value=s.name;box.menu.hidden=true;addButton.disabled=false}else changeSite(mode,s)});box.menu.append(b)});
    box.menu.hidden=false;box.input.setAttribute('aria-expanded','true');
  }
  function closeMenu(box){box.menu.hidden=true;box.input.setAttribute('aria-expanded','false')}
@@ -177,11 +214,9 @@
     activeRoute={coordinates,sites};renderOverlay();
     const map=window.__vx_attraction_map;if(map){let west=Infinity,east=-Infinity,south=Infinity,north=-Infinity;for(const [lon,lat] of coordinates){west=Math.min(west,lon);east=Math.max(east,lon);south=Math.min(south,lat);north=Math.max(north,lat);}if(Number.isFinite(west)){map.fitBounds([[west,south],[east,north]],{padding:70,maxZoom:13,duration:500});}}
     results.replaceChildren();const strong=make('strong','vxr-distance',text().result+': '+sum.toFixed(2)+' '+text().distance);
-    const low=Math.round(sum/50*60),high=Math.round(sum/30*60);
-    const rough=make('p','vxr-time',text().rough+': '+low+'–'+high+' min');
-    results.append(strong,rough,make('p','vxr-note',text().notETA+' '+text().snap));
+    results.append(strong,make('p','vxr-note',text().compare+' '+text().snap));
     setStatus(text().result+': '+sum.toFixed(2)+' '+text().distance);
-    clearSummary();const target=ROOT.querySelector('#vx-map');if(target){summaryBadge=make('div','vxr-map-summary');summaryBadge.append(make('strong','',sum.toFixed(2)+' km'),make('small','',low+'–'+high+' min*'));target.append(summaryBadge)}
+    clearSummary();const target=ROOT.querySelector('#vx-map');if(target){summaryBadge=make('div','vxr-map-summary');summaryBadge.append(make('strong','',sum.toFixed(2)+' km'),make('small','',currentLang()==='es'?'Solo distancia · sin estimación de tiempo':currentLang()==='ja'?'距離のみ・所要時間未計算':'Distance only · no travel-time estimate'));target.append(summaryBadge)}
     results.scrollIntoView?.({block:'nearest',behavior:'smooth'});renderSuggestions(sites,coordinates);
    }catch(err){console.error('[Veracruz Dijkstra]',err);activeRoute=null;clearOverlay();clearSummary();setStatus(err.message,true);}
  }
@@ -195,6 +230,7 @@
     graph=data;optionList(startSelect);optionList(finishSelect);renderStops();setPicking(null);
     fields.hidden=false;stopsHeader.hidden=false;stopsList.hidden=false;addRow.hidden=false;actions.hidden=false;pickButtons.hidden=false;swapBtn.hidden=false;
     setStatus(text().ready);note.textContent=text().limited+' · '+graph.sites.length+' '+text().available+'. '+text().compare;
+    mapHelp.textContent=phaseHint(null);
     // Route overlay is independent of MapLibre's style.load lifecycle.
    }catch(err){console.warn('[Veracruz route graph]',err);setStatus(text().wait+' '+text().error,true);}
  }

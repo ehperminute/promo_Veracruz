@@ -48,3 +48,13 @@
 #vx-map .vxr-map-summary strong{font-size:1rem}
 #vx-map .vxr-map-summary small{font-size:.75rem;color:#5d7066}
 @media(max-width:650px){#veracruz-map-section .vxr-fields{grid-template-columns:1fr}#vx-map .vxr-map-summary{top:60px;left:6px;padding:6px 8px}}
+
+/* Guided, clearly distinct route-selection markers; never override MapLibre transforms. */
+#veracruz-map-section .vxr-map-help{font-size:.82rem;color:#335f4e;line-height:1.5;margin:5px 0 8px}
+#veracruz-map-section .vxr-route-site-pin{position:absolute!important;top:0;left:0;border:0!important;background:transparent!important;padding:0!important;width:38px;height:38px;overflow:visible;cursor:pointer;z-index:40;box-shadow:none!important;border-radius:50%;}
+#veracruz-map-section .vxr-route-site-icon{display:flex;align-items:center;justify-content:center;background:#fff8ea;color:#21372e;font-size:17px;width:36px;height:36px;border-radius:50%;border:3px solid #E39A2E;box-shadow:0 2px 9px #0005;box-sizing:border-box;}
+#veracruz-map-section .vxr-route-site-pin:hover .vxr-route-site-icon,#veracruz-map-section .vxr-route-site-pin:focus-visible .vxr-route-site-icon{outline:2px solid #165f49;outline-offset:2px}
+#veracruz-map-section .vxr-route-site-pin.chosen .vxr-route-site-icon{background:#197562;color:white;border-color:#fff;box-shadow:0 0 0 3px #e69d27,0 2px 9px #0005}
+#veracruz-map-section .vxr-route-site-name{position:absolute;left:50%;top:40px;transform:translateX(-50%);display:block;white-space:nowrap;font:700 11px system-ui,sans-serif;background:rgba(255,255,255,.95);padding:4px 7px;border:1px solid #e4c18a;border-radius:7px;box-shadow:0 2px 8px #0002;color:#264c3b;pointer-events:none}
+#veracruz-map-section .vxr-pick-buttons{margin:8px 0}
+#veracruz-map-section .vxr-panel button.vxr-pick{flex:1;font-size:.86rem;font-weight:650}
