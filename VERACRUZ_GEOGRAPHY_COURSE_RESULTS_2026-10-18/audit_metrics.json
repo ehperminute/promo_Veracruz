@@ -1,0 +1,16 @@
+{
+  "geographic": {
+    "reviewed_physical_sites": 26,
+    "map_ready_site_or_area_points": 10,
+    "already_mapped": 3,
+    "new_verified_additions": 7,
+    "unresolved_geolocations": 16,
+    "visitor_entrances_confirmed": 0
+  },
+  "stochastic": {
+    "iterations_each_budget": 5000,
+    "seed": 20261018,
+    "sampling_frame_municipalities": 61
+  },
+  "analysis_source": "vx14_ready/research/veracruz_master_with_verified_evidence.sqlite, and independently sourced mapping results"
+}

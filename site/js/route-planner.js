@@ -249,5 +249,33 @@
     // Route overlay is independent of MapLibre's style.load lifecycle.
    }catch(err){console.warn('[Veracruz route graph]',err);setStatus(text().wait+' '+text().error,true);}
  }
+
+ // VX_GUIDE_ROUTE_20261018_V1: narrow public API for attraction guide route actions.
+ function findRouteSite(item){
+   if(!graph||!item)return null;
+   const all=eligibleSites(),exact=all.find(s=>s.id===item.id);
+   if(exact)return exact;
+   const named=all.filter(s=>fold(s.name)===fold(item.name));
+   if(!named.length)return null;
+   if(named.length===1)return named[0];
+   if(Array.isArray(item.coordinates))return named.sort((a,b)=>distApprox(a.at,item.coordinates)-distApprox(b.at,item.coordinates))[0];
+   return null;
+ }
+ window.VeracruzRoutePlanner={
+   find(item){const s=findRouteSite(item);return s?{id:s.id,name:s.name}:null;},
+   choose(kind,item){
+     if(!['start','end','stop'].includes(kind))return false;
+     const s=findRouteSite(item);if(!s)return false;
+     if(kind==='end'&&s.id===startSelect.value){setStatus(text().same,true);return false;}
+     if(kind==='stop'&&(s.id===startSelect.value||s.id===finishSelect.value))return false;
+     changeSite(kind,s);
+     setPicking(null); // Route selection is optional; guide buttons never hijack map clicks.
+     setStatus(kind==='start'?text().pickStart:kind==='end'?text().pickEnd:text().pickStop);
+     panel.hidden=false;
+     return true;
+   },
+   show(){panel.hidden=false;panel.scrollIntoView({block:'nearest',behavior:'smooth'});}
+ };
+
  initialize();
 })();

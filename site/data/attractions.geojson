@@ -15969,6 +15969,216 @@
         "mapping_status": "mapped_area",
         "attraction_name_original": "Zona de Preservación Ecológica Zacatepec"
       }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-005",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.91214,
+          17.94852
+        ]
+      },
+      "properties": {
+        "id": "VX14-005",
+        "name": "Parroquia de San Martín Obispo",
+        "type": "Historic or cultural site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W365948068",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Acayucan",
+        "description_en": "Discover Parroquia de San Martín Obispo, a documented cultural site in Acayucan, Veracruz.",
+        "description_es": "Conoce Parroquia de San Martín Obispo, un lugar identificado en Acayucan, Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "Comunicado estatal de 2025 identifica la parroquia en el centro histórico.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-008",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.99632,
+          18.50193
+        ]
+      },
+      "properties": {
+        "id": "VX14-008",
+        "name": "Laguna María Lizamba",
+        "type": "Natural attraction",
+        "icon": "💧",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/30548172",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Tierra Blanca",
+        "description_en": "Explore the landscape of Laguna María Lizamba in Veracruz.",
+        "description_es": "Explora el paisaje de Laguna María Lizamba, en Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "La ficha municipal confirma Laguna María Lizamba y restaurantes; el acceso preciso queda sin verificar.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-012",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.79678,
+          18.36552
+        ]
+      },
+      "properties": {
+        "id": "VX14-012",
+        "name": "Basílica Liberiana",
+        "type": "Historic or cultural site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W441539691",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Cosamaloapan de Carpio",
+        "description_en": "Discover Basílica Liberiana, a documented cultural site in Cosamaloapan de Carpio, Veracruz.",
+        "description_es": "Conoce Basílica Liberiana, un lugar identificado en Cosamaloapan de Carpio, Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "La ficha municipal enumera Basílica Liberiana y hay corroboración documental municipal/hotelera.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-016",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.15235,
+          19.48461
+        ]
+      },
+      "properties": {
+        "id": "VX14-016",
+        "name": "Parque Nacional Cofre de Perote",
+        "type": "Natural attraction",
+        "icon": "🌿",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/19992132",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Perote",
+        "description_en": "Explore the landscape of Parque Nacional Cofre de Perote in Veracruz.",
+        "description_es": "Explora el paisaje de Parque Nacional Cofre de Perote, en Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "Comunicado estatal 2025 propone Parque Nacional Cofre de Perote y actividades de montaña; requiere acceso puntual.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-019",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.64135,
+          21.0655
+        ]
+      },
+      "properties": {
+        "id": "VX14-019",
+        "name": "Iglesia de Santiago Apóstol",
+        "type": "Historic or cultural site",
+        "icon": "🏛️",
+        "status": "mapped_site",
+        "source_url": "https://mapcarta.com/es/W320211080",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Álamo Temapache",
+        "description_en": "Discover Iglesia de Santiago Apóstol, a documented cultural site in Álamo Temapache, Veracruz.",
+        "description_es": "Conoce Iglesia de Santiago Apóstol, un lugar identificado en Álamo Temapache, Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "SECTUR 2026 nombra Iglesia de Santiago Apóstol como punto histórico.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-027",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1988,
+          18.7935
+        ]
+      },
+      "properties": {
+        "id": "VX14-027",
+        "name": "El Rincón de las Doncellas (lago)",
+        "type": "Natural attraction",
+        "icon": "💧",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/W678318298",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Camerino Z. Mendoza",
+        "description_en": "Explore the landscape of El Rincón de las Doncellas (lago) in Veracruz.",
+        "description_es": "Explora el paisaje de El Rincón de las Doncellas (lago), en Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "Ficha turística confirma balneario El Rincón de las Doncellas; servicios actuales sin comprobar.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "VX14-037",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.34732,
+          18.6131
+        ]
+      },
+      "properties": {
+        "id": "VX14-037",
+        "name": "Laguna Verde",
+        "type": "Natural attraction",
+        "icon": "💧",
+        "status": "mapped_area",
+        "source_url": "https://mapcarta.com/es/39263762",
+        "source_provider": "Mapped feature: OSM/Mapcarta (not entrance)",
+        "municipality": "Ángel R. Cabada",
+        "description_en": "Explore the landscape of Laguna Verde in Veracruz.",
+        "description_es": "Explora el paisaje de Laguna Verde, en Veracruz.",
+        "details_en": "This is a documented site or natural area. See original evidence and confirm local visitor access.",
+        "details_es": "Ficha turística confirma Laguna Verde de Los Tuxtlas, diferente a la central nuclear; existe además registro cartográfico regional. Entrada por validar.",
+        "visit_note_en": "Point locates a mapped feature, not a verified visitor entrance. Check access and conditions before visiting.",
+        "visit_note_es": "Punto de la entidad geográfica, no entrada verificada. Confirma acceso y condiciones antes de visitar.",
+        "photo_url": "",
+        "photo_credit": "",
+        "photo_source_url": ""
+      }
     }
   ]
 }

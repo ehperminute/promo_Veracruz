@@ -23,16 +23,21 @@ const select=el('select','vxc-select');cats.forEach(([v,k])=>{const o=el('option
 status.insertAdjacentElement('afterend',controls);
 const panel=el('section','vxc-panel');panel.hidden=true;controls.insertAdjacentElement('afterend',panel);
 const guide=el('article','vxc-guide');guide.hidden=true;panel.insertAdjacentElement('afterend',guide);
+// VX_GUIDE_ROUTE_20261018_V1
+const mapPreview=el('aside','vxc-mini-preview');mapPreview.hidden=true;const mapContainer=root.querySelector('#vx-map');if(mapContainer)mapContainer.append(mapPreview);
 let mapped=[],catalog=[],markers=[],expanded=false,active=null,paging=65;
 const selectedKind=()=>select.value;
 const asEntry=f=>({id:'MAP-'+(f.properties.id||f.id),name:f.properties.name,kind:'mapped',municipality:f.properties.municipality||'',source_url:f.properties.source_url||'',source_text_es:'',activity:f.properties.type||'',feature:f,lat:f.geometry.coordinates[1],lon:f.geometry.coordinates[0],geographic_precision:f.properties.status||'mapped_feature'});
 const entries=()=>[...mapped.map(asEntry),...catalog];
-function clearGuide(){active=null;guide.hidden=true;if(mainList)mainList.style.removeProperty('display');if(mainDetail)mainDetail.style.removeProperty('display');markers.forEach(m=>m.el.classList.remove('vxc-selected'));render();}
+function clearGuide(){mapPreview.hidden=true;mapPreview.replaceChildren();const rp=root.querySelector('#vx-route-planner');if(rp)rp.hidden=false;active=null;guide.hidden=true;if(mainList)mainList.style.removeProperty('display');if(mainDetail)mainDetail.style.removeProperty('display');markers.forEach(m=>m.el.classList.remove('vxc-selected'));render();}
 function isMatch(e,q){return !q||normal([e.name,e.municipality,e.activity,e.source_text_es].join(' ')).includes(q);}
 function filtered(){const q=normal(search.value),kind=selectedKind();return entries().filter(x=>(kind==='all'||(kind==='mapped'?x.kind==='mapped':x.kind===kind))&&isMatch(x,q));}
 function sidebarHide(yes){root.classList.toggle('vxc-active',yes);if(mainList)mainList.style.display=yes?'none':'';if(mainDetail)mainDetail.style.display=yes?'none':'';}
 function guideFor(e){
  active=e.id;sidebarHide(true);guide.hidden=false;panel.hidden=true;guide.replaceChildren();
+ const rp=root.querySelector('#vx-route-planner');if(rp)rp.hidden=true;
+ side.prepend(guide); // Present guide first, rather than scrolling to the route form.
+ mapPreview.hidden=true;mapPreview.replaceChildren();
  const b=el('button','vxc-back','← '+t().back);b.type='button';b.addEventListener('click',clearGuide);guide.append(b);
  let p=e.feature?.properties || e;
  if(p.photo_url && validURL(p.photo_url)){
@@ -53,6 +58,32 @@ function guideFor(e){
   const msg=e.kind==='tourism_product'?t().route:e.geographic_precision==='municipality_reference'?t().area:t().unknown;
   guide.append(el('p','vxc-disclaimer',msg));
   if(e.municipality)guide.append(el('p','vxc-sub',t().nearby+': '+e.municipality));
+ }
+
+ // Guide-first route actions; only attractions connected to the current regional graph qualify.
+ if(e.kind==='mapped'){
+   const route=window.VeracruzRoutePlanner;
+   const ref={id:p.id||e.feature?.id||e.id,name:e.name,coordinates:e.feature?.geometry?.coordinates};
+   if(route?.find(ref)){
+     const tr={en:['Start here','Finish here','Add stop'],es:['Salir de aquí','Llegar aquí','Agregar parada'],ja:['ここから出発','ここを目的地に','経由地に追加']}[lang()];
+     const group=el('div','vxc-route-actions');
+     ['start','end','stop'].forEach((kind,i)=>{
+       const button=el('button','vxc-route-action',tr[i]);button.type='button';
+       button.addEventListener('click',()=>{
+         if(route.choose(kind,ref)){
+           clearGuide();route.show();
+         }
+       });group.append(button);
+     });
+     guide.append(group);
+   }
+ }
+ if(e.kind==='mapped'&&p.photo_url&&validURL(p.photo_url)&&mapContainer){
+   const img=el('img');img.src=p.photo_url;img.alt='';img.loading='lazy';
+   img.addEventListener('error',()=>{mapPreview.hidden=true;});
+   const label=el('strong','',e.name),dismiss=el('button','vxc-mini-close','×');dismiss.type='button';dismiss.setAttribute('aria-label','Close preview');
+   dismiss.addEventListener('click',()=>{mapPreview.hidden=true;});
+   mapPreview.append(img,label,dismiss);mapPreview.hidden=false;
  }
  if(validURL(e.source_url))guide.append(link(e.source_url,t().source+' ↗'));
  const matched=markers.find(m=>m.id===e.id);if(matched)matched.el.classList.add('vxc-selected');
@@ -90,9 +121,9 @@ const zoomLabels=()=>{const z=map.getZoom(),q=normal(search.value);markers.forEa
  m.el.classList.toggle('vxa-labels-on',z>=9.2||m.id===active||(q&&m.name.includes(q)));
  if(m.osm)m.el.style.display=(z>=9.0||m.id===active||(q&&m.name.includes(q)))?'':'none';
 });};
-toggle.addEventListener('click',()=>{expanded=!expanded; paging=65;guide.hidden=true;render();});
-select.addEventListener('change',()=>{paging=65;guide.hidden=true;render();});
-search.addEventListener('input',()=>{paging=65;guide.hidden=true;render();zoomLabels();});
+toggle.addEventListener('click',()=>{expanded=!expanded; paging=65;clearGuide();});
+select.addEventListener('change',()=>{paging=65;clearGuide();});
+search.addEventListener('input',()=>{paging=65;clearGuide();zoomLabels();});
 search.addEventListener('keydown',e=>{if(e.key!=='Enter'||!search.value.trim())return;const match=filtered()[0];if(match){e.preventDefault();guideFor(match);}});
 map.on('zoom',zoomLabels);
 Promise.all([fetch('data/attractions.geojson',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Attractions HTTP '+r.status))),fetch('data/tourism_catalog.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject(Error('Catalog HTTP '+r.status)))]).then(([f,c])=>{

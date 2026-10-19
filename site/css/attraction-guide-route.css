@@ -1,0 +1,12 @@
+/* Guide-first presentation, specific to Veracruz existing map */
+#veracruz-map-section .vxc-guide:not([hidden]){display:block;position:relative;z-index:3;background:white;border-bottom:1px solid #d7e5dc}
+#veracruz-map-section .vxc-route-actions{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 7px}
+#veracruz-map-section .vxc-route-action{font:inherit;font-size:12px;line-height:1.3;background:#165e4d;border:1px solid #165e4d;color:white;padding:8px 10px;border-radius:8px;cursor:pointer}
+#veracruz-map-section .vxc-route-action:hover{background:#104637}
+#veracruz-map-section .vxc-route-action:focus-visible{outline:3px solid #e5ab46;outline-offset:2px}
+#veracruz-map-section .vxc-mini-preview{position:absolute;bottom:12px;left:12px;width:min(185px,36%);min-height:58px;background:#fff;border-radius:10px;box-shadow:0 2px 12px #0003;border:1px solid #d4e2d9;padding:5px;z-index:17;pointer-events:auto;color:#21483c;font-size:11px;overflow:hidden;display:flex;align-items:center;gap:7px}
+#veracruz-map-section .vxc-mini-preview[hidden]{display:none}
+#veracruz-map-section .vxc-mini-preview img{width:63px;height:49px;object-fit:cover;border-radius:6px;flex-shrink:0}
+#veracruz-map-section .vxc-mini-preview strong{font-size:11px;line-height:1.2;padding-right:8px}
+#veracruz-map-section .vxc-mini-close{position:absolute;top:0;right:0;border:0;background:#fff9;color:#375b4e;cursor:pointer;line-height:1;font-size:15px}
+@media(max-width:650px){#veracruz-map-section .vxc-mini-preview{display:none!important}}
