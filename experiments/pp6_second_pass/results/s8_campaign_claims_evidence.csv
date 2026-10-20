@@ -1,0 +1,67 @@
+municipality_id,municipality,feature_id,family,claim_count,claim_ids,source_ids,source_urls,original_text_support_count,summary_only_evidence_count
+30020,Atlahuilco,ancestral_ritual_participation,wellness_spiritual,1,WEBPRODUCT-192-01,WEB4,https://veracruz.mx/productos.php,1,0
+30020,Atlahuilco,backstrap_loom_weaving,traditional_crafts,1,CAT25-C0001,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30020,Atlahuilco,ceremony_honoring_mother_earth,other_specific_unclassified,1,CAT25-C0005,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30020,Atlahuilco,clay_modelling_workshop,traditional_crafts,1,CAT25-C0004,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30020,Atlahuilco,natural_dye_production,traditional_crafts,1,CAT25-C0003,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30032,Catemaco,ancestral_ritual_participation,wellness_spiritual,2,WEBPRODUCT-037-02|WEBPRODUCT-238-01,WEB4,https://veracruz.mx/productos.php,2,0
+30032,Catemaco,birdwatching,nature_observation,4,GOVPROOF-COM26SEP20-birdwatching-30032|WEBPRODUCT-035-01|WEBPRODUCT2-263-birdwatching-30032|WEBPRODUCT2-265-birdwatching-30032,OFFICIAL-COM26SEP20|WEB4,https://veracruz.mx/productos.php|https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/,3,1
+30032,Catemaco,boat_excursion,water_adventure,7,GOVPROOF-COM26SEP20-mangrove_boat_excursion-30032|WEBPRODUCT-003-04|WEBPRODUCT-039-02|WEBPRODUCT-090-01|WEBPRODUCT-286-02|WEBPRODUCT2-160-boat_excursion-30032|WEBPRODUCT2-286-boat_excursion-30032,OFFICIAL-COM26SEP20|WEB4,https://veracruz.mx/productos.php|https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/,6,1
+30032,Catemaco,camping,land_adventure,3,CAT25-C0022|WEBPRODUCT-267-01|WEBPRODUCT2-267-camping-30032,PDF2|WEB4,https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://veracruz.mx/productos.php,3,0
+30032,Catemaco,ethnobotanical_learning,nature_observation,1,WEBPRODUCT-031-01,WEB4,https://veracruz.mx/productos.php,1,0
+30032,Catemaco,hiking,land_adventure,14,GOVPROOF-COM26SEP20-hiking-30032|WEBPRODUCT-030-01|WEBPRODUCT-036-03|WEBPRODUCT-257-01|WEBPRODUCT-267-02|WEBPRODUCT-277-03|WEBPRODUCT-288-02|WEBPRODUCT2-257-hiking-30032|WEBPRODUCT2-259-hiking-30032|WEBPRODUCT2-260-hiking-30032|WEBPRODUCT2-261-hiking-30032|WEBPRODUCT2-267-hiking-30032|WEBPRODUCT2-277-hiking-30032|WEBPRODUCT2-287-hiking-30032,OFFICIAL-COM26SEP20|WEB4,https://veracruz.mx/productos.php|https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/,13,1
+30032,Catemaco,kayaking,water_adventure,5,WEBPRODUCT-036-02|WEBPRODUCT-039-01|WEBPRODUCT-286-01|WEBPRODUCT2-286-kayaking-30032|CAT25-C0106,WEB4|PDF4,https://veracruz.mx/productos.php|https://veracruz.mx/catalogo_de_experiencias_web.pdf,5,0
+30032,Catemaco,massage,wellness_spiritual,1,WEBPRODUCT-043-01,WEB4,https://veracruz.mx/productos.php,1,0
+30032,Catemaco,mineral_clay_treatment,traditional_crafts,4,WEBPRODUCT-030-03|WEBPRODUCT-036-01|WEBPRODUCT-038-01|WEBPRODUCT-090-03,WEB4,https://veracruz.mx/productos.php,4,0
+30032,Catemaco,natural_pool_jumping,other_specific_unclassified,3,CAT25-C0034|WEBPRODUCT-277-02|WEBPRODUCT2-277-natural_pool_jumping-30032,PDF2|WEB4,https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://veracruz.mx/productos.php,3,0
+30032,Catemaco,rappelling,land_adventure,3,WEBPRODUCT-277-01|WEBPRODUCT-288-01|WEBPRODUCT2-277-rappelling-30032,WEB4,https://veracruz.mx/productos.php,3,0
+30032,Catemaco,spiritual_cleansing_ritual,wellness_spiritual,3,WEBPRODUCT-030-02|WEBPRODUCT-042-01|WEBPRODUCT-090-02,WEB4,https://veracruz.mx/productos.php,3,0
+30032,Catemaco,swimming,water_adventure,1,WEBPRODUCT2-259-natural_pool_swimming-30032,WEB4,https://veracruz.mx/productos.php,1,0
+30032,Catemaco,temazcal,wellness_spiritual,4,WEBPRODUCT-032-01|WEBPRODUCT-037-01|WEBPRODUCT-040-01|WEBPRODUCT-041-01,WEB4,https://veracruz.mx/productos.php,4,0
+30032,Catemaco,traditional_cooking_workshop,food_agriculture,1,WEBPRODUCT-266-01,WEB4,https://veracruz.mx/productos.php,1,0
+30038,Coatepec,4x4_mountain_transfer,land_adventure,1,CAT25-C0019,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30038,Coatepec,canyoning,land_adventure,1,GOVPROOF-SECTUR_NAT-canyoning-30038,OFFICIAL-SECTUR_NAT,https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/,0,1
+30038,Coatepec,coffee_cupping,food_agriculture,5,WEBPRODUCT-145-02|WEBPRODUCT-217-01|WEBPRODUCT2-105-coffee_cupping-30038|WEBPRODUCT2-143-coffee_cupping-30038|WEBPRODUCT2-203-coffee_cupping-30038,WEB4,https://veracruz.mx/productos.php,5,0
+30038,Coatepec,coffee_farm_visit,food_agriculture,5,WEBPRODUCT-005-02|WEBPRODUCT-145-01|WEBPRODUCT2-172-coffee_farm_guided_visit-30038|WEBPRODUCT2-203-coffee_farm_guided_visit-30038|WEBPRODUCT2-209-coffee_farm_guided_visit-30038,WEB4,https://veracruz.mx/productos.php,5,0
+30038,Coatepec,coffee_roasting,food_agriculture,4,WEBPRODUCT-217-02|WEBPRODUCT2-105-coffee_roasting_demonstration-30038|WEBPRODUCT2-143-coffee_roasting_demonstration-30038|WEBPRODUCT2-172-coffee_roasting_demonstration-30038,WEB4,https://veracruz.mx/productos.php,4,0
+30038,Coatepec,coffee_tasting,food_agriculture,3,CAT25-C0020|WEBVERIFY-113-01|CAT25-C0150,PDF1|WEB4|PDF5,https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://veracruz.mx/productos.php,3,0
+30038,Coatepec,horseback_riding,land_adventure,1,CAT25-C0018,PDF1,https://veracruz.mx/catalogo_de_experiencias_web.pdf,1,0
+30038,Coatepec,museum_visit,history_culture,2,WEBPRODUCT-065-01|WEBPRODUCT2-169-coffee_museum_visit-30038,WEB4,https://veracruz.mx/productos.php,2,0
+30038,Coatepec,orchid_museum_visit,history_culture,2,STEP2-178-orchid_museum_visit-30038|CAT25-C0192,WEB4|PDF6,https://veracruz.mx/productos.php|https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://sic.gob.mx/ficha.php?table=museo&table_id=2304,2,0
+30068,Fortín,camping,land_adventure,1,WEBPRODUCT-190-04,WEB4,https://veracruz.mx/productos.php,1,0
+30068,Fortín,coffee_farm_visit,food_agriculture,3,WEBPRODUCT-156-01|WEBPRODUCT-157-04|WEBPRODUCT2-156-coffee_farm_guided_visit-30068,WEB4,https://veracruz.mx/productos.php,3,0
+30068,Fortín,coffee_grinding,food_agriculture,1,WEBPRODUCT-157-02,WEB4,https://veracruz.mx/productos.php,1,0
+30068,Fortín,coffee_harvesting,food_agriculture,1,WEBPRODUCT-190-03,WEB4,https://veracruz.mx/productos.php,1,0
+30068,Fortín,coffee_planting,food_agriculture,1,WEBPRODUCT-190-02,WEB4,https://veracruz.mx/productos.php,1,0
+30068,Fortín,coffee_roasting,food_agriculture,2,WEBPRODUCT-157-01|WEBPRODUCT-190-01,WEB4,https://veracruz.mx/productos.php,2,0
+30068,Fortín,coffee_tasting,food_agriculture,3,WEBPRODUCT-156-02|WEBPRODUCT-157-03|WEBPRODUCT2-156-coffee_tasting-30068,WEB4,https://veracruz.mx/productos.php,3,0
+30068,Fortín,hiking,land_adventure,2,WEBPRODUCT-190-05|WEBPRODUCT2-185-hiking-30068,WEB4,https://veracruz.mx/productos.php,2,0
+30068,Fortín,paragliding,land_adventure,1,WEBPRODUCT2-183-paragliding-30068,WEB4,https://veracruz.mx/productos.php,1,0
+30068,Fortín,temazcal,wellness_spiritual,1,WEBPRODUCT2-185-temazcal-30068,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,archaeological_visit,history_culture,9,STEP2-057-archaeological_site_visit-30124|WEBPRODUCT-004-01|WEBPRODUCT-011-01|WEBPRODUCT-088-01|WEBPRODUCT2-147-archaeological_visit-30124|WEBPRODUCT2-161-archaeological_visit-30124|WEBPRODUCT2-176-archaeological_visit-30124|WEBPRODUCT2-188-archaeological_visit-30124|WEBVERIFY-115-01,WEB4,https://veracruz.mx/productos.php,9,0
+30124,Papantla,aromatherapy,wellness_spiritual,3,WEBPRODUCT-125-03|WEBPRODUCT2-123-aromatherapy-30124|WEBPRODUCT2-125-aromatherapy-30124,WEB4,https://veracruz.mx/productos.php,3,0
+30124,Papantla,artisan_workshop,other_specific_unclassified,1,WEBPRODUCT-248-01,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,guided_city_tour,history_culture,1,WEBPRODUCT2-125-guided_city_tour-30124,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,guided_heritage_walk,history_culture,1,STEP2-057-guided_heritage_walk-30124,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,hiking,land_adventure,3,GOVPROOF-COM26SEP07-hiking-30124|WEBPRODUCT-125-01|WEBPRODUCT2-123-hiking-30124,OFFICIAL-COM26SEP07|WEB4,https://veracruz.mx/productos.php|https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/,2,1
+30124,Papantla,hydrotherapy,wellness_spiritual,3,WEBPRODUCT-125-02|WEBPRODUCT2-123-hydrotherapy-30124|WEBPRODUCT2-125-hydrotherapy-30124,WEB4,https://veracruz.mx/productos.php,3,0
+30124,Papantla,medicinal_plant_walk,wellness_spiritual,2,WEBPRODUCT-253-01|WEBPRODUCT-254-01,WEB4,https://veracruz.mx/productos.php,2,0
+30124,Papantla,museum_visit,history_culture,1,WEBPRODUCT-247-01,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,spiritual_cleansing_ritual,wellness_spiritual,4,WEBPRODUCT-125-04|WEBPRODUCT-254-02|WEBPRODUCT2-123-spiritual_cleansing_ritual-30124|WEBPRODUCT2-282-spiritual_cleansing_ritual-30124,WEB4,https://veracruz.mx/productos.php,4,0
+30124,Papantla,traditional_cooking_workshop,food_agriculture,2,WEBPRODUCT-253-02|WEBPRODUCT2-281-traditional_cooking_workshop-30124,WEB4,https://veracruz.mx/productos.php,2,0
+30124,Papantla,traditional_medicine_experience,wellness_spiritual,1,WEBPRODUCT-125-05,WEB4,https://veracruz.mx/productos.php,1,0
+30124,Papantla,vanilla_extract_workshop,food_agriculture,2,WEBPRODUCT-250-01|WEBPRODUCT-254-03,WEB4,https://veracruz.mx/productos.php,2,0
+30124,Papantla,vanilla_planting,food_agriculture,1,WEBPRODUCT-249-01,WEB4,https://veracruz.mx/productos.php,1,0
+30141,San Andrés Tuxtla,birdwatching,nature_observation,2,WEBPRODUCT-151-01|WEBPRODUCT2-151-birdwatching-30141,WEB4,https://veracruz.mx/productos.php,2,0
+30141,San Andrés Tuxtla,boat_excursion,water_adventure,2,WEBPRODUCT-003-03|WEBPRODUCT-245-02,WEB4,https://veracruz.mx/productos.php,2,0
+30141,San Andrés Tuxtla,canyoning,land_adventure,2,CAT25-C0032|WEBPRODUCT-285-03,PDF2|WEB4,https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://veracruz.mx/productos.php,2,0
+30141,San Andrés Tuxtla,diving,water_adventure,1,WEBPRODUCT-024-01,WEB4,https://veracruz.mx/productos.php,1,0
+30141,San Andrés Tuxtla,hiking,land_adventure,2,WEBPRODUCT-025-03|WEBPRODUCT-284-02,WEB4,https://veracruz.mx/productos.php,2,0
+30141,San Andrés Tuxtla,kayaking,water_adventure,2,WEBPRODUCT-026-01|WEBPRODUCT-027-01,WEB4,https://veracruz.mx/productos.php,2,0
+30141,San Andrés Tuxtla,marine_cave_exploration,land_adventure,1,WEBPRODUCT-284-03,WEB4,https://veracruz.mx/productos.php,1,0
+30141,San Andrés Tuxtla,natural_pool_jumping,other_specific_unclassified,3,WEBPRODUCT-025-02|WEBPRODUCT-285-02|WEBPRODUCT2-285-natural_pool_jumping-30141,WEB4,https://veracruz.mx/productos.php,3,0
+30141,San Andrés Tuxtla,rappelling,land_adventure,8,WEBPRODUCT-003-01|WEBPRODUCT-025-01|WEBPRODUCT-027-02|WEBPRODUCT-028-01|WEBPRODUCT-278-02|WEBPRODUCT-285-01|WEBPRODUCT2-283-rappelling-30141|WEBPRODUCT2-285-rappelling-30141,WEB4,https://veracruz.mx/productos.php,8,0
+30141,San Andrés Tuxtla,snorkeling,water_adventure,4,CAT25-C0015|WEBPRODUCT-003-02|WEBPRODUCT-284-01|WEBPRODUCT2-284-snorkeling-30141,PDF1|WEB4,https://veracruz.mx/catalogo_de_experiencias_web.pdf|https://veracruz.mx/productos.php,4,0
+30141,San Andrés Tuxtla,traditional_cooking_workshop,food_agriculture,1,WEBPRODUCT-245-01,WEB4,https://veracruz.mx/productos.php,1,0
+30141,San Andrés Tuxtla,waterfall_visit,nature_observation,2,STEP2-056-waterfall_visit-30141|CAT25-C0076,WEB4|PDF3,https://veracruz.mx/productos.php|https://veracruz.mx/catalogo_de_experiencias_web.pdf,2,0
+30141,San Andrés Tuxtla,ziplining,land_adventure,1,WEBPRODUCT-278-01,WEB4,https://veracruz.mx/productos.php,1,0

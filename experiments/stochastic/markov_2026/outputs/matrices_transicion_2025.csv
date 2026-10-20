@@ -1,0 +1,28 @@
+centro,estado_origen,estado_destino,conteo_2025,probabilidad_suavizada
+Coatzacoalcos,Baja,Baja,0,0.33333
+Coatzacoalcos,Baja,Media,0,0.33333
+Coatzacoalcos,Baja,Alta,0,0.33333
+Coatzacoalcos,Media,Baja,0,0.1
+Coatzacoalcos,Media,Media,5,0.6
+Coatzacoalcos,Media,Alta,2,0.3
+Coatzacoalcos,Alta,Baja,0,0.14286
+Coatzacoalcos,Alta,Media,2,0.42857
+Coatzacoalcos,Alta,Alta,2,0.42857
+Veracruz-Boca del Río,Baja,Baja,0,0.33333
+Veracruz-Boca del Río,Baja,Media,0,0.33333
+Veracruz-Boca del Río,Baja,Alta,0,0.33333
+Veracruz-Boca del Río,Media,Baja,0,0.125
+Veracruz-Boca del Río,Media,Media,3,0.5
+Veracruz-Boca del Río,Media,Alta,2,0.375
+Veracruz-Boca del Río,Alta,Baja,0,0.2
+Veracruz-Boca del Río,Alta,Media,1,0.4
+Veracruz-Boca del Río,Alta,Alta,1,0.4
+Xalapa,Baja,Baja,0,0.16667
+Xalapa,Baja,Media,2,0.5
+Xalapa,Baja,Alta,1,0.33333
+Xalapa,Media,Baja,1,0.22222
+Xalapa,Media,Media,4,0.55556
+Xalapa,Media,Alta,1,0.22222
+Xalapa,Alta,Baja,1,0.4
+Xalapa,Alta,Media,1,0.4
+Xalapa,Alta,Alta,0,0.2

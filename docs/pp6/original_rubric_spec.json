@@ -1,0 +1,175 @@
+{
+  "version": "2026-10-20_original_PP_rubric",
+  "source": {
+    "document": "Copia de PROBLEMA PROTOT-PICO 5-- LCDN-2026-2.pdf",
+    "edition": "2026-2",
+    "rubric_pages": [
+      6,
+      7,
+      8
+    ],
+    "deliverable_pages": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "weights": [
+    [
+      "problem",
+      8,
+      "Planteamiento y comprensión del problema"
+    ],
+    [
+      "big_data",
+      12,
+      "Gestión y almacenamiento de grandes volúmenes de datos"
+    ],
+    [
+      "data_mining",
+      12,
+      "Minería de datos"
+    ],
+    [
+      "machine_learning",
+      12,
+      "Aprendizaje de máquina"
+    ],
+    [
+      "stochastic",
+      10,
+      "Modelos estocásticos"
+    ],
+    [
+      "operations_research",
+      12,
+      "Investigación de Operaciones"
+    ],
+    [
+      "digital_marketing",
+      8,
+      "Mercadotecnia Digital"
+    ],
+    [
+      "integration",
+      10,
+      "Integración interdisciplinaria"
+    ],
+    [
+      "solution",
+      8,
+      "Propuesta de solución e impacto"
+    ],
+    [
+      "communication",
+      4,
+      "Informe técnico y comunicación de resultados"
+    ],
+    [
+      "colloquium",
+      4,
+      "Coloquio: exposición y defensa"
+    ]
+  ],
+  "products": [
+    {
+      "id": "campaign",
+      "name": "Campaña publicitaria integral",
+      "requirements": [
+        "documented data",
+        "public and buyer persona",
+        "brand and visual identity",
+        "media/channel selection",
+        "advertising creatives",
+        "campaign implementation on selected channels",
+        "resource allocation",
+        "performance and impact measurement"
+      ],
+      "pages": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "technical_report",
+      "name": "Informe técnico",
+      "suggested_pages_excluding_appendices": [
+        30,
+        40
+      ],
+      "required_sections": [
+        "cover",
+        "introduction",
+        "problem",
+        "research questions",
+        "justification",
+        "sources",
+        "data architecture",
+        "preparation and quality",
+        "data mining",
+        "machine learning",
+        "stochastic scenarios",
+        "OR model",
+        "digital marketing",
+        "integration",
+        "campaign design",
+        "scenario comparison",
+        "budget optimization",
+        "performance and impact indicators",
+        "campaign proposal",
+        "conclusions",
+        "limitations",
+        "references",
+        "technical appendices"
+      ],
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "technical_artifacts",
+      "name": "Productos técnicos",
+      "requirements": [
+        "databases",
+        "data dictionary",
+        "code",
+        "developed models",
+        "notebooks",
+        "queries",
+        "diagrams",
+        "visualizations",
+        "simulation outputs",
+        "optimization outputs",
+        "technical documentation"
+      ],
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "colloquium",
+      "name": "Presentación para el coloquio",
+      "max_minutes": 15,
+      "required": [
+        "integrated explanation",
+        "all teammates participate",
+        "defend methodology, decisions and results with evidence"
+      ],
+      "pages": [
+        6,
+        8
+      ]
+    }
+  ],
+  "course_sources": [
+    "LCDN_5_MINERIA DE DATOS_FINAL.pdf",
+    "LCDN_5_MODELOS ESTOCASTICOS PARA LA TOMA DE DECISIONES_FINAL.pdf",
+    "iNVESTIGACI-N DE OPERACIONES.pdf",
+    "LCDN_5_HERRAMIENTAS PARA EL ALMACENAMIENTO DE GRANDES VOLUMENES_FINAL.pdf",
+    "PRESENTACION INICIO MERCADOTECNIA DIGITAL 26-2.pptx.pdf"
+  ],
+  "interpretation": "Source PDFs retrieved from prior chat in ChatGPT. The specification records genuine requirements; PASS on spec is not certification of submission."
+}

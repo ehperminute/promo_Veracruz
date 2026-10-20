@@ -1,0 +1,13 @@
+umbrales,centro,n,aciertos_markov,aciertos_persistencia,brier_markov,brier_marginal
+35/45,Coatzacoalcos,7,6,6,0.4278,0.6438
+35/45,Veracruz-Boca del Río,6,1,1,0.8477,0.5289
+35/45,Xalapa,7,6,1,0.5223,0.5384
+35/45,TODOS,20,13,8,0.5868,0.5725
+40/50,Coatzacoalcos,7,1,2,0.7863,0.7327
+40/50,Veracruz-Boca del Río,6,3,3,0.6163,0.5592
+40/50,Xalapa,7,4,3,0.6217,0.5575
+40/50,TODOS,20,8,8,0.6777,0.6193
+45/55,Coatzacoalcos,7,6,6,0.4847,0.6552
+45/55,Veracruz-Boca del Río,6,1,1,0.9126,0.7025
+45/55,Xalapa,7,6,1,0.4223,0.5194
+45/55,TODOS,20,13,8,0.5912,0.6219

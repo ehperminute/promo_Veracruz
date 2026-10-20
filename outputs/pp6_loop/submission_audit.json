@@ -1,0 +1,173 @@
+{
+  "spec_version": "2026-10-20_original_PP_rubric",
+  "rubric_criteria": 11,
+  "rubric_weight_total": 100,
+  "deliverables_expected": [
+    "campaign",
+    "technical_report",
+    "technical_artifacts",
+    "colloquium"
+  ],
+  "technical_report_suggested_pages": [
+    30,
+    40
+  ],
+  "report_current_draft_lines": 48,
+  "report_sections_required": 23,
+  "report_final_certified": false,
+  "items": [
+    {
+      "id": "research_database",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "data/recovered_source_descriptions/veracruz_pp3_master_with_originals.sqlite"
+      ],
+      "missing_files": [],
+      "caveat": "Existing restored research database, not a substitute for missing source archives"
+    },
+    {
+      "id": "processing_and_analytics_code",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "scripts/pp6/run_loop.py",
+        "experiments/pp6_second_pass/run_pass.py"
+      ],
+      "missing_files": [],
+      "caveat": "Reproducibility must still be tested on clean environments"
+    },
+    {
+      "id": "source_provenance",
+      "product": "technical_artifacts",
+      "state": "PARTIAL",
+      "present_files": [
+        "experiments/pp6_second_pass/results/database_audit.json"
+      ],
+      "missing_files": [],
+      "caveat": "Raw archival rebuild remains unavailable in compact transfer"
+    },
+    {
+      "id": "mining_outputs",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "experiments/pp6_second_pass/results/s4_evidence_discovery.json"
+      ],
+      "missing_files": [],
+      "caveat": "Source-supported activity matching, not visitor segmentation"
+    },
+    {
+      "id": "ml_evaluation",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "experiments/pp6_second_pass/results/s5_paired_metrics.csv"
+      ],
+      "missing_files": [],
+      "caveat": "Paired retrospective benchmark; not validated deployment predictor"
+    },
+    {
+      "id": "stochastic_evaluation",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "experiments/pp6_second_pass/results/s6_interval_audit.json",
+        "experiments/stochastic/markov_2026/outputs/resumen_validacion_markov.csv"
+      ],
+      "missing_files": [],
+      "caveat": "Interval and negative Markov results; no invented response probabilities"
+    },
+    {
+      "id": "or_optimization",
+      "product": "technical_artifacts",
+      "state": "PRESENT",
+      "present_files": [
+        "experiments/pp6_second_pass/results/s7_evidence_sensitive_optimization.json"
+      ],
+      "missing_files": [],
+      "caveat": "Six-placement optimization with illustrative costs"
+    },
+    {
+      "id": "campaign_source_ledger",
+      "product": "campaign",
+      "state": "PRESENT",
+      "present_files": [
+        "experiments/pp6_second_pass/results/s8_campaign_claims_evidence.csv"
+      ],
+      "missing_files": [],
+      "caveat": "Archived citation checks only; operators/access must be confirmed"
+    },
+    {
+      "id": "campaign_test_matrix",
+      "product": "campaign",
+      "state": "PRESENT",
+      "present_files": [
+        "outputs/marketing/foreign_campaign_test_matrix_v1.csv"
+      ],
+      "missing_files": [],
+      "caveat": "Planned test cells, not observed campaign data"
+    },
+    {
+      "id": "brand_and_buyer_persona",
+      "product": "campaign",
+      "state": "PARTIAL",
+      "present_files": [
+        "docs/MARKETING_SEGMENTATION.md"
+      ],
+      "missing_files": [],
+      "caveat": "Existing audience hypotheses; final integrated branding/persona/positioning not certified"
+    },
+    {
+      "id": "channel_allocation",
+      "product": "campaign",
+      "state": "PARTIAL",
+      "present_files": [
+        "docs/marketing/foreign_campaign_test_matrix_v1.csv"
+      ],
+      "missing_files": [],
+      "caveat": "Hypothetical six-placement budget is not verified allocation across real media prices"
+    },
+    {
+      "id": "live_implementation",
+      "product": "campaign",
+      "state": "EXTERNAL",
+      "present_files": [],
+      "missing_files": [],
+      "caveat": "No evidence of completed ads on selected channels; do not invent spend or conversions"
+    },
+    {
+      "id": "conversion_impact_tracking",
+      "product": "campaign",
+      "state": "EXTERNAL",
+      "present_files": [],
+      "missing_files": [],
+      "caveat": "Tracking, visit redistribution and environmental impact have not been observed"
+    },
+    {
+      "id": "report_draft",
+      "product": "technical_report",
+      "state": "PARTIAL",
+      "present_files": [
+        "outputs/pp6_loop/TECHNICAL_REPORT_DRAFT_ES.md"
+      ],
+      "missing_files": [],
+      "caveat": "Draft is not the required 30–40-page technical report and does not contain all 23 sections"
+    },
+    {
+      "id": "integrated_colloquium",
+      "product": "colloquium",
+      "state": "MISSING",
+      "present_files": [],
+      "missing_files": [],
+      "caveat": "A final <=15-minute integrated defense deck and speaking plan have not been verified"
+    }
+  ],
+  "state_counts": {
+    "PRESENT": 8,
+    "PARTIAL": 4,
+    "MISSING": 1,
+    "EXTERNAL": 2
+  },
+  "conclusion": "This is an inventory and gap audit, NOT a grade or certification of the final academic submission."
+}

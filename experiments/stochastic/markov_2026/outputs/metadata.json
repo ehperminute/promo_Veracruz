@@ -1,0 +1,22 @@
+{
+  "source": "DataTur monthly Veracruz published archive; repo reference file data/reference/datatur_veracruz_monthly_2025_2026.csv",
+  "training": "2025",
+  "test": "2026-01 through 2026-07, consecutive months only",
+  "state_thresholds": {
+    "low": "<40%",
+    "medium": "40%-<50%",
+    "high": ">=50%"
+  },
+  "smoothing": "Laplace alpha=1",
+  "simulation": "1000 trajectories x 12 steps; no forecasting validity claim",
+  "overall": {
+    "train_transitions": 29,
+    "test_n": 20,
+    "markov_correct": 8,
+    "persistence_correct": 8,
+    "markov_accuracy": 0.4,
+    "persistence_accuracy": 0.4,
+    "markov_brier": 0.6776857048374906,
+    "baseline_marginal_brier": 0.619324150596878
+  }
+}

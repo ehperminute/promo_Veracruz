@@ -1,0 +1,53 @@
+{
+  "centers": 3,
+  "comparison": [
+    {
+      "baseline": "last_month",
+      "baseline_mae_pp": 6.501813001701238,
+      "block_bootstrap_95pct_lower_pp": 0.28651130154130355,
+      "block_bootstrap_95pct_upper_pp": 1.4708435365223824,
+      "forest_mae_pp": 5.593486130831215,
+      "improvement_pp": 0.9083268708700223,
+      "months_n": 19,
+      "paired_n": 52,
+      "resampling_note": "Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines."
+    },
+    {
+      "baseline": "seasonal_naive",
+      "baseline_mae_pp": 5.81206606752967,
+      "block_bootstrap_95pct_lower_pp": -0.8357624033696894,
+      "block_bootstrap_95pct_upper_pp": 1.2154233995503823,
+      "forest_mae_pp": 5.593486130831215,
+      "improvement_pp": 0.21857993669845222,
+      "months_n": 19,
+      "paired_n": 52,
+      "resampling_note": "Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines."
+    },
+    {
+      "baseline": "three_month_mean",
+      "baseline_mae_pp": 5.664505045023595,
+      "block_bootstrap_95pct_lower_pp": -1.0393191693887651,
+      "block_bootstrap_95pct_upper_pp": 1.112479239844635,
+      "forest_mae_pp": 5.593486130831215,
+      "improvement_pp": 0.07101891419237984,
+      "months_n": 19,
+      "paired_n": 52,
+      "resampling_note": "Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines."
+    },
+    {
+      "baseline": "historical_month_mean",
+      "baseline_mae_pp": 7.931396394547395,
+      "block_bootstrap_95pct_lower_pp": -0.055936742287645905,
+      "block_bootstrap_95pct_upper_pp": 4.672697603146351,
+      "forest_mae_pp": 5.593486130831215,
+      "improvement_pp": 2.337910263716179,
+      "months_n": 19,
+      "paired_n": 52,
+      "resampling_note": "Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines."
+    }
+  ],
+  "conclusion": "The forest improves on last_month persistence, but its advantage over the three-month mean and seasonal-naive baselines is too small/uncertain here to justify an operational forecast feature.",
+  "paired_months": 19,
+  "paired_predictions": 52,
+  "total_forest_predictions": 53
+}

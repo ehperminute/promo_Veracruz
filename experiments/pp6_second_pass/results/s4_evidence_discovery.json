@@ -1,0 +1,279 @@
+{
+  "campaign_distinct_feature_links": 66,
+  "campaign_links_with_original_text_support": 65,
+  "campaign_links_without_original_text_support": [
+    {
+      "feature_id": "canyoning",
+      "municipality": "Coatepec"
+    }
+  ],
+  "documented_activity_pair_count": 216,
+  "interpretation": "Recommendations are exact documented activity intersections, not predicted tourist tastes; unlisted activities have unknown status, not established absence.",
+  "recommendations_any_evidence": [
+    {
+      "matched_count": 2,
+      "matches": [
+        {
+          "activity": "birdwatching",
+          "claim_ids": [
+            "GOVPROOF-COM26SEP20-birdwatching-30032",
+            "WEBPRODUCT-035-01",
+            "WEBPRODUCT2-263-birdwatching-30032",
+            "WEBPRODUCT2-265-birdwatching-30032"
+          ],
+          "family": "nature_observation",
+          "original_text_support_count": 3,
+          "source_ids": [
+            "OFFICIAL-COM26SEP20",
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "activity": "kayaking",
+          "claim_ids": [
+            "WEBPRODUCT-036-02",
+            "WEBPRODUCT-039-01",
+            "WEBPRODUCT-286-01",
+            "WEBPRODUCT2-286-kayaking-30032",
+            "CAT25-C0106"
+          ],
+          "family": "water_adventure",
+          "original_text_support_count": 5,
+          "source_ids": [
+            "WEB4",
+            "PDF4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ],
+      "municipality": "Catemaco",
+      "municipality_id": "30032",
+      "original_text_supported_matches": 2
+    },
+    {
+      "matched_count": 2,
+      "matches": [
+        {
+          "activity": "birdwatching",
+          "claim_ids": [
+            "WEBPRODUCT-151-01",
+            "WEBPRODUCT2-151-birdwatching-30141"
+          ],
+          "family": "nature_observation",
+          "original_text_support_count": 2,
+          "source_ids": [
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "activity": "kayaking",
+          "claim_ids": [
+            "WEBPRODUCT-026-01",
+            "WEBPRODUCT-027-01"
+          ],
+          "family": "water_adventure",
+          "original_text_support_count": 2,
+          "source_ids": [
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ],
+      "municipality": "San Andrés Tuxtla",
+      "municipality_id": "30141",
+      "original_text_supported_matches": 2
+    }
+  ],
+  "recommendations_with_original_text": [
+    {
+      "matched_count": 2,
+      "matches": [
+        {
+          "activity": "birdwatching",
+          "claim_ids": [
+            "GOVPROOF-COM26SEP20-birdwatching-30032",
+            "WEBPRODUCT-035-01",
+            "WEBPRODUCT2-263-birdwatching-30032",
+            "WEBPRODUCT2-265-birdwatching-30032"
+          ],
+          "family": "nature_observation",
+          "original_text_support_count": 3,
+          "source_ids": [
+            "OFFICIAL-COM26SEP20",
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "activity": "kayaking",
+          "claim_ids": [
+            "WEBPRODUCT-036-02",
+            "WEBPRODUCT-039-01",
+            "WEBPRODUCT-286-01",
+            "WEBPRODUCT2-286-kayaking-30032",
+            "CAT25-C0106"
+          ],
+          "family": "water_adventure",
+          "original_text_support_count": 5,
+          "source_ids": [
+            "WEB4",
+            "PDF4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ],
+      "municipality": "Catemaco",
+      "municipality_id": "30032",
+      "original_text_supported_matches": 2
+    },
+    {
+      "matched_count": 2,
+      "matches": [
+        {
+          "activity": "birdwatching",
+          "claim_ids": [
+            "WEBPRODUCT-151-01",
+            "WEBPRODUCT2-151-birdwatching-30141"
+          ],
+          "family": "nature_observation",
+          "original_text_support_count": 2,
+          "source_ids": [
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "activity": "kayaking",
+          "claim_ids": [
+            "WEBPRODUCT-026-01",
+            "WEBPRODUCT-027-01"
+          ],
+          "family": "water_adventure",
+          "original_text_support_count": 2,
+          "source_ids": [
+            "WEB4"
+          ],
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ],
+      "municipality": "San Andrés Tuxtla",
+      "municipality_id": "30141",
+      "original_text_supported_matches": 2
+    }
+  ],
+  "stored_exploratory_clustering_views": [
+    {
+      "historical_only": true,
+      "silhouette": 0.4919,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "candidate_core38_families"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.4492,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "candidate_core38_legacy9"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.1388,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 7,
+      "view": "candidate_core38_recurring_specific"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.559,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "candidate_evidenced48_families"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.4824,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "candidate_evidenced48_legacy9"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.1656,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "candidate_evidenced48_recurring_specific"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.4078,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 6,
+      "view": "core29_families"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.4904,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "core29_legacy9"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.1158,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 5,
+      "view": "core29_recurring_specific"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.5987,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "evidenced46_families"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.4248,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 7,
+      "view": "evidenced46_legacy9"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.3007,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 8,
+      "view": "evidenced46_recurring_specific"
+    },
+    {
+      "historical_only": true,
+      "silhouette": 0.432,
+      "singletons": 0,
+      "top_k_by_stored_penalized_score": 6,
+      "view": "original55_legacy9"
+    }
+  ]
+}

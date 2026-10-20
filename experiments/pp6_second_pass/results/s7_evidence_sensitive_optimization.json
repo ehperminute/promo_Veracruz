@@ -1,0 +1,42 @@
+{
+  "all_documented": {
+    "accepted_activity_types_covered": 47,
+    "activity_types_eligible": 78,
+    "assumed_cost_mxn": 30000,
+    "budget_mxn": 30000,
+    "candidate_municipalities": 61,
+    "objective_types_covered": 47,
+    "original_text_supported_types_covered": 47,
+    "proof": "scipy.optimize.milp solved to optimality",
+    "selected_municipalities": [
+      "Atlahuilco",
+      "Catemaco",
+      "Coatepec",
+      "Fortín",
+      "Papantla",
+      "San Andrés Tuxtla"
+    ],
+    "selected_n": 6,
+    "strict_original_text_constraint": false
+  },
+  "strict_original_text": {
+    "accepted_activity_types_covered": 47,
+    "activity_types_eligible": 71,
+    "assumed_cost_mxn": 30000,
+    "budget_mxn": 30000,
+    "candidate_municipalities": 61,
+    "objective_types_covered": 47,
+    "original_text_supported_types_covered": 47,
+    "proof": "scipy.optimize.milp solved to optimality",
+    "selected_municipalities": [
+      "Atlahuilco",
+      "Catemaco",
+      "Coatepec",
+      "Fortín",
+      "Papantla",
+      "San Andrés Tuxtla"
+    ],
+    "selected_n": 6,
+    "strict_original_text_constraint": true
+  }
+}

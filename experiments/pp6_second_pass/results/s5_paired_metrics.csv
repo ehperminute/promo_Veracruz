@@ -1,0 +1,7 @@
+model,n_paired,mae
+tuned_forest,52,5.59348613
+original_forest,52,5.73678462
+last_month,52,6.50181300
+seasonal_naive,52,5.81206607
+three_month_mean,52,5.66450505
+historical_month_mean,52,7.93139639

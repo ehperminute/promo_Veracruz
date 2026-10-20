@@ -26,7 +26,13 @@ def test_export_uses_s4_profiles_and_named_clusters():
     for entry in data:
         p = profiles.loc[entry["name"]]
         expected = [label for column, label in themes.items() if p[column] == 1]
-        assert entry["themes"] == expected
+        # model_themes is the historic PAM input. Public "adventure" is a
+        # separate, source-backed browsing label, deliberately appended last.
+        assert entry["model_themes"] == expected
+        expected_public = [item for item in expected if item != "adventure"]
+        if entry["adventure_activities"]:
+            expected_public.append("adventure")
+        assert entry["themes"] == expected_public
         assert entry["cluster"]["medoid"] == memberships.loc[entry["name"], "cluster_medoid"]
         for lang in ("en", "es", "ja"):
             assert entry["cluster"]["name"][lang].strip()

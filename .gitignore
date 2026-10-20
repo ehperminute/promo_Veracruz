@@ -10,3 +10,7 @@ data/external/*.xlsx
 /.veracruz_osm_checkpoints/
 *.osm.pbf
 /pp6_second_pass.zip
+/outputs/pp6_loop/logs/
+
+# Local transfer archives
+/*.zip

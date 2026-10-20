@@ -1,0 +1,37 @@
+{
+  "by_center": [
+    {
+      "center": "Coatzacoalcos",
+      "coverage_change": 0.21052631578947367,
+      "fixed_coverage": 0.6842105263157895,
+      "fixed_width_pp": 10.19428038843877,
+      "n_evaluated": 19,
+      "rolling12_coverage": 0.8947368421052632,
+      "rolling12_width_pp": 15.717794549159205,
+      "width_change_pp": 5.523514160720435
+    },
+    {
+      "center": "Veracruz-Boca del Río",
+      "coverage_change": 0.0,
+      "fixed_coverage": 0.9333333333333332,
+      "fixed_width_pp": 24.44154189940484,
+      "n_evaluated": 15,
+      "rolling12_coverage": 0.9333333333333332,
+      "rolling12_width_pp": 26.69547106454549,
+      "width_change_pp": 2.253929165140651
+    },
+    {
+      "center": "Xalapa",
+      "coverage_change": -0.052631578947368474,
+      "fixed_coverage": 0.8947368421052632,
+      "fixed_width_pp": 21.13848842360481,
+      "n_evaluated": 19,
+      "rolling12_coverage": 0.8421052631578947,
+      "rolling12_width_pp": 45.20446989796629,
+      "width_change_pp": 24.065981474361482
+    }
+  ],
+  "interpretation": "Recomputed historical interval metrics are internally consistent. Wider intervals can yield higher coverage; neither predictive calibration for new locations nor tourist demand estimates follow.",
+  "metric_rows_checked": 12,
+  "prediction_rows_checked": 212
+}

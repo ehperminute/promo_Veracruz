@@ -1,0 +1,5 @@
+baseline,paired_n,months_n,forest_mae_pp,baseline_mae_pp,improvement_pp,block_bootstrap_95pct_lower_pp,block_bootstrap_95pct_upper_pp,resampling_note
+last_month,52,19,5.59348613,6.50181300,0.90832687,0.34263226,1.47706192,Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines.
+seasonal_naive,52,19,5.59348613,5.81206607,0.21857994,-0.73318980,1.12615544,Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines.
+three_month_mean,52,19,5.59348613,5.66450505,0.07101891,-0.99407028,1.23022156,Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines.
+historical_month_mean,52,19,5.59348613,7.93139639,2.33791026,0.04926473,4.71206538,Illustrative circular 4-calendar-month block bootstrap with all centers grouped per month; 19 months is a short series; no formal superiority claim against all baselines.

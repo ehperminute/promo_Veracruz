@@ -1,0 +1,23 @@
+{
+  "accepted_specific_activity_pairs": 216,
+  "catalog_product_cards": 295,
+  "db": "data/recovered_source_descriptions/veracruz_pp3_master_with_originals.sqlite",
+  "external_14_distinct_municipalities": 14,
+  "external_14_review_records_in_separate_database": 40,
+  "integrity": "ok",
+  "municipalities": 212,
+  "municipalities_with_specific_activity_pairs": 61,
+  "note": "The external 14-municipality review is not merged into the original 216 homogeneous activity-pair observations. Archived source support is not proof of current opening/availability.",
+  "original_product_descriptions_restored": 295,
+  "pairs_with_recorded_original_text_support": 173,
+  "specific_activity_types": 78,
+  "verified_html_snapshots": [
+    {
+      "accessible": true,
+      "byte_count": 1127651,
+      "name": "verified_2026_10_06_snapshot_0483a351060d107a027e9a075e1838db1852ca13af04b36f8190aa7408ade3bf.html",
+      "recorded_byte_count": 1127651,
+      "valid_hash": true
+    }
+  ]
+}
