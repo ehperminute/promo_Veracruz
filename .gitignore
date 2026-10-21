@@ -17,3 +17,5 @@ data/external/*.xlsx
 
 # Local transfer archives
 /*.zip
+
+/*.zip
