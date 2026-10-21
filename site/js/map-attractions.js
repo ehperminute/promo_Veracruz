@@ -108,7 +108,7 @@ function render(){
  }
  if(matches.length>paging){const more=el('button','vxc-more',t().more+' ('+(matches.length-paging)+')');more.addEventListener('click',()=>{paging+=65;render();});panel.append(more);}
 }
-function marker(f){const p=f.properties,e=el('div','vxa-marker');e.tabIndex=0;e.setAttribute('role','button');e.setAttribute('aria-label',p.name);e.title=p.name;
+function marker(f){const p=f.properties,e=el('div','vxa-marker');e.tabIndex=0;e.setAttribute('role','button');e.setAttribute('aria-label',p.name);e.title=p.name;e.dataset.vxPlaceId=String(p.id||f.id);
  // MapLibre needs absolute positioned marker elements. Do not override its transform.
  e.style.position='absolute';const core=el('span','vxa-marker-icon',p.icon||'📍');e.append(core,el('span','vxa-marker-label',p.name));
  const entry=asEntry(f);

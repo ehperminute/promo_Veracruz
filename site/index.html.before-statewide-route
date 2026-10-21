@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Veracruz Tourism Intelligence
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css?v=8"
+    >
+
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
+<link rel="stylesheet" href="css/map-explorer.css?v=20261018-labels-guides-v1">
+<link rel="stylesheet" href="css/route-planner.css?v=20261018-route-click-fix-1">
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="header-inner">
+
+            <h1 data-i18n="title">
+                Veracruz Tourism Intelligence
+            </h1>
+
+            <p
+                class="subtitle"
+                data-i18n="subtitle"
+            >
+                Data-driven exploration of tourism
+                destinations in Veracruz
+            </p>
+
+
+            <div class="header-toolbar">
+
+                <nav>
+
+                    <a
+                        href="#experiences"
+                        data-i18n="nav_experiences"
+                    >
+                        Explore
+                    </a>
+
+                    <a
+                        href="#destinations"
+                        data-i18n="nav_destinations"
+                    >
+                        Destinations
+                    </a>
+
+                    <a
+                        href="#methods"
+                        data-i18n="nav_demo"
+                    >
+                        How it works
+                    </a>
+
+                    <a href="planner.html" data-i18n="nav_planner">Campaign Planner</a>
+
+                </nav>
+
+
+                <div class="language-control">
+
+                    <label
+                        for="language-select"
+                        data-i18n="language_label"
+                    >
+                        Language:
+                    </label>
+
+                    <select id="language-select">
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="es">
+                            Español
+                        </option>
+
+                        <option value="ja">
+                            日本語
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="experiences">
+            <h2 data-i18n="experience_title">Find your kind of Veracruz</h2>
+            <p data-i18n="experience_intro">Explore 12 experience collections based on documented destination characteristics. Choose one to discover its places.</p>
+            <div id="experience-gallery" class="experience-gallery" aria-live="polite"></div>
+        </section>
+
+
+        <section id="veracruz-map-section" aria-label="Interactive Veracruz tourist experiences map"></section>
+
+<section id="destinations">
+
+            <h2 data-i18n="destinations_title">
+                Destination Explorer
+            </h2>
+
+            <p data-i18n="destinations_text">
+                Find destinations by interests. Open a card
+                to see its recorded characteristics and why
+                it belongs to an experience group.
+            </p>
+
+
+            <div class="explorer-controls">
+
+                <input
+                    id="destination-search"
+                    type="text"
+                    placeholder="Search destinations..."
+                    data-i18n-placeholder="search_placeholder"
+                >
+
+
+                <select id="theme-filter">
+
+                    <option value="">
+                        All themes
+                    </option>
+
+                </select>
+
+
+                <select id="cluster-filter">
+
+                    <option value="">
+                        All clusters
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="destination-list"
+                class="destination-grid"
+            ></div>
+
+        </section>
+
+
+        <section id="methods" class="lab-section">
+            <div class="lab-heading">
+                <span class="lab-eyebrow" data-i18n="lab_badge">Project demonstration · not a travel feature</span>
+                <h2 data-i18n="lab_title">Explore how the groups were calculated</h2>
+                <p data-i18n="lab_intro">This optional teaching example uses the same nine profile fields as S4. It does not predict bookings, traffic or travel routes.</p>
+            </div>
+            <div class="lab-panel">
+                <h3 data-i18n="compare_title">Compare two destinations</h3>
+                <div class="lab-controls">
+                    <label><span data-i18n="compare_first">First destination</span><select id="demo-a"></select></label>
+                    <label><span data-i18n="compare_second">Second destination</span><select id="demo-b"></select></label>
+                </div>
+                <div id="demo-distance" aria-live="polite"></div>
+                <div id="demo-comparison"></div>
+            </div>
+            <div class="lab-panel">
+                <h3 data-i18n="pam_title">How representatives are selected</h3>
+                <p data-i18n="pam_intro">A small independent demonstration with four real destination profiles and two representatives. The published 12 groups were calculated separately using all 55 profiles.</p>
+                <div id="demo-pam" aria-live="polite"></div>
+            </div>
+            <p class="method-caution" data-i18n="lab_limitations">Theme indicators represent documented evidence, not intensity or popularity. Shared absent themes are ignored in distance calculations; the Pueblo Mágico indicator is counted even when both places are not designated.</p>
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js?v=8"></script>
+
+<script defer src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+<script defer src="js/map-explorer.js?v=20261018-attractions-v1"></script>
+
+<link rel="stylesheet" href="css/veracruz-guide-originals.css">
+<script defer src="js/veracruz-guide-originals-addon.js"></script>
+
+
+<link rel="stylesheet" href="css/map-attractions.css?v=20261018-fullcatalog1">
+<link rel="stylesheet" href="css/attraction-guide-route.css?v=20261018-v1">
+<script defer src="js/map-attractions.js?v=20261018-guide-route-v1"></script>
+<script defer src="js/route-planner.js?v=20261018-guide-route-v1"></script>
+</body>
+
+</html>

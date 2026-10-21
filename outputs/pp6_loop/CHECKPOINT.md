@@ -1,6 +1,6 @@
 # PP6 execution checkpoint
 
-- **S0_FULL_RAW_REBUILD**: BLOCKED — Slim transfer excludes frozen raw archives
+- **S0_FULL_RAW_REBUILD**: DEFERRED — All archived inputs appear present; full rebuild intentionally not run against working tree
 - **S0_DATABASE**: PASS — Recovered SQLite, source checksums and 295 descriptions verified
 - **S4_DISCOVERY**: PASS — Activity matches have source IDs; archived 65/66 campaign pairs have text support
 - **S5_FORECAST**: RESEARCH_PASS — 52 identical cases for baseline/model comparison; deployment superiority not established

@@ -1,0 +1,42 @@
+/* Single route-building surface; no 500-item native dropdowns. */
+#veracruz-map-section .vxw-panel{padding:16px;margin:12px 0;min-width:0;box-sizing:border-box;border:1px solid #bfcdc8;border-radius:14px;background:#fff;color:#18392d;scroll-margin-top:20px;font:inherit}
+#veracruz-map-section .vxw-title{font-size:1.05rem;margin:0 0 5px;font-weight:750}
+#veracruz-map-section .vxw-lead{font-size:.86rem;line-height:1.45;margin:0 0 14px;color:#526b62}
+#veracruz-map-section .vxw-search-wrap{position:relative;z-index:100}
+#veracruz-map-section .vxw-search{font:inherit;background:#fff;color:#152d28;border:1px solid #9bb5a8;border-radius:9px;padding:11px 12px;width:100%;min-width:0;box-sizing:border-box}
+#veracruz-map-section .vxw-search:focus{outline:2px solid #16866b;outline-offset:2px}
+#veracruz-map-section .vxw-results{position:absolute;left:0;right:0;top:calc(100% + 3px);z-index:1000;background:#fff;box-shadow:0 5px 22px #0002;max-height:245px;overflow:auto;border:1px solid #b7c7c1;border-radius:9px}
+#veracruz-map-section .vxw-results[hidden]{display:none}
+#veracruz-map-section .vxw-suggestion{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;border:0;border-bottom:1px solid #e9eeeb;padding:10px 12px;min-height:45px;width:100%;cursor:pointer;background:white;color:#163d30;font:inherit;font-size:.87rem}
+#veracruz-map-section .vxw-suggestion small{color:#52675e;font-size:.76rem}
+#veracruz-map-section .vxw-suggestion:hover,#veracruz-map-section .vxw-suggestion:focus{background:#e3f3e8}
+#veracruz-map-section .vxw-no-matches{padding:8px 11px;margin:0}
+#veracruz-map-section .vxw-panel button{font:inherit;cursor:pointer;border-radius:9px;min-height:39px;padding:8px 12px}
+#veracruz-map-section .vxw-panel button:disabled{opacity:.45;cursor:default}
+#veracruz-map-section button.vxw-pick{margin:9px 0 4px;width:100%;text-align:center;border:1px solid #a7c3b5;color:#145845;background:#eef7f2;font-size:.86rem}
+#veracruz-map-section button.vxw-pick.vxw-active{background:#1c755e;color:#fff;border-color:#1c755e}
+#veracruz-map-section .vxw-hint{margin:4px 0 9px;color:#4f6b60;font-size:.81rem}
+#veracruz-map-section .vxw-stops{list-style:none;padding:0;margin:0;display:grid;gap:5px;counter-reset:stops}
+#veracruz-map-section .vxw-stop{display:flex;align-items:center;gap:8px;justify-content:space-between;border:1px solid #e0e9e3;border-radius:10px;padding:8px;background:#f8faf8;min-width:0}
+#veracruz-map-section .vxw-stop-name{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}
+#veracruz-map-section .vxw-stop-name strong{font-size:.84rem;font-weight:650;overflow-wrap:anywhere}
+#veracruz-map-section .vxw-stop-role{font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:#267052}
+#veracruz-map-section .vxw-municipality{font-size:.73rem;color:#64786c}
+#veracruz-map-section .vxw-stop-actions{display:flex;gap:3px;flex-shrink:0}
+#veracruz-map-section .vxw-panel button.vxw-icon{width:31px;min-height:32px;padding:3px;border:1px solid #c9d5ce;background:white;color:#1a5842;font-size:1rem}
+#veracruz-map-section .vxw-panel button.vxw-remove{color:#ad3542}
+#veracruz-map-section .vxw-buttons{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+#veracruz-map-section .vxw-panel button.vxw-main{flex:2;background:#215d95;border-color:#215d95;color:white;font-weight:700;font-size:.86rem}
+#veracruz-map-section .vxw-panel button.vxw-subtle{flex:1;background:#fff;border-color:#a3b6ad;color:#1d5944;font-size:.83rem}
+#veracruz-map-section .vxw-status{margin:11px 0 4px;font-size:.83rem;line-height:1.45}
+#veracruz-map-section .vxw-status.vxw-error{color:#b22e32}
+#veracruz-map-section .vxw-summary{margin:10px 0;padding:10px;background:#e4f1ec;font-weight:750;border-radius:8px}
+#veracruz-map-section .vxw-summary[hidden]{display:none}
+#veracruz-map-section .vxw-directions{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+#veracruz-map-section .vxw-external{display:inline-flex;padding:9px 11px;border-radius:8px;border:1px solid #83afac;color:#115b68;text-decoration:none;font-size:.84rem;font-weight:650;background:#f3fafa}
+#veracruz-map-section .vxw-external:hover{background:#e0f3f3}
+#veracruz-map-section .vxw-directions-note{flex-basis:100%;color:#607368}
+#veracruz-map-section .vxw-caveat{font-size:.76rem;line-height:1.4;color:#6b7a72;margin:8px 0 0}
+#veracruz-map-section .vxw-map-open{position:absolute;left:12px;bottom:14px;z-index:25;border:1px solid #235f4e;border-radius:999px;background:#f5fff8;color:#184935;font-size:13px;font-weight:750;padding:11px 15px;box-shadow:0 3px 12px #0003;cursor:pointer}
+#veracruz-map-section.vxw-picking #vx-map{cursor:crosshair}
+@media(max-width:600px){#veracruz-map-section .vxw-panel{padding:12px}#veracruz-map-section .vxw-map-open{bottom:7px;left:7px}#veracruz-map-section .vxw-stop-actions{gap:1px}}

@@ -29,16 +29,9 @@
     },
     "S0_FULL_RAW_REBUILD": {
       "attempts": [],
-      "missing_inputs": [
-        "PIB_Turistico_Estatal_y_Municipal_2018-2022_.zip",
-        "denue_00_48-49_csv.zip",
-        "denue_00_56_shp.zip",
-        "denue_00_71_csv.zip",
-        "denue_00_72_1_csv.zip",
-        "denue_00_72_2_csv.zip"
-      ],
-      "reason": "Slim transfer excludes frozen raw archives",
-      "status": "BLOCKED"
+      "missing_inputs": [],
+      "reason": "All archived inputs appear present; full rebuild intentionally not run against working tree",
+      "status": "DEFERRED"
     },
     "S4_DISCOVERY": {
       "attempts": [
@@ -193,5 +186,5 @@
   "protocol": "PP6-stage-gates-v1",
   "scope": "Evidence checks, not production deployment or observed tourism demand",
   "source_of_truth": "data/recovered_source_descriptions/veracruz_pp3_master_with_originals.sqlite",
-  "utc_executed": "2026-10-20T22:20:11.089602+00:00"
+  "utc_executed": "2026-10-21T06:21:51.611601+00:00"
 }
