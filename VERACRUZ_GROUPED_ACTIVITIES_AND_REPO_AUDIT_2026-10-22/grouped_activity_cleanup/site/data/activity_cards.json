@@ -1,0 +1,3017 @@
+{
+  "schema": "veracruz_activity_cards_v1",
+  "source": "site/data/interest_evidence.json",
+  "kind": "documented_activity_types_not_clusters",
+  "counts": {
+    "activities": 78,
+    "links": 216,
+    "municipalities": 61
+  },
+  "families": {
+    "food_agriculture": [
+      "Gastronomía y campo",
+      "Food & agriculture",
+      "食・農業"
+    ],
+    "history_culture": [
+      "Historia y cultura",
+      "History & culture",
+      "歴史・文化"
+    ],
+    "land_adventure": [
+      "Aventura terrestre",
+      "Land adventure",
+      "陸上アクティビティ"
+    ],
+    "nature_observation": [
+      "Naturaleza",
+      "Nature",
+      "自然"
+    ],
+    "other_specific_unclassified": [
+      "Experiencias singulares",
+      "Distinctive experiences",
+      "特別な体験"
+    ],
+    "scenic_transport": [
+      "Paseos y recorridos",
+      "Scenic journeys",
+      "周遊・乗り物"
+    ],
+    "traditional_crafts": [
+      "Artesanías",
+      "Traditional crafts",
+      "工芸"
+    ],
+    "water_adventure": [
+      "Agua y ríos",
+      "Water & rivers",
+      "水辺・川"
+    ],
+    "wellness_spiritual": [
+      "Bienestar y tradiciones",
+      "Wellness & traditions",
+      "ウェルネス・伝統"
+    ]
+  },
+  "cards": [
+    {
+      "feature_id": "paper_balloon_workshop",
+      "label_es": "Taller de globos de papel",
+      "label_en": "Paper balloon workshop",
+      "family": "traditional_crafts",
+      "description_es": "Conoce la elaboración artesanal de globos de papel y verifica los horarios de los talleres.",
+      "description_en": "Explore the craft of paper balloons; check workshop access and dates.",
+      "media_url": "assets/activity-illustrations/paper_balloon_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30203",
+          "name": "Zozocolco de Hidalgo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "backstrap_loom_weaving",
+      "label_es": "Tejido en telar de cintura",
+      "label_en": "Backstrap loom weaving",
+      "family": "traditional_crafts",
+      "description_es": "Acércate al trabajo artesanal con telar de cintura. Consulta si se reciben visitantes.",
+      "description_en": "Learn about backstrap-loom weaving; confirm whether visitors are welcomed.",
+      "media_url": "assets/activity-illustrations/backstrap_loom_weaving.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30020",
+          "name": "Atlahuilco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "leather_shoemaking_demonstration",
+      "label_es": "Demostración de zapatería artesanal",
+      "label_en": "Leather shoemaking demonstration",
+      "family": "traditional_crafts",
+      "description_es": "Descubre la elaboración artesanal de calzado; disponibilidad sujeta a cada taller.",
+      "description_en": "Explore artisan shoemaking; workshop access depends on the provider.",
+      "media_url": "assets/activity-illustrations/leather_shoemaking_demonstration.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30112",
+          "name": "Naolinco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "vanilla_extract_workshop",
+      "label_es": "Taller de extracto de vainilla",
+      "label_en": "Vanilla Extract Workshop",
+      "family": "food_agriculture",
+      "description_es": "Conoce actividades relacionadas con la vainilla y su transformación local.",
+      "description_en": "Explore vanilla-related workshops and local processing traditions.",
+      "media_url": "assets/activity-illustrations/vanilla_extract_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_farm_visit",
+      "label_es": "Visita a finca cafetalera",
+      "label_en": "Coffee Farm Visit",
+      "family": "food_agriculture",
+      "description_es": "Visitas vinculadas con el cultivo del café; confirma qué fincas reciben visitantes.",
+      "description_en": "Explore coffee-growing experiences; check which farms accept visits.",
+      "media_url": "assets/activity-illustrations/coffee_farm_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 4,
+      "source_support_count": 3,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30071",
+          "name": "Huatusco",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/wp-content/uploads/sites/15/2025/03/2025-Rutas-Turisticas-FITUR.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "birdwatching",
+      "label_es": "Observación de aves",
+      "label_en": "Birdwatching",
+      "family": "nature_observation",
+      "description_es": "Busca lugares con observación de aves documentada; lleva equipo adecuado y respeta el entorno.",
+      "description_en": "Find documented birdwatching experiences; travel responsibly.",
+      "media_url": "assets/activity-illustrations/birdwatching.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 7,
+      "source_support_count": 6,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30065",
+          "name": "Emiliano Zapata",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30134",
+          "name": "Puente Nacional",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/wp-content/uploads/sites/15/2025/03/2025-Rutas-Turisticas-FITUR.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30158",
+          "name": "Tecolutla",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "rafting",
+      "label_es": "Descenso de ríos (rafting)",
+      "label_en": "Rafting",
+      "family": "water_adventure",
+      "description_es": "Experiencias de descenso de río documentadas; confirma guía, nivel y condiciones del agua.",
+      "description_en": "Explore documented river-rafting activities; verify guides and river conditions.",
+      "media_url": "assets/activity-illustrations/rafting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 3,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30183",
+          "name": "Tlapacoyan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "kayaking",
+      "label_es": "Kayak",
+      "label_en": "Kayaking",
+      "family": "water_adventure",
+      "description_es": "Opciones documentadas para remar en kayak; comprueba acceso, equipo y condiciones.",
+      "description_en": "Find documented kayaking experiences; verify access, equipment and conditions.",
+      "media_url": "assets/activity-illustrations/kayaking.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 11,
+      "source_support_count": 9,
+      "municipalities": [
+        {
+          "municipality_id": "30021",
+          "name": "Atoyac",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30039",
+          "name": "Coatzacoalcos",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30122",
+          "name": "Pajapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30201",
+          "name": "Zongolica",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/",
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/",
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30108",
+          "name": "Minatitlán",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.mx/atractivo.php?idnota=2657"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "hiking",
+      "label_es": "Senderismo",
+      "label_en": "Hiking",
+      "family": "land_adventure",
+      "description_es": "Explora experiencias de senderismo documentadas y confirma accesos y dificultad.",
+      "description_en": "Explore documented hiking experiences; check trail access and difficulty.",
+      "media_url": "assets/activity-illustrations/hiking.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 16,
+      "source_support_count": 9,
+      "municipalities": [
+        {
+          "municipality_id": "30021",
+          "name": "Atoyac",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/",
+            "https://www.veracruz.gob.mx/turismo/wp-content/uploads/sites/15/2025/03/2025-Rutas-Turisticas-FITUR.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30203",
+          "name": "Zozocolco de Hidalgo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30017",
+          "name": "Apazapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        },
+        {
+          "municipality_id": "30058",
+          "name": "Chicontepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30113",
+          "name": "Naranjal",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30168",
+          "name": "Tequila",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30182",
+          "name": "Tlalnelhuayocan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/01/14/sectur-inicia-visitas-a-experiencias-turisticas-comunitarias-de-la-zona-centro-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "archaeological_visit",
+      "label_es": "Visita a zonas arqueológicas",
+      "label_en": "Archaeological Visit",
+      "family": "history_culture",
+      "description_es": "Patrimonio arqueológico documentado; verifica horarios de cada sitio.",
+      "description_en": "Discover documented archaeological heritage; verify opening hours.",
+      "media_url": "assets/activity-illustrations/archaeological_visit.svg",
+      "media_kind": "illustration",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg?width=900",
+        "source": "https://commons.wikimedia.org/wiki/File:El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg",
+        "caption": "El Tajín (Papantla) · JEAFotoarte75 · CC BY-SA 4.0",
+        "alt": "Fotografía de El Tajín, Papantla"
+      },
+      "municipality_count": 9,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30016",
+          "name": "La Antigua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30109",
+          "name": "Misantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30191",
+          "name": "Ursulo Galván",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30023",
+          "name": "Atzalan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://lugares.inah.gob.mx/es/node/4391",
+            "https://lugares.inah.gob.mx/es/node/4483"
+          ]
+        },
+        {
+          "municipality_id": "30157",
+          "name": "Castillo de Teayo",
+          "original_text_support": false,
+          "source_urls": [
+            "https://datos.inah.gob.mx/datos-abiertos/zonas-arqueologicas"
+          ]
+        },
+        {
+          "municipality_id": "30172",
+          "name": "Texistepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://lugares.inah.gob.mx/es/node/5383"
+          ]
+        },
+        {
+          "municipality_id": "30192",
+          "name": "Vega de Alatorre",
+          "original_text_support": false,
+          "source_urls": [
+            "https://lugares.inah.gob.mx/es/node/4430"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "waterfall_visit",
+      "label_es": "Visita a cascada",
+      "label_en": "Waterfall visit",
+      "family": "nature_observation",
+      "description_es": "Explora cascadas documentadas; revisa accesos, seguridad y temporada.",
+      "description_en": "Find documented waterfall visits; verify access, safety and seasonality.",
+      "media_url": "assets/activity-illustrations/waterfall_visit.svg",
+      "media_kind": "illustration",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cascada_texolo.jpg?width=900",
+        "source": "https://commons.wikimedia.org/wiki/File:Cascada_texolo.jpg",
+        "caption": "Cascada de Texolo (Xico) · Jonathan UG · CC BY-SA 4.0",
+        "alt": "Fotografía de Cascada de Texolo, Xico"
+      },
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_tasting",
+      "label_es": "Degustación de café",
+      "label_en": "Coffee tasting",
+      "family": "food_agriculture",
+      "description_es": "Degustaciones de café documentadas; las reservas y precios dependen del operador.",
+      "description_en": "Discover documented coffee tastings; availability and prices depend on providers.",
+      "media_url": "assets/activity-illustrations/coffee_tasting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 5,
+      "source_support_count": 4,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30044",
+          "name": "Córdoba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30071",
+          "name": "Huatusco",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/wp-content/uploads/sites/15/2025/03/2025-Rutas-Turisticas-FITUR.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "mangrove_excursion",
+      "label_es": "Recorrido por manglares",
+      "label_en": "Mangrove excursion",
+      "family": "water_adventure",
+      "description_es": "Recorridos vinculados con ecosistemas de manglar; privilegia operadores responsables.",
+      "description_en": "Explore documented mangrove excursions; choose responsible operators.",
+      "media_url": "assets/activity-illustrations/mangrove_excursion.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30114",
+          "name": "Nautla",
+          "original_text_support": false,
+          "source_urls": [
+            "https://visitmexico.com/en/destino/18167/esnautla-ennautla"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "sandboarding",
+      "label_es": "Deslizamiento en dunas",
+      "label_en": "Sandboarding",
+      "family": "land_adventure",
+      "description_es": "Experiencias documentadas de deslizamiento en dunas; confirma equipo y acceso.",
+      "description_en": "Find documented sandboarding activities; verify equipment and access.",
+      "media_url": "assets/activity-illustrations/sandboarding.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30191",
+          "name": "Ursulo Galván",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "traditional_cooking_workshop",
+      "label_es": "Taller de cocina tradicional",
+      "label_en": "Traditional Cooking Workshop",
+      "family": "food_agriculture",
+      "description_es": "Talleres de cocina tradicional documentados; consulta fechas y participación.",
+      "description_en": "Explore documented traditional cooking workshops; confirm dates and participation.",
+      "media_url": "assets/activity-illustrations/traditional_cooking_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 4,
+      "source_support_count": 4,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "snorkeling",
+      "label_es": "Esnórquel",
+      "label_en": "Snorkeling",
+      "family": "water_adventure",
+      "description_es": "Experiencias de esnórquel documentadas; confirma temporada, seguridad y equipo.",
+      "description_en": "Discover documented snorkeling; check conditions and equipment.",
+      "media_url": "assets/activity-illustrations/snorkeling.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 7,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30009",
+          "name": "Alto Lucero de Gutiérrez Barrios",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30011",
+          "name": "Alvarado",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30033",
+          "name": "Cazones de Herrera",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/sol-playa/"
+          ]
+        },
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "ethnobotanical_learning",
+      "label_es": "Aprendizaje etnobotánico",
+      "label_en": "Ethnobotanical learning",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/ethnobotanical_learning.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "aromatherapy",
+      "label_es": "Aromaterapia",
+      "label_en": "Aromatherapy",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/aromatherapy.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "son_jarocho_festival_attendance",
+      "label_es": "Asistencia a festival de son jarocho",
+      "label_en": "Son Jarocho festival attendance",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/son_jarocho_festival_attendance.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30089",
+          "name": "Jáltipan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2024/12/26/con-sus-mas-grandes-exponentes-celebra-jaltipan-31-anos-del-festival-de-son-jarocho/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "xantolo_festival_attendance",
+      "label_es": "Asistencia al Xantolo",
+      "label_en": "Xantolo festival attendance",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/xantolo_festival_attendance.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30161",
+          "name": "Tempoal",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2025/10/25/presenta-secver-la-cartelera-cultural-de-dia-de-muertos-en-las-huastecas-alta-y-baja/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "canyoning",
+      "label_es": "Barranquismo",
+      "label_en": "Canyoning",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/canyoning.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 5,
+      "source_support_count": 4,
+      "municipalities": [
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30164",
+          "name": "Teocelo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        },
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "diving",
+      "label_es": "Buceo",
+      "label_en": "Diving",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/diving.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "scuba_diving",
+      "label_es": "Buceo con equipo autónomo",
+      "label_en": "Scuba diving",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/scuba_diving.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30033",
+          "name": "Cazones de Herrera",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+          ]
+        },
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/sol-playa/"
+          ]
+        },
+        {
+          "municipality_id": "30189",
+          "name": "Tuxpan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/sol-playa/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "hookah_diving",
+      "label_es": "Buceo con suministro desde superficie",
+      "label_en": "Hookah Diving",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/hookah_diving.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30189",
+          "name": "Tuxpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "camping",
+      "label_es": "Campismo",
+      "label_en": "Camping",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/camping.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 3,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_cupping",
+      "label_es": "Catación de café",
+      "label_en": "Coffee Cupping",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_cupping.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 5,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30044",
+          "name": "Córdoba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "ceremony_honoring_mother_earth",
+      "label_es": "Ceremonia de homenaje a la Madre Tierra",
+      "label_en": "Ceremony honoring Mother Earth",
+      "family": "other_specific_unclassified",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/ceremony_honoring_mother_earth.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30020",
+          "name": "Atlahuilco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "cycling",
+      "label_es": "Ciclismo",
+      "label_en": "Cycling",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/cycling.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30114",
+          "name": "Nautla",
+          "original_text_support": false,
+          "source_urls": [
+            "https://visitmexico.com/en/destino/18167/esnautla-ennautla"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "mountain_biking",
+      "label_es": "Ciclismo de montaña",
+      "label_en": "Mountain biking",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/mountain_biking.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30047",
+          "name": "Coscomatepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_harvesting",
+      "label_es": "Cosecha de café",
+      "label_en": "Coffee Harvesting",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_harvesting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "vanilla_planting",
+      "label_es": "Cultivo de vainilla",
+      "label_en": "Vanilla Planting",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/vanilla_planting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "aguamiel_tasting",
+      "label_es": "Degustación de aguamiel",
+      "label_en": "Aguamiel Tasting",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/aguamiel_tasting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30132",
+          "name": "Las Vigas de Ramírez",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_depulping",
+      "label_es": "Despulpado de café",
+      "label_en": "Coffee depulping",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_depulping.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "natural_dye_production",
+      "label_es": "Elaboración de tintes naturales",
+      "label_en": "Natural dye production",
+      "family": "traditional_crafts",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/natural_dye_production.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30020",
+          "name": "Atlahuilco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "wildlife_field_research_expedition",
+      "label_es": "Expedición de investigación de fauna",
+      "label_en": "Wildlife field research expedition",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/wildlife_field_research_expedition.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30137",
+          "name": "Los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "traditional_medicine_experience",
+      "label_es": "Experiencia de medicina tradicional",
+      "label_en": "Traditional medicine experience",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/traditional_medicine_experience.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "marine_cave_exploration",
+      "label_es": "Exploración de cuevas marinas",
+      "label_en": "Marine cave exploration",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/marine_cave_exploration.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "aguamiel_extraction",
+      "label_es": "Extracción de aguamiel",
+      "label_en": "Aguamiel Extraction",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/aguamiel_extraction.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30132",
+          "name": "Las Vigas de Ramírez",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "hydrotherapy",
+      "label_es": "Hidroterapia",
+      "label_en": "Hydrotherapy",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/hydrotherapy.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30211",
+          "name": "San Rafael",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "turtle_hatchling_release",
+      "label_es": "Liberación de crías de tortuga",
+      "label_en": "Turtle Hatchling Release",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/turtle_hatchling_release.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "massage",
+      "label_es": "Masaje",
+      "label_en": "Massage",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/massage.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_grinding",
+      "label_es": "Molienda de café",
+      "label_en": "Coffee Grinding",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_grinding.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "swimming",
+      "label_es": "Natación",
+      "label_en": "Swimming",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/swimming.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "river_boat_navigation",
+      "label_es": "Navegación fluvial",
+      "label_en": "River boat navigation",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/river_boat_navigation.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 4,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30016",
+          "name": "La Antigua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30028",
+          "name": "Boca del Río",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2025/05/02/visita-boca-del-rio-modernidad-sabor-y-tradicion-a-la-orilla-del-mar/"
+          ]
+        },
+        {
+          "municipality_id": "30108",
+          "name": "Minatitlán",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.mx/atractivo.php?idnota=2657"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "wildlife_observation",
+      "label_es": "Observación de fauna",
+      "label_en": "Wildlife observation",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/wildlife_observation.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30113",
+          "name": "Naranjal",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "herpetology_observation",
+      "label_es": "Observación de reptiles y anfibios",
+      "label_en": "Herpetology Observation",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/herpetology_observation.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30137",
+          "name": "Los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "paragliding",
+      "label_es": "Parapente",
+      "label_en": "Paragliding",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/paragliding.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "ancestral_ritual_participation",
+      "label_es": "Participación en rituales ancestrales",
+      "label_en": "Ancestral ritual participation",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/ancestral_ritual_participation.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 3,
+      "municipalities": [
+        {
+          "municipality_id": "30020",
+          "name": "Atlahuilco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30021",
+          "name": "Atoyac",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "horseback_riding",
+      "label_es": "Paseo a caballo",
+      "label_en": "Horseback riding",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/horseback_riding.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30058",
+          "name": "Chicontepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30158",
+          "name": "Tecolutla",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/regiones-turisticas/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "boat_excursion",
+      "label_es": "Paseo en lancha",
+      "label_en": "Boat Excursion",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/boat_excursion.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 10,
+      "source_support_count": 9,
+      "municipalities": [
+        {
+          "municipality_id": "30004",
+          "name": "Actopan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30011",
+          "name": "Alvarado",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/20/naolinco-tequila-catemaco-y-mecayapan-experiencias-para-conocer-el-veracruz-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30039",
+          "name": "Coatzacoalcos",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30016",
+          "name": "La Antigua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30122",
+          "name": "Pajapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30158",
+          "name": "Tecolutla",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "cable_car_ride",
+      "label_es": "Paseo en teleférico",
+      "label_en": "Cable-car ride",
+      "family": "scenic_transport",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/cable_car_ride.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30118",
+          "name": "Orizaba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "guided_heritage_walk",
+      "label_es": "Paseo guiado de patrimonio",
+      "label_en": "Guided Heritage Walk",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/guided_heritage_walk.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 6,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30112",
+          "name": "Naolinco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30087",
+          "name": "Xalapa",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30131",
+          "name": "Poza Rica de Hidalgo",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/2026/03/23/descubre-los-atractivos-turisticos-del-norte-de-veracruz-durante-cumbre-tajin/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "medicinal_plant_walk",
+      "label_es": "Paseo sobre plantas medicinales",
+      "label_en": "Medicinal Plant Walk",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/medicinal_plant_walk.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "fishing",
+      "label_es": "Pesca",
+      "label_en": "Fishing",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/fishing.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "sport_fishing",
+      "label_es": "Pesca deportiva",
+      "label_en": "Sport fishing",
+      "family": "water_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/sport_fishing.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30151",
+          "name": "Tamiahua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://www.veracruz.gob.mx/turismo/sol-playa/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "atv",
+      "label_es": "Recorrido en cuatrimoto",
+      "label_en": "Atv",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/atv.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30191",
+          "name": "Ursulo Galván",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "guided_city_tour",
+      "label_es": "Recorrido guiado por la ciudad",
+      "label_en": "Guided City Tour",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/guided_city_tour.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 5,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30039",
+          "name": "Coatzacoalcos",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "spiritual_cleansing_ritual",
+      "label_es": "Ritual de limpia espiritual",
+      "label_en": "Spiritual Cleansing Ritual",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/spiritual_cleansing_ritual.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "gastronomy_tasting_tour",
+      "label_es": "Ruta de degustación gastronómica",
+      "label_en": "Gastronomy Tasting Tour",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/gastronomy_tasting_tour.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 0,
+      "municipalities": [
+        {
+          "municipality_id": "30058",
+          "name": "Chicontepec",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30123",
+          "name": "Pánuco",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/2025/09/19/huasteca-veracruzana-destino-de-raices-ancestrales-musica-y-paisajes-que-enamoran/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "rappelling",
+      "label_es": "Rápel",
+      "label_en": "Rappelling",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/rappelling.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 8,
+      "source_support_count": 7,
+      "municipalities": [
+        {
+          "municipality_id": "30021",
+          "name": "Atoyac",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30115",
+          "name": "Nogales",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/turismo-de-naturaleza/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "natural_pool_jumping",
+      "label_es": "Saltos a pozas naturales",
+      "label_en": "Natural-pool jumping",
+      "family": "other_specific_unclassified",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/natural_pool_jumping.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 4,
+      "source_support_count": 4,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_planting",
+      "label_es": "Siembra de café",
+      "label_en": "Coffee planting",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_planting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 2,
+      "source_support_count": 2,
+      "municipalities": [
+        {
+          "municipality_id": "30014",
+          "name": "Amatlán de los Reyes",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "pottery_making_workshop",
+      "label_es": "Taller de alfarería",
+      "label_en": "Pottery making workshop",
+      "family": "traditional_crafts",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/pottery_making_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30112",
+          "name": "Naolinco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "artisan_workshop",
+      "label_es": "Taller de artesanía",
+      "label_en": "Artisan Workshop",
+      "family": "other_specific_unclassified",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/artisan_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "clay_modelling_workshop",
+      "label_es": "Taller de modelado en barro",
+      "label_en": "Clay modelling workshop",
+      "family": "traditional_crafts",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/clay_modelling_workshop.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30020",
+          "name": "Atlahuilco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "temazcal",
+      "label_es": "Temazcal",
+      "label_en": "Temazcal",
+      "family": "wellness_spiritual",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/temazcal.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 6,
+      "source_support_count": 6,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30044",
+          "name": "Córdoba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30149",
+          "name": "Soteapan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "ziplining",
+      "label_es": "Tirolesa",
+      "label_en": "Ziplining",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/ziplining.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 6,
+      "source_support_count": 5,
+      "municipalities": [
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/paraisos-indigenas-de-veracruz/"
+          ]
+        },
+        {
+          "municipality_id": "30088",
+          "name": "Jalcomulco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30141",
+          "name": "San Andrés Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30183",
+          "name": "Tlapacoyan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30104",
+          "name": "Mecayapan",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.veracruz.gob.mx/turismo/2025/03/03/encanto-olmeca-un-viaje-a-la-cultura-y-naturaleza-de-veracruz/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "coffee_roasting",
+      "label_es": "Tostado de café",
+      "label_en": "Coffee Roasting",
+      "family": "food_agriculture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/coffee_roasting.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 3,
+      "source_support_count": 3,
+      "municipalities": [
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30068",
+          "name": "Fortín",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "4x4_mountain_transfer",
+      "label_es": "Traslado de montaña en 4×4",
+      "label_en": "4x4 mountain transfer",
+      "family": "land_adventure",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/4x4_mountain_transfer.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "mineral_clay_treatment",
+      "label_es": "Tratamiento con arcilla mineral",
+      "label_en": "Mineral Clay Treatment",
+      "family": "traditional_crafts",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/mineral_clay_treatment.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30032",
+          "name": "Catemaco",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "colonial_house_visit",
+      "label_es": "Visita a casas coloniales",
+      "label_en": "Colonial house visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/colonial_house_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30016",
+          "name": "La Antigua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/turismo/2025/04/28/explora-la-antigua-y-descubre-la-historia-viva-de-la-casa-de-hernan-cortes/"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "fortress_visit",
+      "label_es": "Visita a fortaleza",
+      "label_en": "Fortress Visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/fortress_visit.svg",
+      "media_kind": "illustration",
+      "photo": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fuerte_San_juan_de_ul%C3%BAa.JPG?width=900",
+        "source": "https://commons.wikimedia.org/wiki/File:Fuerte_San_juan_de_ul%C3%BAa.JPG",
+        "caption": "San Juan de Ulúa (Veracruz) · Juan Carlos Espinosa Rivera · CC BY-SA 3.0",
+        "alt": "Fotografía de San Juan de Ulúa, Veracruz"
+      },
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30193",
+          "name": "Veracruz",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "botanical_garden_visit",
+      "label_es": "Visita a jardín botánico",
+      "label_en": "Botanical garden visit",
+      "family": "nature_observation",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/botanical_garden_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30087",
+          "name": "Xalapa",
+          "original_text_support": true,
+          "source_urls": [
+            "https://jardin.inecol.mx/",
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "community_museum_visit",
+      "label_es": "Visita a museo comunitario",
+      "label_en": "Community Museum Visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/community_museum_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "orchid_museum_visit",
+      "label_es": "Visita a museo de orquídeas",
+      "label_en": "Orchid museum visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/orchid_museum_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://sic.gob.mx/ficha.php?table=museo&table_id=2304",
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "museum_visit",
+      "label_es": "Visita a museos",
+      "label_en": "Museum visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/museum_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 10,
+      "source_support_count": 9,
+      "municipalities": [
+        {
+          "municipality_id": "30038",
+          "name": "Coatepec",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30039",
+          "name": "Coatzacoalcos",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30044",
+          "name": "Córdoba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30118",
+          "name": "Orizaba",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30124",
+          "name": "Papantla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30143",
+          "name": "Santiago Tuxtla",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30178",
+          "name": "Tlacotalpan",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30087",
+          "name": "Xalapa",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        },
+        {
+          "municipality_id": "30092",
+          "name": "Xico",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php",
+            "https://www.veracruz.gob.mx/2026/09/07/explora-una-forma-diferente-de-conocer-veracruz-mediante-el-turismo-comunitario/"
+          ]
+        },
+        {
+          "municipality_id": "30196",
+          "name": "Yanga",
+          "original_text_support": false,
+          "source_urls": [
+            "https://www.gob.mx/cultura/prensa/a-partir-de-yanga-el-museo-regional-de-palmillas-recupera-el-tema-de-la-afrodescendencia-en-veracruz?idiom=es-MX"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "colonial_heritage_church_house_visit",
+      "label_es": "Visita a patrimonio colonial",
+      "label_en": "Colonial heritage church/house visit",
+      "family": "history_culture",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/colonial_heritage_church_house_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30016",
+          "name": "La Antigua",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/catalogo_de_experiencias_web.pdf",
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    },
+    {
+      "feature_id": "community_plant_nursery_visit",
+      "label_es": "Visita a vivero comunitario",
+      "label_en": "Community Plant Nursery Visit",
+      "family": "other_specific_unclassified",
+      "description_es": "Experiencia documentada en la fuente turística. Consulta los municipios y las condiciones de acceso.",
+      "description_en": "Documented experience in the tourism evidence. Check municipalities and access conditions.",
+      "media_url": "assets/activity-illustrations/community_plant_nursery_visit.svg",
+      "media_kind": "illustration",
+      "photo": null,
+      "municipality_count": 1,
+      "source_support_count": 1,
+      "municipalities": [
+        {
+          "municipality_id": "30073",
+          "name": "Hueyapan de Ocampo",
+          "original_text_support": true,
+          "source_urls": [
+            "https://veracruz.mx/productos.php"
+          ]
+        }
+      ]
+    }
+  ],
+  "caveat": "Documentary evidence only: no assurance of access, present availability, booking, price or popularity."
+}
