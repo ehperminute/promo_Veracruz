@@ -237,6 +237,7 @@ function buildMarker(f){
   pin.tabIndex=0;
   pin.setAttribute('aria-label',p.name);
   pin.title=p.name;
+  pin.dataset.vxMunicipalityId=String(p.municipality_id);
   Object.assign(pin.style,{
     width:'25px',height:'25px',display:'flex',alignItems:'center',
     justifyContent:'center',border:'0',padding:'0',borderRadius:'50%',

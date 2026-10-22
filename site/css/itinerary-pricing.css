@@ -1,0 +1,32 @@
+#veracruz-map-section .vxp{border:1px solid #9abdae;background:#f8fbfa;border-radius:11px;margin:14px 0;padding:10px;color:#183b30;font-size:.85rem}
+#veracruz-map-section .vxp-trigger{cursor:pointer;font-weight:750;color:#174e3f;padding:8px 3px;font-size:.91rem;line-height:1.5}
+#veracruz-map-section .vxp-intro,#veracruz-map-section .vxp-tip,#veracruz-map-section .vxp-muted{color:#4c655b;line-height:1.45;margin:8px 0;font-size:.8rem}
+#veracruz-map-section .vxp-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0 14px}
+#veracruz-map-section .vxp-field{display:flex;flex-direction:column;gap:4px;min-width:0;font-size:.77rem;color:#335647}
+#veracruz-map-section .vxp-field input{min-width:0;width:100%;box-sizing:border-box;padding:7px 8px;border:1px solid #adc6b7;border-radius:7px;color:#183b30;background:#fff;font:inherit}
+#veracruz-map-section .vxp-h{font-size:.89rem;margin:12px 0 8px}
+#veracruz-map-section .vxp-city{border-top:1px solid #cfdbd4;padding:9px 0}
+#veracruz-map-section .vxp-city h5{font-size:.85rem;margin:2px 0 8px}
+#veracruz-map-section .vxp-offer{padding:9px;margin:6px 0;border:1px solid #dde7df;border-radius:9px;background:#fff}
+#veracruz-map-section .vxp-choice{display:flex;align-items:flex-start;gap:8px;min-width:0;cursor:pointer}
+#veracruz-map-section .vxp-choice input{margin-top:3px;flex:0 0 auto;accent-color:#116955;width:17px;height:17px}
+#veracruz-map-section .vxp-choice span{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px;overflow-wrap:anywhere}
+#veracruz-map-section .vxp-choice strong{font-size:.83rem}
+#veracruz-map-section .vxp-choice small{color:#64766c}
+#veracruz-map-section .vxp-offer-price{font-weight:800;margin:6px 0 3px;color:#165b44}
+#veracruz-map-section .vxp-terms{font-size:.74rem;color:#655c4c;line-height:1.4;margin:5px 0}
+#veracruz-map-section .vxp-offer-meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.73rem}
+#veracruz-map-section .vxp a{color:#085f86;overflow-wrap:anywhere}
+#veracruz-map-section .vxp-regional{padding:8px 2px;border-top:1px solid #cddbd3}
+#veracruz-map-section .vxp-regional summary{font-size:.8rem;cursor:pointer;font-weight:600}
+#veracruz-map-section .vxp-regional-item{font-size:.74rem;padding:6px;border-bottom:1px solid #ddd}
+#veracruz-map-section .vxp-tally{padding:12px;background:#edf5ee;border-radius:10px;margin:10px 0}
+#veracruz-map-section .vxp-tally-title{font-size:.82rem;font-weight:600;margin:0}
+#veracruz-map-section .vxp-number{font-size:1.32rem;font-weight:800;color:#124f39;margin:5px 0}
+#veracruz-map-section .vxp-total-part{font-size:.8rem;margin:3px 0}
+#veracruz-map-section .vxp-budget-msg,#veracruz-map-section .vxp-caution{font-size:.79rem;color:#8b4b18;font-weight:600;line-height:1.4}
+#veracruz-map-section .vxp-unknown,#veracruz-map-section .vxp-breakdown{padding-left:17px;font-size:.77rem;line-height:1.48}
+#veracruz-map-section .vxp-tally h5{margin:12px 0 4px;font-size:.79rem}
+#veracruz-map-section .vxp-tally-foot{font-size:.73rem;line-height:1.45;color:#536b5f}
+#veracruz-map-section button.vxp-copy{border:1px solid #6f9f8b;background:#fff;color:#145843;width:100%;font-size:.83rem}
+@media(max-width:420px){#veracruz-map-section .vxp-fields{grid-template-columns:1fr 1fr;gap:6px}}

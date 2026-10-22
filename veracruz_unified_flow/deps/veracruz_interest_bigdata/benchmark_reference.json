@@ -1,0 +1,69 @@
+{
+  "study": "Bounded scalability and index benchmark on DataTur real source rows plus declared synthetic replicas",
+  "synthetic_not_new_tourist_observations": true,
+  "distributed_framework_tested": false,
+  "production_capability_claim": "none",
+  "interpretation": "Measures local throughput, disk space, indexing and aggregate query correctness; not an actual distributed Big Data cluster or evidence of added tourist sample size.",
+  "runs": [
+    {
+      "scale_factor_synthetic": 1,
+      "source_records": 31147,
+      "test_records": 31147,
+      "input_file": "data/raw/Base70centros.csv",
+      "input_bytes": 2740171,
+      "insert_seconds": 0.14659,
+      "scan_query_seconds": 0.00221,
+      "index_seconds": 0.01169,
+      "indexed_query_seconds": 0.00131,
+      "sqlite_file_bytes": 1753088,
+      "query_groups": 756,
+      "verification": "COUNT and SUM scale exactly; indexed aggregation matches full scan",
+      "max_rss_kib_process": 101532
+    },
+    {
+      "scale_factor_synthetic": 8,
+      "source_records": 31147,
+      "test_records": 249176,
+      "input_file": "data/raw/Base70centros.csv",
+      "input_bytes": 2740171,
+      "insert_seconds": 0.83033,
+      "scan_query_seconds": 0.0186,
+      "index_seconds": 0.13392,
+      "indexed_query_seconds": 0.00748,
+      "sqlite_file_bytes": 14422016,
+      "query_groups": 756,
+      "verification": "COUNT and SUM scale exactly; indexed aggregation matches full scan",
+      "max_rss_kib_process": 103508
+    },
+    {
+      "scale_factor_synthetic": 16,
+      "source_records": 31147,
+      "test_records": 498352,
+      "input_file": "data/raw/Base70centros.csv",
+      "input_bytes": 2740171,
+      "insert_seconds": 1.62043,
+      "scan_query_seconds": 0.03339,
+      "index_seconds": 0.25606,
+      "indexed_query_seconds": 0.01278,
+      "sqlite_file_bytes": 28934144,
+      "query_groups": 756,
+      "verification": "COUNT and SUM scale exactly; indexed aggregation matches full scan",
+      "max_rss_kib_process": 103436
+    },
+    {
+      "scale_factor_synthetic": 64,
+      "source_records": 31147,
+      "test_records": 1993408,
+      "input_file": "data/raw/Base70centros.csv",
+      "input_bytes": 2740171,
+      "insert_seconds": 6.40328,
+      "scan_query_seconds": 0.14313,
+      "index_seconds": 1.46773,
+      "indexed_query_seconds": 0.0784,
+      "sqlite_file_bytes": 116051968,
+      "query_groups": 756,
+      "verification": "COUNT and SUM scale exactly; indexed aggregation matches full scan",
+      "max_rss_kib_process": 103664
+    }
+  ]
+}

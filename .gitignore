@@ -19,3 +19,13 @@ data/external/*.xlsx
 /*.zip
 
 /*.zip
+
+# Local rollback backups (do not publish)
+.local-site-backup-before-v3/
+
+# Local rollback backups
+.local-site-backup-before-search-v4/
+.local-backup-trip-costs/
+# Local unified-flow backups / transfer archives
+.local-backup-unified-flow/
+/*.zip

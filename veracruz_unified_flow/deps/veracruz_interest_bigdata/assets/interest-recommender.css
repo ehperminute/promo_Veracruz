@@ -1,0 +1,22 @@
+/* Compact preference-driven suggestions within the single itinerary panel. */
+#vxw-itinerary .vxi{border:1px solid #c2d8ce;border-radius:12px;background:#f4faf7;margin:10px 0 16px;padding:12px;color:#153c30}
+#vxw-itinerary .vxi>summary{cursor:pointer;font-weight:700;font-size:.9rem;line-height:1.35;color:#175b45;padding:4px 2px}#vxw-itinerary .vxi h4{font-size:.97rem;margin:0 0 4px}
+#vxw-itinerary .vxi-note{font-size:.78rem;color:#476759;line-height:1.45;margin:5px 0 9px}
+#vxw-itinerary .vxi-buttons,#vxw-itinerary .vxi-families{display:flex;gap:5px;flex-wrap:wrap}
+#vxw-itinerary button.vxi-chip{min-height:34px;border:1px solid #acc8b9;background:white;color:#225343;font-size:.78rem;padding:6px 9px}
+#vxw-itinerary button.vxi-chip[aria-pressed='true']{background:#246a54;color:white}
+#vxw-itinerary .vxi-field{display:grid;gap:4px;margin:8px 0;font-size:.79rem}
+#vxw-itinerary .vxi-field input{width:100%;padding:8px;border:1px solid #a9c5b5;background:#fff;border-radius:8px;color:#193c30;box-sizing:border-box}
+#vxw-itinerary .vxi-budget-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+#vxw-itinerary .vxi-buttons{margin:10px 0}
+#vxw-itinerary button.vxi-run{background:#196d58;color:white;border:1px solid #196d58;font-weight:700;flex:1}
+#vxw-itinerary button.vxi-surprise{background:white;color:#145b55;border:1px solid #579889;flex:1}
+#vxw-itinerary .vxi-results{display:grid;gap:8px;margin:10px 0 0}
+#vxw-itinerary .vxi-result{background:white;border:1px solid #d4e4dc;border-radius:9px;padding:9px;font-size:.82rem}
+#vxw-itinerary .vxi-result strong{display:block;margin-bottom:4px}
+#vxw-itinerary .vxi-result small{display:block;color:#537162;margin-top:4px}
+#vxw-itinerary .vxi-result a{color:#0d647d}
+#vxw-itinerary button.vxi-apply{background:#215d95;color:white;border:1px solid #215d95;width:100%;font-weight:700}
+#vxw-itinerary button.vxi-apply:disabled{opacity:.5}
+#vxw-itinerary .vxi-status{color:#234e3d;font-size:.8rem;margin:9px 0 2px}
+@media(max-width:380px){#vxw-itinerary .vxi-budget-row{grid-template-columns:1fr}}

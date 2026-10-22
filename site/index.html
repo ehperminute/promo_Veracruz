@@ -23,7 +23,10 @@
 <link rel="stylesheet" href="css/map-explorer.css?v=20261018-labels-guides-v1">
 
 
-<link rel="stylesheet" href="css/itinerary-router.css?v=2">
+
+<link rel="stylesheet" href="css/itinerary-router.css?v=3">
+<link rel="stylesheet" href="css/interest-recommender.css?v=2">
+<link rel="stylesheet" href="css/itinerary-pricing.css?v=1">
 </head>
 
 
@@ -37,43 +40,15 @@
                 Veracruz Tourism Intelligence
             </h1>
 
-            <p
-                class="subtitle"
-                data-i18n="subtitle"
-            >
-                Data-driven exploration of tourism
-                destinations in Veracruz
-            </p>
+            <p class="subtitle" id="current-subtitle">Explore documented activities and mapped attractions; locations and access may be approximate.</p>
 
 
             <div class="header-toolbar">
 
-                <nav>
-
-                    <a
-                        href="#experiences"
-                        data-i18n="nav_experiences"
-                    >
-                        Explore
-                    </a>
-
-                    <a
-                        href="#destinations"
-                        data-i18n="nav_destinations"
-                    >
-                        Destinations
-                    </a>
-
-                    <a
-                        href="#methods"
-                        data-i18n="nav_demo"
-                    >
-                        How it works
-                    </a>
-
-                    <a href="planner.html" data-i18n="nav_planner">Campaign Planner</a>
-
-                </nav>
+                <nav aria-label="Main navigation">
+      <a href="#veracruz-map-section" id="nav-map">Explore the map</a>
+      <a href="#vxw-itinerary" id="nav-route">Plan a route</a>
+    </nav>
 
 
                 <div class="language-control">
@@ -112,93 +87,20 @@
 
     <main>
 
-        <section id="experiences">
-            <h2 data-i18n="experience_title">Find your kind of Veracruz</h2>
-            <p data-i18n="experience_intro">Explore 12 experience collections based on documented destination characteristics. Choose one to discover its places.</p>
-            <div id="experience-gallery" class="experience-gallery" aria-live="polite"></div>
-        </section>
+        
 
 
         <section id="veracruz-map-section" aria-label="Interactive Veracruz tourist experiences map"></section>
 
-<section id="destinations">
-
-            <h2 data-i18n="destinations_title">
-                Destination Explorer
-            </h2>
-
-            <p data-i18n="destinations_text">
-                Find destinations by interests. Open a card
-                to see its recorded characteristics and why
-                it belongs to an experience group.
-            </p>
 
 
-            <div class="explorer-controls">
 
-                <input
-                    id="destination-search"
-                    type="text"
-                    placeholder="Search destinations..."
-                    data-i18n-placeholder="search_placeholder"
-                >
-
-
-                <select id="theme-filter">
-
-                    <option value="">
-                        All themes
-                    </option>
-
-                </select>
-
-
-                <select id="cluster-filter">
-
-                    <option value="">
-                        All clusters
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div
-                id="destination-list"
-                class="destination-grid"
-            ></div>
-
-        </section>
-
-
-        <section id="methods" class="lab-section">
-            <div class="lab-heading">
-                <span class="lab-eyebrow" data-i18n="lab_badge">Project demonstration · not a travel feature</span>
-                <h2 data-i18n="lab_title">Explore how the groups were calculated</h2>
-                <p data-i18n="lab_intro">This optional teaching example uses the same nine profile fields as S4. It does not predict bookings, traffic or travel routes.</p>
-            </div>
-            <div class="lab-panel">
-                <h3 data-i18n="compare_title">Compare two destinations</h3>
-                <div class="lab-controls">
-                    <label><span data-i18n="compare_first">First destination</span><select id="demo-a"></select></label>
-                    <label><span data-i18n="compare_second">Second destination</span><select id="demo-b"></select></label>
-                </div>
-                <div id="demo-distance" aria-live="polite"></div>
-                <div id="demo-comparison"></div>
-            </div>
-            <div class="lab-panel">
-                <h3 data-i18n="pam_title">How representatives are selected</h3>
-                <p data-i18n="pam_intro">A small independent demonstration with four real destination profiles and two representatives. The published 12 groups were calculated separately using all 55 profiles.</p>
-                <div id="demo-pam" aria-live="polite"></div>
-            </div>
-            <p class="method-caution" data-i18n="lab_limitations">Theme indicators represent documented evidence, not intensity or popularity. Shared absent themes are ignored in distance calculations; the Pueblo Mágico indicator is counted even when both places are not designated.</p>
-        </section>
+        
 
     </main>
 
 
-    <script src="js/app.js?v=8"></script>
+    
 
 <script defer src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
 <script defer src="js/map-explorer.js?v=20261018-attractions-v1"></script>
@@ -212,7 +114,14 @@
 <script defer src="js/map-attractions.js?v=20261018-guide-route-v1"></script>
 
 
-<script defer src="js/itinerary-router.js?v=2"></script>
+
+<!-- PP6 CURRENT-SITE-V3 -->
+<script defer src="js/itinerary-router.js?v=4"></script>
+<script defer src="js/current-home.js?v=3"></script>
+<script defer src="js/discovery-scoring.js?v=2"></script>
+<script defer src="js/interest-recommender.js?v=2"></script>
+<script defer src="js/itinerary-pricing-core.js?v=1"></script>
+<script defer src="js/itinerary-pricing.js?v=2"></script>
 </body>
 
 </html>
