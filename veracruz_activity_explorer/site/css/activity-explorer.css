@@ -1,0 +1,37 @@
+#vx-activities{scroll-margin-top:1rem;margin:1.5rem 0 2.75rem;padding:0;color:#183244}
+#vx-activities .vxa-intro{display:grid;gap:1rem;padding:1.6rem 1.7rem;border-radius:20px;background:#e7f3f0;border:1px solid #bedbd3}
+#vx-activities .vxa-kicker{color:#226e5b;letter-spacing:.12em;font-size:.69rem;font-weight:800}
+#vx-activities h2{font-size:clamp(1.45rem,3.5vw,2.25rem);line-height:1.18;margin:.5rem 0}
+#vx-activities .vxa-heading p{margin:0;color:#3e6061;max-width:64ch;line-height:1.5}
+#vx-activities .vxa-controls{display:grid;gap:.8rem}
+#vx-activities .vxa-search{padding:.82rem 1rem;border:1px solid #81aaa1;border-radius:12px;background:#fff;font-size:1rem;width:100%;box-sizing:border-box}
+#vx-activities .vxa-families{display:flex;gap:.4rem;flex-wrap:wrap}
+#vx-activities .vxa-chip{font:inherit;font-size:.75rem;line-height:1.3;padding:.46rem .76rem;border:1px solid #a4c5ba;border-radius:999px;background:#fff;color:#28524a;cursor:pointer}
+#vx-activities .vxa-chip.is-active{background:#1e6055;color:#fff;border-color:#1e6055}
+#vx-activities .vxa-count{font-size:.8rem;color:#5b6f75;margin:1rem 0}
+#vx-activities .vxa-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:1.12rem}
+#vx-activities .vxa-card{background:#fff;border:1px solid #d5e3e4;border-radius:17px;overflow:hidden;box-shadow:0 3px 16px rgba(10,35,32,.06);display:flex;flex-direction:column}
+#vx-activities .vxa-photo{position:relative;aspect-ratio:16 / 9;background:#dcebe9}
+#vx-activities .vxa-photo img{display:block;width:100%;height:100%;object-fit:cover}
+#vx-activities .vxa-image-credit{position:absolute;bottom:.35rem;left:.4rem;right:.4rem;color:#fff;background:rgba(4,29,32,.78);font-size:.62rem;line-height:1.3;padding:.3rem .5rem;border-radius:6px;max-width:calc(100% - .8rem)}
+#vx-activities .vxa-card-body{display:flex;flex-direction:column;gap:.55rem;padding:1rem;flex:1}
+#vx-activities .vxa-meta{font-size:.72rem;line-height:1.3;color:#567873;margin:0}
+#vx-activities h3{font-size:1.08rem;line-height:1.22;margin:.05rem 0 .12rem}
+#vx-activities .vxa-description{font-size:.88rem;line-height:1.48;color:#50646d;margin:0;flex:1}
+#vx-activities .vxa-actions{display:flex;margin-top:.45rem}
+#vx-activities .vxa-map{border-radius:10px;background:#175849;color:#fff;border:1px solid #175849;font-weight:700;font-size:.87rem;padding:.72rem .85rem;cursor:pointer;width:100%}
+#vx-activities .vxa-details{border-top:1px solid #e2ebec;padding:.7rem 0 0;margin-top:.25rem}
+#vx-activities .vxa-details summary{cursor:pointer;font-size:.8rem;font-weight:650;color:#215f51}
+#vx-activities .vxa-place-list{display:grid;gap:.35rem;margin-top:.8rem;max-height:250px;overflow:auto}
+#vx-activities .vxa-place{display:flex;align-items:center;justify-content:space-between;gap:.5rem;background:#f4f8f9;border-radius:9px;padding:.35rem .55rem;min-width:0}
+#vx-activities .vxa-municipality{display:flex;align-items:center;justify-content:space-between;gap:.35rem;border:0;background:transparent;cursor:pointer;color:#173f37;text-align:left;font:inherit;font-size:.77rem;flex:1;min-width:0}
+#vx-activities .vxa-plus{font-size:1.1rem;color:#137863;font-weight:800}
+#vx-activities .vxa-source{font-size:.69rem;white-space:nowrap;color:#1457a4}
+#vx-activities .vxa-more{display:block;margin:1.25rem auto 0;padding:.74rem 1.25rem;border:1px solid #2a7a67;border-radius:11px;background:#fff;font-weight:700;color:#24574f;cursor:pointer}
+#vx-activities .vxa-more[hidden]{display:none}
+#vx-activities .vxa-caveat{font-size:.76rem;color:#64777e;line-height:1.45;margin-top:1.4rem}
+#vx-activities .vxa-live{font-size:.85rem;color:#215f51;min-height:1em}
+#vx-activities button:focus-visible,#vx-activities a:focus-visible,#vx-activities input:focus-visible{outline:3px solid #f7a24b;outline-offset:3px}
+@media(max-width:680px){#vx-activities .vxa-intro{padding:1.05rem}#vx-activities .vxa-grid{grid-template-columns:1fr}#vx-activities .vxa-card{max-width:none}}
+
+#vx-activities .vxa-photo-source{position:absolute;top:.48rem;right:.48rem;background:#fff;color:#1457a4;padding:.2rem .48rem;border-radius:6px;font-size:.78rem;font-weight:700}
