@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="css/budget-range.css?v=1">
   
   <link rel="stylesheet" href="css/activity-groups.css?v=2">
+<link rel="stylesheet" href="css/provider-market.css?v=1">
 </head>
 
 
@@ -52,7 +53,9 @@
       <a href="#vx-activities" id="nav-activities">Actividades / Activities</a>
       <a href="#veracruz-map-section" id="nav-map">Explore the map</a>
       <a href="#vxw-itinerary" id="nav-route">Plan a route</a>
-    </nav>
+    <a href="proveedores.html">Prestadores / Providers</a>
+<a href="viajes.html">Viajes compartidos / Shared trips</a>
+</nav>
 
 
                 <div class="language-control">
@@ -103,7 +106,21 @@
 
         
 
-    </main>
+    
+<!-- PROVIDER-MARKET-MVP -->
+<section id="provider-offers" class="vp-market" aria-labelledby="vp-title">
+  <div class="vp-market-head">
+    <div><p class="vp-eyebrow">Red turística de Veracruz · prototipo</p><h2 id="vp-title">Servicios para tu itinerario</h2>
+    <p id="vp-intro">Consulta las ofertas revisadas que los prestadores de servicios publican para tus destinos. La disponibilidad debe confirmarse.</p></div>
+    <a class="vp-button secondary" href="proveedores.html">¿Ofreces servicios? Publica tu propuesta</a>
+  </div>
+  <div class="vp-route-summary" id="vp-route-summary" aria-live="polite"></div>
+  <p id="vp-offers-status" class="vp-muted" role="status"></p>
+  <div id="vp-offers-grid" class="vp-offers" aria-live="polite"></div>
+  <button id="vp-show-all" class="vp-button secondary" type="button" aria-pressed="false">Ver todos los servicios publicados</button>
+  <p id="vp-disclaimer" class="vp-disclaimer">Las reservas y pagos se realizan con cada proveedor. Esta plataforma no confirma disponibilidad.</p>
+</section>
+</main>
 
 
     
@@ -132,6 +149,10 @@
 <script defer src="js/budget-range.js?v=1"></script>
   
   <script defer src="js/activity-groups.js?v=2"></script>
+<script defer src="js/provider-market.js?v=1"></script>
+<!-- VERACRUZ-TRIP-JOURNAL-V1 -->
+<script defer src="js/trip-journal-core.js?v=1"></script>
+<script defer src="js/trip-journal-bridge.js?v=1"></script>
 </body>
 
 </html>

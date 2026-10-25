@@ -1,0 +1,4 @@
+{
+  "submission_endpoint": null,
+  "note": "No provider submissions are received automatically. Configure an HTTPS form endpoint supporting CORS POST, or exchange downloaded JSON files privately. Never put API secrets in this public file."
+}

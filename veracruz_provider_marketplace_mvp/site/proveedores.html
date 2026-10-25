@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Publica tus servicios · Veracruz</title><link rel="stylesheet" href="css/provider-market.css"></head>
+<body class="vp-form-page">
+<header><a href="index.html">← Volver al explorador turístico</a></header>
+<main><form class="vp-form" id="vp-submission-form" novalidate>
+  <p style="text-transform:uppercase;color:#21656a;font-size:.78rem;font-weight:800;letter-spacing:.12em">Proveedores turísticos</p>
+  <h1>Ofrece tus servicios en Veracruz</h1>
+  <p>Envía información de tu alojamiento, actividad, guía o transporte. Los anuncios requieren revisión antes de aparecer en el itinerario de los visitantes. <strong>Enviar información no significa tener una reserva confirmada ni ser proveedor autorizado de la plataforma.</strong></p>
+  <p class="vp-message vp-warning" id="vp-submission-mode">Este prototipo permite preparar un archivo de solicitud. Aún no hay un servicio de recepción habilitado.</p>
+  <div class="vp-form-grid">
+    <label>Nombre del negocio <input name="provider_name" maxlength="120" required placeholder="Nombre comercial"></label>
+    <label>Municipio <input name="municipality" list="vp-municipalities" autocomplete="off" required placeholder="Escribe el municipio"><datalist id="vp-municipalities"></datalist></label>
+    <label>Tipo de servicio <select name="category" required><option value="">Selecciona</option><option value="accommodation">Hospedaje</option><option value="activity">Actividad / excursión</option><option value="guide">Guía</option><option value="transport">Transporte</option></select></label>
+    <label>Nombre del servicio <input name="service_name" maxlength="120" required placeholder="Ej. Habitación doble / Recorrido guiado"></label>
+    <label class="wide">Descripción y qué incluye <textarea name="description" required maxlength="1200" placeholder="Servicio, duración, punto de encuentro y condiciones"></textarea></label>
+    <label>Precio anunciado en MXN (opcional) <input name="price_mxn" inputmode="decimal" type="number" min="0" max="10000000" step=".01" placeholder="Dejar vacío si requiere cotización"></label>
+    <label>Unidad del precio <select name="price_unit"><option value="quote">Cotización requerida</option><option value="person">Por persona</option><option value="room_night">Por habitación/noche</option><option value="group">Por grupo</option><option value="service">Por servicio</option></select></label>
+    <label>Impuestos <select name="tax_status"><option value="unknown">A confirmar</option><option value="included">Incluidos</option><option value="excluded">No incluidos</option></select></label>
+    <label>Capacidad / grupo mínimo (opcional) <input name="capacity_note" maxlength="150" placeholder="Ej. Máx. 4 huéspedes; mínimo 3 personas"></label>
+    <label>Disponible hasta (opcional) <input name="valid_until" type="date"></label>
+    <label>URL pública del proveedor (obligatorio) <input name="public_url" type="url" maxlength="600" required placeholder="https://…"></label>
+    <label class="wide">Condiciones de reservación y disponibilidad <textarea name="conditions" maxlength="1000" placeholder="Ej. Sujeto a confirmación del proveedor; horario y temporada"></textarea></label>
+    <label>Correo de contacto administrativo (NO se publica) <input name="private_contact_email" type="email" maxlength="180" required placeholder="contacto@negocio.mx"></label>
+    <label>Número de registro turístico (opcional) <input name="tourism_registration" maxlength="80" placeholder="Número, si corresponde"></label>
+    <label class="wide checkline"><input name="consent_public" type="checkbox" required> Confirmo que estoy autorizado para proporcionar los datos del negocio y que autorizo la publicación de sus datos comerciales aprobados. Entiendo que la información será revisada y que mi correo administrativo no se publicará.</label>
+  </div>
+  <div class="vp-actions"><button type="submit" class="vp-button" id="vp-submit">Preparar solicitud</button><button type="button" class="vp-button secondary" id="vp-download" disabled>Descargar solicitud JSON</button></div>
+  <div id="vp-response" class="vp-message vp-hidden" role="status" aria-live="polite"></div>
+  <p><small>Los precios se presentan con su unidad y condiciones. Este prototipo no acepta pagos ni confirma reservas. Si no se configura un servicio de recepción, descarga el archivo y entrégalo por un canal privado al administrador del proyecto. No compartas solicitudes con correos privados en repositorios públicos.</small></p>
+</form></main><script defer src="js/provider-form.js"></script></body></html>

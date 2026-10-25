@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer">
+<title>Compartir experiencia | Veracruz</title>
+<link rel="stylesheet" href="css/trip-journal.css"><link rel="stylesheet" href="css/trip-community.css">
+<script defer src="js/trip-journal-core.js"></script><script defer src="js/trip-submission.js"></script>
+</head>
+<body>
+<header class="tj-bar"><a class="tj-brand" href="viajes.html">← Veracruz · Viajes</a><label for="vx-lang" id="vx-lang-label">Idioma</label><select id="vx-lang"><option value="es">Español</option><option value="en">English</option><option value="ja">日本語</option></select></header>
+<main class="tj-main vx-submit-layout">
+<div class="tj-hero"><span class="tj-kicker" id="vx-kicker">COMPARTE UNA EXPERIENCIA</span><h1 id="vx-title">Tu ruta puede ayudar a otros viajeros</h1><p id="vx-intro">Prepara una historia de tu viaje, sus gastos opcionales y hasta 4 fotografías. Toda publicación necesita revisión.</p></div>
+<section class="tj-card"><h2 id="vx-route-h">La ruta que quieres compartir</h2><p class="tj-muted" id="vx-route-status">Se cargará tu borrador guardado en este navegador.</p><p><a href="viajes.html" id="vx-return">← Editar la ruta y los gastos</a></p></section>
+<section class="tj-card"><form id="vx-form">
+<fieldset class="vx-fieldset"><legend id="vx-story-h">Tu experiencia</legend>
+<div class="tj-formgrid">
+<label><span id="vx-author-label">Seudónimo público (opcional)</span><input id="vx-author" maxlength="45" autocomplete="off" placeholder="Viajero de Veracruz"></label>
+<label><span id="vx-summary-label">Título breve</span><input id="vx-summary" maxlength="90" required placeholder="Mi recorrido entre café y montañas"></label>
+</div>
+<label><span id="vx-story-label">Consejos y experiencias (sin datos privados)</span><textarea id="vx-story" rows="5" maxlength="1600" required placeholder="¿Qué disfrutaste? ¿Qué recomendarías a otra persona?"></textarea></label>
+</fieldset>
+<fieldset class="vx-fieldset"><legend id="vx-photos-h">Tus fotografías (opcional)</legend>
+<p class="tj-muted" id="vx-photo-intro">Hasta 4 fotos JPG, PNG o WebP (8 MB cada una). Se reducen de tamaño y se quitan los metadatos EXIF antes de preparar el envío. No incluyas rostros de terceros sin permiso.</p>
+<label><span id="vx-photo-label">Selecciona fotografías</span><input id="vx-photos" type="file" multiple accept="image/jpeg,image/png,image/webp"></label>
+<div id="vx-photo-preview" class="vx-submission-photos"></div>
+</fieldset>
+<p class="vx-note" id="vx-policy">Las fotos y los textos no se publican directamente: se revisan primero. La fecha del viaje solo indica mes y año. Las cifras son declaradas por viajeros, no tarifas verificadas.</p>
+<label class="tj-consent"><input type="checkbox" id="vx-rights" required><span id="vx-rights-label">Confirmo que puedo compartir estas imágenes y que he evitado datos personales de terceros.</span></label>
+<label class="tj-consent"><input type="checkbox" id="vx-research-consent"><span id="vx-research-consent-label">Autorizo opcionalmente el uso estadístico de gastos agregados y desidentificados para investigación académica. Puedo compartir mi relato sin aceptarlo.</span></label>
+<div class="tj-row tj-actions"><button id="vx-download" class="tj-button" type="submit">Descargar solicitud para revisión</button><button id="vx-auto" class="tj-button secondary vx-submission-button" type="button" hidden>Enviar solicitud automáticamente</button></div>
+<p role="status" aria-live="polite" id="vx-status"></p>
+<p class="tj-muted" id="vx-backend-status">Este sitio estático no recibe solicitudes automáticamente. Puedes descargar el archivo y entregarlo al administrador hasta que exista un servicio privado configurado.</p>
+</form></section>
+</main><footer class="tj-footer">Veracruz · Proyecto académico de turismo y ciencia de datos</footer>
+</body></html>

@@ -29,3 +29,7 @@ data/external/*.xlsx
 # Local unified-flow backups / transfer archives
 .local-backup-unified-flow/
 /*.zip
+
+# Private provider requests: do not commit contact email submissions
+provider_submissions/
+*solicitud-proveedor*.json

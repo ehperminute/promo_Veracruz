@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Viajes compartidos | Veracruz</title>
+<link rel="stylesheet" href="css/trip-journal.css?v=1">
+<script defer src="js/trip-journal-core.js?v=1"></script>
+<script defer src="js/trip-journal.js?v=1"></script>
+<link rel="stylesheet" href="css/trip-community.css">
+<script defer src="js/trip-gallery.js"></script>
+</head>
+<body>
+<header class="tj-bar"><a class="tj-brand" href="index.html">← Veracruz</a><label for="tj-lang" id="tj-lang-label">Idioma / Language</label><select id="tj-lang"><option value="es">Español</option><option value="en">English</option><option value="ja">日本語</option></select></header>
+<main class="tj-main">
+<!-- VX-COMMUNITY-TRIPS-V1 -->
+<section id="vx-trip-gallery" aria-label="Rutas compartidas y de ejemplo"></section>
+  <div class="tj-hero"><span class="tj-kicker" id="tj-kicker">DIARIO DE RUTA</span><h1 id="tj-headline">Comparte tu viaje, no tus datos privados</h1><p id="tj-lead">Guarda paradas y gastos reales, crea un enlace y ayuda a otros a estimar cuánto podrían gastar.</p></div>
+  <section class="tj-card" aria-labelledby="tj-title-heading">
+    <div class="tj-row tj-between"><h2 id="tj-title-heading">Tu viaje</h2><span class="tj-pill" id="tj-mode">Borrador privado</span></div>
+    <div class="tj-formgrid">
+      <label><span id="tj-title-label">Nombre de la ruta</span><input id="tj-title" maxlength="100" placeholder="Un fin de semana por Veracruz"></label>
+      <label><span id="tj-month-label">Mes aproximado (opcional)</span><input id="tj-month" type="month"></label>
+      <label><span id="tj-people-label">Viajeros</span><input id="tj-people" type="number" min="1" max="30" value="2"></label>
+    </div>
+  </section>
+  <section class="tj-card" aria-labelledby="tj-stops-heading"><h2 id="tj-stops-heading">Paradas</h2><p class="tj-muted" id="tj-stops-help">Trae las paradas del planificador o añade un lugar manualmente.</p><ol id="tj-stops"></ol><div class="tj-row"><input id="tj-stop-name" placeholder="Ciudad o lugar" maxlength="100" aria-label="Ciudad o lugar"><button id="tj-add-stop" type="button" class="tj-button secondary">Añadir parada</button></div></section>
+  <section class="tj-card" aria-labelledby="tj-expenses-heading"><h2 id="tj-expenses-heading">Gastos realizados</h2><p class="tj-muted" id="tj-expenses-help">Indica lo que pagó el grupo en MXN, no el precio por persona.</p><form id="tj-expense-form" class="tj-formgrid">
+    <label><span id="tj-stop-label">Parada</span><select id="tj-expense-stop" required></select></label>
+    <label><span id="tj-category-label">Categoría</span><select id="tj-category" required></select></label>
+    <label><span id="tj-item-label">Compra o servicio</span><input id="tj-item" maxlength="110" required placeholder="Comida, habitación, visita..."></label>
+    <label><span id="tj-amount-label">Total pagado (MXN)</span><input id="tj-amount" inputmode="decimal" type="number" min="0.01" max="1000000" step="0.01" required placeholder="250"></label>
+    <label><span id="tj-provider-label">Proveedor o establecimiento (opcional)</span><input id="tj-provider" maxlength="120" placeholder="Nombre si deseas compartirlo"></label>
+    <label><span id="tj-note-label">Observación (opcional)</span><input id="tj-note" maxlength="200" placeholder="Qué incluía el precio"></label>
+    <div class="tj-formactions"><button class="tj-button" id="tj-add-expense" type="submit">Registrar gasto</button></div>
+  </form><div id="tj-expenses" class="tj-expense-list"></div></section>
+  <section class="tj-card tj-summary"><h2 id="tj-summary-heading">Resumen de gastos declarados</h2><div class="tj-totalrow"><div><small id="tj-total-label">Gastos registrados del grupo</small><strong id="tj-total">$0</strong></div><div><small id="tj-person-label">Por viajero, si se repartió por igual</small><strong id="tj-person-total">$0</strong></div></div><div id="tj-breakdown"></div><p class="tj-muted" id="tj-summary-note">Los totales solo incluyen gastos registrados. No son precios verificados ni una cotización completa.</p></section>
+  <section class="tj-card tj-share"><h2 id="tj-share-heading">Compartir o reutilizar</h2><p id="tj-privacy">Antes de compartir, revisa nombres, notas y proveedores. No incluyas teléfonos, direcciones personales, datos bancarios, tickets con identificadores ni fechas exactas.</p><label class="tj-consent"><input type="checkbox" id="tj-consent"><span id="tj-consent-label">Revisé la información y deseo incluirla en un enlace que cualquiera con él puede leer.</span></label><div class="tj-row tj-actions"><button id="tj-copy" class="tj-button" type="button">Copiar enlace para compartir</button><button id="tj-edit" class="tj-button secondary" type="button" hidden>Editar una copia</button><a href="index.html" class="tj-button secondary" id="tj-back-map">Volver al mapa</a><a href="index.html" class="tj-button secondary" id="tj-open-route" hidden>Abrir ruta en el mapa</a></div><p class="tj-muted" id="tj-public-note">Los enlaces almacenan los datos en la propia dirección. No suben información a este sitio ni crean una publicación pública buscable.</p><p role="status" aria-live="polite" id="tj-status"></p></section>
+</main>
+<footer class="tj-footer">Veracruz · Proyecto académico de turismo y ciencia de datos</footer>
+</body></html>

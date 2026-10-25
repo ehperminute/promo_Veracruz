@@ -1,38 +1,61 @@
-# Veracruz tourism research — PP / PP6
+# Veracruz — travel journal and expense-sharing pilot
 
-This project investigates evidence-grounded tourism experiences, center-level demand, uncertainty, campaign allocation, and a proposed digital marketing campaign for Veracruz. The **latest source-restored SQLite evidence** is not equivalent to the historical 55-destination exploratory S4 catalog. Preserve both; do not promote historical S4 clusters to the current statewide tourism truth.
+## Purpose
+Travelers can record stops and spending from an actual trip, voluntarily share a link with others, and reopen mapped stops in the existing itinerary planner. A traveler may list a purchased service, food, or item, a business name if desired, the approximate travel month, and the **total paid by the group in MXN**.
 
-## Current research database
+This is separate from the approved **provider offers** and from editable budget **scenarios**. Traveler-reported expenses are not live service prices. No shared trip is used as research data automatically.
 
-`data/recovered_source_descriptions/veracruz_pp3_master_with_originals.sqlite` is the source-restored working database for this second-pass audit. The 14-municipality typed review exists in the separate audited source database under `VERACRUZ_GEOGRAPHY_COURSE_RESULTS_2026-10-18/research/`. Missing source mentions mean *not documented*, not zero tourism. Tourism-product publication is not proof of current operation or visitor demand.
+## What is included
+- `travel_journal/site/viajes.html`: self-contained ES/EN/JA travel journal UI
+- `travel_journal/site/js/trip-journal-core.js`: pure trip validation, calculation and URL encoding
+- `travel_journal/site/js/trip-journal.js`: editor, read-only shared view, local draft persistence
+- `travel_journal/site/js/trip-journal-bridge.js`: link from the existing routing panel
+- `travel_journal/site/css/trip-journal.css`: responsive styling
+- `travel_journal/install.py`: additive and repeatable installation
+- `travel_journal/tests/test_core.js`: regression checks
+- `academic/`: two revised Word documents using the feature as a limited pilot, **not** claiming a collected user dataset
 
-## Reproducibility
-
-The historical full rebuild command is:
-
-```bash
-python scripts/data/run_data_pipeline.py --idempotence --test
-```
-
-**Missing DataTur coverage is missing measurement**, not low demand. Frozen DENUE/GDP archives and original catalog PDF snapshots must be present for a complete from-raw rebuild. An intentionally slim research transfer may contain the processed outputs but not those raw archives; treat the latter as an `INPUTS_UNAVAILABLE` check, not as a corrupted database.
-
-The documented earlier frozen-input milestone recorded **56 Milestone-1 tests PASS**. That historical milestone does **not** certify the latest current database or current repository. Recovered sources and newer experiments require their own tests. Historical outputs include `data/processed/demand_series.csv` and `data/processed/origin_market_opportunity.csv`.
-
-## Run the current stage-gated checks
+## Install in Codespaces
+Copy this release ZIP into the **root** of `/workspaces/promo_Veracruz`, then run:
 
 ```bash
-python scripts/pp6/run_loop.py
+cd /workspaces/promo_Veracruz
+unzip -o VERACRUZ_TRAVEL_JOURNAL_MVP_2026-10-25.zip
+python travel_journal/install.py .
+node travel_journal/tests/test_core.js
+python -m http.server 8100 -d site
 ```
 
-See `docs/PP6_BLOCKERS.md` and the generated `outputs/pp6_loop/state.json` for the acceptance criteria, current gate results, retry counts, and externally blocked work. This process runs eligible checks automatically, without rewriting research or claiming scientific validity from a successful script exit. The website and map are excluded from automated writes.
+Open port 8100, use the itinerary planner to select stops, then click **Compartir ruta y gastos / Share route and spending**. Or open `/viajes.html` directly to create a travel journal manually.
 
-## Scope and boundaries
+To deploy after checking, commit **only the installed website source files**, not this ZIP.
 
-- S4: use source-backed activity intersections; keep clustering exploratory.
-- S5: forecast measured hotel-center occupancy only; compare the same dates and baselines.
-- S6: estimate uncertainty with coverage and interval width; Markov prediction may perform no better than persistence.
-- S7: the promotional placement costs are explicit **assumptions**, not verified prices or return on investment.
-- S8: audiences, campaign cells, and advertisements are **proposals**, not observed campaign outcomes.
-- S9: reports must be checked against the actual current assignment rubrics before submission.
+## Usage
+1. Add stops from the current route (or enter them manually).
+2. Enter traveler count and approximate **month/year**, not the exact travel day.
+3. Add purchases or services and the total **MXN amount paid by the group**.
+4. Review all text for personal information, check the consent acknowledgement and copy the link.
+5. Recipients can view the shared trip read-only or create an editable copy. If stops have the map's stable IDs, a button opens that itinerary in the planner.
 
-Do not commit generated archives or overwrite the existing site with the historical 55-destination exporter without an explicit migration and current evidence QA.
+## Storage and privacy
+- A private draft is saved **in your own browser** via `localStorage`.
+- Sharing encodes trip content in the **URL fragment** (after `#`); no backend, registration, or public feed.
+- Anyone with the shared link can read the included information. The user is warned not to enter personal contact details, identifiable receipts, precise dates or home addresses.
+- Content is rendered as text. The sharing UI requires acknowledgement.
+- This version does not upload photos/videos or solicit traveler accounts; those would require moderation, consent and storage.
+
+## Boundaries
+- Up to 12 stops and 40 expense entries per link.
+- Amounts reflect what travelers chose to disclose; omissions are normal, so totals mean **recorded expenditure**, not a complete quote.
+- There is no public searchable trip gallery yet and no central collection of price observations. A moderated publication workflow would be a separate later step.
+- Works on a static GitHub Pages site without a server. Browser state and copied links are the persistent medium.
+
+## Tests / acceptance
+The following have been executed on an extracted repository snapshot:
+- Installer run twice without duplicate navigation or scripts.
+- JavaScript syntax and Node test suite; Unicode roundtrip, sums, per-person totals, route IDs, invalid amounts, 12-stop cap, and month-only dates.
+- Isolated Chromium interactions: adding stops and expenses, consent-gated sharing, receiving read-only links, making an editable copy, English switch, and dynamic itinerary button.
+- HTML-like note text displayed without executing any HTML.
+- Both revised academic DOCX files rendered and checked; report 37 pages, campaign 8 pages. Existing experimental source data unchanged.
+
+**Live browser deployment on your particular GitHub Pages URL is not verified by these local tests.**

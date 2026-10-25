@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "dataKind": "editorial_route_templates",
+  "note": "Illustrative suggested routes based on documented local activities. No traveler testimonials, observations, purchases, or published rates are implied.",
+  "trips": [
+    {
+      "id": "demo-cafe-rio",
+      "kind": "example",
+      "title": {
+        "es": "Café, montaña y río",
+        "en": "Coffee, mountains and river",
+        "ja": "コーヒーと山と川"
+      },
+      "summary": {
+        "es": "Cata de café en Coatepec, paisaje de Xico y actividades de río en Jalcomulco.",
+        "en": "Coffee tasting in Coatepec, Xico scenery and river activities in Jalcomulco.",
+        "ja": "コアテペックのコーヒー、ヒコの景色、ハルコムルコの川の体験。"
+      },
+      "activities": [
+        "coffee_tasting",
+        "coffee_farm_visit",
+        "rafting",
+        "hiking"
+      ],
+      "trip": {
+        "v": 1,
+        "title": "Café, montaña y río · ruta sugerida",
+        "month": "",
+        "people": 2,
+        "stops": [
+          {
+            "id": "municipality:30038",
+            "name": "Coatepec"
+          },
+          {
+            "id": "municipality:30092",
+            "name": "Xico"
+          },
+          {
+            "id": "municipality:30088",
+            "name": "Jalcomulco"
+          }
+        ],
+        "expenses": []
+      },
+      "highlights": {
+        "es": "Catas de café, visita a cafetales, rafting y senderismo",
+        "en": "Coffee tasting, farm visits, rafting and hiking",
+        "ja": "コーヒー試飲、農園見学、ラフティング、ハイキング"
+      }
+    },
+    {
+      "id": "demo-totonaca",
+      "kind": "example",
+      "title": {
+        "es": "Patrimonio totonaca y vainilla",
+        "en": "Totonac heritage and vanilla",
+        "ja": "トトナカ文化とバニラ"
+      },
+      "summary": {
+        "es": "Experiencias arqueológicas y talleres de vainilla documentados en Papantla.",
+        "en": "Archaeological experiences and documented vanilla workshops in Papantla.",
+        "ja": "パパントラの遺跡とバニラ体験。"
+      },
+      "activities": [
+        "archaeological_visit",
+        "vanilla_extract_workshop"
+      ],
+      "trip": {
+        "v": 1,
+        "title": "Patrimonio totonaca y vainilla · ruta sugerida",
+        "month": "",
+        "people": 2,
+        "stops": [
+          {
+            "id": "municipality:30124",
+            "name": "Papantla"
+          },
+          {
+            "id": "municipality:30158",
+            "name": "Tecolutla"
+          }
+        ],
+        "expenses": []
+      },
+      "highlights": {
+        "es": "Patrimonio arqueológico y talleres de vainilla",
+        "en": "Archaeological heritage and vanilla workshops",
+        "ja": "遺跡探訪とバニラの体験"
+      }
+    },
+    {
+      "id": "demo-tuxtlas",
+      "kind": "example",
+      "title": {
+        "es": "Naturaleza de Los Tuxtlas",
+        "en": "Los Tuxtlas nature route",
+        "ja": "ロス・トゥストラス自然ルート"
+      },
+      "summary": {
+        "es": "Excursiones por agua, senderos y observación de aves en Catemaco y San Andrés Tuxtla.",
+        "en": "Boat excursions, trails and birdwatching around Catemaco and San Andrés Tuxtla.",
+        "ja": "カテマコとサン・アンドレス・トゥストラの舟遊び、散策、野鳥観察。"
+      },
+      "activities": [
+        "boat_excursion",
+        "birdwatching",
+        "hiking",
+        "waterfall_visit"
+      ],
+      "trip": {
+        "v": 1,
+        "title": "Naturaleza de Los Tuxtlas · ruta sugerida",
+        "month": "",
+        "people": 2,
+        "stops": [
+          {
+            "id": "municipality:30032",
+            "name": "Catemaco"
+          },
+          {
+            "id": "municipality:30141",
+            "name": "San Andrés Tuxtla"
+          },
+          {
+            "id": "municipality:30143",
+            "name": "Santiago Tuxtla"
+          }
+        ],
+        "expenses": []
+      },
+      "highlights": {
+        "es": "Recorridos en lancha, observación de aves y senderismo",
+        "en": "Boat excursions, birdwatching and hiking",
+        "ja": "船での散策、野鳥観察、ハイキング"
+      }
+    },
+    {
+      "id": "demo-artesania",
+      "kind": "example",
+      "title": {
+        "es": "Oficios, artesanías y tradición",
+        "en": "Crafts and local traditions",
+        "ja": "工芸と地域の伝統"
+      },
+      "summary": {
+        "es": "Demostraciones artesanales en Naolinco y talleres de globos de papel en Zozocolco.",
+        "en": "Craft demonstrations in Naolinco and paper-balloon workshops in Zozocolco.",
+        "ja": "ナオリンコの手工芸とソソコルコの紙風船づくり。"
+      },
+      "activities": [
+        "leather_shoemaking_demonstration",
+        "paper_balloon_workshop"
+      ],
+      "trip": {
+        "v": 1,
+        "title": "Oficios, artesanías y tradición · ruta sugerida",
+        "month": "",
+        "people": 2,
+        "stops": [
+          {
+            "id": "municipality:30112",
+            "name": "Naolinco"
+          },
+          {
+            "id": "municipality:30203",
+            "name": "Zozocolco de Hidalgo"
+          }
+        ],
+        "expenses": []
+      },
+      "highlights": {
+        "es": "Demostraciones de zapatería artesanal y globos de papel",
+        "en": "Artisanal shoemaking demonstrations and paper-balloon workshops",
+        "ja": "靴職人の実演と紙風船づくり"
+      }
+    }
+  ]
+}

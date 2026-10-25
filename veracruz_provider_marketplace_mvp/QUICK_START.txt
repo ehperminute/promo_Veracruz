@@ -1,0 +1,24 @@
+VERACRUZ — SUPPLIER OFFER MVP
+
+1) In the repository root, unzip VERACRUZ_PROVEEDORES_MVP_2026-10-25.zip
+2) Install with:
+   python veracruz_provider_marketplace_mvp/install.py .
+3) Run tests:
+   python veracruz_provider_marketplace_mvp/tests/test_release.py .
+4) Preview locally:
+   python -m http.server 8100 -d site
+
+OPEN:
+  /proveedores.html — Supplier listing submission form (Spanish)
+  /index.html — Route-linked reviewed offers section below the map
+
+By design: zero real supplier offers on initial installation.
+
+The form downloads a PRIVATE request JSON unless a legitimate HTTPS
+submission endpoint is configured in site/data/provider_submission_config.json.
+No information is published until an administrator verifies the business
+and approves the offer via scripts/pp6/review_provider_offer.py.
+
+Do not commit personal submission JSON. Do not claim live inventory,
+reservation confirmation, or real-world provider participation.
+See README.md for details and approval command.

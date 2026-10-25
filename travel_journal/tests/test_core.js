@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('assert');
+const C=require('../site/js/trip-journal-core.js');
+const template={v:1,title:'Los Tuxtlas 🌴',people:3,month:'2026-10',stops:[{id:'municipality:123',name:'Catemaco'},{id:'municipality:321',name:'San Andrés Tuxtla'}],expenses:[{stopIndex:0,category:'food',label:'Comida',amount:499.5,provider:'Local',note:''},{stopIndex:1,category:'accommodation',label:'Cabaña',amount:1250,provider:'',note:'2 noches'}]};
+const copy=C.decode(C.encode(template));
+assert.deepEqual(copy,C.normalize(template));
+assert.deepEqual(C.summary(copy).total,1749.5);
+assert.equal(C.summary(copy).perPerson,583.17);
+assert.deepEqual(C.summary(copy).byStop.map(x=>x.total),[499.5,1250]);
+assert(C.routeURL(copy).includes('vxroute='));
+assert.equal(C.routeURL({...copy,stops:[{name:'Place',id:''}],expenses:[]}),null);
+assert.throws(()=>C.normalize({...template,expenses:[{...template.expenses[0],amount:-1}]}));
+assert.throws(()=>C.normalize({...template,people:0}));
+assert.throws(()=>C.normalize({...template,month:'2026-10-25'}));
+assert.throws(()=>C.normalize({...template,stops:Array(13).fill({id:'',name:'A'})}));
+assert.throws(()=>C.decode('not-a-real-trip'));
+assert.equal(C.normalize({...template,expenses:[{...template.expenses[0],label:'<img src=x onerror=alert(1)>'}]}).expenses[0].label,'<img src=x onerror=alert(1)>');
+console.log('PASS: trip-core roundtrip, budget math, route IDs, date/privacy constraints and invalid input');
