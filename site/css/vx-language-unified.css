@@ -1,0 +1,9 @@
+/* Unified language selector across homepage, journal, story and provider forms. */
+:where(.language-control,.vp-lang-control,.vx-common-language) { display:inline-flex; align-items:center; gap:.6rem; font-weight:650; font-size:.92rem; }
+:where(.language-control,.vp-lang-control,.vx-common-language) label, :where(.language-control,.vp-lang-control,.vx-common-language) span { color:inherit; }
+:where(.language-control,.vp-lang-control,.vx-common-language) select,
+.tj-bar select.vx-language-select { width:auto; min-width:125px; min-height:40px; padding:7px 30px 7px 12px; border:1px solid #91b4bd; border-radius:9px; background:#fff; color:#163a46; font:600 14px/1.3 system-ui,sans-serif; }
+.vx-common-language select:focus-visible, .language-control select:focus-visible, .vp-lang-control select:focus-visible { outline:3px solid #efba55; outline-offset:2px; }
+.tj-bar .vx-common-language { margin-left:auto; }
+.vp-form-page header { background:#10364b; }
+@media(max-width:600px) {.vx-common-language { flex-wrap:wrap; } }

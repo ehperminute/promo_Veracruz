@@ -113,4 +113,12 @@
     render();if(shared)announce(t().shareLoaded);
   }
   start();
+  // VX-TRIP-HASH-NAV-FIX-V2: same-page gallery links must update the journal.
+  function openFromHash() {
+    start();
+    const anchor = $('tj-title-heading');
+    if (anchor) requestAnimationFrame(() => anchor.scrollIntoView({behavior:'smooth',block:'start'}));
+  }
+  window.VXTripJournalOpenHash = openFromHash;
+  window.addEventListener('hashchange', openFromHash);
 })();

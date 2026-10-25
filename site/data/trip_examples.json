@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "dataKind": "editorial_route_templates",
-  "note": "Illustrative suggested routes based on documented local activities. No traveler testimonials, observations, purchases, or published rates are implied.",
+  "note": "Four editorial route templates with Commons location photos and clearly hypothetical expense examples; no real travelers, purchases, provider prices or booking claims. The trip.expenses arrays remain empty.",
   "trips": [
     {
       "id": "demo-cafe-rio",
@@ -47,6 +47,78 @@
         "es": "Catas de café, visita a cafetales, rafting y senderismo",
         "en": "Coffee tasting, farm visits, rafting and hiking",
         "ja": "コーヒー試飲、農園見学、ラフティング、ハイキング"
+      },
+      "coverPhoto": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafting_Rio_Salvaje.JPG?width=960",
+        "page": "https://commons.wikimedia.org/wiki/File:Rafting_Rio_Salvaje.JPG",
+        "credit": "Kiubu · Dominio público",
+        "alt": {
+          "es": "Rafting en Jalcomulco, Veracruz",
+          "en": "Rafting in Jalcomulco, Veracruz",
+          "ja": "ハルコムルコのラフティング"
+        }
+      },
+      "exampleBudget": {
+        "kind": "hypothetical_scenario",
+        "currency": "MXN",
+        "people": 2,
+        "items": [
+          {
+            "stopIndex": 0,
+            "category": "activity",
+            "amount": 600,
+            "label": {
+              "es": "Degustación de café (2 personas)",
+              "en": "Coffee tasting (2 people)",
+              "ja": "コーヒー試飲（2人分）"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "food",
+            "amount": 650,
+            "label": {
+              "es": "Comidas del grupo",
+              "en": "Group meals",
+              "ja": "グループの食事"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 2,
+            "category": "activity",
+            "amount": 1600,
+            "label": {
+              "es": "Actividad de rafting",
+              "en": "Rafting activity",
+              "ja": "ラフティング体験"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 2,
+            "category": "accommodation",
+            "amount": 1100,
+            "label": {
+              "es": "Hospedaje por una noche",
+              "en": "One-night accommodation",
+              "ja": "1泊の宿泊費"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 2,
+            "category": "transport",
+            "amount": 500,
+            "label": {
+              "es": "Transporte local y combustible",
+              "en": "Local transport and fuel",
+              "ja": "現地交通費と燃料"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          }
+        ]
       }
     },
     {
@@ -87,6 +159,89 @@
         "es": "Patrimonio arqueológico y talleres de vainilla",
         "en": "Archaeological heritage and vanilla workshops",
         "ja": "遺跡探訪とバニラの体験"
+      },
+      "coverPhoto": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg?width=960",
+        "page": "https://commons.wikimedia.org/wiki/File:El_Taj%C3%ADn_zona_arqueol%C3%B3gica_precolombina_35_Papantla_de_Olarte,_Veracruz,_M%C3%A9xico.jpg",
+        "credit": "JEAFotoarte75 · CC BY-SA 4.0",
+        "alt": {
+          "es": "Zona arqueológica El Tajín, Papantla",
+          "en": "El Tajín archaeological site, Papantla",
+          "ja": "パパントラのエル・タヒン遺跡"
+        }
+      },
+      "exampleBudget": {
+        "kind": "hypothetical_scenario",
+        "currency": "MXN",
+        "people": 2,
+        "items": [
+          {
+            "stopIndex": 0,
+            "category": "activity",
+            "amount": 240,
+            "label": {
+              "es": "Entradas a zona arqueológica (2 personas)",
+              "en": "Archaeological admission (2 people)",
+              "ja": "遺跡入場料（2人分）"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 0,
+            "category": "activity",
+            "amount": 650,
+            "label": {
+              "es": "Taller cultural o de vainilla",
+              "en": "Cultural or vanilla workshop",
+              "ja": "文化・バニラ体験"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "activity",
+            "amount": 750,
+            "label": {
+              "es": "Paseo opcional en lancha",
+              "en": "Optional boat ride",
+              "ja": "オプションのボート体験"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "accommodation",
+            "amount": 1050,
+            "label": {
+              "es": "Habitación por una noche",
+              "en": "One-night room",
+              "ja": "1泊の客室"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "food",
+            "amount": 650,
+            "label": {
+              "es": "Comidas del grupo",
+              "en": "Group meals",
+              "ja": "グループの食事"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "transport",
+            "amount": 500,
+            "label": {
+              "es": "Traslados y combustible",
+              "en": "Transfers and fuel",
+              "ja": "移動費と燃料"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          }
+        ]
       }
     },
     {
@@ -133,6 +288,78 @@
         "es": "Recorridos en lancha, observación de aves y senderismo",
         "en": "Boat excursions, birdwatching and hiking",
         "ja": "船での散策、野鳥観察、ハイキング"
+      },
+      "coverPhoto": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laguna_de_Catemaco_con_lanchas.jpg?width=960",
+        "page": "https://commons.wikimedia.org/wiki/File:Laguna_de_Catemaco_con_lanchas.jpg",
+        "credit": "Koffer · CC BY-SA 3.0",
+        "alt": {
+          "es": "Lanchas en la Laguna de Catemaco",
+          "en": "Boats on Lake Catemaco",
+          "ja": "カテマコ湖のボート"
+        }
+      },
+      "exampleBudget": {
+        "kind": "hypothetical_scenario",
+        "currency": "MXN",
+        "people": 2,
+        "items": [
+          {
+            "stopIndex": 0,
+            "category": "activity",
+            "amount": 750,
+            "label": {
+              "es": "Paseo en lancha de grupo",
+              "en": "Group boat ride",
+              "ja": "グループのボート体験"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 0,
+            "category": "accommodation",
+            "amount": 1100,
+            "label": {
+              "es": "Hospedaje por una noche",
+              "en": "One-night accommodation",
+              "ja": "1泊の宿泊費"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "activity",
+            "amount": 600,
+            "label": {
+              "es": "Guía local de naturaleza",
+              "en": "Local nature guide",
+              "ja": "自然案内ガイド"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "food",
+            "amount": 700,
+            "label": {
+              "es": "Comidas del grupo",
+              "en": "Group meals",
+              "ja": "グループの食事"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 2,
+            "category": "transport",
+            "amount": 650,
+            "label": {
+              "es": "Combustible y traslados",
+              "en": "Fuel and transfers",
+              "ja": "燃料費と移動費"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          }
+        ]
       }
     },
     {
@@ -173,6 +400,78 @@
         "es": "Demostraciones de zapatería artesanal y globos de papel",
         "en": "Artisanal shoemaking demonstrations and paper-balloon workshops",
         "ja": "靴職人の実演と紙風船づくり"
+      },
+      "coverPhoto": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artesan%C3%ADas_de_barro_en_Naolinco.jpg?width=960",
+        "page": "https://commons.wikimedia.org/wiki/File:Artesan%C3%ADas_de_barro_en_Naolinco.jpg",
+        "credit": "B.jars · CC BY-SA 4.0",
+        "alt": {
+          "es": "Artesanías de barro en Naolinco, Veracruz",
+          "en": "Clay crafts in Naolinco, Veracruz",
+          "ja": "ナオリンコの陶芸工芸品"
+        }
+      },
+      "exampleBudget": {
+        "kind": "hypothetical_scenario",
+        "currency": "MXN",
+        "people": 2,
+        "items": [
+          {
+            "stopIndex": 0,
+            "category": "shopping",
+            "amount": 450,
+            "label": {
+              "es": "Compra de artesanías (opcional)",
+              "en": "Optional craft purchases",
+              "ja": "工芸品の購入（任意）"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 0,
+            "category": "food",
+            "amount": 500,
+            "label": {
+              "es": "Comidas del grupo",
+              "en": "Group meals",
+              "ja": "グループの食事"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "activity",
+            "amount": 400,
+            "label": {
+              "es": "Taller artesanal (si se ofrece)",
+              "en": "Craft workshop (if available)",
+              "ja": "工芸体験（提供される場合）"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "accommodation",
+            "amount": 1000,
+            "label": {
+              "es": "Alojamiento por una noche",
+              "en": "One-night accommodation",
+              "ja": "1泊の宿泊費"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          },
+          {
+            "stopIndex": 1,
+            "category": "transport",
+            "amount": 600,
+            "label": {
+              "es": "Traslados y combustible",
+              "en": "Transfers and fuel",
+              "ja": "移動費と燃料"
+            },
+            "priceBasis": "illustrative_allowance_not_observed"
+          }
+        ]
       }
     }
   ]
